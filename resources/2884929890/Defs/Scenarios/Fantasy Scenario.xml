@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>nightelfScene</defName>
+	<scenario>
+		<name>Night Elf Sanctuary</name>
+		<summary>Start as a new night elf sanctuary.</summary>
+		<description>You have been tasked by the queen of all night elves to colonize a new location.</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerTribe</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<xenotypeCounts>
+					<li>
+						<count>3</count>
+						<requiredAtStart>True</requiredAtStart>
+						<xenotype>nightelf</xenotype>
+						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+					</li>
+				</xenotypeCounts>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Bow_Recurve</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>450</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>WoodLog</thingDef>
+				<count>300</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<factionDef>TribeNightElf</factionDef>
+				<affectStartingGoodwill>True</affectStartingGoodwill>
+				<startingGoodwillRange>100~100</startingGoodwillRange>
+				<affectNaturalGoodwill>True</affectNaturalGoodwill>
+				<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+				<def>VFEC_ForcedFactionGoodwill</def>
+			</li>
+		</parts>
+	</scenario>
+  </ScenarioDef>
+  
+  <ScenarioDef>
+    <defName>elfScene</defName>
+	<scenario>
+		<name>Elf Sanctuary</name>
+		<summary>Start as a new elf sanctuary.</summary>
+		<description>You have been tasked by the queen of all elves to colonize a new location.</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerTribe</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<xenotypeCounts>
+					<li>
+						<count>3</count>
+						<requiredAtStart>True</requiredAtStart>
+						<xenotype>elf</xenotype>
+						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+					</li>
+				</xenotypeCounts>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Bow_Recurve</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>450</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>WoodLog</thingDef>
+				<count>300</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<factionDef>TribeElf</factionDef>
+				<affectStartingGoodwill>True</affectStartingGoodwill>
+				<startingGoodwillRange>100~100</startingGoodwillRange>
+				<affectNaturalGoodwill>True</affectNaturalGoodwill>
+				<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+				<def>VFEC_ForcedFactionGoodwill</def>
+			</li>
+		</parts>
+	</scenario>
+  </ScenarioDef>
+  
+  <ScenarioDef>
+    <defName>dwarfScene</defName>
+	<scenario>
+		<name>Dwarven Mine</name>
+		<summary>Start as a new Dwarven Mine.</summary>
+		<description>You have been tasked by the queen of all dwarves to colonize a new location.</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerTribe</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<xenotypeCounts>
+					<li>
+						<count>3</count>
+						<requiredAtStart>True</requiredAtStart>
+						<xenotype>dwarf</xenotype>
+						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+					</li>
+				</xenotypeCounts>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Bow_Recurve</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>450</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>WoodLog</thingDef>
+				<count>300</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<factionDef>TribeDwarf</factionDef>
+				<affectStartingGoodwill>True</affectStartingGoodwill>
+				<startingGoodwillRange>100~100</startingGoodwillRange>
+				<affectNaturalGoodwill>True</affectNaturalGoodwill>
+				<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+				<def>VFEC_ForcedFactionGoodwill</def>
+			</li>
+		</parts>
+	</scenario>
+	  </ScenarioDef>
+	
+  <ScenarioDef>
+    <defName>orcScene</defName>
+	<scenario>
+		<name>Orc Stronghold</name>
+		<summary>Start as a new Orc Stronghold.</summary>
+		<description>You have been tasked by the queen of all orcs to colonize a new location.</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerTribe</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<xenotypeCounts>
+					<li>
+						<count>3</count>
+						<requiredAtStart>True</requiredAtStart>
+						<xenotype>orc</xenotype>
+						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+					</li>
+				</xenotypeCounts>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Bow_Recurve</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>450</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>WoodLog</thingDef>
+				<count>300</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<factionDef>TribeOrc</factionDef>
+				<affectStartingGoodwill>True</affectStartingGoodwill>
+				<startingGoodwillRange>100~100</startingGoodwillRange>
+				<affectNaturalGoodwill>True</affectNaturalGoodwill>
+				<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+				<def>VFEC_ForcedFactionGoodwill</def>
+			</li>
+		</parts>
+	</scenario>
+  </ScenarioDef>
+
+</Defs>
