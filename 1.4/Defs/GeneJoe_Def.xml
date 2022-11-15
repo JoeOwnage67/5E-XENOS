@@ -86,6 +86,27 @@
 			</suffixSymbols>
     	</symbolPack>
   	</GeneDef>
+
+<!-- Dragonborn Head -->
+	<GeneDef ParentName="GeneHeadboneBase">
+    	<defName>LoxodonHead</defName>
+    	<label>Loxodon Head</label>
+    	<description>Carriers of this gene have the head of a Loxodon. Bearing the elephant’s distinct trunk, ears, leathery skin, and other cosmetic features.</description>
+    	<iconPath>Things/UI/LoxodonHeadGene</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/LoxodonHead</graphicPath>
+			<graphicPathFemale>Things/Pawn/LoxodonHead</graphicPathFemale>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+        		<li><symbol>eyebrowed</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>eyebrows</symbol></li>
+			</suffixSymbols>
+    	</symbolPack>
+  	</GeneDef>
 	
 <!-- Integrated Protection -->
 
