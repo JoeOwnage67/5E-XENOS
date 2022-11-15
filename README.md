@@ -1,11 +1,10 @@
-# races-thing
+# 5eRimRacesPatch
 
-this mod is made up of a few patches to bring some xenotypes from existing mods into line with DnD 5e races for my party, the Heroes of Adrion
+this mod is made up of a few patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion
 
-I am making this mod for my personal use but will probably make it available on steam to share with friends/other interested people
+I am making this mod for my personal use but will probably make it available on steam to share with my other party members/interested people
 
 THIS IS VERY MUCH A WIP
-
 
 Wood Elf
 
