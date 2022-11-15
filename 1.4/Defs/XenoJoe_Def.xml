@@ -193,7 +193,7 @@
 			<inheritable>true</inheritable>
 			<genes>
 				<li>AnimalWarcall</li>				
-				<li>KindInstinct</li>
+				<li>CuriousInstinct</li>
 				<li>Fertile</li>
 				<li>Libido_High</li>
 				<li>Hair_None</li>
@@ -212,23 +212,25 @@
 		<XenotypeDef>
 			<defName>loxodon</defName>
 			<label>Loxodon</label>
-			<description>Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.
-			<descriptionShort>Tabaxi are inquisitive, catlike humanoids known for their curiosity and their restless nature.</descriptionShort>
-			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
+			<description>The Loxodon is an elephantine humanoid, bearing the elephant’s distinct trunk, ears, leathery skin, and other cosmetic features. Massive, kind, stubbornly loyal, and only occasionally given to bouts of beating smaller creatures into a pulp. Hailing from Ravnica, Loxodons are often like an ocean of calm. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man."
+			<descriptionShort>Loxodons are elephantine humanoids. They are massive, calm, and stubbornly loyal.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Loxodon</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
 				<li>AnimalWarcall</li>				
 				<li>KindInstinct</li>
-				<li>Fertile</li>
-				<li>Libido_High</li>
+				<li>Dead_Calm</li>
+				<li>Libido_Low</li>
 				<li>Hair_None</li>
 				<li>Ears_Elephant</li>
 				<li>Tail_Smooth</li>
 				<li>Trunk</li>
-				<li>Body_Hulk</li>				
+				<li>Body_Hulk</li>
+				<li>Natural_Armour</li>
 				<li>AptitudeStrong_Animals</li>
 				<li>AptitudeStrong_Intelligence</li>
-				<li>AptitudeStrong_Cooking</li>
+				<li>MeleeDamage_Strong</li>
+				<li>Robust</li>
 			</genes>
 		</XenotypeDef>
 			
