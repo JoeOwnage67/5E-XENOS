@@ -47,6 +47,12 @@ Hailing from a strange and distant land, wandering tabaxi are catlike humanoids 
 
 Tabaxi are inquisitive, catlike humanoids known for their curiosity and their restless nature.
 
+Loxodon
+
+The Loxodon is an elephantine humanoid, bearing the elephant’s distinct trunk, ears, leathery skin, and other cosmetic features. Massive, kind, stubbornly loyal, and only occasionally given to bouts of beating smaller creatures into a pulp. Hailing from Ravnica, Loxodons are often like an ocean of calm. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man."
+
+Loxodons are elephantine humanoids. They are massive, calm, and stubbornly loyal.
+
 
 Shifter
 
