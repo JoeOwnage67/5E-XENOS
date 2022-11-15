@@ -165,7 +165,7 @@
 			</genes>
 		</XenotypeDef>
 	
-	<!-- Tabaxi -->
+<!-- Tabaxi -->
 		<XenotypeDef>
 			<defName>tabaxi</defName>
 			<label>Tabaxi</label>
