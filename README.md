@@ -4,6 +4,8 @@ this mod is made up of a few patches to bring some xenotypes from existing mods 
 
 I am making this mod for my personal use but will probably make it available on steam to share with friends/other interested people
 
+THIS IS VERY MUCH A WIP
+
 
 Wood Elf
 
