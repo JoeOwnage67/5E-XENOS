@@ -71,4 +71,4 @@ Dragonborn
 
 The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.
 
-Dragonborn hatch from eggs, and combine the best attributes of humanoids and dragons.
+Originally created by the dragons themselves, Dragonborn combine the best attributes of humanoids and dragons.
