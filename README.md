@@ -1,8 +1,14 @@
 # 5eRimRacesPatch
 
-this mod is made up of a few patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion
+This mod is made up of a few patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion.
 
-I am making this mod for my personal use but will probably make it available on steam to share with my other party members/interested people
+Credit for the assets and ideas in the mod dependancies go to their authors and artists.
+
+Dungeons and Dragons Fifth Edition is the property of Wizard of the Coast and this is simply a fan project.
+
+I am making this mod for my personal use but will probably make it available on steam to share with my other party members/interested people. Any requests for additions are welcome as I'd love to expand this but might need help.
+
+Recommended companion mod: Mooloh's DnD Menagerie
 
 THIS IS VERY MUCH A WIP
 
