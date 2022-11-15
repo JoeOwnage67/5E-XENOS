@@ -178,8 +178,9 @@
 				<li>Integrated_Protection</li>
 				<li>AptitudeRemarkable_Melee</li>
 				<li>AptitudeTerrible_Social</li>
-				<li>No_Sleep</li>
-				<li>Immunity_Strong</li>
+				<li>Never_Sleep</li>
+				<li>Super_Immune</li>
+				<li>Tox_Immune</li>
 			</genes>
 		</XenotypeDef>
 	
@@ -205,6 +206,9 @@
 				<li>AptitudeStrong_Intelligence</li>
 				<li>AptitudeStrong_Cooking</li>
 				<li>Fur_Covered</li>
+				<li>sensitive_whiskers</li>
+				<li>darkvision</li>
+				<li>veryfastrunner</li>
 			</genes>
 		</XenotypeDef>
 			
@@ -231,6 +235,10 @@
 				<li>AptitudeStrong_Intelligence</li>
 				<li>MeleeDamage_Strong</li>
 				<li>Robust</li>
+				<li>Skin_slategrey</li>
+				<li>Skin_lightgrey</li>
+				<li>Skin_inkblack</li>
+				<li>packmule</li>
 			</genes>
 		</XenotypeDef>
 			
@@ -257,6 +265,10 @@
 				<li>AptitudeRemarkable_Animals</li>
 				<li>Aggression_HyperAggressive</li>
 				<li>MeleeDamage_Strong</li>
+				<li>bark/bite weapon</li>
+				<li>Fur_Covered</li>
+				<li>sensitive_whiskers</li>
+				<li>darkvision</li>
 			</genes>
 		</XenotypeDef>
 </Defs>
