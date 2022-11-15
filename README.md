@@ -66,3 +66,9 @@ Shifter
 Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect; while they cannot fully change shape they can temporarily enhance their animalistic features – a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife’s edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?
 
 Many believe shifters are the descendants of humans and lycanthropes. They walk on a knifes edge between the wilds and the world around them.
+
+Dragonborn
+
+The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.
+
+Dragonborn hatch from eggs, and combine the best attributes of humanoids and dragons.
