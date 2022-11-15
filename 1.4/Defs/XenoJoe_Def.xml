@@ -77,10 +77,9 @@
 	  			<li>MaxTemp_SmallDecrease</li>
 	  			<li>Beard_Always</li>
 	  			<li>AptitudeStrong_Social</li>
-				<li>AptitudeStrong_Melee</li>
-	  			<li>AptitudePoor_Animals</li>
+				<li>AptitudePoor_Animals</li>
 	  			<li>AptitudePoor_Plants</li>
-	  			<li>AptitudeRemarkable_Crafting</li>
+	  			<li>AptitudeRemarkable_Melee</li>
       				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
@@ -164,10 +163,11 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
+				<li>WarforgedHead</li>
 				<li>Ageless</li>
 				<li>ArchiteMetabolism</li>
 				<li>MaxTemp_LargeIncrease</li>
-				<li>MinTemp_LargeIncrease</li>
+				<li>MinTemp_LargeDecrease</li>
 				<li>DeadCalm</li>
 				<li>Sterile</li>
 				<li>MeleeDamage_Strong</li>
@@ -181,6 +181,8 @@
 				<li>Never_Sleep</li>
 				<li>Super_Immune</li>
 				<li>Tox_Immune</li>
+				<li>Skin_slategrey</li>
+				<li>Skin_lightgrey</li>
 			</genes>
 		</XenotypeDef>
 	
@@ -193,6 +195,7 @@
 			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
+				<li>TabaxiHead</li>
 				<li>AnimalWarcall</li>				
 				<li>CuriousInstinct</li>
 				<li>Fertile</li>
@@ -221,7 +224,7 @@
 			<iconPath>UI/Icons/Xenotypes/Loxodon</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
-				<li>AnimalWarcall</li>				
+				<li>LoxodonHead</li>							
 				<li>KindInstinct</li>
 				<li>Dead_Calm</li>
 				<li>Libido_Low</li>
@@ -251,6 +254,7 @@
 			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
+				<li>ShifterHead</li>
 				<li>AnimalWarcall</li>	
 				<li>Fertile</li>
 				<li>Libido_High</li>
@@ -269,6 +273,31 @@
 				<li>Fur_Covered</li>
 				<li>sensitive_whiskers</li>
 				<li>darkvision</li>
+			</genes>
+		</XenotypeDef>
+			
+<!-- Dragonborn -->
+		<XenotypeDef>
+			<defName>dragonborn</defName>
+			<label>Dragonborn</label>
+			<description>The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.
+			<descriptionShort>Originally shaped by the dragons themselves, Dragonborn combine the best attributes of humanoids and dragons.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Dragonborn</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+				<li>DragonbornHead</li>
+				<li>MaxTemp_LargeIncrease</li>
+				<li>MinTemp_LargeIncrease</li>
+				<li>Breath_Weapon</li>
+				<li>Acid_Splash</li>
+				<li>Claw_Weapon</li>
+				<li>Tail_Smooth</li>
+				<li>MeleeDamage_Strong</li>
+				<li>Aggression_Aggressive</li>	
+				<li>Body_Standard</li>
+				<li>Body_Hulk</li>
+				<li>darkvision</li>
+				<li>Fire_resistant</li>
 			</genes>
 		</XenotypeDef>
 </Defs>
