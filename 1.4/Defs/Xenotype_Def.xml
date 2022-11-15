@@ -28,6 +28,7 @@
 			</genes>
 		</XenotypeDef>
 
+	<!-- Night Elf -->
 		<XenotypeDef>
 			<defName>nightelf</defName>
 			<label>Night Elf</label>
@@ -55,7 +56,8 @@
 				<li>AptitudeRemarkable_Plants</li>
 			 </genes>
 		</XenotypeDef>
-
+	
+<!-- Hill Dwarf -->
 		<XenotypeDef>
 			<defName>dwarf_hill</defName>
 			<label>Hill Dwarf</label>
@@ -78,6 +80,7 @@
 			</genes>
 		</XenotypeDef>
   
+	<!-- Mountain Dwarf -->
 		<XenotypeDef>
 			<defName>dwarf_mountain</defName>
 			<label>Mountain Dwarf</label>
@@ -97,7 +100,7 @@
 	  			<li>AptitudePoor_Animals</li>
 	  			<li>AptitudePoor_Plants</li>
 	  			<li>AptitudeRemarkable_Crafting</li>
-      			<li>Body_Fat</li>
+      				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
 	  			<li>PsychicAbility_Deaf</li>
@@ -110,6 +113,7 @@
 			</genes>
 		</XenotypeDef>
 
+	<!-- Orc -->
 		<XenotypeDef>
 			<defName>orc</defName>
 			<label>Orc</label>
@@ -117,7 +121,7 @@
 			<descriptionShort>Orcs are savage and brutal beasts</descriptionShort>
 			<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
 			<inheritable>true</inheritable>
-    		<genes>
+    			<genes>
 				<li>MaxTemp_LargeIncrease</li>
 				<li>Aggression_HyperAggressive</li>
 				<li>MeleeDamage_Strong</li>
