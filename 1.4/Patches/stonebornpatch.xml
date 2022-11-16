@@ -1,1 +1,18 @@
-1
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  
+<!-- remove Stoneborn xenotype -->	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Det's Xenotypes - Stoneborn</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>		
+			        <li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
+        			</li>
+			</operations>
+   		 </match>
+	</Operation>
+</Patch>
