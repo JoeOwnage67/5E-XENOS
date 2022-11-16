@@ -1,1 +1,57 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  
+<!-- remove Fantasy of the Rim version of xenotypes (have reworked in new defs) -->	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fantasy Of The Rim</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>		
+			        <li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="elf"]</xpath>
+        			</li>
+				
+			        <li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="nightelf"]</xpath>
+        			</li>
+				 	 <li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="dwarf"]</xpath>
+        			</li>
+				  <li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="orc"]</xpath>
+        			</li>
+				
+				<!-- remove Fantasy of the Rim factions (intend to rework later) -->
+				  <li Class="PatchOperationRemove">
+          				<xpath>Defs/FactionDef[defName="TribeElf"]</xpath>
+        			</li>
+				  <li Class="PatchOperationRemove">
+          				<xpath>Defs/FactionDef[defName="TribeNightElf"]</xpath>
+        			</li>
+				  <li Class="PatchOperationRemove">
+          				<xpath>Defs/FactionDef[defName="TribeDwarf"]</xpath>
+        			</li>
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/FactionDef[defName="TribeOrc"]</xpath>
+        			</li>
+				
+				<!-- remove Fantasy of the Rim scenarios (intend to rework later) -->
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/ScenarioDef[defName="nightelfScene"]</xpath>
+        			</li>
+					<li Class="PatchOperationRemove">
+          				<xpath>Defs/ScenarioDef[defName="elfScene"]</xpath>
+        			</li>
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/ScenarioDef[defName="dwarfScene"]</xpath>
+        			</li>
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/ScenarioDef[defName="orcScene"]</xpath>
+        			</li>
+			</operations>
+			
+   		 </match>
+	</Operation>
+</Patch>
