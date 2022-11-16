@@ -16,6 +16,7 @@
 				<li>Body_Thin</li>
 				<li>Beauty_Beautiful</li>
 				<li>Hair_LongOnly</li>
+				<li>ElongatedFingers</li>
 								
 				<li>Ageless</li>
 				<li>ArchiteMetabolism</li>
@@ -50,8 +51,10 @@
 				<li>Skin_InkBlack</li>
 				<li>Beauty_Beautiful</li>
 				<li>Eyes_Gray</li>
-				<li>Hair_White</li> <!-- ? -->
+				<!-- <li>Hair_SheerWhite</li> -->
 				<li>Hair_LongOnly</li>
+				<li>ElongatedFingers</li>
+		
 				
 				<li>Ageless</li>
 				<li>ArchiteMetabolism</li>
