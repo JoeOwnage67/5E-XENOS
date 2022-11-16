@@ -34,7 +34,7 @@
 	
 <!-- Impressionable Gene -->
 	<GeneDef>
-    		<defName>impressionable</defName>
+    		<defName>Impressionable</defName>
     		<label>impressionable</label>    	
     		<description>Carriers of this gene are particularly impressionable, and can be shaped by the actions and opinions of others.</description>
     		<iconPath>Genes/Icons/Gene_ImpressionableIcon</iconPath>
