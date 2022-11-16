@@ -11,21 +11,25 @@
     			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
     			<genes>
-					<li>Ageless</li>
-					<li>ArchiteMetabolism</li>
-					<li>DiseaseFree</li>
-					<li>AnimalWarcall</li>
-					<li>MeleeDamage_Weak</li>
-					<li>KindInstinct</li>
-					<li>Fertile</li>
-					<li>Beauty_Beautiful</li>
-					<li>Hair_LongOnly</li>
-					<li>Ears_Pointed</li>
-					<li>Body_Standard</li>
-					<li>Body_Thin</li>
-					<li>AptitudeTerrible_Melee</li>
-					<li>AptitudeRemarkable_Animals</li>
-					<li>Libido_Low</li>
+				<li>Ears_Pointed</li>
+				<li>Body_Standard</li>
+				<li>Body_Thin</li>
+				<li>Beauty_Beautiful</li>
+				<li>Hair_LongOnly</li>
+								
+				<li>Ageless</li>
+				<li>ArchiteMetabolism</li>
+				<li>DiseaseFree</li>				
+				<li>MeleeDamage_Weak</li>
+				<li>KindInstinct</li>
+				<li>Fertile</li>
+				<li>Libido_Low</li>
+				<li>LowSleep</li>
+								
+				<li>AptitudeTerrible_Melee</li>
+				<li>AptitudeRemarkable_Animals</li>
+				
+				<li>AnimalWarcall</li>				
     			</genes>
   		</XenotypeDef>
 
@@ -40,25 +44,26 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
-				<li>Ageless</li>
-				<li>ArchiteMetabolism</li>
-				<li>DiseaseFree</li>
-				<li>AnimalWarcall</li>
-				<li>Mood_Pessimist</li>
-				<li>MaxTemp_SmallDecrease</li>
-				<li>KindInstinct</li>
-				<li>Fertile</li>
-				<li>Beauty_Beautiful</li>
-				<li>Eyes_Gray</li>
-				<li>Hair_White</li>
-				<li>Hair_LongOnly</li>
 				<li>Ears_Pointed</li>
 				<li>Body_Standard</li>
 				<li>Body_Thin</li>
-				<li>Skin_Black</li>
+				<li>Skin_InkBlack</li>
+				<li>Beauty_Beautiful</li>
+				<li>Eyes_Gray</li>
+				<li>Hair_White</li> <!-- ? -->
+				<li>Hair_LongOnly</li>
+				
+				<li>Ageless</li>
+				<li>ArchiteMetabolism</li>
+				<li>DiseaseFree</li>
 				<li>DarkVision</li>
-				<li>AptitudeRemarkable_Plants</li>
+				<li>Mood_Pessimist</li>
+				<li>Fertile</li>
 				<li>Libido_Low</li>
+				<li>LowSleep</li>
+								
+				<li>MaxTemp_SmallDecrease</li>	
+				<li>AptitudeRemarkable_Plants</li>			
 			 </genes>
 		</XenotypeDef>
 	
@@ -72,22 +77,25 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
-				<li>MoveSpeed_Slow</li>
-	  			<li>MinTemp_SmallDecrease</li>
-	  			<li>MaxTemp_SmallDecrease</li>
-	  			<li>Beard_Always</li>
-	  			<li>AptitudeStrong_Social</li>
-				<li>AptitudePoor_Animals</li>
-	  			<li>AptitudePoor_Plants</li>
-	  			<li>AptitudeRemarkable_Melee</li>
-      				<li>Body_Fat</li>
+				<li>BushyEyebrows</li>
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
-	  			<li>Robust</li>
+				
+				<li>MoveSpeed_Slow</li>
+				<li>Robust</li>
 	  			<li>Libido_High</li>
 	  			<li>WoundHealing_Slow</li>
 	  			<li>Immunity_Strong</li>
-	  			<li>BushyEyebrows</li>
+				
+	  			<li>MinTemp_SmallDecrease</li>
+	  			<li>MaxTemp_SmallDecrease</li>				
+	  			<li>AptitudeStrong_Social</li>
+				<li>AptitudePoor_Animals</li>
+	  			<li>AptitudePoor_Plants</li>
+	  			<li>AptitudeRemarkable_Melee</li>      
 			</genes>
 		</XenotypeDef>
   
@@ -101,26 +109,30 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
-	  			<li>MoveSpeed_Slow</li>
-	  			<li>MinTemp_SmallDecrease</li>
+				<li>BushyEyebrows</li>
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Body_Fat</li>
+	  			<li>Body_Standard</li>
+	  			<li>Body_Hulk</li>
+				
+				<li>MoveSpeed_Slow</li>
+				<li>PsychicAbility_Deaf</li>
+				<li>Robust</li>
+	  			<li>Libido_High</li>
+	  			<li>WoundHealing_Slow</li>
+	  			<li>Immunity_Strong</li>	  			
 	  			<li>Nearsighted</li>
-	  			<li>MaxTemp_SmallDecrease</li>
-	  			<li>Beard_Always</li>
+				
+				<li>MinTemp_SmallDecrease</li>
+	  			<li>MaxTemp_SmallDecrease</li>	  			
 	  			<li>AptitudePoor_Social</li>
 	  			<li>AptitudeStrong_Mining</li>
 	  			<li>AptitudePoor_Animals</li>
 	  			<li>AptitudePoor_Plants</li>
 	  			<li>AptitudeRemarkable_Crafting</li>
-      				<li>Body_Fat</li>
-	  			<li>Body_Standard</li>
-	  			<li>Body_Hulk</li>
-	  			<li>PsychicAbility_Deaf</li>
-	  			<li>Robust</li>
-	  			<li>Libido_High</li>
-	  			<li>WoundHealing_Slow</li>
-	  			<li>Immunity_Strong</li>
-	  			<li>BushyEyebrows</li>
-	  			<li>Stonecall</li>
+      				
+	  			<li>Stonecall</li>  	
 			</genes>
 		</XenotypeDef>
 
@@ -134,11 +146,6 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
     			<genes>
-				<li>MaxTemp_LargeIncrease</li>
-				<li>Aggression_HyperAggressive</li>
-				<li>MeleeDamage_Strong</li>
-				<li>KillThirst</li>
-				<li>Robust</li>
 				<li>Hair_ShortOnly</li>
 				<li>Ears_Pointed</li>
 				<li>Jaw_Heavy</li>
@@ -146,6 +153,15 @@
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
 				<li>Skin_Green</li>
+				<li>Nose_Pig</li>
+				<li>BTEMa_ElongatedFangs</li>
+				
+				<li>MaxTemp_LargeIncrease</li>
+				<li>Aggression_HyperAggressive</li>
+				<li>MeleeDamage_Strong</li>
+				<li>KillThirst</li>
+				<li>Robust</li>
+				
 				<li>AptitudeRemarkable_Melee</li>
 				<li>AptitudeTerrible_Social</li>
 				<li>Fertile</li>
@@ -163,26 +179,31 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
-				<li>WarforgedHead</li>
+				<li>FacialRidges</li> <!--placeholder for warforged markings -->
+				<li>Skin_SlateGray</li>
+				<li>Skin_LightGray</li>
+				<li>Hair_BaldOnly</li>
+				<li>Jaw_Heavy</li>
+				<li>Body_Standard</li>
+				<li>BTEMy_AdamantScalesNoGraphic</li> <!-- placeholder for integrated protection -->
+				<li>Eyes_Red</li>
+				
 				<li>Ageless</li>
 				<li>ArchiteMetabolism</li>
-				<li>MaxTemp_LargeIncrease</li>
-				<li>MinTemp_LargeDecrease</li>
-				<li>DeadCalm</li>
 				<li>Sterile</li>
 				<li>MeleeDamage_Strong</li>
 				<li>Robust</li>
-				<li>Hair_None</li>
-				<li>Jaw_Heavy</li>
-				<li>Body_Standard</li>
-				<li>Integrated_Protection</li>
+				<li>Aggression_DeadCalm</li>
+				<li>TotalHealing</li>
+				<!-- Impressionable - gene that assigns trait? -->
+									
+				<li>AptitudeStrong_Construction</li>
 				<li>AptitudeRemarkable_Melee</li>
 				<li>AptitudeTerrible_Social</li>
-				<li>Never_Sleep</li>
-				<li>Super_Immune</li>
-				<li>Tox_Immune</li>
-				<li>Skin_slategrey</li>
-				<li>Skin_lightgrey</li>
+				<li>AptitudeTerrible_Plants</li>
+				<li>Neversleep</li>
+				<li>Immunity_SuperStrong</li>
+				<li>ToxResist_Total</li>
 			</genes>
 		</XenotypeDef>
 	
@@ -195,23 +216,28 @@
 			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
-				<li>TabaxiHead</li>
-				<li>AnimalWarcall</li>				
-				<li>CuriousInstinct</li>
+				<li>Hair_BaldOnly</li>
+				<li>Ears_Cat</li>
+				<li>Tail_Furry</li>
+				<li>BTEMa_SharpClaws</li>
+				<li>Body_Thin</li>
+				<li>Furskin</li>
+				<li>BTEMa_SensitiveWhiskers</li>
+				<li>BTEMa_NoseShort</li>
+											
+				<li>Learning_Fast</li><!-- Curious -->
 				<li>Fertile</li>
 				<li>Libido_High</li>
-				<li>Hair_None</li>
-				<li>Ears_Cat</li>
-				<li>Tail_Smooth</li>
-				<li>Claw_Weapon</li>
-				<li>Body_Thin</li>				
+				<li>DarkVision</li>
+				<li>MoveSpeed_Quick</li>
+											
 				<li>AptitudeStrong_Animals</li>
 				<li>AptitudeStrong_Intelligence</li>
 				<li>AptitudeStrong_Cooking</li>
-				<li>Fur_Covered</li>
-				<li>sensitive_whiskers</li>
-				<li>darkvision</li>
-				<li>veryfastrunner</li>
+				<li>AptitudeWeak_Construction</li>
+				<li>AptitudeTerrible_Mining</li>
+								
+				<li>AnimalWarcall</li>	
 			</genes>
 		</XenotypeDef>
 			
@@ -224,24 +250,26 @@
 			<iconPath>UI/Icons/Xenotypes/Loxodon</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
-				<li>LoxodonHead</li>							
-				<li>KindInstinct</li>
-				<li>Dead_Calm</li>
-				<li>Libido_Low</li>
-				<li>Hair_None</li>
-				<li>Ears_Elephant</li>
-				<li>Tail_Smooth</li>
-				<li>Trunk</li>
+				<li>BTEMa_NoseElephant</li>
+				<li>BTEMa_ElephantEars</li>
+				<li>BTEMa_TailElephant</li>
+				<li>Hair_BaldOnly</li>
 				<li>Body_Hulk</li>
-				<li>Natural_Armour</li>
-				<li>AptitudeStrong_Animals</li>
+				<li>BTEMy_AdamantScalesNoGraphic</li> <!-- placeholder for natural armour -->
+				<li>Skin_InkBlack</li>
+				<li>Skin_SlateGray</li>
+				<li>Skin_LightGray</li>
+																
+				<li>Libido_Low</li>
+				<li>Aggression_DeadCalm</li>
+				<li>KindInstinct</li>
+				<li>BTEMa_ElephantMemory</li>
+				<li>MoveSpeed_Slow</li>
+				
 				<li>AptitudeStrong_Intelligence</li>
 				<li>MeleeDamage_Strong</li>
-				<li>Robust</li>
-				<li>Skin_slategrey</li>
-				<li>Skin_lightgrey</li>
-				<li>Skin_inkblack</li>
-				<li>packmule</li>
+				<li>Robust</li>				
+				<li>packmule</li> <!-- name? --> <!-- increased carrying capacity -->
 			</genes>
 		</XenotypeDef>
 			
@@ -254,25 +282,38 @@
 			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
-				<li>ShifterHead</li>
-				<li>AnimalWarcall</li>	
-				<li>Fertile</li>
-				<li>Libido_High</li>
-				<li>Hair_None</li>
-				<li>Ears_Wolf</li>
+				<li>BTEMa_Nose_Lupine</li>
+				<li>BTEMa_ElongatedFangs</li>
+				<li>BTEMa_SharpClaws</li>
+				<li>VoiceRoar</li>
+				<li>Ears_Floppy</li>
+	      			<li>BTEMa_VulpineEars</li>
 				<li>Tail_Furry</li>
-				<li>Fur_Covered</li>
-				<li>Claw_Weapon</li>
-				<li>Body_Thin</li>
+      				<li>BTEMa_Tail_Vulpine</li>
+      				<li>Furskin</li>
+				<li>Skin_SlateGray</li>
+				<li>Skin_InkBlack</li>
+				<li>BTEMa_SensitiveWhiskers</li>
+				<li>Hair_BaldOnly</li>
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
-				<li>AptitudeRemarkable_Animals</li>
-				<li>Aggression_HyperAggressive</li>
+	
+				<li>KillThirst</li>
+				<li>Aggression_Aggressive</li>
+				<li>StrongStomach</li>
+				<li>RobustDigestion</li>				
 				<li>MeleeDamage_Strong</li>
-				<li>bark/bite weapon</li>
-				<li>Fur_Covered</li>
-				<li>sensitive_whiskers</li>
-				<li>darkvision</li>
+				<li>Fertile</li>
+				<li>Libido_High</li>
+				<li>DarkVision</li>
+				<li>MoveSpeed_Quick</li>
+				
+				<li>AptitudeRemarkable_Animals</li>
+				<li>AptitudeStrong_Animals</li>
+      				<li>AptitudeTerrible_Artistic</li>
+				<li>AptitudePoor_Construction</li>
+				
+				<li>AnimalWarcall</li>		
 			</genes>
 		</XenotypeDef>
 			
@@ -285,21 +326,32 @@
 			<iconPath>UI/Icons/Xenotypes/Dragonborn</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
-				<li>DragonbornHead</li>
-				<li>MaxTemp_LargeIncrease</li>
-				<li>MinTemp_LargeIncrease</li>
-				<li>Breath_Weapon</li>
-				<li>Acid_Splash</li>
-				<li>Claw_Weapon</li>
-				<li>Tail_Smooth</li>
-				<li>MeleeDamage_Strong</li>
-				<li>Aggression_Aggressive</li>	
+				<li>BTEMy_DraconicNose</li>
+				<li>BTEMy_DraconicTail</li>
+      				<li>BTEMy_DraconicHorns</li>
+      				<li>BTEMy_DraconicWings</li>
+      				<li>BTEMy_BlazingClaws</li>
+				<li>Hair_BrightRed</li>
+				<li>BTEMy_AdamantScales</li>
+				<li>Skin_DeepRed</li>
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
-				<li>darkvision</li>
-				<li>Fire_resistant</li>
-				<li>Libido_High</li>
-				<li>Natural_Armour</li>
+				
+				<li>FireResistant</li>
+				<li>MeleeDamage_Strong</li>
+				<li>WoundHealing_Fast</li>
+				<li>Sleepy</li>
+				<li>Robust</li>
+      				<li>Unstoppable</li>			
+				<li>BTEMy_AvariceInstinct</li>
+				<li>Aggression_Aggressive</li>
+	 			
+				<li>MinTemp_SmallIncrease</li>
+				<li>AptitudeTerrible_Animals</li>
+	  			<li>AptitudeTerrible_Plants</li>
+				
+				<li>FireSpew</li>
+				<li>AcidSpray</li>
 			</genes>
 		</XenotypeDef>
 </Defs>
