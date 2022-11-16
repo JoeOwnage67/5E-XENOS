@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>BTEMy_Warden_DeliverAurum</defName>
+    <label>deliver aurum</label>
+    <giverClass>BTE_MY.WorkGiver_Warden_DeliverAurum</giverClass>
+    <workType>Warden</workType>
+    <verb>deliver aurum</verb>
+    <gerund>delivering aurum</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+ 
+</Defs>

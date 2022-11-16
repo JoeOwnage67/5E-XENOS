@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>BTEMy_BlazingClaws</defName>
+    <label>blazing claws</label>
+    <description>A set of red hot claws tip the hand for incinerating prey. Absurdly strong, capable of penetrating heavy armor, fast, and can set opponents on fire. To maintain itself, the claws require an active aurum system.\n\nIf an affected limb is destroyed and replaced, the claws may take up to a day to regenerate.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMy_BlazingClawsIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <displayOrderInCategory>1</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMy_BlazingClaws</hediffImplant>
+			<bodyPartImplant>Hand</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+  </GeneDef>
+  <GeneDef>
+    <defName>BTEMy_AdamantScales</defName>
+    <label>adamantium scales</label>
+    <description>Carriers of this gene have their bodies covered in glamorous, extremely tough scales composed of hardened aurum mechanites. This grants armor values on par with standard recon armor, with a substantial heat bonus. The mechanites are still conductive, however, and EMP damage will cause immense pain.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMy_AdamantScalesIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <displayOrderInCategory>2</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMy_AdamantScales</hediffImplant>
+			<bodyPartImplant>Torso</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <graphicData>
+      <fur>BTEMy_AdamantScales</fur>
+      <colorType>Skin</colorType>
+      <skinIsHairColor>true</skinIsHairColor>
+      <tattoosVisible>false</tattoosVisible>
+    </graphicData>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMy_AdamantScalesNoGraphic</defName>
+    <label>adamantium scales (no skin graphic)</label>
+    <description>Carriers of this gene have their bodies covered in glamorous, extremely tough scales composed of hardened aurum mechanites. This grants armor values on par with standard recon armor, with a substantial heat bonus. The mechanites are still conductive, however, and EMP damage will cause immense pain. This variation of the gene hides the scales beneath the skin, making it unnoticeable.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMy_AdamantScalesIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <displayOrderInCategory>3</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMy_AdamantScales</hediffImplant>
+			<bodyPartImplant>Torso</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMy_AurumDetonation</defName>
+    <label>aurum detonation</label>
+    <description>Carriers can direct aurum mechanites into a cloud around them, then detonate the cloud by sending a high energy pulse throughout it.</description>
+    <iconPath>Genes/Icons/BTEMy_AurumDetonationIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+    <abilities>
+      <li>BTEMy_AurumDetonation</li>
+    </abilities>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_AurumDetonation</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMy_Cauterize</defName>
+    <label>aurum cauterization</label>
+    <description>Carriers can deploy aurum mechanites from a distance to cauterize a person's entire body. This will tend all their wounds but inflict a massive amount of pain for a few hours. The mechanites scatter easily when resisted, and thus this can only be targeted on calm colonists.</description>
+    <iconPath>Genes/Icons/BTEMy_CauterizeIcon</iconPath>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <abilities>
+      <li>BTEMy_Cauterize</li>
+    </abilities>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_Cauterize</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+  <GeneDef>
+    <defName>BTEMy_PurgeMemory</defName>
+    <label>memory purge</label>
+    <description>Carriers can deploy aurum mechanites to rewire the memory centers of someone's brain, nullifying one of their worst memories. This scrambles the target's mind for half a day or so, and hurts quite a bit.</description>
+    <iconPath>Genes/Icons/BTEMy_PurgeMemoryIcon</iconPath>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <abilities>
+      <li>BTEMy_PurgeMemory</li>
+    </abilities>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_PurgeMemory</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+</Defs>

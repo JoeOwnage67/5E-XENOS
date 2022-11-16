@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>BTEMy_AurumThirst</defName>
+    <label>aurum thirst</label>
+    <description>Due to a lack of aurum material, this person's aggressive instincts are slowly overtaking their natural thought process. They will fly into a berserk rage more and more often until fed aurum.</description>
+    <hediffClass>Hediff_HemogenCraving</hediffClass>
+    <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>minor</label>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.95</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>30</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.35</minSeverity>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.9</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>15</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.7</minSeverity>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>5</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+    <comps>
+      <li Class="BTE_MY.HediffCompProperties_SeverityFromAurum">
+        <severityPerHourEmpty>0.05</severityPerHourEmpty>
+        <severityPerHourAurum>-0.1</severityPerHourAurum>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_ConductiveSting</defName>
+    <label>conductive sting</label>
+    <description>Sudden exposure to an electromagnetic pulse has left this person writhing in pain.</description>
+    <defaultLabelColor>(0.5, 1, 1)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <painOffset>0.35</painOffset>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-6</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_CauterizedBody</defName>
+    <label>cauterized body</label>
+    <description>Every inch of the body has been cauterized to seal every wound. This hurts. A lot.</description>
+    <defaultLabelColor>(1, 0.5, 0)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>stinging</label>
+        <painOffset>0.5</painOffset>
+      </li>
+      <li>
+        <label>agonizing</label>
+        <minSeverity>0.5</minSeverity>
+        <painOffset>1</painOffset>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_PurgedMind</defName>
+    <label>purged mind</label>
+    <description>The mind has had its memory purged by aurum, scrambling it temporarily.</description>
+    <defaultLabelColor>(0.7, 0.2, 0)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>cloudy</label>
+        <painOffset>0.5</painOffset>
+		  <capMods>
+			<li>
+			  <capacity>Consciousness</capacity>
+			  <offset>-0.25</offset>
+			</li>
+		  </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

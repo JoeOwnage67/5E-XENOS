@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  <ThoughtDef>
+    <defName>BTEMy_Thought_MemoryPurge</defName>
+    <thoughtClass>BTE_MY.Thought_MemoryPurged</thoughtClass>
+    <stages>
+      <li>
+        <label>memory purged by {0}</label>
+        <description>It feels like there's an empty spot in my mind where something sad used to be...</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--GLINTSCALE-->
+  <GeneDef>
+    <defName>BTEMy_AurumThirst</defName>
+    <label>aurum thirst</label>
+    <description>Carriers of this gene have a second circulatory system that powers a swarm of ultra conductive mechanites called aurum. These mechanites can perform electric and pyrotechnic feats and can augment the physical body, but requires precious metals like silver and gold to sustain.\n\nCarriers lose 2 aurum per day from wear and tear. Regenerating 1 aurum requires 1 gold or 10 silver.</description>
+    <geneClass>BTE_MY.Gene_Aurum</geneClass>
+    <resourceGizmoType>BTE_MY.GeneGizmo_ResourceAurum</resourceGizmoType>
+    <resourceLabel>aurum</resourceLabel>
+    <resourceGizmoThresholds>
+      <li>0.25</li>
+      <li>0.5</li>
+      <li>0.75</li>
+    </resourceGizmoThresholds>
+    <showGizmoOnWorldView>true</showGizmoOnWorldView>
+    <resourceDescription>A second circulatory system that powers a swarm of ultra conductive mechanites called aurum. These mechanites can perform electric and pyrotechnic feats and can augment the physical body, but requires precious metals like silver and gold to sustain. These must be ground down in a crafting spot to be consumed.\n\nCarriers lose 2 aurum per day from wear and tear. If aurum reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+    <iconPath>Genes/Icons/BTEMy_AurumThirstIcon</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>-2</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>Gives aurum supply.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>auro</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <minAgeActive>3</minAgeActive>
+    <resourceLossPerDay>0.02</resourceLossPerDay>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMy_DraconicNose</defName>
+    <label>dragon nose</label>
+    <description>Carriers of this gene have dragon-like snouts.</description>
+    <iconPath>Genes/Icons/BTEMy_DraconicNoseIcon</iconPath>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/DraconicNose/DraconicNose</graphicPath>
+      <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+      <useSkinShader>true</useSkinShader>
+	  <drawScale>1</drawScale>
+	  <!--<drawOffsetEast>(0.26, 0, -0.125)</drawOffsetEast>
+	  <drawOffsetSouth>(-0.01, 0, -0.13)</drawOffsetSouth>-->
+      <layer>PostSkin</layer>
+    </graphicData>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>6</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMy_DraconicTail</defName>
+    <label>draconic tail</label>
+    <description>Carriers of this gene grow a draconic tail. </description>
+    <iconPath>Genes/Icons/BTEMy_DraconicTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>5</displayOrderInCategory>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/DraconicTail/DraconicTail</graphicPath>
+      <colorType>Skin</colorType>
+      <drawOffsetNorth>(0.1, 0.2, -0.25)</drawOffsetNorth>
+      <drawOffsetSouth>(-0.1, -0.11, -0.25)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.11, -0.15)</drawOffsetEast>
+    </graphicData>
+	
+   </GeneDef>
+  	<!--<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMy_DraconicEars</defName>
+	<label>vulpine ears</label>
+	<description>Carriers of this gene have two fox like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMy_VulpineEarsIcon</iconPath>
+	<graphicData>
+      <colorType>Skin</colorType>
+	  <layer>PostHair</layer>
+	  <graphicPath>Things/Pawn/Humanlike/HeadAttachments/VulpineEars/VulpineEars</graphicPath>
+	</graphicData>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+  </GeneDef>-->
+  
+	<GeneDef ParentName="GeneHeadboneBase">
+	<defName>BTEMy_DraconicHorns</defName>
+	<label>draconic horns</label>
+	<description>Carriers of this gene grow two sweeping horns behind their heads.</description>
+	<iconPath>Genes/Icons/BTEMy_DraconicHornsIcon</iconPath>
+	<graphicData>
+	  <graphicPath>Things/Pawn/Humanlike/HeadAttachments/DraconicHorns/DraconicHorns</graphicPath>
+	  <color>(255, 255, 255)</color>
+	  <layer>PostHeadgear</layer>
+	  <drawOffsetEast>(0, 0, -0.1)</drawOffsetEast>
+	  <drawOffsetSouth>(0, -1, -0.1)</drawOffsetSouth>
+	  <drawOffsetNorth>(0, 1, -0.1)</drawOffsetNorth>
+	  <visibleNorth>true</visibleNorth>
+	</graphicData>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>7</displayOrderInCategory>
+	<symbolPack>
+	  <prefixSymbols>
+		<li><symbol>horn</symbol></li>
+		<li><symbol>knob</symbol></li>
+		<li><symbol>spike</symbol></li>
+		<li><symbol>devil</symbol></li>
+		<li><symbol>demon</symbol></li>
+		<li><symbol>luci</symbol></li>
+		<li><symbol>beelze</symbol></li>
+		<li><symbol>hell</symbol></li>
+	  </prefixSymbols>
+	  <suffixSymbols>
+		<li><symbol>horn</symbol></li>
+		<li><symbol>spike</symbol></li>
+		<li><symbol>vil</symbol></li>
+	  </suffixSymbols>
+	</symbolPack>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+  <GeneDef>
+    <defName>BTEMy_DraconicWings</defName>
+    <label>draconic wings</label>
+    <description>Carriers have large scaled wing limbs protruding from their back. Aurum augmentation enables these wings to exist despite their physics defying size, and with an additional injection of aurum they can even be used to fly a far distance.</description>
+    <iconPath>Genes/Icons/BTEMy_DraconicWingsIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>8</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statOffsets>
+    <abilities>
+      <li>BTEMy_VastFlight</li>
+    </abilities>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_VastFlight</AbilityDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/DraconicWings/DraconicWings</graphicPath>
+	  <color>(255, 255, 255)</color>
+      <colorType>Skin</colorType>
+      <drawOffsetNorth>(0, 0.2, -0.05)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.05)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.1, -0.05)</drawOffsetEast>
+    </graphicData>
+    <biostatMet>-3</biostatMet>
+    <biostatCpx>2</biostatCpx>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BTEMy_AvariceInstinct</defName>
+    <label>avarice instinct</label>
+    <labelShortAdj>jealous</labelShortAdj>
+    <description>Carriers of this gene believe themselves to be the most important thing in the world, and gets upset if someone else has more than them.</description>
+    <iconPath>Genes/Icons/BTEMy_GreedInstinctIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>6</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Jealous</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMy_DraconicWingsNoAurum</defName>
+    <label>draconic wings (no aurum)</label>
+    <description>Carriers have large scaled wing limbs protruding from their back. Without aurum augmentation, they're about as practical as two large blankets, and are incapable of flight. It is still possible to perform big leaps with it, however.</description>
+    <iconPath>Genes/Icons/BTEMy_DraconicWingsIcon</iconPath>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>9</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statOffsets>
+    <abilities>
+      <li>BTEMy_VastFlightWeaker</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_VastFlightWeaker</AbilityDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/DraconicWings/DraconicWings</graphicPath>
+	  <color>(255, 255, 255)</color>
+      <colorType>Skin</colorType>
+      <drawOffsetNorth>(0, 0.2, -0.05)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.05)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.1, -0.05)</drawOffsetEast>
+    </graphicData>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>2</biostatCpx>
+  </GeneDef>
+  
+<!--ASHFEATHER-->
+  <GeneDef>
+    <defName>BTEMy_AurumStabilizer</defName>
+    <label>aurum stability system</label>
+    <labelShortAdj>gold stabilized</labelShortAdj>
+    <description>Carriers no longer passively lose aurum due to a hyperefficient stability organ wired through the body. However, this organ is taxing on incorporating new aurum material, making all aurum restoration methods restore only half as much aurum.</description>
+    <resourceLabel>aurum</resourceLabel>
+    <geneClass>BTE_MY.Gene_AurumDrainMod</geneClass>
+    <iconPath>Genes/Icons/BTEMy_AurumStabilizerIcon</iconPath>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <resourceLossPerDay>-0.02</resourceLossPerDay>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>-1</displayOrderInCategory>
+    <minAgeActive>3</minAgeActive>
+    <statOffsets>
+      <BTEMy_AurumGainFactor>-0.5</BTEMy_AurumGainFactor>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMy_PhoenixWings</defName>
+    <label>phoenix wings</label>
+    <description>Carriers have large feathered wings attached to their arms. Aurum augmentation enables these wings to exist despite their physics defying size, and with an additional injection of aurum they can even be used to fly a far distance.</description>
+    <iconPath>Genes/Icons/BTEMy_PhoenixWingsIcon</iconPath>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>3</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statOffsets>
+    <abilities>
+      <li>BTEMy_VastFlight</li>
+    </abilities>
+    <prerequisite>BTEMy_AurumThirst</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_VastFlight</AbilityDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/PhoenixWings/PhoenixWings</graphicPath>
+	  <color>(255, 255, 255)</color>
+      <colorType>Hair</colorType>
+      <drawOffsetNorth>(0, 0.2, -0.05)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.05)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.1, -0.05)</drawOffsetEast>
+    </graphicData>
+    <biostatMet>-3</biostatMet>
+    <biostatCpx>2</biostatCpx>
+  </GeneDef>
+ 
+  <GeneDef>
+    <defName>BTEMy_PhoenixWingsNoAurum</defName>
+    <label>phoenix wings (no aurum)</label>
+    <description>Carriers have large feathered wings attached to their arms. Without aurum augmentation, they're about as practical as two large blankets, and are incapable of flight. It is still possible to perform big leaps with it, however.</description>
+    <iconPath>Genes/Icons/BTEMy_PhoenixWingsIcon</iconPath>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statOffsets>
+    <abilities>
+      <li>BTEMy_VastFlightWeaker</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_VastFlightWeaker</AbilityDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/PhoenixWings/PhoenixWings</graphicPath>
+	  <color>(255, 255, 255)</color>
+      <colorType>Skin</colorType>
+      <drawOffsetNorth>(0, 0.2, -0.05)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.05)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.1, -0.05)</drawOffsetEast>
+    </graphicData>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>2</biostatCpx>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMy_PhoenixNose</defName>
+    <label>phoenix nose</label>
+    <description>Carriers of this gene have phoenix-like beaks.</description>
+    <iconPath>Genes/Icons/BTEMy_PhoenixNoseIcon</iconPath>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PhoenixNose/PhoenixNose</graphicPath>
+      <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+      <useSkinShader>false</useSkinShader>
+	  <drawScale>1</drawScale>
+      <colorType>Hair</colorType>
+	  <!--<drawOffsetEast>(0.26, 0, -0.125)</drawOffsetEast>
+	  <drawOffsetSouth>(-0.01, 0, -0.13)</drawOffsetSouth>-->
+      <layer>PostSkin</layer>
+    </graphicData>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>6</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>beak</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>beak</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMy_PhoenixTail</defName>
+    <label>phoenix tail</label>
+    <description>Carriers of this gene grow a set of phoenix tail feathers.</description>
+    <iconPath>Genes/Icons/BTEMy_PhoenixTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>7</displayOrderInCategory>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/PhoenixTail/PhoenixTail</graphicPath>
+      <colorType>Hair</colorType>
+      <drawOffsetNorth>(0.1, 0.2, -0.25)</drawOffsetNorth>
+      <drawOffsetSouth>(-0.02, -0.11, -0.25)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.11, -0.15)</drawOffsetEast>
+    </graphicData>
+  </GeneDef>
+  
+	<GeneDef ParentName="GeneHeadboneBase">
+	<defName>BTEMy_PhoenixCrest</defName>
+	<label>phoenix crest</label>
+	<description>Carriers of this gene grow a full head of feathers, resembling a phoenix crest.</description>
+	<iconPath>Genes/Icons/BTEMy_PhoenixCrestIcon</iconPath>
+	<graphicData>
+	  <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PhoenixCrest/PhoenixCrest</graphicPath>
+      <colorType>Hair</colorType>
+	  <layer>PostHeadgear</layer>
+	  <drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+	  <drawOffsetSouth>(0, 1, 0)</drawOffsetSouth>
+	  <drawOffsetNorth>(0, 1, 0)</drawOffsetNorth>
+	  <visibleNorth>true</visibleNorth>
+	</graphicData>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>8</displayOrderInCategory>
+
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+</Defs>

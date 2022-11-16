@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <AbilityDef>
+    <defName>BTEMy_AurumDetonation</defName>
+    <label>aurum detonation</label>
+    <description>Deploy aurum mechanites in a cloud in all directions, then channel a high energy burst throughout the cloud to create a massive explosion of fire.</description>
+    <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+    <iconPath>Genes/Icons/BTEMy_AurumDetonationIcon</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <targetRequired>false</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <showCastingProgressBar>true</showCastingProgressBar>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupEffecter>Fire_Burst_Warmup</warmupEffecter>
+      <warmupTime>3</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <range>8</range>
+      <drawAimPie>false</drawAimPie>      
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFireBurst">
+        <radius>8</radius>
+      </li>	
+	  <li Class="BTE_My.CompProperties_AbilityAurumCost">
+        <aurumCost>0.40</aurumCost>
+      </li>
+    </comps>
+  </AbilityDef> 
+  
+  <!--<AbilityDef>
+    <defName>BTEMa_BestowFangs</defName>
+    <label>bestow fangs</label>
+    <description>Inject a temporary and fast acting mutation serum into the target, causing razor teeth to grow from their jaw and granting them the ferocity of a wild beast.</description>
+    <charges>3</charges>
+    <iconPath>Genes/Icons/BTEMa_BestowFangsIcon</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <displayOrder>600</displayOrder>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>15</range>
+      <warmupTime>2</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <severity>1</severity>
+        <hediffDef>BTEMa_FerociousRazorTeeth</hediffDef>
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<onlyBrain>true</onlyBrain>
+		<replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>-->
+  
+  <AbilityDef>
+    <defName>BTEMy_VastFlight</defName>
+    <label>vast flight</label>
+    <description>Fly to a nearby location with wings using an injection of aurum.</description>
+    <iconPath>Genes/Icons/BTEMy_DraconicWingsIcon</iconPath>
+    <cooldownTicksRange>200</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>1</warmupTime>
+      <range>30</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>      
+	<li Class="BTE_My.CompProperties_AbilityAurumCost">
+        <aurumCost>0.10</aurumCost>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>BTEMy_VastFlightWeaker</defName>
+    <label>winged leap</label>
+    <description>Make a big leap to a nearby location.</description>
+    <iconPath>Genes/Icons/BTEMy_DraconicWingsIcon</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>1</warmupTime>
+      <range>10</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>      
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>BTEMy_Cauterize</defName>
+    <label>cauterize</label>
+    <description>Deploy aurum mechanites from a distance to cauterize a person's entire body. This will tend all their wounds but inflict a massive amount of pain for a few hours. The mechanites scatter easily when resisted, and thus this can only be targeted on calm colonists.</description>
+    <iconPath>Genes/Icons/BTEMy_CauterizeIcon</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+    <displayOrder>400</displayOrder>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>16</range>
+      <warmupTime>1</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+		<onlyTargetColonistsOrPrisonersOrSlaves>true</onlyTargetColonistsOrPrisonersOrSlaves>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BTE_MY.CompProperties_AbilityAurumCost">
+        <aurumCost>0.1</aurumCost>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.4~0.8</tendQualityRange>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <severity>1</severity>
+        <hediffDef>BTEMy_CauterizedBody</hediffDef>
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<onlyBrain>false</onlyBrain>
+		<replaceExisting>true</replaceExisting>
+      </li>
+	</comps>
+  </AbilityDef>
+
+  
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BTEMy_PurgeMemory</defName>
+    <label>purge memory</label>
+    <description>Direct aurum mechanites into the brain of a target, and order them to alter the memory storage parts of the brain to negate their worst memory. This also reduces consciousness for half a day, which can be lethal if the brain is already heavily damaged. Does not affect any memory if the worst memory the target has isn't -10 or worse.</description>
+    <iconPath>Genes/Icons/BTEMy_PurgeMemoryIcon</iconPath>
+    <cooldownTicksRange>300000</cooldownTicksRange>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+		<onlyTargetColonistsOrPrisonersOrSlaves>true</onlyTargetColonistsOrPrisonersOrSlaves>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BTE_MY.CompProperties_AbilityAurumCost">
+        <aurumCost>0.2</aurumCost>
+      </li>
+      <li Class="BTE_MY.CompProperties_AbilityPurgeMemory">
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <severity>1</severity>
+        <hediffDef>BTEMy_PurgedMind</hediffDef>
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<onlyBrain>true</onlyBrain>
+		<replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

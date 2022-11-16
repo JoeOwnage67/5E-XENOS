@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FurDef>
+    <defName>BTEMy_AdamantScales</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Things/Pawn/Humanlike/Bodies/ASMale</Male>
+      <Female>Things/Pawn/Humanlike/Bodies/ASFemale</Female>
+      <Hulk>Things/Pawn/Humanlike/Bodies/ASHulk</Hulk>
+      <Fat>Things/Pawn/Humanlike/Bodies/ASFat</Fat>
+      <Thin>Things/Pawn/Humanlike/Bodies/ASThin</Thin>
+      <Child>Things/Pawn/Humanlike/Bodies/ASChild</Child>
+      <Baby>Things/Pawn/Humanlike/Bodies/ASChild</Baby><!-- Always covered by swaddled graphic -->
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+</Defs>

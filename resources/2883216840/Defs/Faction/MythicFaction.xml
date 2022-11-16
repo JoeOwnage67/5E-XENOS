@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="TribeRoughBase">
+    <defName>TribeMythicHouseFire</defName>
+    <label>mythic house of fire</label>
+    <description>A tribe ruled by a clan of extremely powerful draconic xenohumans. With a strong preference for warmer climates and an endless lust for gold, the glintscales in control of this tribe rarely leave their den of decadence, instead sending "lesser" xenotypes to obtain gold for their draconic masters. However, places that have proven themselves especially wealthy may attract the notice, and ire, of a glintscale, and they may send themselves along with a warband to confiscate what they see as rightfully theirs.\n\nGlintscales only rarely appear on raids compared to other xenotypes, and have extremely high combat point modifiers, as a result they will not be seen until the colony is fairly rich or enough time has passed. Or you somehow get very unlucky.</description>
+    <factionIconPath>World/Factions/MythicHouseFire</factionIconPath>
+    <pawnSingular>mythic servant</pawnSingular>
+    <pawnsPlural>mythic servants</pawnsPlural>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <settlementNameMaker>BTEMa_NamerSettlementMythicFire</settlementNameMaker>
+    <factionNameMaker>BTEMa_NamerFactionMythicFire</factionNameMaker>
+    <canStageAttacks>true</canStageAttacks>
+    <melaninRange>0~0.5</melaninRange>
+    <colorSpectrum>
+      <li>(0.93, 0.05, 0.05)</li>
+      <li>(1, 0.5, 0.5)</li>
+      <li>(6, 0, 0)</li>
+	 </colorSpectrum>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Glintscale>0.02</Glintscale>
+        <Ashfeather>0.02</Ashfeather>
+        <Hussar>0.10</Hussar>
+        <Neanderthal>0.10</Neanderthal>
+        <Genie>0.05</Genie>
+        <Dirtmole>0.05</Dirtmole>
+        <Impid>0.25</Impid>
+      </xenotypeChances>
+      <warnIfTotalAbove1>true</warnIfTotalAbove1>
+    </xenotypeSet>
+    <!--<dialogFactionGreetingHostile>NeanderthalFactionGreetingHostile</dialogFactionGreetingHostile>
+    <dialogFactionGreetingHostileAppreciative>NeanderthalFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+    <dialogFactionGreetingWary>NeanderthalFactionGreetingWary</dialogFactionGreetingWary>
+    <dialogFactionGreetingWarm>NeanderthalFactionGreetingWarm</dialogFactionGreetingWarm>-->
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>150</commonality>
+        <options>
+          <Tribal_Penitent>10</Tribal_Penitent>
+          <Tribal_Warrior>10</Tribal_Warrior>
+          <Tribal_Berserker>10</Tribal_Berserker>
+          <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <Tribal_Breacher>5</Tribal_Breacher>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribal_Warrior>20</Tribal_Warrior>
+          <Tribal_Child>10</Tribal_Child>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribal_Trader>1</Tribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribal_Hunter>10</Tribal_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>10</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Hunter>1</Tribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Logger>1</Tribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Farmer>1</Tribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	
+    <minSettlementTemperatureChanceCurve> <!-- Glintscales need warmer temperatures. -->
+      <points>
+        <li>(17.9,  0.00001)</li>
+        <li>(18,    1)</li>
+        <li>(24,    1)</li>
+      </points>
+    </minSettlementTemperatureChanceCurve>
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>BTEMa_NamerSettlementMythicFire</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[msyl][esyl] [grove]</li>
+
+
+        <li>grove->grove</li>
+        <li>grove->cave</li>
+        <li>grove->copse</li>
+        <li>grove->glade</li>
+        <li>grove->forest</li>
+
+        <li>msyl->howl</li>
+        <li>msyl->bark</li>
+        <li>msyl->horn</li>
+        <li>msyl->stalk</li>
+        <li>msyl->hide</li>
+        <li>msyl->wing</li>
+        <li>msyl->chitter</li>
+        <li>msyl->roar</li>
+        <li>msyl->glare</li>
+		
+        <li>esyl->chasm</li>
+        <li>esyl->bane</li>
+        <li>esyl->terror</li>
+        <li>esyl->hate</li>
+        <li>esyl->shaded</li>
+        <li>esyl->doom</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>BTEMa_NamerFactionMythicFire</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [esyl] [msyl] [grove]</li>
+        <li>r_name->The [msyl] [grove]</li>
+
+
+        <li>grove->collective</li>
+        <li>grove->horde</li>
+        <li>grove->plague</li>
+        <li>grove->swarm</li>
+        <li>grove->terror</li>
+
+        <li>msyl->barking</li>
+        <li>msyl->roaring</li>
+        <li>msyl->raging</li>
+        <li>msyl->stalking</li>
+        <li>msyl->voracious</li>
+        <li>msyl->unseen</li>
+        <li>msyl->chittering</li>
+
+		
+        <li>esyl->scarlet</li>
+        <li>esyl->crimson</li>
+        <li>esyl->darkened</li>
+        <li>esyl->midnight</li>
+        <li>esyl->dusk</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

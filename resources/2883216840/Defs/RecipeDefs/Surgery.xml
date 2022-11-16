@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>BTEMy_AurumInjection</defName>
+    <label>aurum injection</label>
+    <description>Inject aurum into an individual to energize their aurum system. Does nothing if they do not have an active aurum system.</description>
+    <jobString>injecting aurum on TargetA.</jobString>
+    <workAmount>800</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workerClass>BTE_MY.Recipe_AurumInjection</workerClass>
+    <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BTEMy_AurumFuel</li>
+          </thingDefs>
+        </filter>
+		<count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BTEMy_AurumFuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>
