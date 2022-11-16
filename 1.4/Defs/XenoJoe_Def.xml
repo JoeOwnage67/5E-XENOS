@@ -75,7 +75,7 @@
 			<label>Hill Dwarf</label>
 			<description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.
 			<descriptionShort>Hill Dwarves are a lowland subrace of Dwarf known for their robustness, combat prowess, and ability to strike a bargain.</descriptionShort>
-			<iconPath>Things/UI/XenoIcon</iconPath>
+			<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
@@ -107,7 +107,7 @@
 			<label>Mountain Dwarf</label>
 			<description>Mountain Dwarves are a breed of dwarves at home in the high peaks and rarified air of the rocky mountains. In many ways similar to their lowland cousins, mountain dwarves are slightly more reclusive and tend to focus on mining, forging, and crafting a bit more strongly -- their closeness to the dwarven deity Moradin is said to be a cause of this. It is said that a mountain dwarf is born in armor, but this is likely just a mild exaggeration.
 			<descriptionShort>Mountain Dwarves are a more reclusive subrace of Dwarf focused on mining, forging and crafting.
-			<iconPath>Things/UI/XenoIcon</iconPath>
+			<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
@@ -282,7 +282,7 @@
 			<label>Shifter</label>
 			<description>Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect; while they cannot fully change shape they can temporarily enhance their animalistic features – a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife’s edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?
 			<descriptionShort>Many believe shifters are the descendants of humans and lycanthropes. They walk on a knifes edge between the wilds and the world around them.</descriptionShort>
-			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
+			<iconPath>UI/Icons/Xenotypes/Shifter</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
 				<li>BTEMa_Nose_Lupine</li>
