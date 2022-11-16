@@ -141,7 +141,7 @@
 
 <!-- Orc -->
 		<XenotypeDef>
-			<defName>orc</defName>
+			<defName>orc_brutal</defName>
 			<label>Orc</label>
 			<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.
 			<descriptionShort>Orcs are savage, fearless warriors who seek glory through death and destruction.</descriptionShort>
