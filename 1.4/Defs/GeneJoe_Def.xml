@@ -42,12 +42,11 @@
     		<displayOrderInCategory>500</displayOrderInCategory>
     		<forcedTraits>
       			<li>
-        			<def>Jealous</def>
+        			<def></def>
       			</li>
     		</forcedTraits>
     		<biostatMet>2</biostatMet>
 	</GeneDef>
-  </Defs>
 
 <!-- Undergrounder Gene -->
 	<GeneDef>
