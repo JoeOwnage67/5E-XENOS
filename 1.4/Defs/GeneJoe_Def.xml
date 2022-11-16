@@ -26,11 +26,79 @@
 	</GeneDef>
 
 
-<!-- Integrated Protection -->
+<!-- Armor Skin Base -->
+	<GeneDef Name="ArmorSkinBase" Abstract="True">
+		<displayCategory>Violence</displayCategory>
+		<biostatCpx>3</biostatCpx>		
+  	</GeneDef>
 	
-
-<!-- Natural Armour -->
-
+<!-- Natural Armor (thick, leathery skin) -->
+  <GeneDef ParentName="ArmorSkinBase">
+	<defName>NaturalArmor</defName>
+	<label>natural armor</label>	
+	<description>Carriers of this gene have natural protection gained from having thick, leathery skin.</description>
+	<iconPath>UI/Icons/Genes/Gene_NaturalArmor</iconPath>
+	<displayOrderInCategory>70</displayOrderInCategory>
+	<conditionalStatAffecters>
+	  <li Class="ConditionalStatAffecter_Clothed">
+		<statOffsets>
+		  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+		</statOffsets>
+	  </li>
+	  <li Class="ConditionalStatAffecter_Unclothed">
+		<statOffsets>
+		  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.20</ArmorRating_Heat>
+		</statOffsets>
+	  </li>
+	</conditionalStatAffecters>
+	<biostatMet>-2</biostatMet>
+	<symbolPack>
+	  <prefixSymbols>
+		<li><symbol>cloth</symbol></li>
+		<li><symbol>armo</symbol></li>
+		<li><symbol>clarmor</symbol></li>
+		<li><symbol>power</symbol></li>
+	  </prefixSymbols>
+	</symbolPack>
+  </GeneDef>
+	
+<!-- Integrated Protection (Metal Skin)-->
+   <GeneDef ParentName="ArmorSkinBase">
+	<defName>IntegratedProtection</defName>
+	<label>integrated protection</label>	
+	<description>Carriers of this gene have a metal body with built-in defensive layers, which can be enhanced with armor.</description>
+	<iconPath>UI/Icons/Genes/Gene_IntegratedProtection</iconPath>
+	<displayOrderInCategory>80</displayOrderInCategory>
+	<conditionalStatAffecters>
+	  <li Class="ConditionalStatAffecter_Clothed">
+		<statOffsets>
+		  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.50</ArmorRating_Heat>
+		</statOffsets>
+	  </li>
+	  <li Class="ConditionalStatAffecter_Unclothed">
+		<statOffsets>
+		  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.40</ArmorRating_Heat>
+		</statOffsets>
+	  </li>
+	</conditionalStatAffecters>
+	<biostatMet>-2</biostatMet>
+	<symbolPack>
+	  <prefixSymbols>
+		<li><symbol>cloth</symbol></li>
+		<li><symbol>armo</symbol></li>
+		<li><symbol>clarmor</symbol></li>
+		<li><symbol>power</symbol></li>
+	  </prefixSymbols>
+	</symbolPack>
+  </GeneDef>
 	
 <!-- Impressionable Gene -->
 	<GeneDef>
