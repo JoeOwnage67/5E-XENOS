@@ -48,3 +48,20 @@
     		<biostatMet>2</biostatMet>
 	</GeneDef>
   </Defs>
+
+<!-- Undergrounder Gene -->
+	<GeneDef>
+    		<defName>Undergrounder</defName>
+    		<label>undergrounder</label>    	
+    		<description>Carriers of this gene have no need to experience the outdoors or light. They will never feel cooped up or get cabin fever no matter how long they stay inside, and are not bothered by darkness.</description>
+    		<iconPath>Genes/Icons/Gene_UndergrounderIcon</iconPath>
+    		<displayCategory>Misc</displayCategory>
+    		<displayOrderInCategory>500</displayOrderInCategory>
+    		<forcedTraits>
+      			<li>
+        			<def>Undergrounder</def>
+      			</li>
+    		</forcedTraits>
+    		<biostatMet>2</biostatMet>
+	</GeneDef>
+  </Defs>
