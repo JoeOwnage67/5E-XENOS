@@ -64,13 +64,13 @@
 <defName>HemogenDrain</defName>
 <defName>FireWeakness</defName>
 <defName>FireTerror</defName>
-<defName>PerfectImmunity</defName>
-<defName>DiseaseFree</defName> <!-- non senescent -->
-<defName>TotalHealing</defName>
+<defName>PerfectImmunity</defName> <!-- Archite -->
+<defName>DiseaseFree</defName> <!-- non senescent --> <!-- Archite -->
+<defName>TotalHealing</defName> <!-- scarless --> <!-- Archite -->
 <defName>Deathrest</defName>
-<defName>Ageless</defName>
-<defName>Deathless</defName>
-<defName>ArchiteMetabolism</defName>
+<defName>Ageless</defName> <!-- Archite -->
+<defName>Deathless</defName> <!-- Archite -->
+<defName>ArchiteMetabolism</defName> <!-- Archite -->
 
 <!-- Health -->
 <defName>WoundHealing_Slow</defName>
@@ -145,7 +145,7 @@
 <defName>AnimalWarcall</defName>
 <defName>Bloodfeeder</defName>
 <defName>Coagulate</defName>
-<defName>XenogermReimplanter</defName>
+<defName>XenogermReimplanter</defName> <!-- Archite -->
 <defName>PiercingSpine</defName>
 <defName>AcidSpray</defName>
 
@@ -190,15 +190,34 @@
 <defName>BTEMa_ChemfuelGenerator</defName>
 <defName>BTEMa_ChemPustules</defName>
 <defName>BTEMa_SmokeExhaust</defName>
-<defName>BTEMa_Sundrinker</defName>
-<defName>BTEMa_BestowFangs</defName>
-<defName>BTEMa_EyesGold</defName>
+<defName>BTEMa_Sundrinker</defName> <!-- Archite -->
+<defName>BTEMa_BestowFangs</defName> <!-- Archite -->
+<defName>BTEMa_EyesGold</defName> <!-- Archite -->
 
+<!-- BTE Mythic -->
+<defName>BTEMy_BlazingClaws</defName>
+<defName>BTEMy_AdamantScales</defName>
+<defName>BTEMy_AdamantScalesNoGraphic</defName>
+<defName>BTEMy_AurumDetonation</defName>
+<defName>BTEMy_Cauterize</defName>
+<defName>BTEMy_PurgeMemory</defName>
+<defName>BTEMy_AurumThirst</defName>
+<defName>BTEMy_DraconicNose</defName>
+<defName>BTEMy_DraconicTail</defName>
+<defName>BTEMy_DraconicHorns</defName>
+<defName>BTEMy_DraconicWings</defName>
+<defName>BTEMy_AvariceInstinct</defName>
+<defName>BTEMy_DraconicWingsNoAurum</defName>
+<defName>BTEMy_AurumStabilizer</defName>
+<defName>BTEMy_PhoenixWings</defName>
+<defName>BTEMy_PhoenixWingsNoAurum</defName>
+<defName>BTEMy_PhoenixNose</defName>
+<defName>BTEMy_PhoenixTail</defName>
+<defName>BTEMy_PhoenixCrest</defName>
 
-
-
-
-
+<!-- Stoneborn -->
+<defName>BushyEyebrows</defName>
+<defName>Stonecall</defName>
 
 
 
