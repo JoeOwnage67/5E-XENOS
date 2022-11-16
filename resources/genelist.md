@@ -149,6 +149,56 @@
 <defName>PiercingSpine</defName>
 <defName>AcidSpray</defName>
 
+<!-- BTE Mammalia -->
+<defName>BTEMa_SharpClaws</defName>
+<defName>BTEMa_HeavyHooves</defName>
+<defName>BTEMa_SensitiveWhiskers</defName>
+<defName>BTEMa_ElongatedFangs</defName>
+<defName>BTEMa_Farsighted</defName>
+<defName>BTEMa_DeathBlast</defName>
+<defName>BTEMa_DeathBlastAntimatter</defName>
+<defName>BTEMa_AntimatterGenerator</defName>
+<defName>BTEMa_Nose_Lupine</defName> <!-- dog nose -->
+<defName>BTEMa_Tail_Vulpine</defName> <!-- fox tail -->
+<defName>BTEMa_VulpineEars</defName> <!-- fox ears -->
+<defName>BTEMa_Antlers</defName>
+<defName>BTEMa_CervineEars</defName> <!-- deer ears -->
+<defName>BTEMa_Tail_Small</defName> <!-- small fluffy tail -->
+<defName>BTEMa_NoseCervine</defName> <!-- deer nose -->
+<defName>BTEMa_RatEars</defName>
+<defName>BTEMa_NoseShort</defName> <!-- short, generic, snout -->
+<defName>BTEMa_Tail_Rat</defName>
+<defName>BTEMa_FatalToxWeakness</defName>
+<defName>BTEMa_NoseBat</defName>
+<defName>BTEMa_BatEars</defName>
+<defName>BTEMa_HideboundWings</defName>
+<defName>BTEMa_NoseElephant</defName>
+<defName>BTEMa_ElephantEars</defName>
+<defName>BTEMa_TailElephant</defName>
+<defName>BTEMa_PsychicFuryNeedle</defName>
+<defName>BTEMa_ElephantMemory</defName>
+<defName>BTEMa_RabbitsIntuition</defName>
+<defName>BTEMa_RabbitEarsStraight</defName>
+<defName>BTEMa_RabbitEarsLopped</defName>
+<defName>BTEMa_TailRabbit</defName>
+<defName>BTEMa_RapidCoatGrowth</defName>
+<defName>BTEMa_SheepEars</defName>
+<defName>BTEMa_NoseSheep</defName>
+<defName>BTEMa_ExcessMilkProduction</defName>
+<defName>BTEMa_BovineEars</defName>
+<defName>BTEMa_NoseBovine</defName>
+<defName>BTEMa_ChemfuelGenerator</defName>
+<defName>BTEMa_ChemPustules</defName>
+<defName>BTEMa_SmokeExhaust</defName>
+<defName>BTEMa_Sundrinker</defName>
+<defName>BTEMa_BestowFangs</defName>
+<defName>BTEMa_EyesGold</defName>
+
+
+
+
+
+
 
 
 
