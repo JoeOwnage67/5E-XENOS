@@ -40,7 +40,9 @@
     		<iconPath>Genes/Icons/Gene_ImpressionableIcon</iconPath>
     		<displayCategory>Misc</displayCategory>
     		<displayOrderInCategory>500</displayOrderInCategory>
-    		<CertaintyLossFactor>3</CertaintyLossFactor>
+		<statOffsets>
+          		<CertaintyLossFactor>3</CertaintyLossFactor>
+        	</statOffsets>    		
     		<biostatMet>2</biostatMet>
 	</GeneDef>
 
