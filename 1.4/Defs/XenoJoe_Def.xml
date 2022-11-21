@@ -17,7 +17,7 @@
 				<li>Beauty_Beautiful</li>
 				<li>Hair_LongOnly</li>
 				<li>ElongatedFingers</li>
-								
+				
 				<li>Ageless</li>
 				<li>ArchiteMetabolism</li>
 				<li>DiseaseFree</li>				
@@ -135,7 +135,7 @@
 	  			<li>AptitudePoor_Plants</li>
 	  			<li>AptitudeRemarkable_Crafting</li>
       				
-	  			<li>Stonecall</li>  	
+				li>Stonecall</li>  	
 			</genes>
 		</XenotypeDef>
 
@@ -271,9 +271,9 @@
 				
 				<li>AptitudeStrong_Intelligence</li>
 				<li>MeleeDamage_Strong</li>
-				<li>Robust</li>				
-				<li>Packyderm</li> <!-- name? --> <!-- increased carrying capacity -->
-			</genes>
+				<li>Robust</li>
+				<li MayRequire="PackageId.Packmule">Packyderm</li> <!-- name? --> <!-- increased carrying capacity -->
+			</genes>				
 		</XenotypeDef>
 			
 <!-- Shifter -->
