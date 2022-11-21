@@ -9,32 +9,33 @@
   
 	<loadAfter>
 		<li>skylar.fantasyoftherim</li>
-    <li>biotexpans.core</li>
-    <li>biotexpans.mammalia</li>
-    <li>biotexpans.mythic</li>
-    <li>det.stoneborn</li>
+    	<li>biotexpans.core</li>
+    	<li>biotexpans.mammalia</li>
+		<li>biotexpans.mythic</li>
+		<li>det.stoneborn</li>
 	</loadAfter>
 
 	<modDependencies>
-    <li>
-      <packageID>skylar.fantasyoftherim</packageId>
-      <displayName>Fantasy Of The Rim</displayName>  
-	  <li>
-		  <packageId>biotexpans.core</packageId>
-		  <displayName>Biotech Expansion - Core</displayName>
-	  </li>
-    <li>
-		  <packageId>biotexpans.mammalia</packageId>
-		  <displayName>Biotech Expansion - Mammalia</displayName>
-	  </li>
-    <li>
-		  <packageId>biotexpans.mythic</packageId>
-		  <displayName>Biotech Expansion - Mythic</displayName>
-	  </li>
-    <li>
-		  <packageId>det.stoneborn</packageId>
-		  <displayName>Det's Xenotypes - Stoneborn</displayName>
-	  </li>  
+    	<li>
+      		<packageID>skylar.fantasyoftherim</packageId>
+      		<displayName>Fantasy Of The Rim</displayName>  
+		</li>
+		<li>	
+			<packageId>biotexpans.core</packageId>
+			<displayName>Biotech Expansion - Core</displayName>
+		</li>
+    	<li>
+			<packageId>biotexpans.mammalia</packageId>
+			<displayName>Biotech Expansion - Mammalia</displayName>
+		</li>
+    	<li>
+			<packageId>biotexpans.mythic</packageId>
+			<displayName>Biotech Expansion - Mythic</displayName>
+		</li>
+    	<li>
+			<packageId>det.stoneborn</packageId>
+			<displayName>Det's Xenotypes - Stoneborn</displayName>
+		</li>  
 	</modDependencies>
-	<description></description>
+	<description>This mod is made up of a few patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion.</description>
 </ModMetaData>
