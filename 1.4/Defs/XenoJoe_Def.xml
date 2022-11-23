@@ -182,7 +182,7 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
-				<li>FacialRidges</li> <!--placeholder for warforged markings -->
+				<li>WarforgedHead</li>
 				<li>Skin_SlateGray</li>
 				<li>Skin_LightGray</li>
 				<li>Hair_BaldOnly</li>
