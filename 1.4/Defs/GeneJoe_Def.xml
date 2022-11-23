@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+<!-- Gene Category for Heads -->
+	<GeneCategoryDef>
+		<defName>Joe_Cosmetic_Heads</defName>
+		<label>cosmetic - heads</label>
+		<displayPriorityInXenotype>295.59</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-110.69</displayPriorityInGenepack>
+	</GeneCategoryDef>
+	
 <!-- Head base -->
 	<GeneDef Name="JoeGeneHeadBase" Abstract="True">
 		<biostatCpx>0</biostatCpx>
