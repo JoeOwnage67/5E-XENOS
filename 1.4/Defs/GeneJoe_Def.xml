@@ -4,7 +4,7 @@
 <!-- Gene Category for Heads -->
 	<GeneCategoryDef>
 		<defName>Joe_Cosmetic_Heads</defName>
-		<label>cosmetic - warheads</label>
+		<label>cosmetic - joeheads</label>
 		<displayPriorityInXenotype>295.59</displayPriorityInXenotype>
 		<displayPriorityInGenepack>-110.69</displayPriorityInGenepack>
 	</GeneCategoryDef>
