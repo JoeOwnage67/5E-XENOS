@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-<!-- Gene Category for Heads -->
-	<GeneCategoryDef>
-		<defName>Joe_Cosmetic_Heads</defName>
-		<label>cosmetic - joeheads</label>
-		<displayPriorityInXenotype>295.59</displayPriorityInXenotype>
-		<displayPriorityInGenepack>-110.69</displayPriorityInGenepack>
-	</GeneCategoryDef>
-	
-<!-- Head base -->
-	<GeneDef Name="JoeGeneHeadBase" Abstract="True">
-		<biostatCpx>0</biostatCpx>
-		<displayCategory>Joe_Cosmetic_Heads</displayCategory>
-		
-		<exclusionTags>			
-			<li>Heads</li>
-			<li>Head</li>
-		</exclusionTags>
-		<graphicData>
-			<layer>PostHair</layer>
-			<drawLoc>HeadTop</drawLoc>
-		</graphicData>
-	</GeneDef>
-	
 <!-- Warforged Head -->
-	
-	<GeneDef ParentName="JoeGeneHeadBase">
+	<GeneDef ParentName="AG_GeneHeadBase">
 		<defName>WarforgedHead</defName>
 		<label>warforged head</label>
 		<selectionWeight>0</selectionWeight>
 		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have Crystalline Eyes, a hinged jawline and a prominent brow.</description>
-		<biostatCpx>1</biostatCpx>		
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
 		<iconPath>UI/Icons/Genes/Gene_WarFace</iconPath>
-		<graphicData>
-			<graphicPaths>
-				<li>Things/Pawn/Humanlike/Heads/WarFace/</li>			
-			</graphicPaths>
-			<drawOffsetNorth>(0, -0.01, 0)</drawOffsetNorth>
-			<drawOffsetSouth>(0, -0.01, 0)</drawOffsetSouth>
-			<drawOffsetEast>(0, -0.01, 0)</drawOffsetEast>
-		</graphicData>
+		<forcedHeadTypes>
+			<li>WarFace/li>			
+		</forcedHeadTypes>		
 		<beardTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
@@ -60,20 +32,9 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-
-
-<!-- Armor Skin Base -->
-	<GeneDef Name="ArmorSkinBase" Abstract="True">
-		<displayCategory>Violence</displayCategory>
-		<biostatCpx>3</biostatCpx>	
-			<exclusionTags>			
-			<li>Armour</li>
-			<li>Armor</li>
-		</exclusionTags>
-  	</GeneDef>
 	
 <!-- Natural Armor (thick, leathery skin) -->
-  <GeneDef ParentName="ArmorSkinBase">
+  <GeneDef ParentName="AG_ArmourBase">
 	<defName>NaturalArmor</defName>
 	<label>natural armor</label>	
 	<description>Carriers of this gene have natural protection gained from having thick, leathery skin.</description>
@@ -106,7 +67,7 @@
 	</GeneDef>
 	
 <!-- Integrated Protection (Metal Skin)-->
-   <GeneDef ParentName="ArmorSkinBase">
+   <GeneDef ParentName="AG_ArmourBase">
 	<defName>IntegratedProtection</defName>
 	<label>integrated protection</label>	
 	<description>Carriers of this gene have a metal body with built-in defensive layers, which can be enhanced with armor.</description>
