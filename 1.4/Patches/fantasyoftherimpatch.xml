@@ -49,6 +49,108 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ScenarioDef[defName="orcScene"]</xpath>
 				</li>
+				
+<!-- Patch Fantasy of the Rim Factions -->
+<!-- Wood Elf Enclave -->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeElf"]/description</xpath>
+                    			<value>
+                        			<description>Wood Elves are a subrace of Elf that prefer to live out their lives in nature's embrace. Generations ago they banished their Lolth-worshipping brethren, the Dark Elves, from the surface world. They have been at odds ever since.</description>
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeElf"]/xenotypeSet</xpath>
+                    			<value>
+						<xenotypeSet Inherit="False">
+							<xenotypeChances>
+								 <elf_wood>999</elf_wood>
+							</xenotypeChances>
+							<warnIfTotalAbove1>false</warnIfTotalAbove1>
+						</xenotypeSet>                        			 
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeElf"]/label</xpath>
+                    			<value>
+						<label>Wood Elf Enclave</label>                  			 
+                   			</value>
+				</li>
+								
+<!-- Dark Elf Consortium-->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeNightElf"]/description</xpath>
+                    			<value>
+                        			<description>Dark Elves are a subrace of Elf that worship the evil and corrupt goddess Lolth. Generations ago they were banished from the surface world by their nature-loving brethren, the Wood Elves. They have been at odds ever since.</description>
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeNightElf"]/xenotypeSet</xpath>
+                    			<value>
+						<xenotypeSet Inherit="False">
+							<xenotypeChances>
+								 <elf_dark>999</elf_dark>
+							</xenotypeChances>
+							<warnIfTotalAbove1>false</warnIfTotalAbove1>
+						</xenotypeSet>                        			 
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeNightElf"]/label</xpath>
+                    			<value>
+						<label>Night Elf Consortium</label>                  			 
+                   			</value>
+				</li>
+
+<!-- Mountain Dwarf Mining Operation -->				
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeDwarf"]/description</xpath>
+                    			<value>
+                        			<description>Mountain Dwarves are a breed of dwarves at home in the high peaks and rarified air of the rocky mountains. In many ways similar to their lowland cousins, mountain dwarves are slightly more reclusive and tend to focus on mining, forging, and crafting a bit more strongly -- their closeness to the dwarven deity Moradin is said to be a cause of this. It is said that a mountain dwarf is born in armor, but this is likely just a mild exaggeration.</description>
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeDwarf"]/xenotypeSet</xpath>
+                    			<value>
+						<xenotypeSet Inherit="False">
+							<xenotypeChances>
+								 <dwarf_mountain>999</dwarf_mountain>
+							</xenotypeChances>
+							<warnIfTotalAbove1>false</warnIfTotalAbove1>
+						</xenotypeSet>                        			 
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeDwarf"]/label</xpath>
+                    			<value>
+						<label>Mountain Dwarf Mining Operation</label>                  			 
+                   			</value>
+				</li>
+				
+<!-- Savage Orc Tribe -->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeOrc"]/description</xpath>
+                    			<value>
+                        			<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeOrc"]/xenotypeSet</xpath>
+                    			<value>
+						<xenotypeSet Inherit="False">
+							<xenotypeChances>
+								 <orc_brutal>999</orc_brutal>
+							</xenotypeChances>
+							<warnIfTotalAbove1>false</warnIfTotalAbove1>
+						</xenotypeSet>                        			 
+                   			</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="TribeOrc"]/label</xpath>
+                    			<value>
+						<label>Savage Orc Tribe</label>                  			 
+                   			</value>
+				</li>		
+			
 			</operations>
    		 </match>
 	</Operation>
