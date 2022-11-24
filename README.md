@@ -9,7 +9,7 @@ Dungeons and Dragons Fifth Edition is the property of Wizard of the Coast and th
 I am making this mod for my personal use but will probably make it available on steam to share with my other party members/interested people. Any requests for additions are welcome as I'd love to expand this but might need help.
 
 Recommended companion mod: Mooloh's DnD Menagerie https://steamcommunity.com/sharedfiles/filedetails/?id=2751849453
-
+Also: Pointed Elf Ears Refined https://steamcommunity.com/sharedfiles/filedetails/?id=2886966525&searchtext=
 THIS IS VERY MUCH A WIP
 
 Wood Elf
