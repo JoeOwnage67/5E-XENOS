@@ -11,7 +11,7 @@
 		<biostatMet>-1</biostatMet>
 		<iconPath>UI/Icons/Genes/Gene_WarFace</iconPath>
 		<forcedHeadTypes>
-			<li>WarFace/li>			
+			<li>WarFace</li>			
 		</forcedHeadTypes>		
 		<beardTagFilter>
 			<whitelist>true</whitelist>
