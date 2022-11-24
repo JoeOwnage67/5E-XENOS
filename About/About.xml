@@ -8,6 +8,7 @@
 	<packageId>JoeDaly.5eXenosPatch</packageId>
   
 	<loadAfter>
+		<li>sarg.alphagenes</li>
 		<li>skylar.fantasyoftherim</li>
     	<li>biotexpans.core</li>
     	<li>biotexpans.mammalia</li>
@@ -16,6 +17,10 @@
 	</loadAfter>
 
 	<modDependencies>
+		<li>
+      		<packageID>sarg.alphagenes</packageId>
+      		<displayName>Alpha Genes</displayName>  
+		</li>
     	<li>
       		<packageID>skylar.fantasyoftherim</packageId>
       		<displayName>Fantasy Of The Rim</displayName>  
