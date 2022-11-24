@@ -169,6 +169,7 @@
 				<li>MeleeDamage_Strong</li>
 				<li>KillThirst</li>
 				<li>Robust</li>
+				<li>AG_PackMule</li> <!-- increased carrying capacity -->
 				
 				<li>AptitudeRemarkable_Melee</li>
 				<li>AptitudeTerrible_Social</li>
