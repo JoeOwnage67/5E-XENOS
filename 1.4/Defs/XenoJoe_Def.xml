@@ -48,7 +48,7 @@
 				<li>Ears_Pointed</li>
 				<li>Body_Standard</li>
 				<li>Body_Thin</li>
-				<li>Skin_InkBlack</li>
+				<li>Skin_InkBlack</li>				
 				<li>Beauty_Beautiful</li>
 				<li>Eyes_Gray</li>
 				<li>Hair_SnowWhite</li>
@@ -126,6 +126,7 @@
 	  			<li>Immunity_Strong</li>	  			
 	  			<li>Nearsighted</li>
 				<li>UndergrounderGene</li>
+				<li>AG_MiningYield_High</li>
 				
 				<li>MinTemp_SmallDecrease</li>
 	  			<li>MaxTemp_SmallDecrease</li>	  			
@@ -156,8 +157,12 @@
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
 				<li>Skin_Green</li>
-				<li>Nose_Pig</li>
-				<li>BTEMa_ElongatedFangs</li>
+				<li>AG_Skin_DeepGreen</li>
+				<li>AG_Skin_PlantGreen</li>
+				<li>Nose_Pig</li>				
+				<li>AG_LargerBodySize</li>
+				<li>AG_Tusks</li>
+				<li>AG_GutturalVoice</li>
 				
 				<li>MaxTemp_LargeIncrease</li>
 				<li>Aggression_HyperAggressive</li>
@@ -192,13 +197,15 @@
 				<li>Eyes_Red</li>
 				
 				<li>Ageless</li>
-				<li>ArchiteMetabolism</li>
+				<li>AG_Foodless</li>
 				<li>Sterile</li>
 				<li>MeleeDamage_Strong</li>
 				<li>Robust</li>
 				<li>Aggression_DeadCalm</li>
 				<li>TotalHealing</li>
+				<li>AG_RegenerationMinor</li>
 				<li>ImpressionableGene</li>
+				<li>AG_ColdSlowness</li>
 									
 				<li>AptitudeStrong_Construction</li>
 				<li>AptitudeRemarkable_Melee</li>
@@ -262,6 +269,8 @@
 				<li>Skin_InkBlack</li>
 				<li>Skin_SlateGray</li>
 				<li>Skin_LightGray</li>
+				<li>AG_LargerBodySize</li>
+				<li>AG_Tusks</li>
 																
 				<li>Libido_Low</li>
 				<li>Aggression_DeadCalm</li>
@@ -272,7 +281,7 @@
 				<li>AptitudeStrong_Intelligence</li>
 				<li>MeleeDamage_Strong</li>
 				<li>Robust</li>
-				<li MayRequire="PackageId.Packmule">Packyderm</li> <!-- name? --> <!-- increased carrying capacity -->
+				<li>AG_PackMule</li> <!-- increased carrying capacity -->
 			</genes>				
 		</XenotypeDef>
 			
@@ -287,8 +296,7 @@
 			<genes>
 				<li>BTEMa_Nose_Lupine</li>
 				<li>BTEMa_ElongatedFangs</li>
-				<li>BTEMa_SharpClaws</li>
-				<li>VoiceRoar</li>
+				<li>BTEMa_SharpClaws</li>				
 				<li>Ears_Floppy</li>
 	      			<li>BTEMa_VulpineEars</li>
 				<li>Tail_Furry</li>
@@ -300,6 +308,8 @@
 				<li>Hair_BaldOnly</li>
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
+				<li>AG_EfficientMandibles</li>
+				<li>AG_GrowlingVoice</li>
 	
 				<li>KillThirst</li>
 				<li>Aggression_Aggressive</li>
@@ -337,8 +347,10 @@
 				<li>Hair_BrightRed</li>
 				<li>BTEMy_AdamantScales</li>
 				<li>Skin_DeepRed</li>
+				<li>AG_Skin_DeeperRed</li>
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
+				<li>AG_EggLaying</li>
 				
 				<li>FireResistant</li>
 				<li>MeleeDamage_Strong</li>
