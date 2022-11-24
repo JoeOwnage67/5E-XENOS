@@ -20,21 +20,366 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="orc"]</xpath>
-				</li>	
+				</li>			
+
 				
-<!-- remove Fantasy of the Rim scenarios (intend to rework later using new versions of xenos) -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ScenarioDef[defName="nightelfScene"]</xpath>
+<!-- Patch Fantasy of the Rim Scenarios -->
+<!-- Wood Elf -->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/ScenarioDef[defName="elfScene"]/scenario</xpath>
+                    			<value>
+                        			<scenario>
+							<name>Wood Elf Enclave</name>
+							<summary>Start as a new wood elf colony.</summary>
+							<description>You have received news that your rivals the Dark Elves have been mobilizing their forces and intend to return to the surface world. You have been tasked by the Queen of all Elves to colonize a new location that will serve to fortify the Wood Elf territories.</description>
+							<playerFaction>
+								<def>PlayerFaction</def>
+								<factionDef>PlayerTribe</factionDef>
+							</playerFaction>
+							<parts>
+								<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+									<def>ConfigurePawnsXenotypes</def>
+									<pawnChoiceCount>8</pawnChoiceCount>
+									<xenotypeCounts>
+										<li>
+											<count>3</count>
+											<requiredAtStart>True</requiredAtStart>
+											<xenotype>elf_wood</xenotype>
+											<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+										</li>
+									</xenotypeCounts>
+								</li>
+								<li Class="ScenPart_PlayerPawnsArriveMethod">
+									<def>PlayerPawnsArriveMethod</def>
+								</li>
+								<li Class="ScenPart_StartingThing_Defined">
+									<def>StartingThing_Defined</def>
+									<thingDef>Silver</thingDef>
+									<count>800</count>
+								</li>
+								<li Class="ScenPart_StartingThing_Defined">
+									<def>StartingThing_Defined</def>
+									<thingDef>MealSurvivalPack</thingDef>
+									<count>50</count>
+								</li>
+								<li Class="ScenPart_StartingThing_Defined">
+									<def>StartingThing_Defined</def>
+									<thingDef>MedicineHerbal</thingDef>
+									<count>30</count>
+								</li>							
+								<li Class="ScenPart_StartingThing_Defined">
+									<def>StartingThing_Defined</def>
+									<thingDef>Bow_Recurve</thingDef>
+								</li>
+								<li Class="ScenPart_StartingThing_Defined">
+									<def>StartingThing_Defined</def>
+									<thingDef>MeleeWeapon_Knife</thingDef>
+									<stuff>Plasteel</stuff>
+								</li>
+								<li Class="ScenPart_ScatterThingsNearPlayerStart">
+									<def>ScatterThingsNearPlayerStart</def>
+									<thingDef>Steel</thingDef>
+									<count>450</count>
+									<allowRoofed>True</allowRoofed>
+								</li>
+								<li Class="ScenPart_ScatterThingsNearPlayerStart">
+									<def>ScatterThingsNearPlayerStart</def>
+									<thingDef>WoodLog</thingDef>
+									<count>300</count>
+									<allowRoofed>True</allowRoofed>
+								</li>								
+								<li Class="ScenPart_ScatterThingsAnywhere">
+									<def>ScatterThingsAnywhere</def>
+									<thingDef>Steel</thingDef>
+									<count>720</count>
+									<allowRoofed>True</allowRoofed>
+								</li>
+								<li Class="ScenPart_ScatterThingsAnywhere">
+									<def>ScatterThingsAnywhere</def>
+									<thingDef>MealSurvivalPack</thingDef>
+									<count>7</count>
+									<allowRoofed>True</allowRoofed>
+								</li>
+								<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+									<factionDef>TribeElf</factionDef>
+									<affectStartingGoodwill>True</affectStartingGoodwill>
+									<startingGoodwillRange>100~100</startingGoodwillRange>
+									<affectNaturalGoodwill>True</affectNaturalGoodwill>
+									<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+									<def>VFEC_ForcedFactionGoodwill</def>
+								</li>
+							</parts>
+						</scenario>
+                   	</value>				
 				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ScenarioDef[defName="elfScene"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ScenarioDef[defName="dwarfScene"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ScenarioDef[defName="orcScene"]</xpath>
-				</li>
+				
+<!-- Dark Elf -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ScenarioDef[defName="nightelfScene"]/scenario</xpath>
+                    	<value>		
+							<scenario>
+								<name>Dark Elf Consortium</name>
+								<summary>Start as a new dark elf colony.</summary>
+								<description>You have been tasked by the Queen of all Dark Elves to come out of the shadows a colonize a new land that will become the Dark Elves' seat of power in the surface world.</description>
+								<playerFaction>
+									<def>PlayerFaction</def>
+									<factionDef>PlayerTribe</factionDef>
+								</playerFaction>
+							
+								<parts>
+									<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+										<def>ConfigurePawnsXenotypes</def>
+										<pawnChoiceCount>8</pawnChoiceCount>
+										<xenotypeCounts>
+											<li>
+												<count>3</count>
+												<requiredAtStart>True</requiredAtStart>
+												<xenotype>elf_dark</xenotype>
+												<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+											</li>
+										</xenotypeCounts>
+									</li>
+									<li Class="ScenPart_PlayerPawnsArriveMethod">
+										<def>PlayerPawnsArriveMethod</def>
+									</li>
+									<li Class="ScenPart_StartingThing_Defined">
+										<def>StartingThing_Defined</def>
+										<thingDef>Silver</thingDef>
+										<count>800</count>
+									</li>
+									<li Class="ScenPart_StartingThing_Defined">
+										<def>StartingThing_Defined</def>
+										<thingDef>MealSurvivalPack</thingDef>
+										<count>50</count>
+									</li>
+									<li Class="ScenPart_StartingThing_Defined">
+										<def>StartingThing_Defined</def>
+										<thingDef>MedicineHerbal</thingDef>
+										<count>30</count>
+									</li>			
+									<li Class="ScenPart_StartingThing_Defined">
+										<def>StartingThing_Defined</def>
+										<thingDef>Bow_Recurve</thingDef>
+									</li>
+									<li Class="ScenPart_StartingThing_Defined">
+										<def>StartingThing_Defined</def>
+										<thingDef>MeleeWeapon_Knife</thingDef>
+										<stuff>Plasteel</stuff>
+									</li>
+									<li Class="ScenPart_ScatterThingsNearPlayerStart">
+										<def>ScatterThingsNearPlayerStart</def>
+										<thingDef>Steel</thingDef>
+										<count>450</count>
+										<allowRoofed>True</allowRoofed>
+									</li>
+									<li Class="ScenPart_ScatterThingsNearPlayerStart">
+										<def>ScatterThingsNearPlayerStart</def>
+										<thingDef>WoodLog</thingDef>
+										<count>300</count>
+										<allowRoofed>True</allowRoofed>
+									</li>
+									<li Class="ScenPart_ScatterThingsAnywhere">
+										<def>ScatterThingsAnywhere</def>
+										<thingDef>Steel</thingDef>
+										<count>720</count>
+										<allowRoofed>True</allowRoofed>
+									</li>
+									<li Class="ScenPart_ScatterThingsAnywhere">
+										<def>ScatterThingsAnywhere</def>
+										<thingDef>MealSurvivalPack</thingDef>
+										<count>7</count>
+										<allowRoofed>True</allowRoofed>
+									</li>
+									<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+										<factionDef>TribeNightElf</factionDef>
+										<affectStartingGoodwill>True</affectStartingGoodwill>
+										<startingGoodwillRange>100~100</startingGoodwillRange>
+										<affectNaturalGoodwill>True</affectNaturalGoodwill>
+										<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+										<def>VFEC_ForcedFactionGoodwill</def>
+									</li>
+								</parts>
+							</scenario>
+						</value>				
+					</li>
+				
+<!-- Mountain Dwarf -->
+					<li Class="PatchOperationReplace">
+ 						<xpath>Defs/ScenarioDef[defName="dwarfScene"]/scenario</xpath>
+                    		<value>	
+								<scenario>
+									<name>Mountain Dwarf Mining Operation</name>
+									<summary>Start as a new Mountain Dwarf colony.</summary>
+									<description>You have been tasked by the Queen of all Mountain Dwarves to create a new mining operation in a virgin mountain.</description>
+									<playerFaction>
+										<def>PlayerFaction</def>
+										<factionDef>PlayerTribe</factionDef>
+									</playerFaction>
+									<parts>
+										<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+											<def>ConfigurePawnsXenotypes</def>
+											<pawnChoiceCount>8</pawnChoiceCount>
+											<xenotypeCounts>
+												<li>
+													<count>3</count>
+													<requiredAtStart>True</requiredAtStart>
+													<xenotype>dwarf_mountain</xenotype>
+													<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+												</li>
+											</xenotypeCounts>
+										</li>
+										<li Class="ScenPart_PlayerPawnsArriveMethod">
+											<def>PlayerPawnsArriveMethod</def>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>Silver</thingDef>
+											<count>800</count>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>MealSurvivalPack</thingDef>
+											<count>50</count>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>MedicineHerbal</thingDef>
+											<count>30</count>
+										</li>										
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>Bow_Recurve</thingDef>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>MeleeWeapon_Knife</thingDef>
+											<stuff>Plasteel</stuff>
+										</li>
+										<li Class="ScenPart_ScatterThingsNearPlayerStart">
+											<def>ScatterThingsNearPlayerStart</def>
+											<thingDef>Steel</thingDef>
+											<count>450</count>
+											<allowRoofed>True</allowRoofed>
+										</li>
+										<li Class="ScenPart_ScatterThingsNearPlayerStart">
+											<def>ScatterThingsNearPlayerStart</def>
+											<thingDef>WoodLog</thingDef>
+											<count>300</count>
+											<allowRoofed>True</allowRoofed>
+										</li>										
+										<li Class="ScenPart_ScatterThingsAnywhere">
+											<def>ScatterThingsAnywhere</def>
+											<thingDef>Steel</thingDef>
+											<count>720</count>
+											<allowRoofed>True</allowRoofed>
+										</li>
+										<li Class="ScenPart_ScatterThingsAnywhere">
+											<def>ScatterThingsAnywhere</def>
+											<thingDef>MealSurvivalPack</thingDef>
+											<count>7</count>
+											<allowRoofed>True</allowRoofed>
+										</li>
+										<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+											<factionDef>TribeDwarf</factionDef>
+											<affectStartingGoodwill>True</affectStartingGoodwill>
+											<startingGoodwillRange>100~100</startingGoodwillRange>
+											<affectNaturalGoodwill>True</affectNaturalGoodwill>
+											<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+											<def>VFEC_ForcedFactionGoodwill</def>
+										</li>
+									</parts>
+								</scenario>
+							</value>				
+						</li>
+				
+<!-- Orc -->		
+						<li Class="PatchOperationReplace">
+                    		<xpath>Defs/ScenarioDef[defName="orcScene"]/scenario</xpath>
+								<value>	
+									<scenario>
+										<name>Orc Stronghold</name>
+										<summary>Start as a new Orc Stronghold.</summary>
+										<description>You have been tasked by the King of all orcs to colonize a new location, which will serve as his Stronghold. You will crush all who oppose him.</description>
+										<playerFaction>
+											<def>PlayerFaction</def>
+											<factionDef>PlayerTribe</factionDef>
+										</playerFaction>
+									<parts>
+										<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+											<def>ConfigurePawnsXenotypes</def>
+											<pawnChoiceCount>8</pawnChoiceCount>
+											<xenotypeCounts>
+												<li>
+													<count>3</count>
+													<requiredAtStart>True</requiredAtStart>
+													<xenotype>orc_brutal</xenotype>
+													<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+												</li>
+											</xenotypeCounts>
+										</li>
+										<li Class="ScenPart_PlayerPawnsArriveMethod">
+											<def>PlayerPawnsArriveMethod</def>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>Silver</thingDef>
+											<count>800</count>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>MealSurvivalPack</thingDef>
+											<count>50</count>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>MedicineHerbal</thingDef>
+											<count>30</count>
+										</li>										
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>Bow_Recurve</thingDef>
+										</li>
+										<li Class="ScenPart_StartingThing_Defined">
+											<def>StartingThing_Defined</def>
+											<thingDef>MeleeWeapon_Knife</thingDef>
+											<stuff>Plasteel</stuff>
+										</li>
+										<li Class="ScenPart_ScatterThingsNearPlayerStart">
+											<def>ScatterThingsNearPlayerStart</def>
+											<thingDef>Steel</thingDef>
+											<count>450</count>
+											<allowRoofed>True</allowRoofed>
+										</li>
+										<li Class="ScenPart_ScatterThingsNearPlayerStart">
+											<def>ScatterThingsNearPlayerStart</def>
+											<thingDef>WoodLog</thingDef>
+											<count>300</count>
+											<allowRoofed>True</allowRoofed>
+										</li>										
+										<li Class="ScenPart_ScatterThingsAnywhere">
+											<def>ScatterThingsAnywhere</def>
+											<thingDef>Steel</thingDef>
+											<count>720</count>
+											<allowRoofed>True</allowRoofed>
+										</li>
+										<li Class="ScenPart_ScatterThingsAnywhere">
+											<def>ScatterThingsAnywhere</def>
+											<thingDef>MealSurvivalPack</thingDef>
+											<count>7</count>
+											<allowRoofed>True</allowRoofed>
+										</li>
+										<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+											<factionDef>TribeOrc</factionDef>
+											<affectStartingGoodwill>True</affectStartingGoodwill>
+											<startingGoodwillRange>100~100</startingGoodwillRange>
+											<affectNaturalGoodwill>True</affectNaturalGoodwill>
+											<naturalGoodwillRange>-50~50</naturalGoodwillRange>
+											<def>VFEC_ForcedFactionGoodwill</def>
+										</li>
+									</parts>
+								</scenario>						
+							</value>				
+						</li>
 				
 <!-- Patch Fantasy of the Rim Factions -->
 <!-- Wood Elf Enclave -->
