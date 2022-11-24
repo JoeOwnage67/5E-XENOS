@@ -8,7 +8,7 @@
 			<success>Normal</success>
 			<operations>	
 				
-<!-- remove Fantasy of the Rim version of xenotypes (have reworked in new defs) -->
+<!-- remove Fantasy of the Rim version of xenotypes that I have reworked in the new defs -->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="elf"]</xpath>
 				</li>				
@@ -20,7 +20,18 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="orc"]</xpath>
-				</li>			
+				</li>
+				
+<!-- add small body gene to halfling and goblin -->
+				<li Class="PatchOperationAdd">
+                	<xpath>Defs/ThingDef[@Name="MechanicalMed" or @Name="AmbroisenMed"]</xpath>
+                    				<value>
+                       					<techLevel>Medieval</techLevel>
+							<techHediffsTags>
+								<li>Simple</li>
+							</techHediffsTags>
+                    				</value>
+                		</li>
 
 				
 <!-- Patch Fantasy of the Rim Scenarios -->
