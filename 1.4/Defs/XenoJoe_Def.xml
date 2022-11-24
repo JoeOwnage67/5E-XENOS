@@ -207,6 +207,7 @@
 				<li>AG_RegenerationMinor</li>
 				<li>ImpressionableGene</li>
 				<li>AG_ColdSlowness</li>
+				<li>AG_PackMule</li> <!-- increased carrying capacity -->
 									
 				<li>AptitudeStrong_Construction</li>
 				<li>AptitudeRemarkable_Melee</li>
