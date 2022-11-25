@@ -1,6 +1,6 @@
 # 5eXenosPatch
 
-This mod is made up of a few patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion.
+This mod is made up of several patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion.
 
 Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson, Lennoxite, Skylar and DetVisor.
 
