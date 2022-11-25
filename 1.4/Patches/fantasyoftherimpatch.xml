@@ -38,7 +38,7 @@
                     			</value>
                 		</li>
 				
-<!-- add xeno icons to halfling, goblin and undead -->
+<!-- add xeno icons to halfling, goblin, undead and troll -->
 				<li Class="PatchOperationReplace">
                     			<xpath>Defs/XenotypeDef[defName="halfling"]/iconPath</xpath>
                     			<value>
@@ -55,6 +55,12 @@
                     			<xpath>Defs/XenotypeDef[defName="undead"]/iconPath</xpath>
                     			<value>
                         			<iconPath>UI/Icons/Xenotypes/Undead</iconPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/XenotypeDef[defName="troll"]/iconPath</xpath>
+                    			<value>
+                        			<iconPath>UI/Icons/Xenotypes/Troll</iconPath>
 					</value>
 				</li>
 				
