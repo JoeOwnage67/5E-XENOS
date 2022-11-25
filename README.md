@@ -12,7 +12,9 @@ Recommended companion mods:
 
 Mooloh's DnD Menagerie https://steamcommunity.com/sharedfiles/filedetails/?id=2751849453
 
-Pointed Elf Ears Refined https://steamcommunity.com/sharedfiles/filedetails/?id=2886966525&searchtext=
+Pointed Elf Ears Refined https://steamcommunity.com/sharedfiles/filedetails/?id=2886966525
+
+Level Up! https://steamcommunity.com/sharedfiles/filedetails/?id=1701592470
 
 THIS IS VERY MUCH A WIP
 
