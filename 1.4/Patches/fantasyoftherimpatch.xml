@@ -24,15 +24,39 @@
 				
 <!-- add small body gene to halfling and goblin -->
 				<li Class="PatchOperationAdd">
-                	<xpath>Defs/ThingDef[@Name="MechanicalMed" or @Name="AmbroisenMed"]</xpath>
-                    				<value>
-                       					<techLevel>Medieval</techLevel>
-							<techHediffsTags>
-								<li>Simple</li>
-							</techHediffsTags>
-                    				</value>
+                			<xpath>Defs/XenotypeDef[defName="halfling" or "goblin"]/genes</xpath>
+                    			<value>
+                       				<li>AG_SmallerBodySize</li>
+                    			</value>
                 		</li>
-
+				
+<!-- add large body gene to troll -->
+				<li Class="PatchOperationAdd">
+                			<xpath>Defs/XenotypeDef[defName="troll"]/genes</xpath>
+                    			<value>
+                       				<li>AG_LargerBodySize</li>
+                    			</value>
+                		</li>
+				
+<!-- add xeno icons to halfling, goblin and undead -->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/XenotypeDef[defName="halfling"]/iconPath</xpath>
+                    			<value>
+                        			<iconPath>UI/Icons/Xenotypes/Halfling</iconPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/XenotypeDef[defName="goblin"]/iconPath</xpath>
+                    			<value>
+                        			<iconPath>UI/Icons/Xenotypes/Goblin</iconPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/XenotypeDef[defName="undead"]/iconPath</xpath>
+                    			<value>
+                        			<iconPath>UI/Icons/Xenotypes/Undead</iconPath>
+					</value>
+				</li>
 				
 <!-- Patch Fantasy of the Rim Scenarios -->
 <!-- Wood Elf -->
