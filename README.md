@@ -29,4 +29,4 @@ THIS IS VERY MUCH A WIP
 - Adds large body type to Troll.
 - Vanilla Factions are patched to include the new xenotypes.
 
-If you like this, you can buy me a coffee: ko-fi.com/joeownage 
+If you like this, you can buy me a coffee: https://ko-fi.com/joeownage 
