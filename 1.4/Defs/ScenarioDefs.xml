@@ -39,14 +39,9 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MedicineIndustrial</thingDef>
+					<thingDef>MedicineHerbal</thingDef>
 					<count>30</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>ComponentIndustrial</thingDef>
-					<count>30</count>
-				</li>
+				</li>				
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Bow_Recurve</thingDef>
@@ -67,13 +62,7 @@
 					<thingDef>WoodLog</thingDef>
 					<count>300</count>
 					<allowRoofed>True</allowRoofed>
-				</li>
-				<li Class="ScenPart_ScatterThingsAnywhere">
-					<def>ScatterThingsAnywhere</def>
-					<thingDef>ShipChunk</thingDef>
-					<count>3</count>
-					<allowRoofed>True</allowRoofed>
-				</li>
+				</li>				
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
 					<thingDef>Steel</thingDef>
