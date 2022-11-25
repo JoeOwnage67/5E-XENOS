@@ -24,3 +24,4 @@ THIS IS VERY MUCH A WIP
 - Adds xenotype icons for each race where one didn't already exist, as well as Halfling, Goblin, Troll, Undead from Fantasy of the Rim.
 - Adds small body type to Halfling and Goblin.
 - Adds large body type to Troll.
+- Vanilla Factions are patched to include the new xenotypes.
