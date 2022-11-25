@@ -20,9 +20,9 @@
 		</value>
 	</Operation>  
 	
-	<li MayRequire="Ludeon.RimWorld.Ideology">
+	<li MayRequire="Ludeon.RimWorld.Royalty">
 		<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Empire" or "OutlanderRefugee"]/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeChances</xpath>
 				<value>
 					<elf_wood>0.02</elf_wood>
 					<elf_dark>0.02</elf_dark>
@@ -39,9 +39,50 @@
 					<goblin>0.00</goblin>
 					<undead>0.00</undead>
 				</value>
-		</Operation>  		
-	</li>
-	
-	
-	
+		</Operation>  	
+		
+		<li MayRequire="Ludeon.RimWorld.Royalty">
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeChances</xpath>
+				<value>
+					<elf_wood>0.02</elf_wood>
+					<elf_dark>0.02</elf_dark>
+					<dwarf_hill>0.02</dwarf_hill>
+					<dwarf_mountain>0.02</dwarf_mountain>
+					<orc_brutal>0.02</orc_brutal>
+					<warforged>0.02</warforged>
+					<tabaxi>0.02</tabaxi>           
+					<loxodon>0.02</loxodon>
+					<shifter>0.02</shifter>
+					<dragonborn>0.02</dragonborn>
+					<troll>0.02</troll>
+					<halfling>0.02</halfling>
+					<goblin>0.02</goblin>
+					<undead>0.02</undead>
+				</value>
+			</Operation>  	
+		</li>
+		
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeChances</xpath>
+				<value>
+					<elf_wood>0.02</elf_wood>
+					<elf_dark>0.02</elf_dark>
+					<dwarf_hill>0.02</dwarf_hill>
+					<dwarf_mountain>0.02</dwarf_mountain>
+					<orc_brutal>0.02</orc_brutal>
+					<warforged>0.02</warforged>
+					<tabaxi>0.02</tabaxi>           
+					<loxodon>0.02</loxodon>
+					<shifter>0.02</shifter>
+					<dragonborn>0.02</dragonborn>
+					<troll>0.02</troll>
+					<halfling>0.02</halfling>
+					<goblin>0.02</goblin>
+					<undead>0.02</undead>
+				</value>
+			</Operation>  	
+		</li>		
 </Patch>
