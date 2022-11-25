@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- adding new xenos to existing factions -->
 <Patch>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/FactionDef[defName="OutlanderCivil" or "OutlanderRough" or "Pirate" or "TribeCivil" or "TribeRough" or "TribeSavage" or "Ancients" or "AncientsHostile"]/xenotypeChances</xpath>
