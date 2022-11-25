@@ -16,7 +16,7 @@ Pointed Elf Ears Refined https://steamcommunity.com/sharedfiles/filedetails/?id=
 
 THIS IS VERY MUCH A WIP
 
-- Adds or reworks the following races: Wood Elf, Dark Elf, Hill Dwarf, Mountain Dwarf, Orc, Warforged, Tabaxi, Loxodon, Shifter, Dragonborn using Genes from mod dependancies.
+- Adds or reworks the following races: Wood Elf, Dark Elf, Hill Dwarf, Mountain Dwarf, Orc, Warforged, Tabaxi, Loxodon, Shifter, Dragonborn using genes from mod dependancies.
 - Adds custom Warforged Head gene, if I'm happy with how it works I may add an Undead Head gene later.
 - Adds natural armour and integrated protection genes based off of AG armor genes.
 - Adds impressionable and undergrounder genes.
