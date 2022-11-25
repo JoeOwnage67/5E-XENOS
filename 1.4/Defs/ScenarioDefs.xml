@@ -76,7 +76,7 @@
 					<allowRoofed>True</allowRoofed>
 				</li>
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-					<factionDef>TribeDwarf</factionDef>
+					<factionDef>TribeHillDwarf</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 					<affectNaturalGoodwill>True</affectNaturalGoodwill>
