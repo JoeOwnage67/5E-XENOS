@@ -498,31 +498,10 @@
                    			</value>
 				</li>
 				
-<!-- Savage Orc Tribe -->
-				<li Class="PatchOperationReplace">
-                    			<xpath>Defs/FactionDef[defName="TribeOrc"]/description</xpath>
-                    			<value>
-                        			<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
-                   			</value>
+<!-- Savage Orc Tribe --> <!-- Reworked in Defs -->
+				<li Class="PatchOperationRemove">
+                    			<xpath>Defs/FactionDef[defName="TribeOrc"]</xpath>
 				</li>
-				<li Class="PatchOperationReplace">
-                    			<xpath>Defs/FactionDef[defName="TribeOrc"]/xenotypeSet</xpath>
-                    			<value>
-						<xenotypeSet Inherit="False">
-							<xenotypeChances>
-								 <orc_brutal>999</orc_brutal>
-							</xenotypeChances>
-							<warnIfTotalAbove1>false</warnIfTotalAbove1>
-						</xenotypeSet>                        			 
-                   			</value>
-				</li>
-				<li Class="PatchOperationReplace">
-                    			<xpath>Defs/FactionDef[defName="TribeOrc"]/label</xpath>
-                    			<value>
-						<label>Savage Orc Tribe</label>                  			 
-                   			</value>
-				</li>		
-			
 			</operations>
    		 </match>
 	</Operation>
