@@ -2,155 +2,160 @@
 
 <Defs>
 	<FactionDef ParentName="TribeBase">
-    <defName>TribeHillDwarf</defName>
-    <label>Hill Dwarf Trading Post</label>
-    <description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.</description>
-    <factionIconPath>World/WorldObjects/Expanding/VillageSavage</factionIconPath>
-    <factionNameMaker>NamerFactionTribal</factionNameMaker>
-    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-	<requiredCountAtGameStart>0</requiredCountAtGameStart>
-    <colorSpectrum>
-      <li>(0, 0.4, 0.94)</li>
-      <li>(0.64, 0.8, 1)</li>
-    </colorSpectrum>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>1</configurationListOrderPriority>
-    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
-    <pawnSingular>tribesman</pawnSingular>
-    <pawnsPlural>tribespeople</pawnsPlural>
-    <melaninRange>0~0.5</melaninRange>
-    <xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <dwarf_hill>999</dwarf_hill>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-    </xenotypeSet>
-    <pawnGroupMakers Inherit="False">
-      <li>
-        <!-- Normal fights, ranged with melee mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
-        <options>
-          <Tribal_Penitent>5</Tribal_Penitent>
-          <Tribal_Warrior>5</Tribal_Warrior>
-          <Tribal_Archer>1</Tribal_Archer>
-          <Tribal_Hunter>1</Tribal_Hunter>
-          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
-          <Tribal_Berserker>5</Tribal_Berserker>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, melee only -->
-        <kindDef>Combat</kindDef>
-        <commonality>150</commonality>
-        <options>
-          <Tribal_Penitent>10</Tribal_Penitent>
-          <Tribal_Warrior>10</Tribal_Warrior>
-          <Tribal_Berserker>10</Tribal_Berserker>
-          <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
-      </options>
-      </li>
-      <li>
+    	<defName>TribeHillDwarf</defName>
+    	<label>Hill Dwarf Trading Post</label>
+    	<description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.</description>
+		<factionIconPath>World/WorldObjects/Expanding/VillageSavage</factionIconPath>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<requiredCountAtGameStart>0</requiredCountAtGameStart>
+		<colorSpectrum>
+		  <li>(0, 0.4, 0.94)</li>
+		  <li>(0.64, 0.8, 1)</li>
+		</colorSpectrum>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<melaninRange>0~0.5</melaninRange>
+		<xenotypeSet Inherit="False">
+      		<xenotypeChances>
+        		<dwarf_hill>999</dwarf_hill>
+      		</xenotypeChances>
+      		<warnIfTotalAbove1>false</warnIfTotalAbove1>
+    	</xenotypeSet>
+   		<pawnGroupMakers Inherit="False">
+      	
+<!-- Normal fights, ranged with melee mix-ins -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Tribal_Penitent>5</Tribal_Penitent>
+					<Tribal_Warrior>5</Tribal_Warrior>
+					<Tribal_Archer>1</Tribal_Archer>
+					<Tribal_Hunter>1</Tribal_Hunter>
+					<Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+					<Tribal_Berserker>5</Tribal_Berserker>
+					<Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+					<Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+				</options>
+			</li>
+			
+<!-- Normal fights, melee only -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>150</commonality>
+				<options>
+					<Tribal_Penitent>10</Tribal_Penitent>
+					<Tribal_Warrior>10</Tribal_Warrior>
+					<Tribal_Berserker>10</Tribal_Berserker>
+					<Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+			  	</options>
+			</li>
+			
         <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>5</commonality>
-        <options>
-          <Tribal_Breacher>5</Tribal_Breacher>
-          <Tribal_Penitent>5</Tribal_Penitent>
-          <Tribal_Warrior>5</Tribal_Warrior>
-          <Tribal_Archer>1</Tribal_Archer>
-          <Tribal_Hunter>1</Tribal_Hunter>
-          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
-          <Tribal_Berserker>5</Tribal_Berserker>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
-      </options>
-      </li>
-      <li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Tribal_Breacher>5</Tribal_Breacher>
+					<Tribal_Penitent>5</Tribal_Penitent>
+					<Tribal_Warrior>5</Tribal_Warrior>
+					<Tribal_Archer>1</Tribal_Archer>
+					<Tribal_Hunter>1</Tribal_Hunter>
+					<Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+					<Tribal_Berserker>5</Tribal_Berserker>
+					<Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+					<Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+			  	</options>
+      		</li>
+     
         <!-- Peaceful -->
-        <kindDef>Peaceful</kindDef>
-        <options>
-          <Tribal_Warrior>20</Tribal_Warrior>
-          <Tribal_Child>10</Tribal_Child>
-          <Tribal_Archer>1</Tribal_Archer>
-          <Tribal_Hunter>1</Tribal_Hunter>
-          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
-          <Tribal_Berserker>5</Tribal_Berserker>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
-        </options>
-      </li>
-      <li>
-        <kindDef>Trader</kindDef>
-        <traders>
-          <Tribal_Trader>1</Tribal_Trader>
-        </traders>
-        <carriers>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2.5</Alpaca>
-          <Elephant>2</Elephant>
-        </carriers>
-        <guards>
-          <Tribal_Warrior>7</Tribal_Warrior>
-          <Tribal_Archer>1</Tribal_Archer>
-          <Tribal_Hunter>1</Tribal_Hunter>
-          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
-          <Tribal_Berserker>7</Tribal_Berserker>
-        </guards>
-      </li>
-      <li>
-        <kindDef>Settlement</kindDef>
-        <options>
-          <Tribal_Warrior>7</Tribal_Warrior>
-          <Tribal_Archer>1</Tribal_Archer>
-          <Tribal_Hunter>1</Tribal_Hunter>
-          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
-          <Tribal_Berserker>7</Tribal_Berserker>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
-        </options>
-      </li>
-      <li>
-        <kindDef>Settlement_RangedOnly</kindDef>
-        <options>
-          <Tribal_Archer>10</Tribal_Archer>
-          <Tribal_Hunter>10</Tribal_Hunter>
-          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>10</Tribal_ChiefMelee>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Miners</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Tribal_Miner>1</Tribal_Miner>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Hunters</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Tribal_Hunter>1</Tribal_Hunter>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Loggers</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Tribal_Logger>1</Tribal_Logger>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Farmers</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Tribal_Farmer>1</Tribal_Farmer>
-        </options>
-      </li>
-    </pawnGroupMakers>
-  </FactionDef>
+			 <li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Tribal_Warrior>20</Tribal_Warrior>
+					<Tribal_Child>10</Tribal_Child>
+					<Tribal_Archer>1</Tribal_Archer>
+					<Tribal_Hunter>1</Tribal_Hunter>
+					<Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+					<Tribal_Berserker>5</Tribal_Berserker>
+					<Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+					<Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+				</options>
+      		</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Tribal_Trader>1</Tribal_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Tribal_Warrior>7</Tribal_Warrior>
+					<Tribal_Archer>1</Tribal_Archer>
+					<Tribal_Hunter>1</Tribal_Hunter>
+					<Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+					<Tribal_Berserker>7</Tribal_Berserker>
+				</guards>
+			</li>
+      		
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Tribal_Warrior>7</Tribal_Warrior>
+					<Tribal_Archer>1</Tribal_Archer>
+					<Tribal_Hunter>1</Tribal_Hunter>
+					<Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+					<Tribal_Berserker>7</Tribal_Berserker>
+					<Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+					<Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+				</options>
+			</li>
+      		<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Tribal_Archer>10</Tribal_Archer>
+					<Tribal_Hunter>10</Tribal_Hunter>
+					<Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+					<Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+					<Tribal_ChiefMelee>10</Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Tribal_Miner>1</Tribal_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Tribal_Hunter>1</Tribal_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+				  <Tribal_Logger>1</Tribal_Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+				  <Tribal_Farmer>1</Tribal_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
 </Defs>
