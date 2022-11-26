@@ -15,4 +15,18 @@
 			</operations>
    		 </match>
 	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Stoneborn>0.05</Stoneborn>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Stoneborn>0.05</Stoneborn>
+		</value>
+	</Operation>
 </Patch>
