@@ -42,7 +42,7 @@
 					<undead>0.00</undead>
 				</value>
 		</Operation>
-	</li>
+	
 		
 			<Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
@@ -63,7 +63,7 @@
 					<undead>0.02</undead>
 				</value>
 			</Operation>  	
-		</li>
+		
 		
 		
 				<Operation Class="PatchOperationAdd">
@@ -85,5 +85,5 @@
 					<undead>0.02</undead>
 				</value>
 			</Operation>  	
-		</li>		
+			
 </Patch>
