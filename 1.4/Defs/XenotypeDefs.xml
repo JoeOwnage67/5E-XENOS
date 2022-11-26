@@ -244,9 +244,9 @@
 				<li>MoveSpeed_Quick</li>
 											
 				<li>AptitudeStrong_Animals</li>
-				<li>AptitudeStrong_Intelligence</li>
+				<li>AptitudeStrong_Intellectual</li>
 				<li>AptitudeStrong_Cooking</li>
-				<li>AptitudeWeak_Construction</li>
+				<li>AptitudePoor_Construction</li>
 				<li>AptitudeTerrible_Mining</li>
 								
 				<li>AnimalWarcall</li>	
@@ -280,7 +280,7 @@
 				<li>BTEMa_ElephantMemory</li>
 				<li>MoveSpeed_Slow</li>
 				
-				<li>AptitudeStrong_Intelligence</li>
+				<li>AptitudeStrong_Intellectual</li>
 				<li>MeleeDamage_Strong</li>
 				<li>Robust</li>
 				<li>AG_PackMule</li> <!-- increased carrying capacity -->
