@@ -3,7 +3,7 @@
 <!-- adding new xenos to existing factions -->
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or "TribeBase" or "AncientsBase" or PirateBandBase"]/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name=PirateBandBase"]/xenotypeChances</xpath>
 		<value>
 			<elf_wood>0.02</elf_wood>
             <elf_dark>0.02</elf_dark>
