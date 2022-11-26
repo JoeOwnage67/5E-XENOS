@@ -410,7 +410,7 @@
 											<allowRoofed>True</allowRoofed>
 										</li>
 										<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-											<factionDef>TribeOrc</factionDef>
+											<factionDef>TribeOrcSavage</factionDef>
 											<affectStartingGoodwill>True</affectStartingGoodwill>
 											<startingGoodwillRange>100~100</startingGoodwillRange>
 											<affectNaturalGoodwill>True</affectNaturalGoodwill>
