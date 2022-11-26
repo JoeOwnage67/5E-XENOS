@@ -13,8 +13,8 @@
           				<xpath>Defs/FactionDef[defName="OutlanderRoughStoneborn"]</xpath>
         			</li>
 				<!-- <li Class="PatchOperationRemove">
-          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath> -->
-				</li>
+          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
+				</li>-->
 				<li Class="PatchOperationReplace">
 				<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances/Stoneborn</xpath>
 					<value>
