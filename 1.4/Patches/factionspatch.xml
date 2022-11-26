@@ -23,8 +23,6 @@
 		</value>
 	</Operation>  
 	
-	
-	<li MayRequire="Ludeon.RimWorld.Royalty">
 		<Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
@@ -46,8 +44,7 @@
 		</Operation>
 	</li>
 		
-		<li MayRequire="Ludeon.RimWorld.Royalty">
-		<Operation Class="PatchOperationAdd">
+			<Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<elf_wood>0.02</elf_wood>
@@ -69,8 +66,7 @@
 		</li>
 		
 		
-		<li MayRequire="Ludeon.RimWorld.Ideology">
-		<Operation Class="PatchOperationAdd">
+				<Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<elf_wood>0.02</elf_wood>
