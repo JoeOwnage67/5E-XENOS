@@ -4,7 +4,7 @@
 <Patch>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name=PirateBandBase"]/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
 			<elf_wood>0.02</elf_wood>
             <elf_dark>0.02</elf_dark>
@@ -26,7 +26,7 @@
 	
 	<li MayRequire="Ludeon.RimWorld.Royalty">
 		<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<elf_wood>0.02</elf_wood>
 					<elf_dark>0.02</elf_dark>
@@ -48,7 +48,7 @@
 		
 		<li MayRequire="Ludeon.RimWorld.Royalty">
 		<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<elf_wood>0.02</elf_wood>
 					<elf_dark>0.02</elf_dark>
@@ -71,7 +71,7 @@
 		
 		<li MayRequire="Ludeon.RimWorld.Ideology">
 		<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<elf_wood>0.02</elf_wood>
 					<elf_dark>0.02</elf_dark>
