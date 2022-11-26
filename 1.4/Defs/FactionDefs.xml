@@ -164,7 +164,7 @@
 	
 <!-- Orc -->
 	<FactionDef ParentName="TribeSavageBase">
-    	<defName>TribeOrc</defName>
+    	<defName>TribeOrcSavage</defName>
     	<label>Savage Orc Tribe</label>
     	<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
     	<factionIconPath>World/WorldObjects/Expanding/CannibalTribe</factionIconPath>
