@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   
-<!-- remove Stoneborn xenotype -->	
+<!-- remove Stoneborn xenotype and faction -->	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Det's Xenotypes - Stoneborn</li>
@@ -11,6 +11,9 @@
 			<operations>		
 				<li Class="PatchOperationRemove">
           				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
+        			</li>
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/FactionDef[defName="OutlanderRoughStoneborn"]</xpath>
         			</li>
 			</operations>
    		 </match>
