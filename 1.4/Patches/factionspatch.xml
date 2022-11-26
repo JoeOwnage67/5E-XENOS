@@ -22,6 +22,7 @@
 		</value>
 	</Operation>  
 	
+	
 	<li MayRequire="Ludeon.RimWorld.Royalty">
 		<Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeChances</xpath>
@@ -41,7 +42,8 @@
 					<goblin>0.00</goblin>
 					<undead>0.00</undead>
 				</value>
-		</Operation>  	
+		</Operation>
+	</li>
 		
 		<li MayRequire="Ludeon.RimWorld.Royalty">
 		<Operation Class="PatchOperationAdd">
