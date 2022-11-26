@@ -8,12 +8,12 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Normal</success>
-			<operations>		
-				<li Class="PatchOperationRemove">
-          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
-        			</li>
+			<operations>	
 				<li Class="PatchOperationRemove">
           				<xpath>Defs/FactionDef[defName="OutlanderRoughStoneborn"]</xpath>
+        			</li>
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
         			</li>
 			</operations>
    		 </match>
