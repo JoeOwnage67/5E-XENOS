@@ -22,68 +22,6 @@
             <undead>0.02</undead>
 		</value>
 	</Operation>  
-	
-		<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
-				<value>
-					<elf_wood>0.02</elf_wood>
-					<elf_dark>0.02</elf_dark>
-					<dwarf_hill>0.02</dwarf_hill>
-					<dwarf_mountain>0.02</dwarf_mountain>
-					<orc_brutal>0.00</orc_brutal>
-					<warforged>0.02</warforged>
-					<tabaxi>0.02</tabaxi>           
-					<loxodon>0.02</loxodon>
-					<shifter>0.00</shifter>
-					<dragonborn>0.02</dragonborn>
-					<troll>0.02</troll>
-					<halfling>0.00</halfling>
-					<goblin>0.00</goblin>
-					<undead>0.00</undead>
-				</value>
-		</Operation>
-	
 		
-			<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
-				<value>
-					<elf_wood>0.02</elf_wood>
-					<elf_dark>0.02</elf_dark>
-					<dwarf_hill>0.02</dwarf_hill>
-					<dwarf_mountain>0.02</dwarf_mountain>
-					<orc_brutal>0.02</orc_brutal>
-					<warforged>0.02</warforged>
-					<tabaxi>0.02</tabaxi>           
-					<loxodon>0.02</loxodon>
-					<shifter>0.02</shifter>
-					<dragonborn>0.02</dragonborn>
-					<troll>0.02</troll>
-					<halfling>0.02</halfling>
-					<goblin>0.02</goblin>
-					<undead>0.02</undead>
-				</value>
-			</Operation>  	
-		
-		
-		
-				<Operation Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
-				<value>
-					<elf_wood>0.02</elf_wood>
-					<elf_dark>0.02</elf_dark>
-					<dwarf_hill>0.02</dwarf_hill>
-					<dwarf_mountain>0.02</dwarf_mountain>
-					<orc_brutal>0.02</orc_brutal>
-					<warforged>0.02</warforged>
-					<tabaxi>0.02</tabaxi>           
-					<loxodon>0.02</loxodon>
-					<shifter>0.02</shifter>
-					<dragonborn>0.02</dragonborn>
-					<troll>0.02</troll>
-					<halfling>0.02</halfling>
-					<goblin>0.02</goblin>
-					<undead>0.02</undead>
-				</value>
-			</Operation>  	
 			
 </Patch>
