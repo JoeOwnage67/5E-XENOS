@@ -8,20 +8,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Normal</success>
-			<operations>					       
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
-					<value>
-						<Stoneborn>0.05</Stoneborn>
-					</value>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
-					<value>
-						<Stoneborn>0.05</Stoneborn>
-					</value>
-				</li>
-				
+			<operations>		
 				<li Class="PatchOperationRemove">
           				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
         			</li>
