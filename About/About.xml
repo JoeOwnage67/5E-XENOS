@@ -18,7 +18,7 @@
 
 	<modDependencies>
 		<li>
-      		<packageID>sarg.alphagenes</packageId>
+      		<packageId>sarg.alphagenes</packageId>
       		<displayName>Alpha Genes</displayName>  
 		</li>
     	<li>
