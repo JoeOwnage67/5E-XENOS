@@ -52,17 +52,18 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/GeneDef[defName="BTEMa_ElephantEars"]/graphicData/useSkinShader</xpath>
-					<value>
-						<useSkinShader>false</useSkinShader>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
 					<xpath>Defs/GeneDef[defName="BTEMa_NoseElephant"]/graphicData</xpath>
 					<value>
 						<colorType>Skin</colorType>
 					</value>
+				</li>		
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="BTEMa_ElephantEars"]/graphicData</xpath>
+					<value>
+						<useSkinShader>false</useSkinShader>
+					</value>
 				</li>
+				
 				
 				
 				
