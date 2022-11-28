@@ -11,22 +11,22 @@
 			<operations>	
 				<li Class="PatchOperationRemove">
           				<xpath>Defs/FactionDef[defName="OutlanderRoughStoneborn"]</xpath>
-        			</li>
-				<!-- <li Class="PatchOperationRemove">
-          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
-				</li>-->
+        			</li>				
 				<li Class="PatchOperationReplace">
 				<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances/Stoneborn</xpath>
 					<value>
-						<Stoneborn>0.00</Stoneborn>
+						<!-- <Stoneborn>0.00</Stoneborn> -->
 					</value>
 				</li>
-				<li Class="PatchOperationAdd">
+				<li Class="PatchOperationReplace">
 				<xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances/Stoneborn</xpath>
 					<value>
-						<Stoneborn>0.00</Stoneborn>
+						<!-- <Stoneborn>0.00</Stoneborn> -->
 					</value>
         			</li>
+				<li Class="PatchOperationRemove">
+          				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
+				</li>
 			</operations>
    		 </match>
 	</Operation>
