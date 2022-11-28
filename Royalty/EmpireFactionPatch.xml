@@ -5,13 +5,13 @@
 <Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<elf_wood>0.2</elf_wood>
-					<elf_dark>0.2</elf_dark>
-					<dwarf_hill>0.2</dwarf_hill>
-					<warforged>0.2</warforged>
-					<tabaxi>0.2</tabaxi>           
-					<loxodon>0.2</loxodon>
-					<dragonborn>0.2</dragonborn>
+					<elf_wood>0.05</elf_wood>
+					<elf_dark>0.05</elf_dark>
+					<dwarf_hill>0.05</dwarf_hill>
+					<warforged>0.05</warforged>
+					<tabaxi>0.05</tabaxi>           
+					<loxodon>0.05</loxodon>
+					<dragonborn>0.05</dragonborn>
 				</value>
 		</Operation>
   
