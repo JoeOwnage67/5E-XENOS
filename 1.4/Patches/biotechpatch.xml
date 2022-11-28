@@ -9,16 +9,13 @@
             <elf_dark>0.02</elf_dark>
             <dwarf_hill>0.02</dwarf_hill>
             <dwarf_mountain>0.02</dwarf_mountain>
-            <orc_brutal>0.02</orc_brutal>
-            <warforged>0.00</warforged>
+            <orc_brutal>0.02</orc_brutal>            
             <tabaxi>0.02</tabaxi>           
             <loxodon>0.02</loxodon>
             <shifter>0.02</shifter>
-            <dragonborn>0.02</dragonborn>
-            <troll>0.02</troll>
+            <dragonborn>0.02</dragonborn>            
             <halfling>0.02</halfling>
-            <goblin>0.02</goblin>
-            <undead>0.00</undead>
+            <goblin>0.02</goblin>           
 		</value>
 	</Operation>
     
