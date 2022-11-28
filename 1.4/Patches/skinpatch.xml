@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- skin genes no skinshader -->
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[@Name="GeneSkinColorOverride"]</xpath>
+		<value>
+			<graphicData>
+				<useSkinShader>false</useSkinShader>
+			</graphicData>			 
+		</value>
+	</Operation>    
+</Patch>
