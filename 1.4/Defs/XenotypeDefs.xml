@@ -17,6 +17,7 @@
 				<li>Beauty_Beautiful</li>
 				<li>Hair_LongOnly</li>
 				<li>ElongatedFingers</li>
+				<li>Beard_NoBeardOnly</li>
 				
 				<li>Ageless</li>
 				<li>Delicate</li>
@@ -54,7 +55,8 @@
 				<li>Eyes_Gray</li>
 				<li>Hair_SnowWhite</li>
 				<li>Hair_LongOnly</li>
-				<li>ElongatedFingers</li>		
+				<li>ElongatedFingers</li>
+				<li>Beard_NoBeardOnly</li>
 				
 				<li>Ageless</li>
 				<li>Delicate</li>
@@ -163,8 +165,7 @@
 				<li>AG_Skin_DeepGreen</li>
 				<li>AG_Skin_PlantGreen</li>
 				<li>Nose_Pig</li>				
-				<li>AG_LargerBodySize</li>
-				<li>AG_Tusks</li>
+				<li>AG_LargerBodySize</li>				
 				<li>AG_GutturalVoice</li>
 				
 				<li>MaxTemp_LargeIncrease</li>
@@ -200,6 +201,7 @@
 				<li>Body_Standard</li>
 				<li>IntegratedProtection</li> 
 				<li>Eyes_Red</li>
+				<li>Beard_NoBeardOnly</li>
 				
 				<li>Ageless</li>
 				<li>AG_Foodless</li>
@@ -240,7 +242,8 @@
 				<li>Body_Thin</li>
 				<li>Furskin</li>
 				<li>BTEMa_SensitiveWhiskers</li>
-				<li>BTEMa_NoseShort</li>
+				<li>BTEMa_NoseShort</li>			
+				<li>Beard_NoBeardOnly</li>
 											
 				<li>Learning_Fast</li><!-- Curious -->
 				<li>Fertile</li>
@@ -277,7 +280,8 @@
 				<li>Skin_InkBlack</li>
 				<li>Skin_SlateGray</li>
 				<li>Skin_LightGray</li>
-				<!-- <li>AG_LargerBodySize</li>	--> 	 		
+				<!-- <li>AG_LargerBodySize</li>	-->
+				<li>Beard_NoBeardOnly</li>
 																
 				<li>Libido_Low</li>
 				<li>Aggression_DeadCalm</li>
@@ -321,6 +325,7 @@
 				<li>AG_EfficientMandibles</li>
 				<li>AG_GrowlingVoice</li>
 				<li>Beauty_Ugly</li>
+				<li>Beard_NoBeardOnly</li>
 	
 				<li>KillThirst</li>
 				<li>Aggression_Aggressive</li>
@@ -362,6 +367,7 @@
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
 				<li>AG_EggLaying</li>
+				<li>Beard_NoBeardOnly</li>
 				
 				<li>FireResistant</li>
 				<li>MeleeDamage_Strong</li>
