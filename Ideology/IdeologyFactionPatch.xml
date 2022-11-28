@@ -5,20 +5,20 @@
   				<Operation Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<elf_wood>0.02</elf_wood>
-					<elf_dark>0.02</elf_dark>
-					<dwarf_hill>0.02</dwarf_hill>
-					<dwarf_mountain>0.02</dwarf_mountain>
-					<orc_brutal>0.02</orc_brutal>
-					<warforged>0.02</warforged>
-					<tabaxi>0.02</tabaxi>           
-					<loxodon>0.02</loxodon>
-					<shifter>0.02</shifter>
-					<dragonborn>0.02</dragonborn>
-					<troll>0.02</troll>
-					<halfling>0.02</halfling>
-					<goblin>0.02</goblin>
-					<undead>0.02</undead>
+					<elf_wood>0.2</elf_wood>
+					<elf_dark>0.2</elf_dark>
+					<dwarf_hill>0.2</dwarf_hill>
+					<dwarf_mountain>0.2</dwarf_mountain>
+					<orc_brutal>0.2</orc_brutal>
+					<warforged>0.2</warforged>
+					<tabaxi>0.2</tabaxi>           
+					<loxodon>0.2</loxodon>
+					<shifter>0.2</shifter>
+					<dragonborn>0.2</dragonborn>
+					<troll>0.2</troll>
+					<halfling>0.2</halfling>
+					<goblin>0.2</goblin>
+					<undead>0.2</undead>
 				</value>
 			</Operation>  	
   
