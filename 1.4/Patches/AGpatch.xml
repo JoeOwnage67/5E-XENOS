@@ -3,7 +3,7 @@
 <Patch>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName"AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
 			<elf_wood>0.2</elf_wood>
             <elf_dark>0.2</elf_dark>
