@@ -43,7 +43,29 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/FactionDef[defName="TribeCivilMammals"]</xpath>
-				</li>		
+				</li>	
+<!-- skin shader -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/GeneDef[defName="BTEMa_NoseElephant"]/graphicData/useSkinShader</xpath>
+					<value>
+						<useSkinShader>false</useSkinShader>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/GeneDef[defName="BTEMa_ElephantEars"]/graphicData/useSkinShader</xpath>
+					<value>
+						<useSkinShader>false</useSkinShader>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="BTEMa_NoseElephant"]/graphicData</xpath>
+					<value>
+						<colorType>Skin</colorType>
+					</value>
+				</li>
+				
+				
+				
 			</operations>
    		 </match>
 	</Operation>
