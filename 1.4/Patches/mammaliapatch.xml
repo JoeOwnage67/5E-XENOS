@@ -51,7 +51,7 @@
 						<useSkinShader>false</useSkinShader>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/GeneDef[defName="BTEMa_ElephantEars"]/graphicData/useSkinShader</xpath>
 					<value>
 						<useSkinShader>false</useSkinShader>
