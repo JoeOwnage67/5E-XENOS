@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Chronos_Producer</defName>
+		<label>Kronos production facility</label>
+		<description>This is a production machine required to produce Kronos Stones. It is essential to produce Chronos Stone, but its effect destroys the surrounding nature, and its influence expands over time and increases to a maximum of 8.</description>
+        <thingClass>Building</thingClass>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <placeWorkers>
+         <li>PlaceWorker_ShowPlantHarmRadius</li>
+        </placeWorkers>
+		<graphicData>
+			<texPath>Things/Building/Chronos_Producer/Chronos_Producer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+					<cornerTL>Damage/Corner</cornerTL>
+					<cornerTR>Damage/Corner</cornerTR>
+					<cornerBL>Damage/Corner</cornerBL>
+					<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>100</pathCost>
+		<blockWind>false</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>4500</WorkToBuild>
+			<Flammability>0.2</Flammability>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(2,2)</size>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+            <Steel>200</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(86,44,143,255)</glowColor>
+			</li>
+            <li Class="CompProperties_Power">
+              <compClass>CompPowerTrader</compClass>
+              <basePowerConsumption>150</basePowerConsumption>
+            </li>
+			<li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>true</requiresPower>
+				<thingToSpawn>Chronos_Stone</thingToSpawn>
+				<spawnCount>4</spawnCount>
+				<spawnIntervalRange><min>520000</min><max>520000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+            <li Class="CompProperties_PlantHarmRadius">
+             <radiusPerDayCurve>
+               <points>
+                <li>0  , 0</li>
+                <li>3  , 6</li>			
+              </points>
+             </radiusPerDayCurve>
+           </li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Infinity_engineering</designationCategory>
+		<designationHotKey>Misc1</designationHotKey>
+        <specialDisplayRadius>6</specialDisplayRadius>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Infinity_engineering</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Kronosmortar_Producer</defName>
+		<label>Kronos mortar shot facility</label>
+		<description>A facility that produces Kronos mortar shells. It is built using M.R.L manufactured parts, so it is produced automatically and consumes a lot of power instead.</description>
+        <thingClass>Building</thingClass>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <placeWorkers>
+         <li>PlaceWorker_ShowPlantHarmRadius</li>
+        </placeWorkers>
+		<graphicData>
+			<texPath>Things/Building/Kronosmortar_Producer/Kronosmortar_Producer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<damageData>
+					<cornerTL>Damage/Corner</cornerTL>
+					<cornerTR>Damage/Corner</cornerTR>
+					<cornerBL>Damage/Corner</cornerBL>
+					<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>120</pathCost>
+		<blockWind>false</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>4500</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(3,2)</size>
+		<costList>
+		    <MRL_Produce_part>1</MRL_Produce_part>
+			<Plasteel>85</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Steel>150</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(86,44,143,255)</glowColor>
+			</li>
+            <li Class="CompProperties_Power">
+              <compClass>CompPowerTrader</compClass>
+              <basePowerConsumption>500</basePowerConsumption>
+            </li>
+			<li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>true</requiresPower>
+				<thingToSpawn>Shell_Kronosmortar</thingToSpawn>
+				<spawnCount>3</spawnCount>
+				<spawnIntervalRange><min>480000</min><max>480000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Infinity_engineering</designationCategory>
+		<designationHotKey>Misc1</designationHotKey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Infinity_Ranged_Alioth</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>

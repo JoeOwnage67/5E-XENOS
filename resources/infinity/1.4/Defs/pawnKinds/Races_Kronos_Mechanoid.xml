@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <PawnKindDef Name="BaseInfinityKind" Abstract="True">
+    <defaultFactionType>Kronos_fleet</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover> 
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+  </PawnKindDef>
+
+  <ThingDef ParentName="KronosMechanoid">
+    <defName>Mech_Thuban</defName>
+    <label>Thuban</label>
+    <description>과열 크로노스 에너지 무기를 사용하는 크로노스 메카노이드입니다. 과열 에너지를 사용해 맞은 대상을 화상입게 만드며 탄환을 난사해 사방에 있는 적들을 쓸어버리는 역할을 지니고 있습니다. 단단한 장갑을 두르고 있으며 해체시 과열 에너지 제어 부품을 드랍합니다.\n\n가끔 전장에서 파괴된 투반들이 메카노이드에 의해 회수되어 메카노이드 전초기지에서 종종 발견되기도 합니다.</description>
+    <statBases>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <MoveSpeed>3</MoveSpeed>
+    </statBases>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>Thuban</body>
+      <baseBodySize>1.4</baseBodySize>
+      <baseHealthScale>2.3</baseHealthScale>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Termite_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Termite_Death</soundDeath>
+          <soundCall>Pawn_Mech_Termite_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+     </race>
+    <butcherProducts>
+	  <Chronos_Stone>2</Chronos_Stone>
+      <Steel>25</Steel>
+      <Plasteel>10</Plasteel>
+	  <OEM_part>1</OEM_part>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseInfinityKind">
+    <defName>Infinity_Mechanoid_Thuban</defName>
+    <label>Thuban</label>
+    <labelPlural>Thuban</labelPlural>
+    <race>Mech_Thuban</race>
+    <combatPower>300</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Mechanoid/Thuban</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.2</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>Thubanweapon</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--==== 엘타닌과 라스타반 ===-->
+
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>Rastaban_Eltanin</defName>
+    <label>Rastaban_Eltanin</label>
+    <description>엘타닌과 라스타반은 쌍동이 개체로 만들어졌습니다. 각각 저각.고각 공격을 맡고 있습니다.\n\n엘타닌은 고각 포격 역할을 지닌 크로노스 메카노이드입니다. 사정거리가 길고 고각무기 이기때문에 저각 보호막을 무시합니다. 대신 공격 불가 범위가 존재하며 데미지또한 낮습니다.\n\n라스타반은 저각 로켓을 발사하는 크로노스 메카노이드입니다. 저각으로 발사해 땅에 떨어진후 2초후 폭발하여 피해를 줍니다. 대신 사정거리가 엘타닌보다 낮으며 조준 속도가 느립니다.</description>
+    <statBases>
+      <MoveSpeed>2.1</MoveSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <PsychicSensitivity>0.35</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.3</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>MechanicalTermite</body>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>3</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Termite_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Termite_Death</soundDeath>
+          <soundCall>Pawn_Mech_Termite_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+	  <Chronos_Stone>3</Chronos_Stone>
+	  <MRL_Produce_part>1</MRL_Produce_part>
+      <Steel>25</Steel>
+      <Plasteel>5</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseInfinityKind">
+    <defName>Infinity_Mechanoid_Rastaban</defName>
+    <label>Rastaban</label>
+    <race>Rastaban_Eltanin</race>
+    <combatPower>340</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Mechanoid/Infinity_Mechanoid_Rastaban</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>Rastaban</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseInfinityKind">
+    <defName>Infinity_Mechanoid_Eltanin</defName>
+    <label>Eltanin</label>
+    <race>Rastaban_Eltanin</race>
+    <combatPower>360</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Mechanoid/Infinity_Mechanoid_Eltanin</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>Eltanin</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--==== 알타이스 ===-->
+
+  <ThingDef ParentName="KronosMechanoid">
+    <defName>Mech_Altais</defName>
+    <label>Altais</label>
+    <description>알타이스는 인피니티가 개발한 전차형 병기입니다. 센티피드의 모습을 지니고 있으며 평험해 보이지만 탄이랑 폭발 자체를 막아버리는 시스템이 장착하고 있어 그 때문에 아무리 총을 갈겨도 쉽게 쓰러지지 않으며 천천히 전진해 적들을 몰살해 버립니다. 하지만 화염과 둔탁함에는 반응하지 않으며 장갑이 화염에 쉽게 노출되는 형식으로 만들어져 있어 화상데미지를 입혀 파괴해야 합니다. 하지만 강철로 만들어져 불에 붙지 않기 때문에 화상 데미지를 주는 무기 또는 대알타이스 무기를 사용해야합니다.</description>
+    <statBases>
+      <Flammability>1</Flammability>
+      <MoveSpeed>2.2</MoveSpeed>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.5</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>MechanicalCentipede</body>
+      <baseBodySize>1.9</baseBodySize>
+      <baseHealthScale>2.1</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <energy_control_components>1</energy_control_components>
+      <precision_aiming_parts>1</precision_aiming_parts>
+      <Kronos_Core>1</Kronos_Core>
+      <Steel>40</Steel>
+      <Plasteel>15</Plasteel>
+      <Uranium>10</Uranium>
+      <ComponentSpacer>1</ComponentSpacer>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Abstract="true" Name="BaseAltais" ParentName="BaseInfinityKind">
+    <race>Mech_Altais</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Mechanoid/Infinity_Mechanoid_Altais</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseAltais">
+    <defName>Infinity_Mechanoid_Altais</defName>
+    <label>Altais</label>
+    <combatPower>650</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>Altais</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+</Defs>

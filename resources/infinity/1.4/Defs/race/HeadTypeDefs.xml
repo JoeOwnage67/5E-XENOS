@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+  
+  <HeadTypeDef ParentName="AverageBase" Name="Infinity_MaleHeadtypeBase" Abstract="True">
+	<gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>Infinity_AverageNormalA</defName>
+    <graphicPath>Pawn/Infinity/head/Infinity_Head1</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>Infinity_AverageNormalB</defName>
+    <graphicPath>Pawn/Infinity/head/Infinity_Head2</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>Infinity_AverageNormalC</defName>
+    <graphicPath>Pawn/Infinity/head/Infinity_Head3</graphicPath>
+  </HeadTypeDef>
+
+</Defs>

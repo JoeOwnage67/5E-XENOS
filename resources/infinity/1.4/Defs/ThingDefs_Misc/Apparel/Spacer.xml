@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--==== 정찰 헬멧 ====-->
+
+  <ThingDef ParentName="ApparelInfinityHelmetReconBase">
+    <defName>Infinity_ReconHelmet</defName>
+    <label>Infinity Recon Helmet</label>
+    <description>A reconnaissance armor worn by the Infinity. It is inferior in performance to the power helmet, but the defense is reliable.</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityHelmetReconBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Infinity_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Recon Armor/Infinity_ReconHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>Infinity_Headgear</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>15750</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+      <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>65</Plasteel>
+      <Cloth>85</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Recon Armor/Infinity_ReconHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+<!--==== 정찰 아머 ====-->
+
+  <ThingDef ParentName="ApparelInfinityArmorReconBase">
+    <defName>Infinity_ReconArmor</defName>
+    <label>Infinity Recon Armor</label>
+    <description>This is reconnaissance armor used by Infinity soldiers. It has lower defense than power armor, but if it is not heavy, it reduces damage.</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityArmorReconBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Recon Armor/Infinity_ReconArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>9</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <EquipDelay>11</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+      <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <Uranium>10</Uranium>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Recon Armor/Infinity_ReconArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+<!--==== 파워 헬멧 아머 ====-->
+
+  <ThingDef ParentName="ApparelInfinityArmorHelmetPowerBase">
+    <defName>Infinity_PowerArmorHelmet</defName>
+    <label>Infinity Power helmet</label>
+    <description>It is a power helmet worn by Infinity. It reduces damage and has a combat assistance system attached.\n\nThe Infinity Power Helmet is only used by high-ranking or human Infinities, and it is a sign that it is dangerous for Infinity soldiers to come from the enemy wearing this armor. It also means to inform</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityArmorHelmetPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisites>
+	   <li>PoweredArmor</li>
+       <li>Infinity_PowerArmor</li>  
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Power Armor/Infinity_Power_Armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>15750</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>Infinity_Headgear</li>
+    </thingCategories>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+      <MoveSpeed>-0.4</MoveSpeed>
+      <MeleeHitChance>0.5</MeleeHitChance>
+      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>75</Plasteel>
+      <Cloth>155</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Power Armor/Infinity_Power_Armor</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+<!--==== 파워 아머 ====-->
+
+  <ThingDef ParentName="ApparelInfinityArmorPowerBase">
+    <defName>Infinity_PowerArmor</defName>
+    <label>Infinity Power Armor</label>
+    <description>This is the power armor used by the Infinity Fleet. A high defense and damage reduction system is applied, and the heat is low, so it does not catch fire easily.\n\nInfinity Power Armor is used only by high-ranking or human Infinities, and Infinity soldiers coming to the enemy wear this armor. Coming means signaling that danger is imminent.</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityArmorPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisites>
+	   <li>PoweredArmor</li>
+       <li>Infinity_PowerArmor</li>  
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Power Armor/Power_Armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.3</Flammability>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+      <MoveSpeed>-0.8</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>125</Plasteel>
+      <Uranium>50</Uranium>
+      <Cloth>225</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Power Armor/Power_Armor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+<!--==== 어썰트 아머 ====-->
+
+  <ThingDef ParentName="ApparelInfinityArmor_AssaultPowerBase">
+    <defName>Infinity_Assault_PowerArmor</defName>
+    <label>Infinity  Assault Power Armor</label>
+    <description>This is a short-range power armor used by the Infinity Fleet. It is mainly worn by short-range soldiers and has fast movement speed and auxiliary systems.\n\nInfinity power armor is only used by high-ranking or human infinities, and the fact that infinity soldiers coming from the enemy wear this armor. It means to signal that danger is imminent.</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityArmor_AssaultPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Assault_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Assault PowerArmor/Assault_PowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.45</ArmorRating_Heat>
+      <EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.75</EnergyShieldEnergyMax>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.17</IncomingDamageFactor>
+      <MoveSpeed>0.9</MoveSpeed>
+      <MeleeHitChance>1</MeleeHitChance>
+      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>	  
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+      <MeleeDamageFactor MayRequire="Ludeon.RimWorld.Biotech">0.15</MeleeDamageFactor>
+      <RangedCooldownFactor MayRequire="Ludeon.RimWorld.Biotech">-0.05</RangedCooldownFactor>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+      <Plasteel>120</Plasteel>
+      <Uranium>65</Uranium>
+      <Cloth>200</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Assault PowerArmor/Assault_PowerArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Shield">
+        <energyLossPerDamage>0.025</energyLossPerDamage>
+        <energyOnReset>7.5</energyOnReset>
+        <minDrawSize>1.5</minDrawSize>
+        <maxDrawSize>1.8</maxDrawSize>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--==== 어썰트 파워 헬멧 ====-->
+
+  <ThingDef ParentName="Assault_PowerArmorHelmetPowerBase">
+    <defName>Infinity_Assault_PowerArmorHelmet</defName>
+    <label>Infinity Assault Power helmet</label>
+    <description>A short-range power helmet worn by Infinity. Although the defense has been reduced, the movement speed has increased and the combat assistance system has been greatly increased.\n\nThe Infinity Power Helmet is only used by high-ranking or human Infinities, and it is dangerous for Infinity soldiers to come from the enemy wearing this armor. It means giving a signal that it is going to end.</description>
+  </ThingDef>
+
+  <ThingDef Name="Assault_PowerArmorHelmetPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Assault_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Assault PowerArmor/Assault_PowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>15750</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.5</Flammability>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>Infinity_Headgear</li>
+    </thingCategories>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+      <MoveSpeed>0.6</MoveSpeed>
+      <MeleeHitChance>0.5</MeleeHitChance>
+      <MeleeDodgeChance>0.5</MeleeDodgeChance>
+      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>90</Plasteel>
+      <Cloth>155</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Assault PowerArmor/Assault_PowerArmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+<!--==== 크로노스 나이트 파워 헬멧 ====-->
+
+  <ThingDef ParentName="Kronos_PowerArmorHelmetPowerBase">
+    <defName>Infinity_Kronos_PowerArmorHelmet</defName>
+    <label>Infinity Kronos Knight Power helmet</label>
+    <description>A night power helmet worn by the Infinity. It is concentrated only on defense, so movement speed is slow, but it has high defense.\n\nThe Infinity Knight Power Helmet is used only by high-ranking or human-age Infinities, and it is dangerous for Infinity soldiers coming from the enemy to wear this armor. It means giving a signal that it is going to end.</description>
+  </ThingDef>
+
+  <ThingDef Name="Kronos_PowerArmorHelmetPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Kronos_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Kronos Launcher Armor/Infinity_Kronos_PowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>18500</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.3</Flammability>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>Infinity_Headgear</li>
+    </thingCategories>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+      <MoveSpeed>-0.6</MoveSpeed>
+      <ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Steel>250</Steel>
+      <Plasteel>125</Plasteel>
+      <Cloth>225</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Kronos Launcher Armor/Infinity_Kronos_PowerArmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Knight</hediff>
+        <part>Head</part>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Knight</defName>
+    <label>Knight armor</label>
+    <description>A body-enhancing ritual system mounted on a Night Armor helmet.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(255,255,255,255)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+	<stages>
+      <li>
+	    <capMods>
+		    <li>
+		    	<capacity>Manipulation</capacity>
+		    	<offset>0.1</offset>
+	    	</li>
+		    <li>
+		    	<capacity>Sight</capacity>
+		    	<offset>0.1</offset>
+	    	</li>
+ 	    </capMods> 
+        <naturalHealingFactor>0.3</naturalHealingFactor>
+        <totalBleedFactor>0.6</totalBleedFactor>
+      </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+  </HediffDef>
+
+<!--==== 크로노스 나이트 아머 ====-->
+
+  <ThingDef ParentName="ApparelInfinityArmor_KronosPowerBase">
+    <defName>Infinity_Kronos_PowerArmor</defName>
+    <label>Infinity Kronos Knight Armor</label>
+    <description>Chronos Knight Armor is mainly used by heavily armed soldiers. It has high defense and durability, and is equipped with a Chronos Launcher that fires Chronos bullets.\n\nInfinity Power Armor is used only by high-ranking or human Infinity. And the fact that the Infinity Soldiers coming from the enemy wear this armor is a sign that it is dangerous.</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityArmor_KronosPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>Kronos_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Kronos Launcher Armor/Kronos_Launcher_Armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>85000</WorkToMake>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.2</IncomingDamageFactor>
+      <MoveSpeed>-1.5</MoveSpeed>
+      <MeleeHitChance>1.5</MeleeHitChance>
+      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>	  
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <costList>
+	  <MRL_Produce_part>1</MRL_Produce_part>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Plasteel>225</Plasteel>
+      <Uranium>95</Uranium>
+      <Cloth>225</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Kronos Launcher Armor/Kronos_Launcher_Armor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>Chronos_Stone</ammoDef>
+        <ammoCountPerCharge>3</ammoCountPerCharge>
+        <baseReloadTicks>3</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch Kronos grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>17.9</range>
+        <minRange>3</minRange> 
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_Kronos</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseIncendiaryProjectile">
+    <defName>Proj_Kronos</defName>
+    <label>incendiary grenade</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Kronosmortar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>45</speed>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Kronos_explosion</damageDef>
+      <explosionRadius>1.8</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--==== 팬텀 아머 ====-->
+
+  <ThingDef ParentName="ApparelInfinityArmor_phantomPowerBase">
+    <defName>Infinity_phantom_PowerArmor</defName>
+    <label>Infinity  phantom Power Armor</label>
+    <description>This is an infinity sniper phantom power armor.\n\nThis is an armor used by night snipers, instead of giving up defense, it specializes in flammability and fire defense. It is equipped with an exoskeleton system so you can aim and shoot faster.\n\nInfinity Power Armor is used only by the high ranks or the Infinity of the human era, and it means that the Infinity soldiers coming from the enemy wearing this armor are a signal that it is dangerous.</description>
+  </ThingDef>
+
+  <ThingDef Name="ApparelInfinityArmor_phantomPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>Assault_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Infinity_phantom/Infinity_phantom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <MaxHitPoints>480</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.05</AimingDelayFactor>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+      <RangedCooldownFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RangedCooldownFactor>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>125</Plasteel>
+      <Uranium>95</Uranium>
+      <Cloth>155</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Infinity_phantom/Infinity_phantom</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+<!--==== 팬텀 파워 헬멧 ====-->
+
+  <ThingDef ParentName="phantom_PowerArmorHelmetPowerBase">
+    <defName>Infinity_phantom_PowerArmorHelmet</defName>
+    <label>Infinity phantom Power helmet</label>
+    <description>This is a phantom power helmet worn by Infinity Knight snipers.\n\nThe helmet has a fire hit assist system attached, so instead of giving up defense, it was made to focus on firepower.\n\nInfinity Power helmets are only for high ranks or humans. It is used by the Infinity of the times, and the fact that the enemy Infinity soldiers come wearing this armor is a sign that it is dangerous.</description>
+  </ThingDef>
+
+  <ThingDef Name="phantom_PowerArmorHelmetPowerBase" ParentName="InfinitySpacerArmorBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>Assault_PowerArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>Infinity_PolarisBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Infinity_phantom/Infinity_phantomHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.40</ArmorRating_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>Infinity_Headgear</li>
+    </thingCategories>
+    <equippedStatOffsets>
+	  <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+      <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+      <RangedCooldownFactor MayRequire="Ludeon.RimWorld.Biotech">-0.1</RangedCooldownFactor>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Steel>115</Steel>
+      <Plasteel>60</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Infinity_phantom/Infinity_phantomHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+  
+</Defs>

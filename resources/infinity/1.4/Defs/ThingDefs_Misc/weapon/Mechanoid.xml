@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Thubanweapon</defName>
+    <label>O.E.M.G -Buße-</label>
+    <description>투반이 사용하는 과열 무기입니다. 적들을 태워버리는 용도로 만들어 졌으며 연발로 발사해 사방에 있는 적들을 공격합니다.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Thubanweapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.1</drawSize>
+    </graphicData>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.48</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Thubanweapon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ThubanGun</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <burstShotCount>25</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>25</range>
+        <soundCast>Shot_MegrezGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ThubanGun</defName>
+    <label>Bullet Thuban</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_Thuban</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>overheating_Kronos_Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetrationBase>0.21</armorPenetrationBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Missile</defName>
+    <label>high angle rocket -Erlösung-</label>
+    <description>고각형 로켓포입니다 엘타닌이 사용하는 로켓포로 먼거리에서 포격 지원 역할을 하고 있습니다. 데미지가 약하지만 엄청 긴 사정거리를 지니고 있으며 고각으로 발사하기 때문에 저각 보호막을 무시하지만 내산지에는 영향을 줄수 없으며 최소 사정거리가 존재해 안에 들어온 적들을 공격하지 못합니다.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Thubanweapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>20</Mass>
+      <AccuracyTouch>0</AccuracyTouch>
+      <AccuracyShort>0.09</AccuracyShort>
+      <AccuracyMedium>0.03</AccuracyMedium>
+      <AccuracyLong>0.01</AccuracyLong>
+      <RangedWeapon_Cooldown>14</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>0</relicChance>
+    <weaponTags>
+      <li>Rastaban</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Rastaban</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <forcedMissRadius>12</forcedMissRadius>
+        <minRange>12.9</minRange> 
+        <warmupTime>3</warmupTime>
+        <range>45.2</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThumpCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <noiseRadius>4</noiseRadius>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Bullet_Rastaban</defName>
+    <label>thump bomb</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_Rastaban</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Kronos_explosion</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <explosionRadius>1.7</explosionRadius >
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Eltanin</defName>
+    <label>low angle rocket -Erlösung-</label>
+    <description>라스타반이 사용하는 저각용 유탄포입니다. 고각 로켓포보다 사정거리가 짧지만 데미지가 높아졌으며 빗나감이 줄어졌습니다. 하지만 유탄형식으로 만들어져 터지려면 폭발지연 시간이 필요하며 최소 사정거리가 존재합니다.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Thubanweapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>23</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.56</AccuracyLong>
+      <RangedWeapon_Cooldown>12</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>0</relicChance>
+    <weaponTags>
+      <li>Eltanin</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Eltanin</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <forcedMissRadius>3</forcedMissRadius>
+        <minRange>5</minRange> 
+        <warmupTime>6</warmupTime>
+        <range>24.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThumpCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <noiseRadius>4</noiseRadius>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Eltanin</defName>
+    <label>thump bomb</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Kronosmortar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Kronos_explosion</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <explosionRadius>2.5</explosionRadius >
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>35</speed>
+      <explosionDelay>150</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+<!--==== 대형포 ===-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos_Heavy_gun</defName>
+    <label>charge blaster shot</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>88</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="Gun_Heavy_gunBase">
+    <label>Heavy gun -Erbsünde-</label>
+    <description>A pulse-charged rapid-fire blaster for area suppressive fire. Heavy cooling allows long, deadly bursts.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Heavy_gun_Erbsünde</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>35</Mass>
+      <AccuracyTouch>0.20</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_Heavy_gunBase">
+    <defName>Kronos_Heavy_gun</defName>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos_Heavy_gun</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>19.5</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Altais</li>
+    </weaponTags>
+  </ThingDef>
+
+<!--==== 저격포 ===-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos_Sniper</defName>
+    <label>charge blaster shot</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <speed>88</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="KronosSniper_gunBase">
+    <label>Sniper -Erbsünde-</label>
+    <description>A pulse-charged rapid-fire blaster for area suppressive fire. Heavy cooling allows long, deadly bursts.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Sniper_Erbsünde</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>35</Mass>
+      <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="KronosSniper_gunBase">
+    <defName>Kronos_Sniper</defName>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos_Sniper</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <minRange>3.9</minRange>
+        <range>28.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Altais</li>
+    </weaponTags>
+  </ThingDef>
+
+</Defs>

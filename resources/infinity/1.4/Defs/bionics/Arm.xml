@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Infinity_partsArm</defName>
+    <label>인피니티 기계 파츠 팔</label>
+    <labelNoun>기계 파츠 팔</labelNoun>
+    <description>인피니티의 기계 파츠 팔입니다.</description>
+    <woundAnchorRange>0</woundAnchorRange>
+    <descriptionHyperlinks><ThingDef>Infinity_partsArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>Infinity_partsArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartInfinityBionicBase">
+    <defName>Infinity_partsArm</defName>
+    <label>인피니티 기계 파츠</label>
+    <description>인피니티 종족들이 만든 기계 파츠입니다. 생체공학으로 이루어져 있지 않으며 오직 기계 파츠로만 만들어졌습니다.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_partsArmInstall</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_parts</researchPrerequisite>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Infinity_partsArmInstall</defName>
+    <label>인피니티 파츠 팔</label>
+    <description>인피니티 파츠 팔 설치</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_partsArm</ThingDef>
+      <HediffDef>Infinity_partsArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>인피니티 파츠 팔 해체.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_partsArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_partsArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Infinity_Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <addsHediff>Infinity_partsArm</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Infinity_beef_partsArm</defName>
+    <label>인피니티 강화 파츠 팔</label>
+    <labelNoun>보이드 강화 파츠 팔</labelNoun>
+    <description>강화 파츠 팔입니다.</description>
+    <woundAnchorRange>0</woundAnchorRange>
+    <descriptionHyperlinks><ThingDef>Infinity_beef_partsArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>Infinity_beef_partsArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartInfinityBionicBase">
+    <defName>Infinity_beef_partsArm</defName>
+    <label>인피니티 강화 파츠 팔</label>
+    <description>인피니티 강화 파츠 팔입니다. 일반 기계 파츠에서 강화되어 효율성이 증가했습니다.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_beef_InstallpartsArm</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Infinity_partsArm>1</Infinity_partsArm>
+      <Plasteel>45</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_tighten_parts</researchPrerequisite>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Infinity_beef_InstallpartsArm</defName>
+    <label>인피니티 강화 파츠 팔</label>
+    <description>인피니티 강화 파츠 팔 장착</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_beef_partsArm</ThingDef>
+      <HediffDef>Infinity_beef_partsArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>강화 파츠 팔 해체.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_beef_partsArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_beef_partsArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Infinity_Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <addsHediff>Infinity_beef_partsArm</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Infinity_battle_partsArm</defName>
+    <label>인피니티 전투 파츠 팔</label>
+    <labelNoun>전투 파츠 팔</labelNoun>
+    <description>전투용 파츠 팔입니다.</description>
+    <woundAnchorRange>0</woundAnchorRange>
+    <descriptionHyperlinks><ThingDef>Infinity_battle_partsArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>blade</label>
+            <capacities>
+              <li>Electric_shock_Poke</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>1.8</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>Infinity_battle_partsArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+        <statOffsets> 
+          <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+          <MeleeHitChance>0.25</MeleeHitChance>
+	      <AimingDelayFactor>-0.05</AimingDelayFactor>  
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartInfinityBionicBase">
+    <defName>Infinity_battle_partsArm</defName>
+    <label>인피니티 전투 파츠 팔</label>
+    <description>전투 전투 파츠 팔입니다. 전투 보조 시스템이 갖춰져 있어 전투에 효율적으로 작용하지만 그대가로 작업속도가 감소합니다.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_battle_InstallpartsArm</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Infinity_partsLeg>1</Infinity_partsLeg>
+      <Plasteel>35</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_battle_parts</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Infinity_battle_InstallpartsArm</defName>
+    <label>인피니티 전투 팔입니다.</label>
+    <description>인피니티 전투 팔 설치</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_battle_partsArm</ThingDef>
+      <HediffDef>Infinity_battle_partsArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>인피니티 전투 팔 해체</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_battle_partsArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_battle_partsArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Infinity_Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <addsHediff>Infinity_battle_partsArm</addsHediff>
+  </RecipeDef>
+
+</Defs>

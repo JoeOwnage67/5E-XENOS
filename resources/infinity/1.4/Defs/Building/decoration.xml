@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>Infinity_TileA</defName>
+    <label>Infinity tileA</label>
+    <renderPrecedence>230</renderPrecedence>
+    <description>인피니티 시설에서 볼수 있는 바닥으로 일자선으로 푸른 발판이 존재합니다.</description>
+    <texturePath>Things/Building/Terrain/TileA</texturePath>
+    <statBases>
+      <Flammability>0.1</Flammability>
+      <WorkToBuild>650</WorkToBuild>
+      <Cleanliness>0.1</Cleanliness>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+    <designationHotKey>Misc8</designationHotKey>
+    <researchPrerequisites>
+      <li>Infinity_engineering</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>Infinity_TileB</defName>
+    <label>Infinity tileB</label>
+    <renderPrecedence>230</renderPrecedence>
+    <description>인피니티 시설에서 볼수 있는 바닥으로 일자선으로 푸른 발판이 존재합니다.</description>
+    <texturePath>Things/Building/Terrain/TileB</texturePath>
+    <statBases>
+      <Flammability>0.1</Flammability>
+      <WorkToBuild>650</WorkToBuild>
+      <Cleanliness>0.1</Cleanliness>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+    <designationHotKey>Misc8</designationHotKey>
+    <researchPrerequisites>
+      <li>Infinity_engineering</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>Infinity_TileC</defName>
+    <label>Infinity tileC</label>
+    <renderPrecedence>230</renderPrecedence>
+    <description>인피니티 시설에서 볼수 있는 바닥으로 일자선으로 푸른 발판이 존재합니다.</description>
+    <texturePath>Things/Building/Terrain/TileC</texturePath>
+    <statBases>
+      <Flammability>0.1</Flammability>
+      <WorkToBuild>650</WorkToBuild>
+      <Cleanliness>0.1</Cleanliness>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+    <designationHotKey>Misc8</designationHotKey>
+    <researchPrerequisites>
+      <li>Infinity_engineering</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+</Defs>

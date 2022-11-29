@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_Handgun</defName>
+    <label>Infinity Chronos Handgun</label>
+    <description>Kronos pistol. It is an ordinary pistol, but it uses Chronos bullets and is carried by rear units or commanders.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_Handgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.54</AccuracyTouch>
+      <AccuracyShort>0.62</AccuracyShort>
+      <AccuracyMedium>0.52</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chronos_Stone>2</Chronos_Stone>
+      <Steel>65</Steel>
+      <Plasteel>5</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos_Handgun</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>18</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li></li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos_Handgun</defName>
+    <label>크로노스 에너지 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.21</armorPenetrationBase>
+      <stoppingPower>2.5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_long_gun</defName>
+    <label>Infinity Chronos long gun</label>
+    <description>It is a dedicated long gun mainly used by Infinity snipers and uses Chronos bullets.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_long_gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.20</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_BoltActionRifle>1</Gun_BoltActionRifle>
+      <Chronos_Stone>2</Chronos_Stone>
+      <Steel>45</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronoslong_gun</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>35</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Infinity_sniping</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronoslong_gun</defName>
+    <label>크로노스 에너지 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_Submachine</defName>
+    <label>Infinity Chronos SMG</label>
+    <description>A submachine gun used by Infinity soldiers. The submachine gun position specializes in close combat and uses Chronos bullets.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_Submachine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.61</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
+      <AccuracyLong>0.21</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_HeavySMG>1</Gun_HeavySMG>
+      <Chronos_Stone>4</Chronos_Stone>
+      <Steel>45</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos_Submachine</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>21</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Infinity_Kronos</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos_Submachine</defName>
+    <label>크로노스 에너지 기관 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>2.1</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_carabine</defName>
+    <label>Infinity Chronos assault rifle</label>
+    <description>It is an assault rifle used by Infinity soldiers. It is a standard weapon mainly used by ordinary soldiers. It has high versatility and fights using Chronos bullets.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+      <researchPrerequisites>
+	   <li>PrecisionRifling</li>
+       <li>Infinity_Ranged_Weapon</li>  
+	  </researchPrerequisites>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.62</AccuracyTouch>
+      <AccuracyShort>0.56</AccuracyShort>
+      <AccuracyMedium>0.62</AccuracyMedium>
+      <AccuracyLong>0.46</AccuracyLong>
+      <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_AssaultRifle>1</Gun_AssaultRifle>
+      <Chronos_Stone>4</Chronos_Stone>
+      <Steel>65</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>29</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Infinity_Kronos</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos</defName>
+    <label>크로노스 에너지 돌격 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.23</armorPenetrationBase>
+      <stoppingPower>2.5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_Sniper_Rifle</defName>
+    <label>Infinity Chronos Sniper Rifle</label>
+    <description>A newly developed Kronos sniper rifle. It has a shorter range than a sniper rifle, but increases the ranged accuracy and fires 2 shots in a row.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_Sniper_Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.15</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_SniperRifle>1</Gun_SniperRifle>
+      <Chronos_Stone>3</Chronos_Stone>
+      <Steel>75</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_KronosSniper_Rifle</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>25</ticksBetweenBurstShots>
+        <range>42</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Infinity_sniping</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_KronosSniper_Rifle</defName>
+    <label>크로노스 에너지 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>31</damageAmountBase>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_sAnti_Tank</defName>
+    <label>Infinity Chronos Anti-Tank Rifle</label>
+    <description>A Kronos mass-produced anti-tank rifle designed to destroy Mechanoids. It was developed to hit enemy bases or enemy mechanoids by shooting from a distance with high penetration. However, it has low accuracy, slow reload speed and low damage.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_sAnti_Tank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>15</Mass>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_SniperRifle>1</Gun_SniperRifle>
+      <Chronos_Stone>6</Chronos_Stone>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_KronosAnti_Tank</defaultProjectile>
+        <warmupTime>2.8</warmupTime>
+        <range>48</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>30</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Infinity_sniping</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_KronosAnti_Tank</defName>
+    <label>크로노스 에너지 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>135</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_minigun</defName>
+    <label>Infinity Chronos minigun</label>
+    <description>It is a firearm that has been modified from a minigun to a Chronos style. A support weapon designed to subdue enemies that attack in large numbers. Although the firepower of the minigun has decreased, the accuracy and reload speed of the minigun have been slightly increased, the number of ammunition has been increased, and the performance of the Kronos has been improved.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<recipeMaker>
+      <researchPrerequisites>
+	   <li>MultibarrelWeapons</li>
+       <li>Infinity_Ranged_Weapon</li>  
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	</recipeMaker>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_Minigun>1</Gun_Minigun>
+      <Chronos_Stone>5</Chronos_Stone>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos_Minigun</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <burstShotCount>40</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <range>32.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Predator</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos_Minigun</defName>
+    <label>크로노스 에너지 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Minigun_Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="InfinityBaseGun">
+    <defName>Infinity_Kronos_Shotgun</defName>
+    <label>Infinity Chronos Shotgun</label>
+    <description>A shotgun used by Infinity soldiers. It uses a Chronos round and has a shotgun position, so it's mainly used by assault squads to subdue nearby enemies.</description>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Infinity_Kronos_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.61</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.12</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_ChainShotgun>1</Gun_ChainShotgun>
+      <Chronos_Stone>4</Chronos_Stone>
+      <Steel>65</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kronos_Shotgun</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>13</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+	  <li>shock_troop</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kronos_Shotgun</defName>
+    <label>크로노스 에너지 샷건 탄환</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.23</armorPenetrationBase>
+      <stoppingPower>4.5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>Kronos_grenade</defName>
+    <label>Kronos grenade</label>
+    <description>Kronos grenade used by the Infinity Grenadiers. Although the damage is weak, it cannot kill the enemies, but the Kronos explosion incapacitates the enemies, and the explosive power is strong and destroys buildings.</description>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_Ranged_Weapon</researchPrerequisite>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Kronos_grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.3</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Chronos_Stone>5</Chronos_Stone>
+      <Plasteel>15</Plasteel>
+      <Steel>50</Steel>
+      <Chemfuel>80</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>Grenadier</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw frag grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>9</range>
+        <forcedMissRadius>1.5</forcedMissRadius>
+        <warmupTime>3</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Kronos_grenadeFrag</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>6.2</explosiveRadius>
+        <explosiveDamageType>building_collapse</explosiveDamageType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="Kronos_grenadeProjectile" ParentName="BaseGrenadeProjectile" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Kronos_grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <explosionRadius>2.5</explosionRadius >
+      <damageAmountBase>15</damageAmountBase>
+      <damageDef>building_collapse</damageDef>
+      <explosionDelay>400</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Kronos_grenadeProjectile">
+    <defName>Kronos_grenadeFrag</defName>
+    <label>과부하 수류탄</label>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Infinity_chronos_pistol_epic</defName>
+    <label>chronos pistol epic</label>
+    <description>인피니티 지휘관 개체가 사용하는 배럴 권총입니다. 사방에 발사해 접근하는 적들을 제압하는 용도로 만들어졌으며 사정거리가 조금 증가했습니다.</description>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/chronos_pistol_epic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+    <statBases>
+      <Mass>15</Mass>
+      <AccuracyTouch>0.44</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.52</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_pistol_epic</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <range>24</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>4</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+	  <li>factionLeader</li>
+	  <li>wanderer</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_pistol_epic</defName>
+    <label>Bullet Phecda</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.24</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

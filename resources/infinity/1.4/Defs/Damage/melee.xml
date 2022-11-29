@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="CutBase">
+    <defName>Electric_Cut</defName>
+    <label>Electric</label>
+	<additionalHediffs>
+      <li>
+        <hediff>Mental_Electric_Power</hediff>
+		<severityPerDamageDealt>0.005</severityPerDamageDealt>
+		<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>Electric_Poke</defName>
+    <label>Electric</label>
+	<additionalHediffs>
+      <li>
+        <hediff>Mental_Electric_Power</hediff>
+		<severityPerDamageDealt>0.005</severityPerDamageDealt>
+		<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>  
+  
+</Defs>

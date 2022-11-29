@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Infinity_partsLeg</defName>
+    <label>인피니티 기계 파츠 다리</label>
+    <labelNoun>기계 파츠 다리</labelNoun>
+    <description>An installed bionic leg.</description>
+    <descriptionHyperlinks><ThingDef>Infinity_partsLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Infinity_partsLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartInfinityBionicBase">
+    <defName>Infinity_partsLeg</defName>
+    <label>인피니티 기계 파츠 다리</label>
+    <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_partsInstall</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_parts</researchPrerequisite>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Infinity_partsInstall</defName>
+    <label>인피니티 기계 파츠 다리</label>
+    <description>인피니티 기계 파츠 다리 설치.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_partsLeg</ThingDef>
+      <HediffDef>Infinity_partsLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>인피니티 기계 파츠 다리 해체.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_partsLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_partsLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Infinity_Leg</li>
+    </appliedOnFixedBodyParts>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <addsHediff>Infinity_partsLeg</addsHediff>
+  </RecipeDef>
+
+     <!--=강화=-->
+
+   <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Infinity_beef_partsLeg</defName>
+    <label>인피니티 강화 파츠 다리</label>
+    <labelNoun>강화 파츠 다리</labelNoun>
+    <description>인피니티 강화 파츠 다리입니다.</description>
+    <descriptionHyperlinks><ThingDef>Infinity_beef_partsLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Infinity_beef_partsLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.45</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartInfinityBionicBase">
+    <defName>Infinity_beef_partsLeg</defName>
+    <label>인피니티 강화 파츠</label>
+    <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_beef_partsLegInstall</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Infinity_partsLeg>1</Infinity_partsLeg>
+      <Plasteel>45</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_tighten_parts</researchPrerequisite>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Infinity_beef_partsLegInstall</defName>
+    <label>인피니티 강화 파츠 다리</label>
+    <description>인피니티 강화 파츠 다리 설치.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_beef_partsLeg</ThingDef>
+      <HediffDef>Infinity_beef_partsLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>인피니티 강화 파츠 다리 해체.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_beef_partsLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_beef_partsLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Infinity_Leg</li>
+    </appliedOnFixedBodyParts>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <addsHediff>Infinity_beef_partsLeg</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Infinity_battle_partsLeg</defName>
+    <label>인피니티 전투 파츠 다리</label>
+    <labelNoun>인피니티 전투 파츠 다리</labelNoun>
+    <description>인피니티 전투 파츠 다리입니다.</description>
+    <descriptionHyperlinks><ThingDef>Infinity_battle_partsLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Infinity_battle_partsLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+        <statOffsets> 
+          <MoveSpeed>0.25</MoveSpeed>
+          <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages> 
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartInfinityBionicBase">
+    <defName>Infinity_battle_partsLeg</defName>
+    <label>인피니티 전투 파츠 다리</label>
+    <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_battle_partsLegInstall</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Infinity_partsLeg>1</Infinity_partsLeg>
+      <Plasteel>35</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_battle_parts</researchPrerequisite>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Infinity_battle_partsLegInstall</defName>
+    <label>인피니티 전투 파츠 다리</label>
+    <description>인피니티 전투 파츠 다리 설치.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_battle_partsLeg</ThingDef>
+      <HediffDef>Infinity_battle_partsLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>인피니티 전투 파츠 다리 해체.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_battle_partsLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_battle_partsLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Infinity_Leg</li>
+    </appliedOnFixedBodyParts>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <addsHediff>Infinity_battle_partsLeg</addsHediff>
+  </RecipeDef>
+ 
+</Defs>

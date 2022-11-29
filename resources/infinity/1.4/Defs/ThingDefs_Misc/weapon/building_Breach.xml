@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Infinity_Battering_Ram</defName>
+    <label>Electric shock pole</label>
+    <description>데스 트루퍼가 사용하는 배터링 램으로 적들의 정착지의 벽을 뚫기 위해 만들어진 무기입니다.</description>
+    <graphicData>
+      <texPath>Things/weapon/Melee weapon/Battering_Ram</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<equippedAngleOffset>0</equippedAngleOffset>
+    <weaponTags Inherit="False">
+       <li>through</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+		  <li>Demolish</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Infinity_Sledgehammer</defName>
+    <label>Sledgehammer</label>
+    <description>데스 트루퍼가 사용하는 슬레지해머로 적들의 정착지의 벽을 부수는 용도로 만들었습니다.</description>
+    <graphicData>
+      <texPath>Things/weapon/Melee weapon/Sledgehammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<equippedAngleOffset>0</equippedAngleOffset>
+    <weaponTags Inherit="False">
+       <li>through</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

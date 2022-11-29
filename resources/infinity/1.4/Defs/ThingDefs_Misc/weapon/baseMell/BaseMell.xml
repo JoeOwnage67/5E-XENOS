@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+       <defName>Infinity_Headgear</defName>
+       <label>Infinity Headgear</label>
+       <parent>Infinity_Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+       <defName>Infinity_Apparel</defName>
+       <label>Infinity Apparel</label>
+       <parent>Apparel</parent>
+    </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>Infinity_odule_system</defName>
+    <label>Infinity module</label>
+    <parent>Infinity_Apparel</parent>
+  </ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Infinity_WeaponsMelee</defName>
+		<label>Infinity Melee Weapons</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Infinity_Gun</defName>
+		<label>Infinity Ranged Weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Altais_Weapons</defName>
+		<label>Altais Weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Infinity_BigDipper_Gun</defName>
+		<label>Infinity BigDipper Weapons</label>
+		<parent>Infinity_Gun</parent>
+	</ThingCategoryDef>
+
+  <ThingDef Name="InfinityMeleeWeapon" Abstract="True" ParentName="BaseMeleeWeapon">
+    <techLevel>Industrial</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories Inherit="False">
+      <li>Infinity_WeaponsMelee</li>
+    </thingCategories>
+	<inspectorTabs>
+		<li>ITab_Art</li>
+	</inspectorTabs>		
+	<comps>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+        <li Class="CompProperties_Biocodable"/>
+		<li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		</li>
+	</comps>		
+  </ThingDef>
+
+	<ThingDef Name="InfinityBaseGun" Abstract="true" ParentName="BaseWeapon">
+        <techLevel>Industrial</techLevel>
+        <weaponClasses>
+          <li>Ranged</li>
+        </weaponClasses>
+        <inspectorTabs>
+         <li>ITab_Art</li>
+        </inspectorTabs>
+        <generateCommonality>0.05</generateCommonality>
+        <comps>
+         <li Class="CompProperties_Biocodable"/>
+         <li Class="CompProperties_Art">
+           <nameMaker>NamerArtWeaponGun</nameMaker>
+           <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+           <minQualityForArtistic>Excellent</minQualityForArtistic>
+         </li>
+         <li>
+          <compClass>CompQuality</compClass>
+         </li>
+        </comps>
+        <smeltable>true</smeltable>
+        <smeltProducts>
+          <Chronos_Stone>1</Chronos_Stone>
+        </smeltProducts>
+		<recipeMaker>
+            <researchPrerequisite>Infinity_Ranged_Weapon</researchPrerequisite>
+            <skillRequirements>
+              <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+              <li>Kronos_Weapon_bench</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Infinity_Gun</li>
+		</thingCategories>	
+	</ThingDef>
+
+	<ThingDef Name="InfinityBigDipperBaseGun" Abstract="true" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+        <weaponClasses>
+          <li>Ranged</li>
+        </weaponClasses>
+        <inspectorTabs>
+         <li>ITab_Art</li>
+        </inspectorTabs>
+        <generateCommonality>0.05</generateCommonality>
+        <comps>
+         <li Class="CompProperties_Biocodable"/>
+         <li Class="CompProperties_Art">
+           <nameMaker>NamerArtWeaponGun</nameMaker>
+           <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+           <minQualityForArtistic>Excellent</minQualityForArtistic>
+         </li>
+         <li>
+          <compClass>CompQuality</compClass>
+         </li>
+        </comps>
+        <smeltable>true</smeltable>
+        <smeltProducts>
+          <Kronos_Core>1</Kronos_Core>
+        </smeltProducts>
+		<recipeMaker>
+            <researchPrerequisite>Infinity_Ranged_asterism</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <recipeUsers Inherit="False">
+              <li>Infinity_PolarisBench</li>
+            </recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Infinity_BigDipper_Gun</li>
+		</thingCategories>	
+	</ThingDef>
+	
+</Defs>

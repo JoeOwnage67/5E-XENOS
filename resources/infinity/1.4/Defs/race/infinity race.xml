@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.RaceSettings>
+    <defName>Infinity_Settings</defName>
+     <pawnKindSettings>          
+            <alienrefugeekinds>
+                <li>
+                    <kindDefs>
+                        <li>Infinity_Memory_wanderer</li>
+                    </kindDefs>
+                    <chance>5</chance>
+                </li>
+            </alienrefugeekinds>
+            <startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Infinity_Memory_wanderer</li>
+							</kindDefs>
+							<chance>10</chance>
+						</li>
+					</pawnKindEntries>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+								<li>Infinity_Memory_wanderer</li>
+                            </kindDefs>
+                            <chance>5</chance>
+                        </li>
+                    </pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+                </li>
+            </alienwandererkinds>
+      </pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="InfinityRaceBase">
+    <defName>Infinity</defName>
+    <label>Infinity</label>
+    <description>The Infinity are a race made up of machines. They are made up of robots and use their own equipment and parts.\n\nThese are people from outer galaxies, each with different ancient human memories, but only a few. Most of them are made up of self-duplicates. \n\nAccording to the records of people I've met, the Infinities are found to be using similar techniques from the Transcendental world using a time-related stone called Chronos. I'm guessing it's a robot with a transcendental origin or a transcendental ego from an outer galaxy.</description>
+    <alienRace>
+        <generalSettings>
+          <maleGenderProbability>1</maleGenderProbability>
+		  <immuneToAge>false</immuneToAge>
+          <canLayDown>true</canLayDown>
+		  <maxDamageForSocialfight>1</maxDamageForSocialfight>
+          <immuneToXenophobia>true</immuneToXenophobia>
+            <disallowedTraits>
+             <li>
+			     <defName MayRequire="Ludeon.RimWorld.Biotech">Delicate</defName>
+			 </li> 
+             <li>
+			     <defName>Asexual</defName>
+			 </li> 
+             <li>
+			     <defName>Bisexual</defName>
+			 </li>
+             <li>
+			     <defName>DrugDesire</defName>
+			 </li>
+             <li>
+			     <defName>Gay</defName>			 
+			 </li>
+			 <li>
+                 <defName>Psychopath</defName>			 
+			 </li>
+			 <li>
+				 <defName>Neurotic</defName>
+			 </li>
+			  <li>
+				 <defName>Cannibal</defName>
+			 </li>
+			 <li>
+				 <defName>DislikesMen</defName>
+			 </li>	 
+			 <li>
+				 <defName>DislikesWomen</defName>
+			 </li>
+			 <li>
+				 <defName>Pyromaniac</defName>
+			 </li>
+			  <li>
+				 <defName>Wimp</defName>
+			  </li>
+			  <li>
+				 <defName>BodyPurist</defName>
+			  </li>	
+			  <li>
+				  <defName>Beauty</defName>
+			  </li>		 
+			   <li>
+				  <defName>Immunity</defName>
+			   </li>
+				<li>
+				  <defName>Tough</defName>
+				</li>			   
+                <li>
+		          <defName>AnnoyingVoice</defName>		
+				</li>
+				<li>
+				  <defName>Nudist</defName>
+				</li>
+			</disallowedTraits>
+           <minAgeForAdulthood>0</minAgeForAdulthood>
+      <alienPartGenerator>
+		<headTypes><!--머리-->
+		   <li>Infinity_AverageNormalA</li>
+		   <li>Infinity_AverageNormalB</li>
+		   <li>Infinity_AverageNormalC</li>
+		</headTypes><!--머리-->
+		<bodyTypes><!--몸-->
+           <li>Male</li>
+		</bodyTypes><!--몸-->
+		<headBodyPartDef>Infinity_head</headBodyPartDef>
+        <headOffset>(0.0, 0.08)</headOffset>
+        <!-- 신체 드로잉 크기 -->
+        <customDrawSize>(1.0, 1.0)</customDrawSize>
+        <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+        <customPortraitDrawSize>(1.0,1.2)</customPortraitDrawSize>
+		<atlasScale>2</atlasScale>
+        		<colorChannels>
+					<li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+							<li>
+                               <weight>1</weight>
+                               <only>RGBA(1.0,1.0,1.0,1)</only>
+							</li>
+						</options>
+					</first>				
+					</li>
+        		</colorChannels>
+       </alienPartGenerator>
+       </generalSettings>
+
+        <graphicPaths>
+              <head>Pawn/Infinity/head/</head>
+              <body>Pawn/Infinity/body/</body>			
+        </graphicPaths>
+
+        <styleSettings>
+           <li>
+             <key>HairDef</key>
+              <value>
+                 <hasStyle>false</hasStyle>
+              </value>
+           </li>
+           <li>
+             <key>BeardDef</key>
+              <value>
+                 <hasStyle>false</hasStyle>
+              </value>
+           </li>
+            <li>
+                <key>TattooDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+        </styleSettings>
+
+        <thoughtSettings>
+			<replacerList>
+				<li>
+					<original>DefeatedMechCluster</original>
+					<replacer>DefeatedMechCluster_Infinity</replacer> 
+				</li>						
+            </replacerList>
+			<cannotReceiveThoughts>
+             <li>SoakingWet</li>
+             <li>SleptInBarracks</li>
+             <li>ObservedLayingCorpse</li>
+             <li>ObservedLayingRottingCorpse</li>
+             <li>Insulted</li>
+			 <li>Naked</li>			
+			 <li>Pain</li>			
+			 <li>SharedBed</li>
+			 <li>SleepDisturbed</li>			
+			 <li>SleptOnGround</li>			
+			 <li>SleptInBarracks</li>
+			 <li>EnvironmentCold</li>
+			 <li>EnvironmentHot</li>
+			 <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
+			 <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
+			 <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversalDemanded</li>
+             <li MayRequire="Ludeon.RimWorld.Ideology">BioSculpterDespised</li>
+             <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentStandard</li>
+			 <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentHorrible</li>
+			 <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentAbhorrent</li>
+             <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleApparelRequirementNotMet</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <relationSettings>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>         
+        </relationSettings>
+        <raceRestriction>
+          <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+            <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+			  <li>None</li>
+              <li>HairColor</li>
+			  <li>Melanin</li>
+              <li>BodyType</li>
+			  <li>Nose</li>
+			  <li>Jaw</li>
+			  <li>Ears</li>
+			  <li>Hands</li>
+			  <li>Head</li>
+			  <li>Headbone</li>
+			  <li>Voice</li>
+            </blackEndoCategories>
+            <blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+              <li>Body_Fat</li>
+              <li>Body_Hulk</li>
+              <li>Body_Thin</li>
+
+			  <li>Ears_Pig</li>
+			  <li>Ears_Human</li>
+			  <li>Ears_Floppy</li>
+			  <li>Ears_Cat</li>
+			  <li>Ears_Pointed</li>
+
+			  <li>Nose_Human</li>
+			  <li>Nose_Pig</li>
+
+			  <li>Jaw_Baseline</li>
+			  <li>Jaw_Heavy</li>
+
+			  <li>Head_Gaunt</li>
+			  <li>Hands_Pig</li>
+              <li>Hair_BaldOnly</li>
+			  <li>Beard_Always</li>
+
+			  <li>ElongatedFingers</li>
+			  <li>Headbone_MiniHorns</li>
+			  <li>Headbone_CenterHorn</li>
+
+			  <li>VoicePig</li>
+			  <li>VoiceRoar</li>
+
+	          <li>Skin_LightGray</li>
+              <li>Skin_SlateGray</li>
+			  <li>Skin_Blue</li>
+			  <li>Skin_Purple</li>
+			  <li>Skin_PaleRed</li>
+			  <li>Skin_DeepRed</li>
+			  <li>Skin_PaleYellow</li>
+			  <li>Skin_DeepYellow</li>
+			  <li>Skin_Orange</li>
+			  <li>Skin_Green</li>
+
+			  <li>Furskin</li>
+			  <li>Eyes_Red</li>
+			  <li>Eyes_Gray</li>
+
+			  <li>Brow_Heavy</li>
+			  <li>Tail_Furry</li>
+			  <li>Tail_Smooth</li>
+			  <li>FacialRidges</li>
+
+			  <li>Beauty_VeryUgly</li>
+			  <li>Beauty_Ugly</li>
+
+			  <li>Nearsighted</li>
+            </blackGeneList>
+		      <apparelList>
+           <!--==== 산업시대 ===-->
+                <li>Infinity_Bulletproof_Helmet</li>
+			    <li>Infinity_Apparel_FlakVest</li>
+				<li>Infinity_FlakJacket</li>
+
+                <li>Infinity_Apparel_Heavy_FlakVest</li>
+				<li>Infinity_Apparel_Combat_Engineer_FlakVest</li>
+
+				<li>Infinity_heavy_Bulletproof_Helmet</li>
+                <li>Infinity_heavy_Apparel</li>
+
+                <li>Infinity_sniping_Head</li>
+                <li>Infinity_sniping_Apparel</li>
+
+                <li>Infinity_Ghillie_suit</li>
+                <li>Infinity_Ghillie_suit_Hood</li>
+
+
+           <!--==== 우주시대 ===-->
+				
+				<li>Infinity_PowerArmorHelmet</li>
+				<li>Infinity_PowerArmor</li>
+
+                <li>Infinity_ReconHelmet</li>
+                <li>Infinity_ReconArmor</li>
+
+                <li>Infinity_Assault_PowerArmorHelmet</li>
+                <li>Infinity_Assault_PowerArmor</li>
+
+                <li>Infinity_phantom_PowerArmor</li>
+				<li>Infinity_phantom_PowerArmorHelmet</li>
+
+                <li>Infinity_Kronos_PowerArmor</li>
+                <li>Infinity_Kronos_PowerArmorHelmet</li>
+           <!--==== 특수아머 ===-->
+				
+				<li>Death_Trooper_ArmorHelmet</li>
+				<li>Death_Trooper_PowerArmor</li>
+
+                <li>Death_Trooper_sniping_Helmet</li>
+                <li>Death_Trooper_sniping_Armor</li>
+
+           <!--==== 작업용 ===-->
+
+                <li>Infinity_HAZMAT_Helmet</li>
+				<li>Infinity_HAZMAT_Armor</li>
+
+           <!--==== 모듈 ===-->
+
+                <li>Apparel_module_system_bulletproof</li>
+                <li>Apparel_module_system_melee</li>
+                <li>Apparel_module_system_shooting</li>
+                <li>Apparel_module_system_heavy_armor</li>
+
+           <!--==== 전투 모듈 ===-->
+
+                <li>Apparel_module_system_work</li>
+                <li>Apparel_module_system_EP</li>
+                <li>Apparel_module_system_Medicine</li>
+                <li>Apparel_module_system_Crafting</li>
+                <li>Apparel_module_system_Intellectual</li>
+             </apparelList>
+			    <whiteApparelList>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackTox</li>
+
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_SmokepopBelt</li>
+                    <li>Apparel_backpack</li>
+					<li>Apparel_CSDrone</li>
+                    <li>Apparel_BSDrone</li>
+                    <li>Apparel_BSDrone</li>
+		    	</whiteApparelList>
+            <buildingList>
+			</buildingList>
+            	<weaponList>
+				</weaponList>
+        </raceRestriction>
+    </alienRace>
+    <statBases>
+	<!--기본-->
+      <MarketValue>3000</MarketValue>
+	  <Flammability>0.3</Flammability>
+      <MoveSpeed>4.2</MoveSpeed>
+      <Fertility MayRequire="Ludeon.RimWorld.Biotech">0.1</Fertility>
+	  <MentalBreakThreshold>0.30</MentalBreakThreshold>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ToxicResistance>5</ToxicResistance>
+	  <ToxicEnvironmentResistance>5</ToxicEnvironmentResistance>
+	  <ImmunityGainSpeed>3</ImmunityGainSpeed>
+	  <CarryingCapacity>95</CarryingCapacity>
+	  <MeatAmount>0</MeatAmount>
+	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <LeatherAmount>45</LeatherAmount>
+      <Mass>45</Mass>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.45</CertaintyLossFactor>
+	  <IncomingDamageFactor>0.85</IncomingDamageFactor>
+	  <PainShockThreshold>1.2</PainShockThreshold>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <InjuryHealingFactor>1.5</InjuryHealingFactor>
+      <LifespanFactor>1</LifespanFactor>
+  <!-- 전투 -->
+      <MeleeDodgeChance>1.2</MeleeDodgeChance>
+      <MeleeHitChance>0.5</MeleeHitChance>
+      <AimingDelayFactor>0.9</AimingDelayFactor>
+      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+	<!--사교-->
+	  <NegotiationAbility>1.0</NegotiationAbility> <!--외교 영향력-->
+	  <SellPriceFactor>1.0</SellPriceFactor> <!--거래 가격 개선-->
+	  <SocialImpact>0.8</SocialImpact> <!--사회적 영향력-->
+    <!--건설-->
+	  <ConstructionSpeed>1.1</ConstructionSpeed>
+	<!--제작-->
+	  <ButcheryMechanoidEfficiency>0.5</ButcheryMechanoidEfficiency> <!--메카노이드 분해 효율-->
+	  <ButcheryMechanoidSpeed>1.1</ButcheryMechanoidSpeed> <!--메카노이드 분해 속도-->
+	  <SmeltingSpeed>1.1</SmeltingSpeed> <!--금속 제련 속도-->
+	  <!--<SmithingSpeed>1.2</SmithingSpeed>--> <!--제련 속도-->
+	  <GeneralLaborSpeed>0.8</GeneralLaborSpeed> <!--재단 속도-->
+	<!--조리-->
+	  <ButcheryFleshEfficiency>0.5</ButcheryFleshEfficiency> <!--도축 효율-->
+	  <ButcheryFleshSpeed>1.1</ButcheryFleshSpeed> <!--도축 속도-->
+	  <FoodPoisonChance>1.1</FoodPoisonChance> <!--식중독 확률-->
+	  <CookSpeed>1.1</CookSpeed> <!--조리 속도-->
+	<!--수면-->
+	  <RestRateMultiplier>1.1</RestRateMultiplier>
+	<!--재배-->
+	  <PlantWorkSpeed>1.1</PlantWorkSpeed>
+  <!--의학및연구-->
+      <ResearchSpeed>1.1</ResearchSpeed>  <!--연구 속도-->
+      <MedicalTendQuality>0.5</MedicalTendQuality>
+      <MedicalTendSpeed>1.1</MedicalTendSpeed>
+      <DrugSynthesisSpeed>1.1</DrugSynthesisSpeed>
+      <MedicalSurgerySuccessChance>1.0</MedicalSurgerySuccessChance>
+  <!--채굴-->
+	  <MiningSpeed>1.1</MiningSpeed>
+	  <MiningYield>0.5</MiningYield>     
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>1.8</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>10000</lifeExpectancy>
+      <leatherDef>Plasteel</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <hasGenders>true</hasGenders>
+	  <fleshType>Infinity_Normal</fleshType>
+	  <body>Infinity_body</body>
+	  <bloodDef>Infinity_energy</bloodDef>
+      <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>999</gestationPeriodDays>
+      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <soundCallIntervalRange>9999</soundCallIntervalRange>
+      <litterSizeCurve>
+        <points>
+          <li>(0, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+                <li>
+                    <def>HumanlikeBaby</def>
+                    <minAge>1</minAge>
+                </li>
+                <li>
+                    <def>HumanlikeChild</def>
+                    <minAge>2</minAge>
+                </li>
+                <li>
+                    <def>HumanlikeTeenager</def>
+                    <minAge>3</minAge>
+                </li>
+                <li>
+                    <def>HumanlikeAdult</def>
+                    <minAge>4</minAge>
+                </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(800,0)</li>
+          <li>(1200,40)</li>
+          <li>(1500,70)</li>
+          <li>(1800,100)</li>
+          <li>(2000,20)</li>
+          <li>(2400,3)</li>
+          <li>(2500,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>Infinity_body</li>
+      </hediffGiverSets>
+    </race>
+    <butcherProducts>
+      <Steel>115</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </butcherProducts>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+      <li>CureScaria</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+    </recipes>
+</AlienRace.ThingDef_AlienRace>
+</Defs>

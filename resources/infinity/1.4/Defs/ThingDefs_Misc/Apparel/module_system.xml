@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="module_system" ParentName="ApparelNoQualityBase" Abstract="True">
+    <thingCategories Inherit="False">
+      <li>Infinity_odule_system</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+    <generateAllowChance>0</generateAllowChance>
+
+    <recipeMaker>
+      <researchPrerequisite>Infinity_module_system</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers Inherit="False">
+          <li>Infinity_Apparel_Workbench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+    </recipeMaker>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+		<li>EVA</li>
+        <li>IndustrialBasic</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+ <!--======== 작업 ========-->
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_work</defName>
+    <label>module system(work)</label>
+    <description>This is a work module that Infinities use during non-combat. Efficient in horticulture, construction, and mining operations, they are mainly worn by worker ego.</description>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>9500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ImmunityGainSpeed>-1</ImmunityGainSpeed>
+	  <MiningSpeed>-0.2</MiningSpeed>
+      <SmoothingSpeed>0.3</SmoothingSpeed>
+	  <MiningYield>0.5</MiningYield> 
+	  <PlantWorkSpeed>0.3</PlantWorkSpeed>
+	  <ConstructionSpeed>0.3</ConstructionSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_Medicine</defName>
+    <label>module system(Medicine)</label>
+    <description>Infinity is a medical module that increases the healing efficiency of the wounded. It is a module used only for medical purposes and increases the treatment speed and treatment efficiency.</description>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>9500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ImmunityGainSpeed>-1</ImmunityGainSpeed>
+      <MedicalTendQuality>0.4</MedicalTendQuality>
+      <DrugSynthesisSpeed>0.3</DrugSynthesisSpeed>
+      <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_Crafting</defName>
+    <label>module system(Crafting)</label>
+    <description>It is a work module used by Infinities to craft weapons and equipment, and increases the speed of smelting and crafting.</description>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system6</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ImmunityGainSpeed>-1</ImmunityGainSpeed>
+	  <ButcheryMechanoidEfficiency>0.4</ButcheryMechanoidEfficiency>
+	  <ButcheryMechanoidSpeed>0.2</ButcheryMechanoidSpeed>
+	  <SmeltingSpeed>0.2</SmeltingSpeed>
+	  <GeneralLaborSpeed>0.4</GeneralLaborSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_Intellectual</defName>
+    <label>module system(Intellectual)</label>
+    <description>This module is used when researching non-combat. Increase research to allow for faster research.</description>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ImmunityGainSpeed>-1.5</ImmunityGainSpeed>
+      <ResearchSpeed>0.2</ResearchSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+ <!--======== 전투 ========-->
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_bulletproof</defName>
+    <label>battle module system(bulletproof)</label>
+    <description>It is a bulletproof exoskeleton module used in battle. It is mainly used by Infinity main soldiers, and when equipped, increases defense and lowers the spirit stick.</description>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_Apparel</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system8</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.5</MoveSpeed>
+	  <ImmunityGainSpeed>-1.5</ImmunityGainSpeed>
+	  <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/module_system/bulletproof</wornGraphicPath>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_EP</defName>
+    <label>battle module system(Explosion protection)</label>
+    <description>An exoskeleton module with blast-proof protection, which gains protection against bluntness, but loses protection against bullets.</description>
+    <recipeMaker>
+      <researchPrerequisite>Infinity_Apparel</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system9</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.5</MoveSpeed>
+	  <ImmunityGainSpeed>-1.5</ImmunityGainSpeed>
+	  <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/module_system/EP</wornGraphicPath>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_heavy_armor</defName>
+    <label>battle module system(heavy armor)</label>
+    <description>This is an exoskeleton module with heavy armor protection. It has high defense and can last for a long time because it reduces damage, but evasion and movement speed are slowed by its weight.</description>
+    <recipeMaker>
+      <researchPrerequisites>
+	   <li>MultiAnalyzer</li>
+       <li>Infinity_module_system</li>  
+	  </researchPrerequisites>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system7</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Apparel_module_system_EP>1</Apparel_module_system_EP>
+	  <Apparel_module_system_bulletproof>1</Apparel_module_system_bulletproof>
+      <Plasteel>25</Plasteel>
+      <Steel>95</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ImmunityGainSpeed>-1.5</ImmunityGainSpeed>
+	  <IncomingDamageFactor>-0.2</IncomingDamageFactor>
+      <MeleeDodgeChance>-2.1</MeleeDodgeChance>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <AimingDelayFactor>0.1</AimingDelayFactor>
+      <MoveSpeed>-1.25</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/module_system/heavy_armor</wornGraphicPath>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_melee</defName>
+    <label>battle module system(melee)</label>
+    <description>This is an exoskeleton module focused solely on close combat. It's focused only on close combat and is not as rigid as a heavy armored exoskeleton, but it has a miniature shield and has a close combat aid.</description>
+    <recipeMaker>
+      <researchPrerequisites>
+	   <li>MultiAnalyzer</li>
+       <li>Infinity_module_system</li>  
+	  </researchPrerequisites>
+    </recipeMaker>
+    <thingClass>Apparel</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+	  <Apparel_module_system_bulletproof>1</Apparel_module_system_bulletproof>
+      <Apparel_ShieldBelt>1</Apparel_ShieldBelt>
+      <Plasteel>15</Plasteel>
+      <Steel>85</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>11500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ImmunityGainSpeed>-1.5</ImmunityGainSpeed>
+	  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+	  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <MeleeHitChance>1.2</MeleeHitChance>
+      <MoveSpeed>1.25</MoveSpeed>
+    </equippedStatOffsets>
+    <comps>
+      <li Class="CompProperties_Shield">
+        <energyOnReset>3.5</energyOnReset>
+      </li>
+    </comps>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/module_system/Almost</wornGraphicPath>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="module_system">
+    <defName>Apparel_module_system_shooting</defName>
+    <label>battle module system(Ranged)</label>
+    <description>An exoskeleton module that supports long distances. It enhances the user's movement and vision to show high accuracy and fast aiming speed, but has low defense.</description>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisites>
+	   <li>Fabrication</li>
+       <li>Infinity_module_system</li>  
+	  </researchPrerequisites>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/module_system/module_system4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+	  <Apparel_module_system_bulletproof>1</Apparel_module_system_bulletproof>
+      <Plasteel>45</Plasteel>
+      <Steel>115</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>11500</WorkToMake>
+      <Mass>0.25</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.05</ArmorRating_Heat>
+	  <ImmunityGainSpeed>-1.5</ImmunityGainSpeed>
+      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.1</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/module_system/lightgloves</wornGraphicPath>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

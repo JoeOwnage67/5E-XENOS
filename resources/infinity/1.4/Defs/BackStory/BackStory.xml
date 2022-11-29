@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef Abstract="True" Name="BaseInfinityEgoBackStory">
+		<bodyTypeMale>Male</bodyTypeMale>	
+        <bodyTypeFemale>Male</bodyTypeFemale>
+		<shuffleable>true</shuffleable>
+	<forcedHediffs>
+		<li>Chronos_Blood</li>
+	</forcedHediffs>  
+	</AlienRace.AlienBackstoryDef>	
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_observer</defName>
+		<title>인피니티 관찰자</title>
+		<titleShort>관찰자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 수많은 세계를 관찰하고 기록하는 사서같은 인피니티입니다. 모든 인피니티 함대 서버 네트워크로 수많은 데이터를 기록하여 책으로 남기는 역할을 하고 있으며 지금도 우리은하를 포함해 모든 사건들을 기록하고 있습니다.\n\n관찰자는 모습을 그닥 보이지 않는 인피니티들입니다. 하지만 가끔 직접 모습을 드러내지만 혼자 있는걸 좋아하고 오직 기록만 하고 다니기에 가까워지기 어렵습니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Mining</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>						
+		</skillGains>
+		<workDisables>
+		   <li>Crafting</li>
+           <li>Social</li>
+           <li>Animals</li>
+		   <li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityEgoBackStory">
+		<defName>Infinity_Chauvinism</defName>
+		<title>인피니티 우월 주의자</title>
+		<titleShort>우월 주의자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 자신이 나약한 인간의 육체를 버려 초월했다고 믿는 인피니티입니다.\n\n[PAWN_nameDef]은 다른 종족들은 나약한 하등 종족으로 보고있어. 그들을 하등하고 나약한 노예로 보고 있으며 인피니티는 우월한 종족이라고 생각하고 있습니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>						
+		</skillGains>
+		<forcedTraits>
+			<Xenophobia>1</Xenophobia>
+            <Abrasive>0</Abrasive>
+		</forcedTraits>
+		<spawnCategories>
+		    <li>Sentry</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityEgoBackStory">
+		<defName>Infinity_Annihilator</defName>
+		<title>인피니티 말살자</title>
+		<titleShort>말살자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 그때의 사건으로 인간에 대한 혐오를 가지게된 인피니티입니다.\n\n[PAWN_nameDef]은 원래 먼저 다가가 대화하고 친해지려는 사람이였습니다. 여러 종족이 발견되고 있는 은하에서 여러 종족들 한테 먼저 다가갔으며 친해지고 호전적이여도 먼저 대화했습니다. 인간또한 그랬죠 하지만 한 변화계 제국에서 일이 터지면서 한순간에 모습이 바꿨습니다. 인간을 절대적으로 혐오하고 그들을 인간의 탈을 쓴 쓰레기라고 생각하고 있습니다.\n\n"그들은 원래 우리와 같았어 먼저 다가가고 대화로 풀려고 했지. 인간들 한테도... 하지만 그 행성의 사건으로 그들은 인간을 혐오에 빠지게 되었지."</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>5</value>
+			</li>						
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<Xenophobia>1</Xenophobia>
+		</forcedTraits>
+		<spawnCategories>
+		    <li>Sentry</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityEgoBackStory">
+		<defName>Infinity_Alien_Races</defName>
+		<title>인피니티 제노 탐험가</title>
+		<titleShort>제노 탐험가</titleShort>
+		<baseDesc>[PAWN_nameDef]은 인피니티가 되기전부터 외계인에 관심이 많았습니다.\n\n[PAWN_nameDef]은 인피니티가 된이후 외계인을 찾기위해 마침 외은하로 나갈려던 함대에 합류하여 활동하였습니다. 하지만 수천년동안 여러 행성을 돌아다녀도 새로운 외계 생물체만 발견될뿐 지성을 가진 외계인은 발견하지 못해 실망하고 말았습니다.\n\n하지만 수백년이 지날때 한 은하에서 인간과 비슷하지만 그들의 모습이 달팽이.켄타우로스를 포함해 여러 동물귀랑 꼬리를 가진 생명체들이 발견되고 있는 은하가 있다는 소문을 듣고 필요한 물품들을 들고 그은하로 향하는 함대에 합류했습니다.\n\n(뭐 사실은 그 은하가 사실 우리 은하하는게 알게되면 살짝 실망하겠지만요)</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>						
+		</skillGains>
+		<forcedTraits>
+			<Xenophobia>-1</Xenophobia>
+		</forcedTraits>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_activation</defName>
+		<title>인피니티 인격 활성체</title>
+		<titleShort>인격 활성체</titleShort>
+		<baseDesc>[PAWN_nameDef]은 인격 활성화입니다.\n\n[PAWN_nameDef]은 인격 복제체중 하나였습니다. 하지만 자아가 성장하면서 스스로 생각하고 움직이며 '인간'처럼 행동하는게 발견되자 그를 인격 활성체로 불렸으며 새로운 과거의 지식을 넣은뒤 새로운 동료로 받아 드렸습니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>						
+			<li>
+				<key>Intellectual</key>
+				<value>5</value>
+			</li>						
+			<li>
+				<key>Mining</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_drones</defName>
+		<title>인피니티 엔지니어</title>
+		<titleShort>엔지니어</titleShort>
+		<baseDesc>[PAWN_nameDef]은 엔지니어입니다.\n\n[PAWN_nameDef]은 드론 또는 메카노이드를 수리하거나 제조하고 다녔으며 현재도 새로운 메카노이드와 드론들을 제작하고 있을수도 모릅니다.\n\n"</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_excavation</defName>
+		<title>인피니티 유적 발굴병</title>
+		<titleShort>유적 발굴병</titleShort>
+		<baseDesc>[PAWN_nameDef]은 외은하 진출이후 곳곳에서 가끔 발견되는 고대 유적들을 발굴하는 인피니티입니다.\n\n수백년동안 여러 행성을 돌아다녀 외계 유물과 유적들을 발견하였으며 희귀한 유물들을 분석하고 해석하였습니다.\n\n"수많은 유적들을 발견하고 다녓지. 근데 보면 볼수록 어디서 본거같은 유물들 뿐이였어"</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>						
+			<li>
+				<key>Mining</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_deep_sea</defName>
+		<title>인피니티 심해 탐사병</title>
+		<titleShort>심해 탐사병</titleShort>
+		<baseDesc>[PAWN_nameDef]은 외은하 심해 깊속한 곳에 있는 전초기지에서 활동했던 인피니티였습니다.\n\n[PAWN_nameDef]은 심해속에서 살고있는 여러 생물을 기록하고 여러 곳을 수색했으며 위험한 심해 괴물들을 사냥한 전적도 있습니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Adventurer</defName>
+		<title>인피니티 탐험가</title>
+		<titleShort>탐험가</titleShort>
+		<baseDesc>[PAWN_nameDef]수많은 외은하에 존재하는 행성을 탐사하고 다녔습니다.\n\n인피니티의 수명은 엄청 깁니다. 하지만 살아가는 삶을 잃기도 하죠 그래서 일부는 새로운 세계를 보기 위해 외은하로 나가 여러 행성을 탐험하고 다니며 기록하고 다닙니다.\n\n뭐 그들중 불행한 사고로 정지될때도 있지만요</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Collector</defName>
+		<title>인피니티 수집가</title>
+		<titleShort>수집가</titleShort>
+		<baseDesc>[PAWN_nameDef]은 외은하에서 맘에 드는걸 수집하고 다니는 인피니티입니다.\n\n수많은 파괴된 도시또는 유적을 탐사해 쓸만한 유물또는 여러가지를 수집하고 다닙니다. 하지만 가끔 고대유적에 있는 유물과 생명체까지 수집해 가긴 합니다.\n\n그래서 가끔 크로노스 함대 병사들이 고대 유적에 아무것도 없다는건 발견하고 [PAWN_nameDef]을 의심합니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Top</li>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Mechanoid_Hunter</defName>
+		<title>인피니티 메카노이드 헌터</title>
+		<titleShort>메카노이드 헌터</titleShort>
+		<baseDesc>[PAWN_nameDef]은 메카노이드 헌터입니다.\n\n외은하로 날라온 수많은 메카노이드들을 사냥하고 다녔습니다. 자신을 따른 수많은 인피니티 병사들이 정지되었지만 여전히 그는 계속 움직입니다.\n\n오랫동안 수많은 메카노이드들을 분해하고 효율적인 무기를 제작하고 다닌거 때문인지 가끔 무기 제작 의뢰가 오기도 합니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>3</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Engineering</defName>
+		<title>인피니티 생명 공학자</title>
+		<titleShort>생명 공학자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 수많은 생물을 연구하고 기록하는 인피니티입니다.\n\n외은하로 떠나 이후 여러 행성에서 생물과 생태계를 연구하거나 기록하고 다녔으며 우리은하로 온 이유는 생명공학으로 만들어진 생명체에 흥미를 느껴서 왔을지도 모릅니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Cave</defName>
+		<title>인피니티 행성 내부 탐험가</title>
+		<titleShort>행성 내부 탐험가</titleShort>
+		<baseDesc>[PAWN_nameDef]은 외은하에서 동굴 또는 땅 밑을 이용해 행성 내부를 조사하고 다녔습니다.\n\n그는 내부로 들어가 생태계를 발견하며 수많은 희귀 광물과 광석들을 발견하거나 볼수 없었던 풍경을 발견할때도 있지만 가끔 위험한 생물체도 발견되기도 하죠. 뭐 그들은 멈추지 않고 내부를 탐사하지만요.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Mining</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_manager</defName>
+		<title>인피니티 관리자</title>
+		<titleShort>관리자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 자아 복체제들을 관리하는 높은 계급을 지니고 있습니다. 자아 복체제들을 역할을 분리하고 관리하며 또는 지휘를 맡습니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>						
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>5</value>
+			</li>		
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+			<li>Sentrycommander</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Royal_Producer</defName>
+		<title>인피니티 무기 엔지니어</title>
+		<titleShort>무기 엔지니어</titleShort>
+		<baseDesc>[PAWN_nameDef]은 무기를 개발하거나 수리하는 엔지니어입니다. 이들은 적들이 사용하는 무기에 수집해 관찰하고 여러 무기를 만드는거에 집중합니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>						
+            <li>
+                <key>Crafting</key>
+                <value>2</value>
+            </li>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>	
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_Royal_Guard</defName>
+		<title>인피니티 근위대</title>
+		<titleShort>근위대</titleShort>
+		<baseDesc>[PAWN_nameDef]은 외은하에서 함선의 함장으로 현재는 함대를 지키는 정예병사들입니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_medical_manager</defName>
+		<title>인피니티 의료 관리자</title>
+		<titleShort>의료 관리자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 다친 병사들을 관리하는 관리자로 주로 의료를 담당하고 있으며 라스 알하스들한테 의료를 가르칩니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>				
+            <li>
+                <key>Medicine</key>
+                <value>3</value>
+            </li>
+		</skillGains>
+		<spawnCategories>
+		    <li>Sentry</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+
+
+
+
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_lonely_Traveller</defName>
+		<title>인피니티 고독한 방랑자</title>
+		<titleShort>고독한 방랑자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 고독하게 방랑자로 혼자 외은하에서 여러 행성을 다녔고, 현재는 우리은하에 여러 세계를 구경하고 있습니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>						
+		</skillGains>
+		<spawnCategories>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseInfinityBackStory">
+		<defName>Infinity_wanderer_Memory</defName>
+		<title>인피니티 방랑자</title>
+		<titleShort>방랑자</titleShort>
+		<baseDesc>[PAWN_nameDef]은 방랑자입니다. 전투로 의해 패잔병이거나 계속되는 전투에 지쳐 탈주했으며 대부분 떠돌아 다니는 인피니티 병사입니다.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>						
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>	
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+            <li>
+                <key>Construction</key>
+                <value>3</value>
+            </li>
+		</skillGains>
+		<spawnCategories>
+		    <li>wanderer_Memory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>	
+
+</Defs>

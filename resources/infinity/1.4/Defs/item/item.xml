@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Chronos_Stone</defName>
+		<label>Chronos Stone</label>
+		<description>Kronos A Kronos Stone that is used in weapons and other places. It is produced only in the Chronos Producer.\n\nThe Chronos Stone is a time-related stone discovered thousands of years ago. It was a material that could only be seen in the transcendental realm, and was sold in trillions in the transcendental realm. But all the Chronos Stones are related material. It even disappeared somewhere along with the recipe, and many transformation systems tried to restore the Kronos Stone, but the restoration itself was impossible, so it was abandoned. However, several years later, rumors began to circulate that it was owned by the Kronos Fleet, which came from a foreign galaxy, and that some people living in the outskirts who interacted with the Kronos Fleet were using it.</description>
+		<graphicData>
+			<texPath>Things/item/Kronos/Kronos_Stone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>50</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<intricate>true</intricate>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Kronos_Core</defName>
+		<label>Chronos Core</label>
+		<description>The Kronos Core is made of Kronos Stones and other materials, and is used to craft weapons and equipment in the Space Age.\n\nKronos Core is a component made by amplifying Kronos Stones and is a stable but problematic material. It is dangerous to make a weapon of the Transformation System using the Kronos Core instead of amplifying the Kronos effect with similar power. Even in a busy world with excellent technological prowess, the moment the Kronos Core is used as an energy source or weapon, it becomes unstable in an instant. Alternatively, you should look at the recipe for the Kronos Core provided by Infiniti and make it.</description>
+        <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/item/Kronos/Kronos_Core</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+			<MarketValue>650</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<intricate>true</intricate>
+        <comps>
+         <li Class="CompProperties_Explosive">
+           <explosiveRadius>4.5</explosiveRadius>
+           <explosiveDamageType>Kronos_explosion</explosiveDamageType>
+           <explosiveExpandPerStackcount>0.087</explosiveExpandPerStackcount>
+           <startWickHitPointsPercent>0.233</startWickHitPointsPercent>
+           <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+           <wickTicks>150~150</wickTicks>
+         </li>
+        </comps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>OEM_part</defName>
+		<label>O.E.M.G control parts</label>
+		<description>It is a part material produced by dismantling the mechanoid tuban as an overheat energy control part. An essential ingredient for making superheated energy weapons.</description>
+		<graphicData>
+			<texPath>Things/item/part/O.E.M part</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>450</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.4</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <tradeTags>
+          <li></li>
+        </tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>MRL_Produce_part</defName>
+		<label>M.R.L Produce part</label>
+		<description>It is a rocket manufacturing system produced by dismantling the mechanoids Altenin and Rastavan. It is used as a component to manufacture Kronos bullets or used as an explosive weapon.</description>
+        <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/item/part/MRL_Produce_part</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>600</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.4</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <comps>
+         <li Class="CompProperties_Explosive">
+           <explosiveRadius>1.1</explosiveRadius>
+           <explosiveDamageType>Kronos_explosion</explosiveDamageType>
+           <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+           <startWickOnDamageTaken>
+             <li>Flame</li>
+           </startWickOnDamageTaken>
+           <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+           <preExplosionSpawnChance>1</preExplosionSpawnChance>
+           <wickTicks>70~150</wickTicks>
+         </li>
+        </comps>
+        <tradeTags>
+          <li></li>
+        </tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>precision_aiming_parts</defName>
+		<label>precision aiming parts</label>
+		<description>It is a part produced by dismantling the mechanoid Altais. It is used as an aiming system to increase the accuracy by increasing the accuracy with a precision aiming component. It is mainly used for sniper weapons or precision weapons.</description>
+		<graphicData>
+			<texPath>Things/item/part/precision aiming parts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>800</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.4</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <tradeTags>
+          <li></li>
+        </tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>energy_control_components</defName>
+		<label>energy control components</label>
+		<description>It is a component that controls energy. It is essential and necessary for crafting railguns or rechargeable weapons, and can be obtained by dismantling the mechanoid Altais.</description>
+		<graphicData>
+			<texPath>Things/item/part/energy control components</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>900</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.4</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <tradeTags>
+          <li></li>
+        </tradeTags>
+	</ThingDef>
+
+</Defs>

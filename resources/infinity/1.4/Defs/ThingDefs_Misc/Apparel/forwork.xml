@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Infinity_HAZMAT_Helmet</defName>
+    <label>Infinity Medical HAZMAT Armor Helmet</label>
+    <description>It is a work hat that is mainly worn by Infinity Ras Alhas and medical soldiers. It is made to prevent exposure to radiation and toxicity in various dangerous areas as a protective suit, and medical and treatment efficiency increases.\n\nBut we are machines anyway, so we don't need a protective suit..?\n\nMolu..?</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisites>
+	   <li>Infinity_enforce_Apparel</li>
+       <li>MedicineProduction</li>  
+	  </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+          <li>Infinity_Apparel_Workbench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Infinity_HAZMAT/Infinity_HAZMAT_Head</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <thingCategories>
+      <li>Infinity_Headgear</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalTendQuality>0.2</MedicalTendQuality>
+      <MedicalTendSpeed>0.15</MedicalTendSpeed>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+	  <MedicineIndustrial>2</MedicineIndustrial>
+      <Plasteel>15</Plasteel>
+      <Steel>65</Steel>
+      <Cloth>250</Cloth>
+      <DevilstrandCloth>2</DevilstrandCloth>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Infinity_HAZMAT/Infinity_HAZMAT_Head</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Infinity_HAZMAT_Armor</defName>
+    <label>Infinity Medical HAZMAT Armor</label>
+    <description>It is the work clothes mainly worn by Infinity Ras Alhas and medical soldiers. The hazmat suit is made not to be exposed to radiation and toxicity, and medical and treatment efficiency is increased.\n\nBut we are machines anyway, so we don't need hazmat suits..?\n\nMolu..?</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisites>
+	   <li>Infinity_enforce_Apparel</li>
+       <li>MedicineProduction</li>  
+	  </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+          <li>Infinity_Apparel_Workbench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Infinity_HAZMAT/Infinity_HAZMAT_Armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <DrugSynthesisSpeed>0.2</DrugSynthesisSpeed>
+      <MedicalTendSpeed>0.15</MedicalTendSpeed>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <costList>
+	  <MedicineIndustrial>3</MedicineIndustrial>
+      <DevilstrandCloth>2</DevilstrandCloth>
+      <Steel>60</Steel>
+      <Cloth>150</Cloth>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+		<li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Infinity_HAZMAT/Infinity_HAZMAT_Armor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+</Defs>

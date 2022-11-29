@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_backpack</defName>
+    <label>Apparel backpack</label>
+    <description>A tactical pack used by Infinity soldiers. Contains survival-focused items that increase their effectiveness, but are slowed by the weight of the hunt.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Infinity_module_system</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Cloth>120</Cloth>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>40</Steel>
+    </costList>
+    <graphicData>
+      <texPath>Things/Apparel/pack/Apparel_backpack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>6</Mass>
+      <Flammability>0.3</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+	<equippedStatOffsets>
+        <MoveSpeed>-0.75</MoveSpeed>
+        <MedicalTendQuality>0.05</MedicalTendQuality>
+	</equippedStatOffsets>
+    <apparel>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li></li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/pack/Apparel_backpack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <east>
+          <offset>(-0.35,-0.01)</offset>
+          <thin><offset>(0.05,0)</offset></thin>
+          <hulk><offset>(-0.1,0)</offset></hulk>
+          <fat><offset>(-0.15,0)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.35,-0.01)</offset>
+          <thin><offset>(-0.05,0)</offset></thin>
+          <hulk><offset>(0.1,0)</offset></hulk>
+          <fat><offset>(0.15,0)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+      </wornGraphicData>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_medical_pack</defName>
+    <label>medical pack</label>
+    <description>It is a bag used by Ras Alhas to assist with medical care and increases the medical quality and medical speed.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Infinity_module_system</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+	  <MedicineIndustrial>3</MedicineIndustrial>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>150</Steel>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <graphicData>
+      <texPath>Things/Apparel/pack/medical_pack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>6</Mass>
+      <Flammability>0.3</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+	<equippedStatOffsets>
+        <MoveSpeed>-0.25</MoveSpeed>
+        <MedicalTendSpeed>0.2</MedicalTendSpeed>
+        <MedicalTendQuality>0.15</MedicalTendQuality>
+	</equippedStatOffsets>
+    <apparel>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li></li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/pack/medical_pack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <east>
+          <offset>(-0.35,-0.01)</offset>
+          <thin><offset>(0.05,0)</offset></thin>
+          <hulk><offset>(-0.1,0)</offset></hulk>
+          <fat><offset>(-0.15,0)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.35,-0.01)</offset>
+          <thin><offset>(-0.05,0)</offset></thin>
+          <hulk><offset>(0.1,0)</offset></hulk>
+          <fat><offset>(0.15,0)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+      </wornGraphicData>
+    </apparel>
+  </ThingDef>
+
+
+
+  <ApparelLayerDef>
+    <defName>Apparel_Drone</defName>
+    <label>Drone</label>
+    <drawOrder>275</drawOrder>
+  </ApparelLayerDef>
+
+    <ThingDef ParentName="ApparelNoQualityBase" Name="ApparelDroneBase" Abstract="True">
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Infinity_Drone</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>6</Mass>
+      <Flammability>0.2</Flammability>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>Infinity_Apparel</li>
+    </thingCategories>
+    <generateAllowChance>0</generateAllowChance>
+    <apparel>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li></li>
+      </tags>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.75,0.66)</offset>
+        </north>
+        <south>
+          <offset>(-0.75,0.66)</offset>
+        </south>
+        <east>
+          <offset>(-0.60,0.66)</offset>
+          <male><offset>(-0.2,0)</offset></male>
+          <hulk><offset>(-0.2,0)</offset></hulk>
+          <fat> <offset>(-0.2,0)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.60,0.66)</offset>
+          <male><offset>(0.2,0)</offset></male>
+          <hulk><offset>(0.2,0)</offset></hulk>
+          <fat> <offset>(0.2,0)</offset></fat>
+        </west>
+        <male>  <scale>(0.7,0.7)</scale></male>
+        <female><scale>(0.7,0.7)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.7,0.7)</scale></hulk>
+        <fat>   <scale>(0.7,0.7)</scale></fat>
+      </wornGraphicData>
+    </apparel>
+  </ThingDef>
+
+    <ThingDef ParentName="ApparelDroneBase">
+    <defName>Apparel_CSDrone</defName>
+    <label>CS Drone</label>
+    <description>It is an emp drone developed to counter mechanoids, and fires emp bullets at enemies or mechanoids with shields.</description>
+    <techLevel>Industrial</techLevel>
+    <costList>
+	  <Gun_SmokeLauncher>1</Gun_SmokeLauncher>
+	  <Weapon_GrenadeEMP>1</Weapon_GrenadeEMP>
+      <Apparel_BSDrone>1</Apparel_BSDrone>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Plasteel>25</Plasteel>
+    </costList>
+    <graphicData>
+      <texPath>Things/Apparel/Drone/CSDrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>6</Mass>
+      <Flammability>0.2</Flammability>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>Steel</ammoDef>
+        <ammoCountPerCharge>25</ammoCountPerCharge>
+        <baseReloadTicks>1</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch Kronos grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>18.5</range>
+        <minRange>3</minRange> 
+        <forcedMissRadius>1.5</forcedMissRadius>
+        <warmupTime>0.5</warmupTime>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_EMPLauncher_Drone</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <generateAllowChance>0</generateAllowChance>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/Drone/CSDrone</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EMPLauncher_Drone</defName>
+    <label>EMP launcher shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.6</drawSize>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(140,135,156)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>85</speed>
+      <damageDef>EMP</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.8</explosionRadius>
+      <postExplosionGasType>BlindSmoke</postExplosionGasType>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <arcHeightFactor>0.8</arcHeightFactor>
+      <shadowSize>0.2</shadowSize>
+    </projectile>
+  </ThingDef>
+
+    <ThingDef ParentName="ApparelDroneBase">
+    <defName>Apparel_BSDrone</defName>
+    <label>BS Drone</label>
+    <description>A basic drone assists the user in battle.</description>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Steel>125</Steel>
+      <Plasteel>25</Plasteel>
+    </costList>
+    <graphicData>
+      <texPath>Things/Apparel/Drone/BSDrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>6</Mass>
+      <Flammability>0.3</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <generateAllowChance>0</generateAllowChance>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/Drone/BSDrone</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+    <ThingDef ParentName="ApparelDroneBase">
+    <defName>Apparel_STDrone</defName>
+    <label>ST Drone</label>
+    <description>A small drone designed to protect allies, it creates a shield that passes through allies' bullets and blocks enemies' bullets.</description>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Apparel_BSDrone>1</Apparel_BSDrone>
+	  <Apparel_ShieldBelt>1</Apparel_ShieldBelt>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>35</Plasteel>
+    </costList>
+    <graphicData>
+      <texPath>Things/Apparel/Drone/CADrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+      <EquipDelay>2</EquipDelay>
+      <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.20</EnergyShieldEnergyMax>
+   </statBases>
+    <comps>
+      <li Class="CompProperties_Shield">
+        <blocksRangedWeapons>false</blocksRangedWeapons>
+        <energyOnReset>4.5</energyOnReset>
+        <minDrawSize>1.5</minDrawSize>
+        <maxDrawSize>1.8</maxDrawSize>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/Drone/CADrone</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+</Defs>

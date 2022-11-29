@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>Infinity_head</defName>
+		<label>head</label>
+		<hitPoints>22</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<bleedRate>0</bleedRate>
+		<skinCovered>true</skinCovered>
+        <canScarify>false</canScarify>
+        <canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Torso</defName>
+    <label>Torso</label>
+    <hitPoints>40</hitPoints>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Shoulder</defName>
+    <label>shoulder</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>1.5</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Arm</defName>
+    <label>arm</label>
+    <hitPoints>25</hitPoints>
+    <bleedRate>1</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Hand</defName>
+    <label>hand</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Finger</defName>
+    <label>finger</label>
+    <hitPoints>8</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <bleedRate>0</bleedRate>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Waist</defName>
+    <label>utility slot</label>
+    <conceptual>true</conceptual>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Toe</defName>
+    <label>toe</label>
+    <hitPoints>8</hitPoints>
+    <frostbiteVulnerability>0.1</frostbiteVulnerability>
+    <bleedRate>0</bleedRate>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Ear</defName>
+    <label>ear</label>
+    <hitPoints>12</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <solid>true</solid>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Eye</defName>
+    <label>eye</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <bleedRate>0</bleedRate>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>true</socketed>
+    <beautyRelated>true</beautyRelated>
+    <solid>true</solid>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Neck</defName>
+    <label>neck</label>
+    <hitPoints>20</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <solid>true</solid>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Leg</defName>
+    <label>leg</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Foot</defName>
+    <label>foot</label>
+    <hitPoints>25</hitPoints>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>  
+  
+  <!-- Bones -->
+
+  <BodyPartDef>
+    <defName>Infinity_Clavicle</defName>
+    <label>clavicle</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Sternum</defName>
+    <label>sternum</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSourceCage</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Humerus</defName>
+    <label>humerus</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Radius</defName>
+    <label>radius</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Pelvis</defName>
+    <label>pelvis</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>Pelvis</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Femur</defName>
+    <label>femur</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Infinity_Tibia</defName>
+    <label>tibia</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

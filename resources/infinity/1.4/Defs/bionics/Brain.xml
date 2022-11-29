@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Infinity_Painstopper</defName>
+    <label>인피니티 통각 제어장치</label>
+    <labelNoun>통각 제어장치</labelNoun>
+    <description>통각 제어장치입니다.</description>
+    <descriptionHyperlinks><ThingDef>Infinity_Painstopper</ThingDef></descriptionHyperlinks>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>Infinity_Painstopper</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticBase">
+    <defName>Infinity_Painstopper</defName>
+    <label>인피니티 통각 제어장치</label>
+    <description>인피니티의 통각을 제어하는 용도로 제작된 겁니다.</description>
+    <descriptionHyperlinks><RecipeDef>Infinity_InstallPainstopper</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Infinity_InstallPainstopper</defName>
+    <label>install painstopper</label>
+    <description>Install a painstopper.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_Painstopper</ThingDef>
+      <HediffDef>Infinity_Painstopper</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing painstopper.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Infinity_Painstopper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Infinity_Painstopper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kronos_core</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Infinity_Painstopper</addsHediff>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Infinity_RemovePainstopper</defName>
+    <label>remove painstopper</label>
+    <description>Remove the painstopper.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Infinity_Painstopper</ThingDef>
+      <HediffDef>Infinity_Painstopper</HediffDef>
+    </descriptionHyperlinks>
+    <recipeUsers>
+         <li>Infinity</li>
+    </recipeUsers>
+    <jobString>Removing painstopper.</jobString>
+    <removesHediff>Infinity_Painstopper</removesHediff>
+  </RecipeDef>
+  
+</Defs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Infinity_parts</defName>
+    <label>Infinity machine parts</label>
+    <description>인피니티 전용 기계 파츠입니다.</description>
+    <tab>Infinity</tab>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>8</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Infinity_tighten_parts</defName>
+    <label>Infinity enforce parts</label>
+    <description>인피니티 전용 강화 파츠입니다.</description>
+    <tab>Infinity</tab>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Infinity_parts</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Infinity_battle_parts</defName>
+    <label>Infinity battle parts</label>
+    <description>인피니티 병사 전용 전투 파츠를 연구합니다.</description>
+    <tab>Infinity</tab>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Infinity_tighten_parts</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

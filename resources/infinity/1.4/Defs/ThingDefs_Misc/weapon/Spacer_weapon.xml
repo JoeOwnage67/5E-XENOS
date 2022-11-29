@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <!-- 두베 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Infinity_Kronos_Dubhe</defName>
+    <label>Kronos Machine Pistol -Dubhe-</label>
+    <description>A machine pistol used by Infinity elite soldiers or commanders. It is a Chronos weapon that combines a submachine gun with high rate of fire and a one-handed pistol, and has high short-range firepower.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Infinity_Kronos_Dubhe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+	<recipeMaker>
+        <skillRequirements>
+          <Crafting>6</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>58000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Kronos_Core>2</Kronos_Core>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Dubhe</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <range>18</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>wanderer</li>
+      <li>Sentry</li>
+      <li>Legiones</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Dubhe</defName>
+    <label>Bullet Dubhe</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetrationBase>0.28</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 메라크 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Infinity_Kronos_Merak</defName>
+    <label>Kronos Assault gun -Merak-</label>
+    <description>An assault cannon used by elite Infinity soldiers. An unusual weapon that sits somewhere between an electromagnetic rifle and an electronic cannon. It fires in a single shot instead of a continuous shot, and it shows area damage, a secondary accuracy device required for field combat, and high firepower. However, as it is treated as an explosive weapon and causes damage to allies, it is mainly used in the field.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Infinity_Kronos_Merak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Kronos_Core>3</Kronos_Core>
+      <Plasteel>95</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+      <ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</ShootingAccuracyIndoorsDarkOffset>
+      <ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</ShootingAccuracyOutdoorsDarkOffset>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Merak</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <minRange>6</minRange> 
+        <forcedMissRadius>0.2</forcedMissRadius>
+        <range>34</range>
+        <targetParams>
+          <canTargetLocations>false</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_SeptentrionsGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Sentry</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Merak</defName>
+    <label>Bullet Merak</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_Merak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <explosionRadius>1.4</explosionRadius>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+	  <screenShakeFactor>0</screenShakeFactor>
+      <stoppingPower>7.5</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 페크다 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Infinity_Kronos_Phecda</defName>
+    <label>Kronos Shotgun -Phecda-</label>
+    <description>A shotgun used by Infinity soldiers. A shotgun converted into a Kronos weapon, designed to fire rounds in all directions to subdue approaching enemies.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Infinity_Kronos_Phecda</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Gun_ChainShotgun>1</Gun_ChainShotgun>
+      <Kronos_Core>3</Kronos_Core>
+      <Steel>125</Steel>
+      <Plasteel>65</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Phecda</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <range>11</range>
+        <soundCast>Shot_Kronos</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+	  <li>Predator</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Phecda</defName>
+    <label>Bullet Phecda</label>
+    <graphicData>
+      <texPath>Things/weapon/Ranged weapon/Bullet/Bullet_Kronos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.36</armorPenetrationBase>
+      <stoppingPower>5.5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 메그레즈 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Infinity_Kronos_Megrez</defName>
+    <label>Kronos O.E.M.G -Megrez-</label>
+    <description>Kronos is an overheated energy weapon. It was created for the purpose of inflicting burn damage to enemies by scattering numerous energy bullets. It was built primarily against living things, and requires an overheated energy control component to craft.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Infinity_Kronos_Megrez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+        <researchPrerequisite>Infinity_Ranged_Megrez</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>1</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.24</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <OEM_part>1</OEM_part>
+      <Kronos_Core>4</Kronos_Core>
+      <Chemfuel>250</Chemfuel>
+      <Plasteel>125</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Megrez</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <burstShotCount>30</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <range>29</range>
+        <soundCast>Shot_MegrezGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+	  <li>Legiones</li>
+	  <li>Crusader</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Megrez</defName>
+    <label>Bullet Megrez</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_Thuban</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>overheating_Kronos_Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 알리오츠 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Infinity_Kronos_Alioth</defName>
+    <label>Kronos Siege Cannon -Alioth-</label>
+    <description>A siege cannon used by elite Infinity soldiers. Fires a cannon at a high range, inflicting Kronos explosion damage to enemies at a distance. It has higher firepower than the Kronos grenade and was developed for the purpose of destroying buildings or defenses.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Kronos_Alioth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+	<recipeMaker>
+        <researchPrerequisite>Infinity_Ranged_Alioth</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>9</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>78000</WorkToMake>
+      <Mass>55</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>-0.5</MeleeDodgeChance>
+      <MeleeHitChance>-0.4</MeleeHitChance>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <MRL_Produce_part>1</MRL_Produce_part>
+      <Kronos_Core>4</Kronos_Core>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Alioth</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <minRange>15</minRange> 
+        <forcedMissRadius>4.2</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+        <range>60</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_SeptentrionsGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>30</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Siege_Breakers</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Bullet_Alioth</defName>
+    <label>Bullet Alioth</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_Alioth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Kronos_explosion</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+      <explosionRadius>1.8</explosionRadius >
+      <armorPenetrationBase>0.65</armorPenetrationBase>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 미자르 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Kronos_precision_railgun_Mizar</defName>
+    <label>Kronos railgun -Mizar-</label>
+    <description>Infinity Chronos Railgun. A precision aiming system is attached to the scope to easily hit enemies, and each shot is fatal, so it has firepower that can tear enemies apart in an instant.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Kronos_precision_railgun_Mizar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+        <researchPrerequisite>Altais_weapon</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>35</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.10</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+      <AimingDelayFactor>0.7</AimingDelayFactor>
+    </equippedStatOffsets>
+    <costList>
+	  <Infinity_Kronos_Sniper_Rifle>1</Infinity_Kronos_Sniper_Rifle>
+	  <energy_control_components>1</energy_control_components>
+	  <precision_aiming_parts>1</precision_aiming_parts>
+      <Kronos_Core>4</Kronos_Core>
+      <Plasteel>125</Plasteel>
+      <Uranium>25</Uranium>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_precision_railgun</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <range>55</range>
+        <soundCast>Shot_SeptentrionsGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Shadow</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_precision_railgun</defName>
+    <label>Bullet precision railgun</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_precision_railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <armorPenetrationBase>0.65</armorPenetrationBase>
+      <stoppingPower>7.5</stoppingPower>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 알카이드 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>OEM_Autocannon_Alkaid</defName>
+    <label>O.E.M Autocannon -Alkaid-</label>
+    <description>A weapon that has been converted from an O.E.M into a cannon. It is a weapon that converted the O.E.M into a small weapon from the cannon used by the current 'humanity' and is equipped with a precision auxiliary system.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/O.E.M.G_Autocannon_Alkaid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+        <researchPrerequisite>combination_weapon</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>35</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <precision_aiming_parts>1</precision_aiming_parts>
+      <OEM_part>1</OEM_part>
+      <Kronos_Core>4</Kronos_Core>
+      <Chemfuel>150</Chemfuel>
+      <Steel>45</Steel>
+      <Plasteel>85</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Autocannon_Alkaid</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <range>35</range>
+        <soundCast>Shot_MegrezGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+	  <li>Crusader</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Autocannon_Alkaid</defName>
+    <label>Bullet Alkaid</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/OEM_Autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>overheating_Kronos_Bullet</damageDef>
+      <damageAmountBase>21</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 셉텐트리온 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Kronos_Javelin_Septentrions</defName>
+    <label>Kronos Grenade launcher -Septentrions-</label>
+    <description>It is a weapon that fires multiple missiles at once to draw firepower instantly. It was made for the purpose of reliably killing the enemy by hitting one place. Even weapons called mechanoids can show lethal firepower.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Javelin_Septentrions</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<recipeMaker>
+        <researchPrerequisite>combination_weapon</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>76000</WorkToMake>
+      <Mass>25</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <MRL_Produce_part>1</MRL_Produce_part>
+      <precision_aiming_parts>1</precision_aiming_parts>
+      <Kronos_Core>4</Kronos_Core>
+      <Uranium>55</Uranium>
+      <Plasteel>95</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Javelin</defaultProjectile>
+        <warmupTime>5</warmupTime>
+        <minRange>3</minRange> 
+        <forcedMissRadius>1.5</forcedMissRadius>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <range>18</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>25</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Siege_Breakers</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Bullet_Javelin</defName>
+    <label>Bullet Javelin</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_Rastaban</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Kronos_Merak</damageDef>
+      <flyOverhead>true</flyOverhead>
+      <damageAmountBase>24</damageAmountBase>
+      <explosionRadius>1.4</explosionRadius >
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>3.5</stoppingPower>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 메시아 -->
+  <ThingDef ParentName="InfinityBigDipperBaseGun">
+    <defName>Infinity_shield_gun_Messier</defName>
+    <label>Kronos Siege Cannon -Messier-</label>
+    <description>A breakthrough type shield cannon that breaks through the front lines. A cannon weapon with high firepower, equipped with a shield shield on the side of the weapon. It reduces the damage of enemies' attacks to a minimum and gives resistance to mental attacks and poison attacks.</description>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/shield_gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Shot_Kronosmounting</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+	<recipeMaker>
+      <researchPrerequisites>
+	   <li>ShieldBelt</li>
+       <li>combination_weapon</li>  
+	  </researchPrerequisites>
+        <skillRequirements>
+          <Crafting>8</Crafting>
+        </skillRequirements>
+	</recipeMaker>
+    <statBases>
+      <WorkToMake>78000</WorkToMake>
+      <Mass>45</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicResistance>0.5</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+	  <Flammability>-0.5</Flammability>
+	  <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+      <MoveSpeed>-0.35</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+	  <energy_control_components>1</energy_control_components>
+      <MRL_Produce_part>1</MRL_Produce_part>
+      <Apparel_ShieldBelt>1</Apparel_ShieldBelt>
+      <Kronos_Core>5</Kronos_Core>
+      <Plasteel>90</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_shield_gun</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <minRange>3</minRange> 
+        <forcedMissRadius>1.2</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <range>21</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_SeptentrionsGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>4</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>Siege_Breakers</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_shield_gun</defName>
+    <label>Bullet shield gun</label>
+    <graphicData>
+      <texPath>Things/weapon/Spacer weapon/Bullet/Bullet_shield_gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Kronos_explosion</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <explosionRadius>1.5</explosionRadius >
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

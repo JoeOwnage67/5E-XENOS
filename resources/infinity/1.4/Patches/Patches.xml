@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>infinity_Player</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic" or defName = "Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+					<thingDef>Chronos_Stone</thingDef>
+					<countRange>
+						<min>5</min>
+						<max>8</max>
+					</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+					<thingDef>Kronos_Core</thingDef>
+					<countRange>
+						<min>0</min>
+						<max>2</max>
+					</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+					<thingDef>Chronos_Stone</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>5</max>
+					</countRange>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
