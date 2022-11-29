@@ -117,7 +117,7 @@
     		<defName>ImpressionableGene</defName>
     		<label>impressionable</label>    	
     		<description>Carriers of this gene are particularly impressionable, their outlook can be more easily affected by the opinions of others.</description>
-    		<iconPath>Genes/Icons/Gene_Impressionable</iconPath>
+    		<iconPath>UI/Icons/Genes/Gene_Impressionable</iconPath>
     		<displayCategory>Mood</displayCategory>
     		<displayOrderInCategory>500</displayOrderInCategory>
 		<statOffsets>
@@ -131,7 +131,7 @@
     		<defName>UndergrounderGene</defName>
     		<label>undergrounder</label>    	
     		<description>Carriers of this gene have no need to experience the outdoors or light. They will never feel cooped up or get cabin fever no matter how long they stay inside, and are not bothered by darkness.</description>
-    		<iconPath>Genes/Icons/Gene_Undergrounder</iconPath>
+    		<iconPath>UI/Icons/Genes/Gene_Undergrounder</iconPath>
     		<displayCategory>Mood</displayCategory>
     		<displayOrderInCategory>500</displayOrderInCategory>
     		<forcedTraits>
