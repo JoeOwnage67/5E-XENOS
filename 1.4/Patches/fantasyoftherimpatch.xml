@@ -22,21 +22,21 @@
 					<xpath>Defs/XenotypeDef[defName="orc"]</xpath>
 				</li>
 				
-<!-- add small body gene to halfling and goblin 
+<!-- add small body gene to halfling and goblin -->
 				<li Class="PatchOperationAdd">
                 			<xpath>Defs/XenotypeDef[defName="halfling" or "goblin"]/genes</xpath>
                     			<value>
                        				<li>AG_SmallerBodySize</li>
                     			</value>
-                		</li> -->
+                		</li>
 				
-<!-- add large body gene to troll 
+<!-- add large body gene to troll -->
 				<li Class="PatchOperationAdd">
                 			<xpath>Defs/XenotypeDef[defName="troll"]/genes</xpath>
                     			<value>
                        				<li>AG_LargerBodySize</li>
                     			</value>
-                		</li> -->
+                		</li> 
 				
 <!-- add xeno icons to halfling, goblin, undead and troll -->
 				<li Class="PatchOperationReplace">
