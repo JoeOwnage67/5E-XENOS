@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FurDef>
+    <defName>5X_WarforgedBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Things/Pawn/Humanlike/Bodies/Infinitybody</Male>
+      <Female>Things/Pawn/Humanlike/Bodies/Infinitybody</Female>      
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+</Defs>
