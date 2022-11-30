@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-
-<!-- Warforged Head -->
-<!-- Headtypedef -->
-	<HeadTypeDef ParentName="AverageBase">
-		<defName>WarFace</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/WarFace</graphicPath>
-		<randomChosen>false</randomChosen>
-		<gender>None</gender>
-		<requiredGenes>
-			<li>WarforgedHead</li>
-		</requiredGenes>
-		<selectionWeight>1</selectionWeight>
-	</HeadTypeDef>
-	
 <!-- Warforged Head Genedef -->
 	<GeneDef ParentName="AG_GeneHeadBase">
 		<defName>WarforgedHead</defName>
@@ -93,6 +79,13 @@
 
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>
+	   	
+	   	<graphicData>
+      			<fur>5X_WarforgedBody</fur>
+      			<colorType>Skin</colorType>
+      			<skinIsHairColor>true</skinIsHairColor>
+      			<tattoosVisible>false</tattoosVisible>
+    		</graphicData>
 
 		<symbolPack>
 			<prefixSymbols>
