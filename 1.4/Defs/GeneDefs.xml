@@ -11,7 +11,9 @@
 		<biostatMet>-1</biostatMet>
 		<iconPath>UI/Icons/Genes/Gene_WarFace</iconPath>
 		<forcedHeadTypes>
-			<li>WarFace</li>			
+			<li>5X_War_Head1</li>
+			<li>5X_War_Head2</li>
+			<li>5X_War_Head3</li>
 		</forcedHeadTypes>		
 		<beardTagFilter>
 			<whitelist>true</whitelist>
