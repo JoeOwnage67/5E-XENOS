@@ -42,6 +42,9 @@
 		<displayCategory>AG_Cosmetic_Horns</displayCategory>
 		<description>Carriers of this gene grow fluffy Felyne whiskers.</description>
 		<iconPath>UI/Icons/Genes/5X_FelyneWhiskers</iconPath>
+		<forcedHeadTypes>
+			<li>Female_AveragePointy</li>			
+		</forcedHeadTypes>	
 		<selectionWeight>0</selectionWeight>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FelyneWhiskers/Mashed_FelyneWhiskers</graphicPath>
