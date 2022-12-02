@@ -35,6 +35,28 @@
 		</modExtensions>
 	</GeneDef>
 	
+<!-- Felyne Whiskers -->
+	<GeneDef ParentName="AG_GeneTuskBase">
+		<defName>5X_FelyneWhiskers</defName>
+		<label>felyne whiskers</label>
+		<displayCategory>AG_Cosmetic_Horns</displayCategory>
+		<description>Carriers of this gene grow fluffy Felyne whiskers.</description>
+		<iconPath>UI/Icons/Genes/5X_FelyneWhiskers</iconPath>
+		<selectionWeight>0</selectionWeight>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FelyneWhiskers/Mashed_FelyneWhiskers</graphicPath>
+			<color>skin</color>
+			<layer>PostHeadgear</layer>
+			 <visibleNorth>false</visibleNorth>
+		</graphicData>		
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
 <!-- Natural Armor (thick, leathery skin) -->
   <GeneDef ParentName="AG_ArmourBase">
 	<defName>NaturalArmor</defName>
