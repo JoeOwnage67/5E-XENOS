@@ -70,6 +70,35 @@
 		</modExtensions>
 	</GeneDef>
 	
+<!-- UndeadBody -->
+	  <GeneDef>
+    <defName>5X_UndeadBody</defName>
+    <label>undead body</label>
+    <description>A formerly dead body. It ain't what it used to be.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/Gene_UndeadBody</iconPath>
+    <prerequisite>5X_UndeadHead</prerequisite>
+		  <displayCategory>Mammalian</displayCategory>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <displayOrderInCategory>2</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<bodyPartImplant>Torso</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <graphicData>
+      <fur>5X_UndeadBody</fur>
+      <colorType>Skin</colorType>
+      <skinIsHairColor>true</skinIsHairColor>
+      <tattoosVisible>false</tattoosVisible>
+    </graphicData>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+  </GeneDef>
+	
+	
 <!-- Felyne Whiskers -->
 	<GeneDef ParentName="AG_GeneTuskBase">
 		<defName>5X_FelyneWhiskers</defName>
@@ -167,34 +196,7 @@
 		</modExtensions>
 	</GeneDef>
 	
-<!-- UndeadBody -->
-	  <GeneDef>
-    <defName>5X_UndeadBody</defName>
-    <label>undead body</label>
-    <description>A formerly dead body. It ain't what it used to be.</description>
-    <geneClass>BTE.Gene_AddImplant</geneClass>
-    <iconPath>Genes/Icons/5X_UndeadBody</iconPath>
-    <prerequisite>5X_UndeadHead</prerequisite>
-		  <displayCategory>Mammalian</displayCategory>
-    <exclusionTags>
-      <li>Fur</li>
-    </exclusionTags>
-    <displayOrderInCategory>2</displayOrderInCategory>
-	<modExtensions>
-		<li Class="BTE.GeneImplantInfo">
-			<bodyPartImplant>Torso</bodyPartImplant>
-		</li>
-	</modExtensions>
-    <graphicData>
-      <fur>5X_UndeadBody</fur>
-      <colorType>Skin</colorType>
-      <skinIsHairColor>true</skinIsHairColor>
-      <tattoosVisible>false</tattoosVisible>
-    </graphicData>
-    <biostatCpx>2</biostatCpx>
-    <biostatMet>-3</biostatMet>
-  </GeneDef>
-	
+
 	
 <!-- Impressionable Gene -->
 	<GeneDef>
