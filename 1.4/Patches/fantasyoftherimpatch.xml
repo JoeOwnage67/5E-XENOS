@@ -64,6 +64,21 @@
 					</value>
 				</li>
 				
+<!-- new undead textures -->
+				<li Class="PatchOperationAdd">
+                    			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
+                    			<value>
+						<li>5X_UndeadHead</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+                    			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
+                    			<value>
+						<li>5X_UndeadBody</li>
+					</value>
+				</li>
+				
+				
 <!-- Patch Fantasy of the Rim Scenarios -->
 <!-- Wood Elf -->
 				<li Class="PatchOperationReplace">
