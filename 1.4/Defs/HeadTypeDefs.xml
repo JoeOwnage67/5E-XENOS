@@ -34,15 +34,3 @@
 		
 		
 		
-
-		<!-- <HeadTypeDef ParentName="AverageBase">
-			<defName>WarFace</defName>
-			<graphicPath>Things/Pawn/Humanlike/Heads/WarFace</graphicPath>
-			<randomChosen>false</randomChosen>
-			<gender>None</gender>
-			<requiredGenes>
-				<li>WarforgedHead</li>
-			</requiredGenes>
-			<selectionWeight>1</selectionWeight>
-		</HeadTypeDef> -->
-	
