@@ -35,6 +35,41 @@
 		</modExtensions>
 	</GeneDef>
 	
+<!-- UndeadHead Genedef -->
+	<GeneDef ParentName="AG_GeneHeadBase">
+		<defName>5X_UndeadHead</defName>
+		<label>undead head</label>
+		<selectionWeight>0</selectionWeight>
+		<description>A formerly dead head, it is not in top condition.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<iconPath>UI/Icons/Genes/Gene_UndeadHead</iconPath>
+		<forcedHeadTypes>
+			<li>5X_UndeadHead1</li>
+			<li>5X_UndeadHead2</li>
+			<li>5X_UndeadHead3</li>
+			<li>5X_UndeadHead4</li>
+		</forcedHeadTypes>		
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
 <!-- Felyne Whiskers -->
 	<GeneDef ParentName="AG_GeneTuskBase">
 		<defName>5X_FelyneWhiskers</defName>
