@@ -112,7 +112,7 @@
 		<selectionWeight>0</selectionWeight>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FelyneWhiskers/Mashed_FelyneWhiskers</graphicPath>
-			<color>skin</color>
+			<colorType>skin</colorType>
 			<layer>PostHeadgear</layer>
 			 <visibleNorth>false</visibleNorth>
 		</graphicData>		
