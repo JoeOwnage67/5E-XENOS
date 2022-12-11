@@ -65,12 +65,7 @@
 				</li>
 				
 <!-- new undead textures and remove red eyes etc -->
-				<li Class="PatchOperationAdd">
-                    			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
-                    			<value>
-						<li>5X_UndeadHead</li>
-					</value>
-				</li>
+				
 			
 				<li Class="PatchOperationReplace">
                     			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
@@ -102,6 +97,12 @@
                     			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
                     			<value>
 						<li>5X_UndeadBody</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+                    			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
+                    			<value>
+						<li>5X_UndeadHead</li>
 					</value>
 				</li>
 				
