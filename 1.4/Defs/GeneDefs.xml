@@ -70,7 +70,7 @@
 		</modExtensions>
 	</GeneDef>
 	
-<!-- UndeadBody -->
+<!-- UndeadBody
 	  <GeneDef>
     <defName>5X_UndeadBody</defName>
     <label>undead body</label>
@@ -92,7 +92,33 @@
     </graphicData>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-3</biostatMet>
-  </GeneDef>
+  </GeneDef> -->
+	
+<!-- UndeadBody -->
+	<GeneDef ParentName="AG_ArmourBase">
+	<defName>5X_UndeadBody</defName>
+	<label>undead body</label>	
+	<description>A formerly dead body. It ain't what it used to be.</description>
+	<iconPath>UI/Icons/Genes/Gene_UndeadBody</iconPath>	   
+		<displayOrderInCategory>20</displayOrderInCategory>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	   	
+	   	<graphicData>
+      			<fur>5X_UndeadBody</fur>
+      			<colorType>Skin</colorType>
+      			<skinIsHairColor>true</skinIsHairColor>
+      			<tattoosVisible>false</tattoosVisible>
+    		</graphicData>		
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>				
+			</li>
+		</modExtensions>
+	</GeneDef>
 	
 	
 <!-- Felyne Whiskers -->
