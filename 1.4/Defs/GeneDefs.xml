@@ -76,7 +76,7 @@
     <label>undead body</label>
     <description>A formerly dead body. It ain't what it used to be.</description>
     <geneClass>BTE.Gene_AddImplant</geneClass>
-    <iconPath>Genes/Icons/Gene_UndeadBody</iconPath>
+    <iconPath>UI/Icons/Genes/Gene_UndeadBody</iconPath>
     <prerequisite>5X_UndeadHead</prerequisite>
 		  <displayCategory>Mammalian</displayCategory>
     <exclusionTags>
