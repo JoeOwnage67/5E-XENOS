@@ -3,7 +3,7 @@
 	
 <!-- Warforged Head Genedef -->
 	<GeneDef ParentName="AG_GeneHeadBase">
-		<defName>WarforgedHead</defName>
+		<defName>5X_WarforgedHead</defName>
 		<label>warforged head</label>
 		<selectionWeight>0</selectionWeight>
 		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have Crystalline Eyes, a hinged jawline and a prominent brow.</description>
