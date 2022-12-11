@@ -83,11 +83,7 @@
       <li>Fur</li>
     </exclusionTags>
     <displayOrderInCategory>2</displayOrderInCategory>
-	<modExtensions>
-		<li Class="BTE.GeneImplantInfo">
-			<bodyPartImplant>Torso</bodyPartImplant>
-		</li>
-	</modExtensions>
+	
     <graphicData>
       <fur>5X_UndeadBody</fur>
       <colorType>Skin</colorType>
