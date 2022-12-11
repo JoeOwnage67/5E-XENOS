@@ -70,6 +70,7 @@
 				<li Class="PatchOperationReplace">
                     			<xpath>Defs/XenotypeDef[defName="undead"]/genes</xpath>
                     			<value>
+						<genes>
 						<li>Ageless</li>
 						<li>ArchiteMetabolism</li>
 						<li>Deathless</li>						
@@ -91,6 +92,7 @@
 						<li>DarkVision</li>
 						<li>Instability_Mild</li>
 						<li>Unstoppable</li>
+						</genes>
 					</value>
 				</li>
 					<li Class="PatchOperationAdd">
