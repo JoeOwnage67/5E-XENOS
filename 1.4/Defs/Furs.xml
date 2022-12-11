@@ -15,12 +15,12 @@
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Male>
-      <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Male>
+      <!-- <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Male>
       <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
       <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Male>      
       <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Female>
       <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Female>
-      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Female>
+      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Female> -->
       <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Female>
     </bodyTypeGraphicPaths>
   </FurDef>
