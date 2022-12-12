@@ -35,6 +35,32 @@
 		</modExtensions>
 	</GeneDef>
 	
+<!-- WarforgedBody -->
+	<GeneDef ParentName="AG_ArmourBase">
+	<defName>5X_WarforgedBody</defName>
+	<label>undead body</label>	
+	<description>a metal body with a high quality rust coating.</description>
+	<iconPath>UI/Icons/Genes/Gene_WaforgedBody</iconPath>	   
+		<displayOrderInCategory>20</displayOrderInCategory>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	   	
+	   	<graphicData>
+      			<fur>5X_WarforgedBody</fur>
+      			<colorType>Skin</colorType>
+      			<skinIsHairColor>true</skinIsHairColor>
+      			<tattoosVisible>false</tattoosVisible>			
+    		</graphicData>		
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>				
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
 <!-- UndeadHead Genedef -->
 	<GeneDef ParentName="AG_GeneHeadBase">
 		<defName>5X_UndeadHead</defName>
@@ -68,31 +94,8 @@
 				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
 			</li>
 		</modExtensions>
-	</GeneDef>
-	
-<!-- UndeadBody
-	  <GeneDef>
-    <defName>5X_UndeadBody</defName>
-    <label>undead body</label>
-    <description>A formerly dead body. It ain't what it used to be.</description>
-    <geneClass>BTE.Gene_AddImplant</geneClass>
-    <iconPath>UI/Icons/Genes/Gene_UndeadBody</iconPath>
-    <prerequisite>5X_UndeadHead</prerequisite>
-		  <displayCategory>Mammalian</displayCategory>
-    <exclusionTags>
-      <li>Fur</li>
-    </exclusionTags>
-    <displayOrderInCategory>2</displayOrderInCategory>
-	
-    <graphicData>
-      <fur>5X_UndeadBody</fur>
-      <colorType>Skin</colorType>
-      <skinIsHairColor>true</skinIsHairColor>
-      <tattoosVisible>false</tattoosVisible>
-    </graphicData>
-    <biostatCpx>2</biostatCpx>
-    <biostatMet>-3</biostatMet>
-  </GeneDef> -->
+	</GeneDef>	
+
 	
 <!-- UndeadBody -->
 	<GeneDef ParentName="AG_ArmourBase">
@@ -109,9 +112,7 @@
       			<fur>5X_UndeadBody</fur>
       			<colorType>Skin</colorType>
       			<skinIsHairColor>true</skinIsHairColor>
-      			<tattoosVisible>false</tattoosVisible>
-			<graphicClass>Graphic_Single</graphicClass> 
-      			<shaderType>CutoutComplex</shaderType>	
+      			<tattoosVisible>false</tattoosVisible>			
     		</graphicData>		
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
@@ -195,8 +196,7 @@
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>
 	   	
-	   	<graphicData>
-      			<fur>5X_WarforgedBody</fur>
+	   	<graphicData>      			
       			<colorType>Skin</colorType>
       			<skinIsHairColor>true</skinIsHairColor>
       			<tattoosVisible>false</tattoosVisible>
