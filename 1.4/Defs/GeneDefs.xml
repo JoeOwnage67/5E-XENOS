@@ -110,6 +110,8 @@
       			<colorType>Skin</colorType>
       			<skinIsHairColor>true</skinIsHairColor>
       			<tattoosVisible>false</tattoosVisible>
+			<graphicClass>Graphic_Single</graphicClass> 
+      			<shaderType>CutoutComplex</shaderType>	
     		</graphicData>		
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
