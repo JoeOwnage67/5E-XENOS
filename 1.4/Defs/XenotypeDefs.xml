@@ -194,6 +194,7 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
 			<genes>
+				<li>5X_WarforgedBody</li>
 				<li>5X_WarforgedHead</li>
 				<li>Skin_SlateGray</li>
 				<li>Skin_LightGray</li>
