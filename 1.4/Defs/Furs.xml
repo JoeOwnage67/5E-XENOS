@@ -6,7 +6,7 @@
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Male>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Male> 
-      <Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>  
+      <!--<Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>-->  
     </bodyTypeGraphicPaths>
   </FurDef>
 
