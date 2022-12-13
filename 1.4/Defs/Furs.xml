@@ -5,7 +5,7 @@
     <defName>5X_WarforgedBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Hulk> 
+      <Male>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Male> 
       <!-- <Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>-->      
     </bodyTypeGraphicPaths>
   </FurDef>
@@ -17,10 +17,7 @@
       <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Male>
       <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>
       <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
-      <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>      
-      <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Female>      
-      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Female>
-      <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>
+      <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin> 
     </bodyTypeGraphicPaths>  
   </FurDef>
   
