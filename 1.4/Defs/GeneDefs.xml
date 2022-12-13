@@ -48,8 +48,8 @@
 	   	
 	   	<graphicData>
       			<fur>5X_WarforgedBody</fur>
-      			<colorType>Skin</colorType>
-      			<skinIsHairColor>true</skinIsHairColor>
+      			<!--<colorType>Skin</colorType>-->
+      			<skinIsHairColor>false</skinIsHairColor>
       			<tattoosVisible>false</tattoosVisible>			
     		</graphicData>		
 		<selectionWeight>0</selectionWeight>
@@ -110,8 +110,8 @@
 	   	
 	   	<graphicData>
       			<fur>5X_UndeadBody</fur>
-      			<colorType>Skin</colorType>
-      			<skinIsHairColor>true</skinIsHairColor>
+      			<!--<colorType>Skin</colorType>-->
+      			<skinIsHairColor>false</skinIsHairColor>
       			<tattoosVisible>false</tattoosVisible>			
     		</graphicData>		
 		<selectionWeight>0</selectionWeight>
