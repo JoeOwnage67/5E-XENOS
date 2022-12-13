@@ -5,8 +5,8 @@
     <defName>5X_WarforgedBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Male>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Male>
-      <Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>      
+      <Hulk>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Hulk> 
+      <!-- <Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>-->      
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -15,13 +15,12 @@
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Male>
-      <!-- <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Male>
+      <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>
       <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
-      <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Male>      
-      <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Female>
-      <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Female>
-      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Female> -->
-      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Female>
+      <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>      
+      <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Female>      
+      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Female>
+      <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>
     </bodyTypeGraphicPaths>  
   </FurDef>
   
