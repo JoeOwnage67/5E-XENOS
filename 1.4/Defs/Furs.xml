@@ -5,8 +5,7 @@
     <defName>5X_WarforgedBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Male>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Male> 
-      <!--<Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>-->  
+      <Male>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Male>       
     </bodyTypeGraphicPaths>
   </FurDef>
 
