@@ -40,7 +40,7 @@
 	<defName>5X_WarforgedBody</defName>
 	<label>undead body</label>	
 	<description>a metal body with a high quality rust coating.</description>
-	<iconPath>UI/Icons/Genes/Gene_WaforgedBody</iconPath>	   
+	<iconPath>UI/Icons/Genes/Gene_WarforgedBody</iconPath>	   
 		<displayOrderInCategory>20</displayOrderInCategory>
 
 		<biostatCpx>1</biostatCpx>
