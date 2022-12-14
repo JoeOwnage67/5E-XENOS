@@ -2,7 +2,9 @@
 
 This mod is made up of several patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion.
 
-Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson, Lennoxite, Skylar and DetVisor.
+Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson (Alpha Genes), Lennoxite (Biotech Expansion), Skylar (Fantasty of the Rim), and DetVisor (Det's Stoneborn).
+
+Special thanks to 셉텐트리온 (Infinity Race), Mlie/Dalrae/Elseud (Wa Skeleton and Wa Skeleton Zombie Retexture), and SirMashedPotato (Lynians) for allowing me to borrow their textures.
 
 Dungeons and Dragons Fifth Edition is the property of Wizards of the Coast and this is simply a fan project.
 
