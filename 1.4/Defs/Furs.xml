@@ -19,7 +19,6 @@
       <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>
       <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
       <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>
-      <Female>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Female>
     </bodyTypeGraphicPaths>  
   </FurDef>
   
