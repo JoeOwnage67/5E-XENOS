@@ -17,6 +17,9 @@ Pointed Elf Ears Refined https://steamcommunity.com/sharedfiles/filedetails/?id=
 Level Up! 
 https://steamcommunity.com/sharedfiles/filedetails/?id=1701592470
 
+---Compatibility---
+Not currently working well with Nal's Facial Animations. Needs a patch.
+
 THIS IS VERY MUCH A WIP
 
 - Adds or reworks the following races: Wood Elf, Dark Elf, Hill Dwarf, Mountain Dwarf, Orc, Warforged, Tabaxi, Loxodon, Shifter, Dragonborn using genes from mod dependancies.
