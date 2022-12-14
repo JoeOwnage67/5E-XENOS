@@ -47,16 +47,16 @@
 		<biostatMet>-1</biostatMet>
 	   	
 	   	<graphicData>
-      			<fur>5X_WarforgedBody</fur>
-      			<colorType>Skin</colorType>
-      			<!-- <skinIsHairColor>false</skinIsHairColor> -->
+      			<fur>5X_WarforgedBody</fur>      			
       			<tattoosVisible>false</tattoosVisible>			
     		</graphicData>		
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>				
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<furHidesBody>true</furHidesBody>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -109,16 +109,16 @@
 		<biostatMet>-1</biostatMet>
 	   	
 	   	<graphicData>
-      			<fur>5X_UndeadBody</fur>
-      			<colorType>Skin</colorType>
-      			<!--<skinIsHairColor>false</skinIsHairColor>-->
+      			<fur>5X_UndeadBody</fur>      			
       			<tattoosVisible>false</tattoosVisible>			
     		</graphicData>		
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>				
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<furHidesBody>true</furHidesBody>
 			</li>
 		</modExtensions>
 	</GeneDef>
