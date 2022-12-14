@@ -6,7 +6,7 @@
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Male>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Male>
-      <Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Male</Female>
+      <Female>Things/Pawn/Humanlike/Bodies/InfinityBody/Naked_Female</Female>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -15,6 +15,7 @@
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Male>
+      <Female>Things/Pawn/Humanlike/Bodies/AG_GauntBody/AG_GauntBody_Female</Female>
       <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>
       <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
       <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>
