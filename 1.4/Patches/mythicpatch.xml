@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Biotech Expansion - Mythic</li>
-		</mods>
-		<match Class="PatchOperationSequence">
+<Patch>	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+    		<mods>
+      			<li>Biotech Expansion - Mythic</li>
+    		</mods>
+   		<label>remove Biotech Expansion - Mammalia xenotypes and factions</label>
+	    	<match Class="PatchOperationSequence">
 			<success>Normal</success>
-			<operations>	
+			<operations>
 				
 <!-- remove Biotech Expansion - Mythic version of xenotypes (have reworked in new defs) -->
 				<li Class="PatchOperationRemove">
