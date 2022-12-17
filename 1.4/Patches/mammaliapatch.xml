@@ -36,6 +36,9 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="Blastheart"]</xpath>
 				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Devilpuff"]</xpath>
+				</li>
 				
 <!-- remove Biotech Expansion - Mammalia factions (intend to rework later using new versions of xenos) -->
 				<li Class="PatchOperationRemove">
