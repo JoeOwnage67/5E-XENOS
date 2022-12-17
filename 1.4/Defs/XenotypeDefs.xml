@@ -285,10 +285,9 @@
 				<li>NaturalArmor</li>
 				<li>Skin_InkBlack</li>
 				<li>Skin_SlateGray</li>
-				<li>Skin_LightGray</li>
-				<li>AG_LargerBodySize</li>
+				<li>Skin_LightGray</li>				
 				<li>Beard_NoBeardOnly</li>
-				<li MayRequire="mute.genebodysize">BodySizeBig</li>
+				<li MayRequire="mute.genebodysize">BodySizeBiggest</li>
 																
 				<li>Libido_Low</li>
 				<li>Aggression_DeadCalm</li>
