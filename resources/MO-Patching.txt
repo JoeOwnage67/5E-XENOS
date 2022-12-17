@@ -1,0 +1,168 @@
+so if you want to patch something. These are the steps you have to follow:
+first create your own local Mod folder. I for example have a local folder just for some patches i'd like to apply to the game, because i some times i am unhappy with how things where done.
+Most of the stuff is case sensitive
+
+The Mod folder should consist of:
+1.4 Folder
+About Folder
+
+The About Folder should consist of an About.xml-file. Here is one example of an aboutfile for one of my mods:
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Medieval Overhaul: Royalty</name>
+  <author>Accurex</author>
+  <packageId>Accurex.MedievalEmpireOverhaul</packageId>
+  <supportedVersions>
+    <li>1.3</li>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>This is just a patch for the Empire faction in the game and some mechanics related to them. It does not contain any graphics and works only in combination with Medieval Overhaul</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>DankPyon.Medieval.Overhaul</packageId>
+      <displayName>Medieval Overhaul</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>DankPyon.Medieval.Overhaul</li>
+    <li>Ogam.Rimedieval</li>
+    <li>Ogam.Rimedieval.Royalty</li>
+    <li>VanillaExpanded.BaseGeneration</li>
+    <li>NunahurAlShamikh.MedMed</li>
+  </loadAfter>
+</ModMetaData>
+
+Furthermore, the Aboutfolder can contain a Preview.png image (1202x676)
+
+next there is the 1.4 folder. This folder hold everything from textures, to defs, patches, sounds, assemblies, ...
+
+If you want to create a patch, you first have to create a new Folder called Patches
+Within this Patches folder you can then create different patch files.
+
+i guess, you want to reskin some of the vanilla stuff, as you have drawn some textures. So you can create a Textures folder as well, within the 1.4 folder.
+If you know the vanilla texture path, you can simply recreate this folder structure and name your texture the same as the vanilla texture, to replace it.
+Here are all the vanilla textures: https://www.dropbox.com/sh/mz6zjq3f1d654f3/AAAQq0_J_RtsOYlP0XSgxzqha/Game%20art%20source?dl=0&subfolder_nav_tracking=1
+
+So how do you figure out the texture path of an object? for that you have to look into the xml files or the vanilla texture folder.
+We will do it with the xml file.
+within your Steam\steamapps\common\RimWorld\Data folder there are different Folder for the Core game and all the DLCs. 
+As a bed is part of the core game, we have to go into the core-folder and open the Defs-Folder, as every xml-file for every object ingame is somewhere within the Defs folder.
+a bed is a building, so it must be somewhere within the ThingDefs_Buildings Folder... Maybe in the Buildings_Furniture.xml file? 😉
+So open up the Buildings_Furniture.xml file and look for <defName>Bed</defName> somewhere within that text column.
+
+so this is what you will find:
+  <ThingDef ParentName="BasicBedBase" Name="Bed">
+    <defName>Bed</defName>
+    <label>bed</label>
+    <description>A cozy mattress and sheets on a frame for resting.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Beauty>1</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>30</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+    </statBases>
+    <size>(1,2)</size>
+    <costStuffCount>45</costStuffCount>
+    <designationHotKey>Misc2</designationHotKey>
+    <uiOrder>2010</uiOrder>
+    <building>
+      <paintable>true</paintable>
+    </building>
+  </ThingDef>
+
+All the information between <ThingDef ....> and </ThingDef> is part of the Def with the  name Bed (see defName).
+
+If you look closer, there is a graphicData-Tag, within this Tag a texPath is avialable. So this is the Texturepath of the Bed.
+Now you can open the Texture folder, which i have provided you, and look into it.
+You should then see this stuff: https://cdn.discordapp.com/attachments/1034593628791779389/1043936724876808323/image.png
+
+the naming of the Bed is very important and case sensitive. As you can see the images end with _east, _north, _ south, and _eastm, _northm, _southm.
+This is something you have to do as well, but in the texPath there is only name itself, without the _orientation stuff.
+Furthermore, there is the mask. You need the mask, if you want the bed to change it's color, like it is with Prisoners, Colonists and Medical beds.
+The red part of the mask is the color you bed gets from the building material, iirc. and the greenstuff is the part that changes color with it's designation.
+
+So how to change textures now?
+well either you recreate the texture patch within your modfolder: like create a folder called Things within the Texture folder, within this folder create a folder called Building, within that one Furniture and finally create a folder called Bed and but the different Bed textures there.
+
+Or you can create a new folder in the Textures Folder called MyTextures (or something like that) and put the stuff there. If you do it that you, you have to change the texPath of the Bed ThingDef 
+For this it is best to start the game, with xml patch helper enabled. on the right side, above the language settings, there is a small line, called xml patch helper... if you press it, this window will appear:
+https://cdn.discordapp.com/attachments/1034593628791779389/1043938449893367949/image.png
+
+now we can look up the bed's xpath, the path within the xml file. To do so, we first have to type Defs, if you remember, every Object is part of the Defs folder.
+If you look into the Buildings_Furniture.xml file you can see, that the bed is a Thing as it has the ThingDef . so now we type /ThingDef. And to let the game know, which thingdef we mean, we have to name it by typing [defName="Bed"]
+Now you should see this:
+https://cdn.discordapp.com/attachments/1034593628791779389/1043939473714581584/image.png
+
+we continue with the typing, till we end up with Defs/ThingDef[defName="Bed"]/graphicData/texPath
+https://cdn.discordapp.com/attachments/1034593628791779389/1043939706158727228/image.png
+
+know we know, we have the right xpath. i always do it with the patch helper, because it caused me a lot of troubles to find the correct xpath of some objects as this stuff is case sensitive. and if you have a typo somewhere within this mod, the left window will show you nothing. for example, here i have written bed, instead of Bed
+https://cdn.discordapp.com/attachments/1034593628791779389/1043940023369740470/image.png
+
+okay now that we know the correct xpath Defs/ThingDef[defName="Bed"]/graphicData/texPath we can write a patch operation. For this you first have to create a patchfile.
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<!-- Put Mod Dependencies here like: <li>Biotech</li> -->
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- Put Patch Operatons here -->
+			
+			</operations>
+		</match>	
+	</Operation>
+</Patch>
+
+in order to replace the texPath we have to do a replace operation (https://rimworldwiki.com/wiki/Modding_Tutorials/PatchOperations)
+such an operation consists of the xpath, and a value, the value is the new stuff
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Put Mod Name here (e.g. Medieval Overhaul)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Bed"]/graphicData/texPat</xpath>
+				<value>
+					<texPath>MyTextures/Bed</texPath>
+				</value>
+			</li>
+			
+			</operations>
+		</match>	
+	</Operation>
+</Patch>
+
+Well and if you want to do more patch/replace operations in one file, just add this:
+            <li Class="PatchOperationReplace">
+                <xpath><!--xpath--></xpath>
+                <value>
+                    <!-- value -->
+                </value>
+            </li>
+between the last </li> and before </operations> 

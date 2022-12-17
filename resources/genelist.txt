@@ -1,0 +1,225 @@
+<!-- Misc -->
+<defName>KindInstinct</defName>
+<defName>ViolenceDisabled</defName>
+<defName>Nearsighted</defName>
+<defName>StrongStomach</defName>
+<defName>DarkVision</defName>
+<defName>KillThirst</defName>
+<defName>FireResistant</defName>
+<defName>Inbred</defName>
+<defName>RobustDigestion</defName>
+<defName>Instability_Mild</defName>
+<defName>Instability_Major</defName>
+<defName>PsychicBonding</defName>
+<defName>PollutionRush</defName>
+<defName>Unstoppable</defName>
+<defName>NakedSpeed</defName>
+
+<!-- Spectrum -->
+<defName>MinTemp_SmallIncrease</defName>
+<defName>MinTemp_SmallDecrease</defName>
+<defName>MinTemp_LargeDecrease</defName>
+<defName>MaxTemp_LargeIncrease</defName>
+<defName>MaxTemp_SmallIncrease</defName>
+<defName>MaxTemp_SmallDecrease</defName>
+<defName>PsychicAbility_Deaf</defName>
+<defName>PsychicAbility_Dull</defName>
+<defName>PsychicAbility_Enhanced</defName>
+<defName>PsychicAbility_Extreme</defName>
+<defName>MoveSpeed_Slow</defName>
+<defName>MoveSpeed_Quick</defName>
+<defName>MoveSpeed_VeryQuick</defName>
+<defName>Beauty_VeryUgly</defName>
+<defName>Beauty_Ugly</defName>
+<defName>Beauty_Pretty</defName>
+<defName>Beauty_Beautiful</defName>
+<defName>Learning_Slow</defName>
+<defName>Learning_Fast</defName>
+<defName>Mood_Depressive</defName>
+<defName>Mood_Pessimist</defName>
+<defName>Mood_Optimist</defName>
+<defName>Mood_Sanguine</defName>
+<defName>ToxResist_Partial</defName>
+<defName>ToxResist_Total</defName>
+<defName>Delicate</defName>
+<defName>Robust</defName>
+<defName>Pain_Reduced</defName>
+<defName>Pain_Extra</defName>
+<defName>Aggression_DeadCalm</defName>
+<defName>Aggression_Aggressive</defName>
+<defName>Aggression_HyperAggressive</defName>
+<defName>VerySleepy</defName>
+<defName>Sleepy</defName>
+<defName>LowSleep</defName>
+<defName>Neversleep</defName>
+<defName>MeleeDamage_Weak</defName>
+<defName>MeleeDamage_Strong</defName>
+<defName>UVSensitivity_Mild</defName>
+<defName>UVSensitivity_Intense</defName>
+<defName>Libido_Low</defName>
+<defName>Libido_High</defName>
+
+<!-- Sanguophage -->
+<defName>Hemogenic</defName>
+<defName>HemogenDrain</defName>
+<defName>FireWeakness</defName>
+<defName>FireTerror</defName>
+<defName>PerfectImmunity</defName> <!-- Archite -->
+<defName>DiseaseFree</defName> <!-- non senescent --> <!-- Archite -->
+<defName>TotalHealing</defName> <!-- scarless --> <!-- Archite -->
+<defName>Deathrest</defName>
+<defName>Ageless</defName> <!-- Archite -->
+<defName>Deathless</defName> <!-- Archite -->
+<defName>ArchiteMetabolism</defName> <!-- Archite -->
+
+<!-- Health -->
+<defName>WoundHealing_Slow</defName>
+<defName>WoundHealing_Fast</defName>
+<defName>WoundHealing_SuperFast</defName>
+<defName>Immunity_Weak</defName>
+<defName>Immunity_Strong</defName>
+<defName>Immunity_SuperStrong</defName>
+<defName>ToxicEnvironmentResistance_Partial</defName> <!-- partial antitoxic lungs -->
+<defName>ToxicEnvironmentResistance_Total</defName> <!-- total antitoxic lungs -->
+<defName>Sterile</defName>
+<defName>Fertile</defName>
+<defName>Superclotting</defName>
+
+<!-- Endogenes -->
+<defName>Body_Fat</defName>
+<defName>Body_Thin</defName>
+<defName>Body_Hulk</defName>
+<defName>Body_Standard</defName>
+<defName>Ears_Human</defName>
+<defName>Ears_Pig</defName>
+<defName>Ears_Floppy</defName>
+<defName>Ears_Cat</defName>
+<defName>Ears_Pointed</defName>
+<defName>Nose_Human</defName>
+<defName>Nose_Pig</defName>
+<defName>Jaw_Baseline</defName>
+<defName>Jaw_Heavy</defName>
+<defName>Head_Gaunt</defName>
+<defName>Hands_Human</defName>
+<defName>Hands_Pig</defName>
+<defName>ElongatedFingers</defName>
+<defName>Headbone_Human</defName>
+<defName>Headbone_MiniHorns</defName>
+<defName>Headbone_CenterHorn</defName>
+<defName>Voice_Human</defName>
+<defName>VoicePig</defName>
+<defName>VoiceRoar</defName>
+
+<!-- Cosmetic -->
+<defName>Hair_BaldOnly</defName>
+<defName>Hair_ShortOnly</defName>
+<defName>Hair_LongOnly</defName>
+<defName>Hair_Grayless</defName>
+<defName>Beard_BushyOnly</defName>
+<defName>Beard_NoBeardOnly</defName>
+<defName>Beard_Always</defName> <!-- unisex beards -->
+<defName>Skin_InkBlack</defName>
+<defName>Skin_SlateGray</defName>
+<defName>Skin_LightGray</defName>
+<defName>Skin_SheerWhite</defName>
+<defName>Skin_Blue</defName
+<defName>Skin_Purple</defName>
+<defName>Skin_PaleRed</defName>
+<defName>Skin_DeepRed</defName>
+<defName>Skin_PaleYellow</defName>
+<defName>Skin_DeepYellow</defName>
+<defName>Skin_Orange</defName>
+<defName>Skin_Green</defName>
+<defName>Furskin</defName>
+<defName>Eyes_Red</defName>
+<defName>Eyes_Gray</defName>
+<defName>Brow_Heavy</defName>
+<defName>Tail_Furry</defName>
+<defName>Tail_Smooth</defName>
+<defName>FacialRidges</defName>
+
+<!-- Abilities -->
+<defName>FireSpew</defName>
+<defName>FoamSpray</defName>
+<defName>LongjumpLegs</defName>
+<defName>AnimalWarcall</defName>
+<defName>Bloodfeeder</defName>
+<defName>Coagulate</defName>
+<defName>XenogermReimplanter</defName> <!-- Archite -->
+<defName>PiercingSpine</defName>
+<defName>AcidSpray</defName>
+
+<!-- BTE Mammalia -->
+<defName>BTEMa_SharpClaws</defName>
+<defName>BTEMa_HeavyHooves</defName>
+<defName>BTEMa_SensitiveWhiskers</defName>
+<defName>BTEMa_ElongatedFangs</defName>
+<defName>BTEMa_Farsighted</defName>
+<defName>BTEMa_DeathBlast</defName>
+<defName>BTEMa_DeathBlastAntimatter</defName>
+<defName>BTEMa_AntimatterGenerator</defName>
+<defName>BTEMa_Nose_Lupine</defName> <!-- dog nose -->
+<defName>BTEMa_Tail_Vulpine</defName> <!-- fox tail -->
+<defName>BTEMa_VulpineEars</defName> <!-- fox ears -->
+<defName>BTEMa_Antlers</defName>
+<defName>BTEMa_CervineEars</defName> <!-- deer ears -->
+<defName>BTEMa_Tail_Small</defName> <!-- small fluffy tail -->
+<defName>BTEMa_NoseCervine</defName> <!-- deer nose -->
+<defName>BTEMa_RatEars</defName>
+<defName>BTEMa_NoseShort</defName> <!-- short, generic, snout -->
+<defName>BTEMa_Tail_Rat</defName>
+<defName>BTEMa_FatalToxWeakness</defName>
+<defName>BTEMa_NoseBat</defName>
+<defName>BTEMa_BatEars</defName>
+<defName>BTEMa_HideboundWings</defName>
+<defName>BTEMa_NoseElephant</defName>
+<defName>BTEMa_ElephantEars</defName>
+<defName>BTEMa_TailElephant</defName>
+<defName>BTEMa_PsychicFuryNeedle</defName>
+<defName>BTEMa_ElephantMemory</defName>
+<defName>BTEMa_RabbitsIntuition</defName>
+<defName>BTEMa_RabbitEarsStraight</defName>
+<defName>BTEMa_RabbitEarsLopped</defName>
+<defName>BTEMa_TailRabbit</defName>
+<defName>BTEMa_RapidCoatGrowth</defName>
+<defName>BTEMa_SheepEars</defName>
+<defName>BTEMa_NoseSheep</defName>
+<defName>BTEMa_ExcessMilkProduction</defName>
+<defName>BTEMa_BovineEars</defName>
+<defName>BTEMa_NoseBovine</defName>
+<defName>BTEMa_ChemfuelGenerator</defName>
+<defName>BTEMa_ChemPustules</defName>
+<defName>BTEMa_SmokeExhaust</defName>
+<defName>BTEMa_Sundrinker</defName> <!-- Archite -->
+<defName>BTEMa_BestowFangs</defName> <!-- Archite -->
+<defName>BTEMa_EyesGold</defName> <!-- Archite -->
+
+<!-- BTE Mythic -->
+<defName>BTEMy_BlazingClaws</defName>
+<defName>BTEMy_AdamantScales</defName>
+<defName>BTEMy_AdamantScalesNoGraphic</defName>
+<defName>BTEMy_AurumDetonation</defName>
+<defName>BTEMy_Cauterize</defName>
+<defName>BTEMy_PurgeMemory</defName>
+<defName>BTEMy_AurumThirst</defName>
+<defName>BTEMy_DraconicNose</defName>
+<defName>BTEMy_DraconicTail</defName>
+<defName>BTEMy_DraconicHorns</defName>
+<defName>BTEMy_DraconicWings</defName>
+<defName>BTEMy_AvariceInstinct</defName>
+<defName>BTEMy_DraconicWingsNoAurum</defName>
+<defName>BTEMy_AurumStabilizer</defName>
+<defName>BTEMy_PhoenixWings</defName>
+<defName>BTEMy_PhoenixWingsNoAurum</defName>
+<defName>BTEMy_PhoenixNose</defName>
+<defName>BTEMy_PhoenixTail</defName>
+<defName>BTEMy_PhoenixCrest</defName>
+
+<!-- Stoneborn -->
+<defName>BushyEyebrows</defName>
+<defName>Stonecall</defName>
+
+
+
+
+
