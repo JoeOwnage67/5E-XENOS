@@ -26,7 +26,7 @@
 				<li Class="PatchOperationAdd">
                 			<xpath>Defs/XenotypeDef[defName="halfling" or "goblin"]/genes</xpath>
                     			<value>
-                       				<li>AG_SmallerBodySize</li>
+                       				<li MayRequire="mute.genebodysize">BodySizeSmaller</li>
                     			</value>
                 		</li>
 				
@@ -34,7 +34,7 @@
 				<li Class="PatchOperationAdd">
                 			<xpath>Defs/XenotypeDef[defName="troll"]/genes</xpath>
                     			<value>
-                       				<li>AG_LargerBodySize</li>
+                       				<li MayRequire="mute.genebodysize">BodySizeBigger</li>
                     			</value>
                 		</li> 
 				
