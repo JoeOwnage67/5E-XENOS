@@ -90,7 +90,7 @@
 				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
-				<li MayRequire="mute.genebodysize">BodySizeSmaller</li>
+				<li MayRequire="mute.genebodysize">BodySizeSmall</li>
 				
 				<li>MoveSpeed_Slow</li>
 				<li>Robust</li>
@@ -123,7 +123,7 @@
 				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
-				<li MayRequire="mute.genebodysize">BodySizeSmaller</li>
+				<li MayRequire="mute.genebodysize">BodySizeSmall</li>
 				
 				<li>MoveSpeed_Slow</li>
 				<li>PsychicAbility_Deaf</li>
