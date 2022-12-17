@@ -90,6 +90,7 @@
 				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
+				<li MayRequire="mute.genebodysize">BodySizeSmaller</li>
 				
 				<li>MoveSpeed_Slow</li>
 				<li>Robust</li>
@@ -122,6 +123,7 @@
 				<li>Body_Fat</li>
 	  			<li>Body_Standard</li>
 	  			<li>Body_Hulk</li>
+				<li MayRequire="mute.genebodysize">BodySizeSmaller</li>
 				
 				<li>MoveSpeed_Slow</li>
 				<li>PsychicAbility_Deaf</li>
@@ -164,8 +166,9 @@
 				<li>Skin_Green</li>
 				<li>AG_Skin_DeepGreen</li>
 				<li>AG_Skin_PlantGreen</li>
-				<li>Nose_Pig</li>				
-				<li>AG_LargerBodySize</li>				
+				<li>Nose_Pig</li>
+				<li MayRequire="mute.genebodysize">BodySizeBigger</li>
+								
 				<li>AG_GutturalVoice</li>
 				
 				<li>MaxTemp_LargeIncrease</li>
@@ -201,7 +204,9 @@
 				<li>Body_Standard</li>
 				<li>IntegratedProtection</li> 
 				<li>Eyes_Red</li>				
-				<li>Beard_NoBeardOnly</li>				
+				<li>Beard_NoBeardOnly</li>
+				<li MayRequire="mute.genebodysize">BodySizeBig</li>
+				
 				
 				<li>Ageless</li>
 				<li>AG_Foodless</li>
@@ -283,6 +288,7 @@
 				<li>Skin_LightGray</li>
 				<li>AG_LargerBodySize</li>
 				<li>Beard_NoBeardOnly</li>
+				<li MayRequire="mute.genebodysize">BodySizeBig</li>
 																
 				<li>Libido_Low</li>
 				<li>Aggression_DeadCalm</li>
