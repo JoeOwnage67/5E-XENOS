@@ -14,7 +14,10 @@
 				</li>				
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="Ashfeather"]</xpath>
-				</li>			
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Tailbinder"]</xpath>
+				</li>	
 				
 <!-- remove Biotech Expansion - Mythic faction (intend to rework later using new versions of xenos) -->
 				<li Class="PatchOperationRemove">
