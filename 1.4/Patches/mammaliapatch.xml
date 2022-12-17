@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Biotech Expansion - Mammalia</li>
-		</mods>
-		<match Class="PatchOperationSequence">
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+    		<mods>
+      			<li>Biotech Expansion - Mammalia</li>
+    		</mods>
+   		<label>remove Biotech Expansion - Mammalia xenotypes and factions</label>
+	    	<match Class="PatchOperationSequence">
 			<success>Normal</success>
 			<operations>
 				
@@ -44,7 +46,7 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/FactionDef[defName="TribeCivilMammals"]</xpath>
 				</li>	
-<!-- skin shader -->
+<!-- skin shader
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/GeneDef[defName="BTEMa_NoseElephant"]/graphicData/useSkinShader</xpath>
 					<value>
@@ -62,11 +64,7 @@
 					<value>
 						<useSkinShader>false</useSkinShader>
 					</value>
-				</li>
-				
-				
-				
-				
+				</li> -->	
 			</operations>
    		 </match>
 	</Operation>
