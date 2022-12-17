@@ -2,13 +2,15 @@
 <Patch>
   
 <!-- remove Stoneborn xenotype and faction -->	
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Det's Xenotypes - Stoneborn</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Normal</success>
-			<operations>	
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+    	<enabled>False</enabled>
+    	<mods>
+      		<li>Det's Xenotypes - Stoneborn</li>
+    	</mods>
+    	<label>Remove the fuel req. for torches:</label>
+   	<operations>
+	
 				<li Class="PatchOperationRemove">
           				<xpath>Defs/FactionDef[defName="OutlanderRoughStoneborn"]</xpath>
         			</li>				
@@ -28,6 +30,6 @@
           				<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
 				</li>
 			</operations>
-   		 </match>
+   		
 	</Operation>
 </Patch>
