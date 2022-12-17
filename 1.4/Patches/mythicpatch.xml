@@ -5,7 +5,7 @@
     		<mods>
       			<li>Biotech Expansion - Mythic</li>
     		</mods>
-   		<label>remove Biotech Expansion - Mammalia xenotypes and factions</label>	    
+   		<label>remove BTE-Mythic xenotypes and factions</label>	    
 		<operations>
 				
 <!-- remove Biotech Expansion - Mythic version of xenotypes (have reworked in new defs) -->
