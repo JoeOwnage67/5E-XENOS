@@ -20,23 +20,8 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="orc"]</xpath>
-				</li>
-				
-<!-- add small body gene to halfling and goblin -->
-				<li Class="PatchOperationAdd">
-                			<xpath>Defs/XenotypeDef[defName="halfling" or "goblin"]/genes</xpath>
-                    			<value>
-                       				<li MayRequire="mute.genebodysize">BodySizeSmaller</li>
-                    			</value>
-                		</li>
-				
-<!-- add large body gene to troll -->
-				<li Class="PatchOperationAdd">
-                			<xpath>Defs/XenotypeDef[defName="troll"]/genes</xpath>
-                    			<value>
-                       				<li MayRequire="mute.genebodysize">BodySizeBigger</li>
-                    			</value>
-                		</li> 
+				</li>			
+
 				
 <!-- add xeno icons to halfling, goblin, undead and troll -->
 				<li Class="PatchOperationReplace">
