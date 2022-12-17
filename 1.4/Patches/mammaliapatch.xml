@@ -5,10 +5,8 @@
     		<mods>
       			<li>Biotech Expansion - Mammalia</li>
     		</mods>
-   		<label>remove Biotech Expansion - Mammalia xenotypes and factions</label>
-	    	<match Class="PatchOperationSequence">
-			<success>Normal</success>
-			<operations>
+   		<label>remove Biotech Expansion - Mammalia xenotypes and factions</label>	   
+		<operations>
 				
 <!-- remove Biotech Expansion - Mammalia xenotypes (have reworked some in new defs) -->	
 				<li Class="PatchOperationRemove">
@@ -46,7 +44,6 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/FactionDef[defName="TribeCivilMammals"]</xpath>
 				</li>	
-			</operations>
-   		 </match>
+			</operations>   		
 	</Operation>
 </Patch>
