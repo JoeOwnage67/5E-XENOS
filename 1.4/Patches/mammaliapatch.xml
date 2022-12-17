@@ -5,10 +5,10 @@
     		<mods>
       			<li>Biotech Expansion - Mammalia</li>
     		</mods>
-   		<label>remove Biotech Expansion - Mammalia xenotypes and factions</label>	   
+   		<label>remove BTE-Mammalia xenotypes and factions</label>	   
 		<operations>
 				
-<!-- remove Biotech Expansion - Mammalia xenotypes (have reworked some in new defs) -->	
+<!-- remove BTE-Mammalia xenotypes (have reworked some in new defs) -->	
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="Barkkin"]</xpath>
 				</li>				
