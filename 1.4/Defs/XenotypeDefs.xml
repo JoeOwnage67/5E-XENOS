@@ -365,21 +365,18 @@
 			<genes>
 				<li>BTEMy_DraconicNose</li>
 				<li>BTEMy_DraconicTail</li>      				    				
-      				<li>BTEMy_BlazingClaws</li>
-				<li>BTEMy_AdamantScales</li>
-				
-				<li>Hair_DarkReddish</li>
-				<li>Hair_SnowWhite</li>
-				<li>Hair_InkBlack</li>
-				
-				
+				<li>AG_ScalyBody</li>
+				<li>BTEMa_SharpClaws</li>
+				<li>AG_AnimusEars</li>
+				<li>NaturalArmor</li>
+											
+				<li>Hair_BaldOnly</li>
 				<li>Skin_DeepRed</li>
 				<li>AG_Skin_DeeperRed</li>
 				<li>AG_Skin_DeepGreen</li>
 				<li>AG_Skin_PlantGreen</li>
 				<li>Skin_InkBlack</li>
-				<li>Skin_PaleRed</li>
-				<li>Skin_Green</li>
+				<li>Skin_PaleRed</li>		
 				
 				
 				<li>Body_Standard</li>
