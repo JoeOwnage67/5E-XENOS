@@ -157,16 +157,18 @@
 			<inheritable>true</inheritable>
 			<chanceToUseNameMaker>1</chanceToUseNameMaker>
     			<genes>
-				<li>Hair_ShortOnly</li>
-				<li>Ears_Pointed</li>
-				<li>Jaw_Heavy</li>
+				<li>Hair_BaldOnly</li>
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Ears_Pointed</li>				
 				<li>Headbone_MiniHorns</li>
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
 				<li>Skin_Green</li>
 				<li>AG_Skin_DeepGreen</li>
-				<li>AG_Skin_PlantGreen</li>
-				<li>Nose_Pig</li>
+				<li>AG_Skin_PlantGreen</li>				
+				<li>Brow_Heavy</li>
+				<li>FacialRidges</li>
 				<li MayRequire="mute.genebodysize">BodySizeBigger</li>
 								
 				<li>AG_GutturalVoice</li>
@@ -362,14 +364,24 @@
 			<inheritable>true</inheritable>
 			<genes>
 				<li>BTEMy_DraconicNose</li>
-				<li>BTEMy_DraconicTail</li>
-      				<li>BTEMy_DraconicHorns</li>
-      				<li>AG_BatWings</li>
+				<li>BTEMy_DraconicTail</li>      				    				
       				<li>BTEMy_BlazingClaws</li>
-				<li>Hair_BrightRed</li>
 				<li>BTEMy_AdamantScales</li>
+				
+				<li>Hair_DarkReddish</li>
+				<li>Hair_SnowWhite</li>
+				<li>Hair_InkBlack</li>
+				
+				
 				<li>Skin_DeepRed</li>
 				<li>AG_Skin_DeeperRed</li>
+				<li>AG_Skin_DeepGreen</li>
+				<li>AG_Skin_PlantGreen</li>
+				<li>Skin_InkBlack</li>
+				<li>Skin_PaleRed</li>
+				<li>Skin_Green</li>
+				
+				
 				<li>Body_Standard</li>
 				<li>Body_Hulk</li>
 				<li>AG_EggLaying</li>
