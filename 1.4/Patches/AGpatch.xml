@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
-		<value>
-			<elf_wood>0.2</elf_wood>
-            <elf_dark>0.2</elf_dark>
-            <dwarf_hill>0.2</dwarf_hill>
-            <dwarf_mountain>0.2</dwarf_mountain>
-            <orc_brutal>0.2</orc_brutal>
-            <warforged>0.2</warforged>
-            <tabaxi>0.2</tabaxi>           
-            <loxodon>0.2</loxodon>
-            <shifter>0.2</shifter>
-            <dragonborn>0.2</dragonborn>
-            <troll>0.2</troll>
-            <halfling>0.2</halfling>
-            <goblin>0.2</goblin>
-            <undead>0.2</undead>
-		</value>
-	</Operation>  
-		
-			
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>		
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
+					<value>
+						<elf_wood>0.2</elf_wood>
+						<elf_dark>0.2</elf_dark>
+						<dwarf_hill>0.2</dwarf_hill>
+						<dwarf_mountain>0.2</dwarf_mountain>
+						<orc_brutal>0.2</orc_brutal>
+						<warforged>0.2</warforged>
+						<tabaxi>0.2</tabaxi>           
+						<loxodon>0.2</loxodon>
+						<shifter>0.2</shifter>
+						<dragonborn>0.2</dragonborn>
+						<troll>0.2</troll>
+						<halfling>0.2</halfling>
+						<goblin>0.2</goblin>
+						<undead>0.2</undead>
+					</value>
+				<li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="AG_MindDevourer"]/label</xpath>
+					<value>
+						<label>Illithid</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="AG_MindDevourer"]/description</xpath>
+					<value>
+						<description>A xenotype inspired by the old eldritch folklore tales from old Earth, the Chthonian visage of Illithid mind flayers inspires terror and intense uneasiness. They are masters of the psychic arts, being capable of projecting their mental powers and using their mind as a fearsome weapon, as well as devouring the brains of their victims and extracting valuable knowledge from them. Illithids are usually reviled by other human xenotypes.</description>
+					</value>
+				</li>	
+			</operations>
+   		 </match>
+	</Operation>
 </Patch>
