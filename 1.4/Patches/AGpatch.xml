@@ -26,7 +26,7 @@
 						<goblin>0.2</goblin>
 						<undead>0.2</undead>
 					</value>
-				<li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/FactionDef[defName="AG_MindDevourer"]/label</xpath>
 					<value>
