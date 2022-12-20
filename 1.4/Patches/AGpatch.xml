@@ -28,13 +28,13 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/FactionDef[defName="AG_MindDevourer"]/label</xpath>
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/label</xpath>
 					<value>
 						<label>Illithid</label>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/FactionDef[defName="AG_MindDevourer"]/description</xpath>
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/description</xpath>
 					<value>
 						<description>A xenotype inspired by the old eldritch folklore tales from old Earth, the Chthonian visage of Illithid mind flayers inspires terror and intense uneasiness. They are masters of the psychic arts, being capable of projecting their mental powers and using their mind as a fearsome weapon, as well as devouring the brains of their victims and extracting valuable knowledge from them. Illithids are usually reviled by other human xenotypes.</description>
 					</value>
