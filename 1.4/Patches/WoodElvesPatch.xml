@@ -51,7 +51,52 @@
 						</value>
 				</li>
 				
-        </operations>
+<!-- changes to wood elf scenario -->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/ScenarioDef[defName="BaseWoodElvesScenario"]/label</xpath>
+                    			<value>
+						<label>Wood Elf Enclave</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ScenarioDef[defName="BaseWoodElvesScenario"]/scenario/summary</xpath>
+                    			<value>
+						<summary>Start as a new wood elf colony.</summary>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ScenarioDef[defName="BaseWoodElvesScenario"]/description</xpath>
+                    			<value>
+						<description>You have received news that your rivals the Dark Elves have been mobilizing their forces and intend to return to the surface world. You have been tasked by the Queen of all Elves to colonize a new location that will serve to fortify the Wood Elf territories.</description>
+					</value>
+				</li>		
+				
+<!-- changes to wood elf faction -->
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="DevDesigner_WoodElvesFaction"]/label</xpath>
+                    			<value>
+						<label>Wood Elf Enclave</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="DevDesigner_WoodElvesFaction"]/description</xpath>
+                    			<value>
+						<description>Wood Elves are a subrace of Elf that prefer to live out their lives in nature's embrace. Generations ago they banished their Lolth-worshipping brethren, the Dark Elves, from the surface world. They have been at odds ever since.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="DevDesigner_WoodElvesFaction_Player"]/label</xpath>
+                    			<value>
+						<label>Wood Elf Enclave</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+                    			<xpath>Defs/FactionDef[defName="DevDesigner_WoodElvesFaction_Player"]/description</xpath>
+                    			<value>
+						<description>Wood Elves are a subrace of Elf that prefer to live out their lives in nature's embrace. Generations ago they banished their Lolth-worshipping brethren, the Dark Elves, from the surface world. They have been at odds ever since.</description>
+					</value>
+				</li>		
+        		</operations>
    		 </match>
 	</Operation>
 </Patch>
