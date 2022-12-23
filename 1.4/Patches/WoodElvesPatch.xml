@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Fantasy Of The Rim</li>
+			<li>ↁ Elves</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Normal</success>
