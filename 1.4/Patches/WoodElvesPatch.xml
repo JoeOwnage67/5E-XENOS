@@ -9,9 +9,6 @@
 			<operations>	
 				
 <!-- remove Wood Elf Xenotype if Elves mod is installed -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/XenotypeDef[defName="elf_wood"]</xpath>
-				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances/elf_wood</xpath>
 					<value>
@@ -35,7 +32,10 @@
 					<value>
 						<DevDesigner_XenotypeWoodElves>0.02</DevDesigner_XenotypeWoodElves>
 					</value>
-				</li>		
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="elf_wood"]</xpath>
+				</li>
 				
 <!-- use 5e Xenos descriptions for wood elf -->
 				<li Class="PatchOperationReplace">
