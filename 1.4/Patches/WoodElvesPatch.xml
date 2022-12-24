@@ -12,6 +12,30 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="elf_wood"]</xpath>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances/elf_wood</xpath>
+					<value>
+						<DevDesigner_XenotypeWoodElves>0.02</DevDesigner_XenotypeWoodElves>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances/elf_wood</xpath>
+					<value>
+						<DevDesigner_XenotypeWoodElves>0.02</DevDesigner_XenotypeWoodElves>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances/elf_wood</xpath>
+					<value>
+						<DevDesigner_XenotypeWoodElves>0.02</DevDesigner_XenotypeWoodElves>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances/elf_wood</xpath>
+					<value>
+						<DevDesigner_XenotypeWoodElves>0.02</DevDesigner_XenotypeWoodElves>
+					</value>
+				</li>		
 				
 <!-- use 5e Xenos descriptions for wood elf -->
 				<li Class="PatchOperationReplace">
