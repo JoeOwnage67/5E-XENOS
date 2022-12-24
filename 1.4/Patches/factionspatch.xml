@@ -4,7 +4,7 @@
 <Patch>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
 			<elf_wood>0.02</elf_wood>
             <elf_dark>0.02</elf_dark>
