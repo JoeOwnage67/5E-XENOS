@@ -2,7 +2,7 @@
   
 If you like my stuff, you can buy me a coffee (or a beer) at : https://ko-fi.com/joeownage  
   
-This mod uses new genes and genes from existing mods to create or change xenotypes to bring them into line with DnD 5e races. I had discontinued this mod, believing that Forgotten Realms - Biotech Edition was superior, but there are still some people that want to use it so I have updated it.  
+This mod uses new genes and genes from existing mods to create or change xenotypes to bring them into line with DnD 5e races. I had discontinued this mod, believing that Forgotten Realms - Biotech Edition was superior, but there are still some people that want to use it so I have updated it. Also it uses Big & Small now, which many have requested. 
   
 Wood Elf  
 Dark Elf  
