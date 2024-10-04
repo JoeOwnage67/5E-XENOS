@@ -17,7 +17,8 @@ Loxodon - requires *Biotech Expansion - Mammalia* loaded.
 Shifter - requires *Biotech Expansion - Mammalia* loaded.  
 Troll - will come back in the future  
 Halfling - will come back in the future  
-Goblin - will come back in the future  
+Goblin - will come back in the future
+Illithid - just a name change and small gene tweak from the *Alpha Genes* version.
 
 There are mod options under Vanilla Expanded Framework that allow you to toggle *Biotech Expansion* xenotypes and factions on or off.
   
