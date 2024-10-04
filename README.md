@@ -18,6 +18,8 @@ Shifter - requires *Biotech Expansion - Mammalia* loaded.
 Troll - will come back in the future  
 Halfling - will come back in the future  
 Goblin - will come back in the future  
+
+There are mod options under Vanilla Expanded Framework that allow you to toggle *Biotech Expansion* xenotypes and factions on or off.
   
 Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson (Alpha Genes), Lennoxite (Biotech Expansion), and DetVisor (Det's Stoneborn).  
   
@@ -32,5 +34,7 @@ Mooloh's DnD Menagerie https://steamcommunity.com/sharedfiles/filedetails/?id=27
 Pointed Elf Ears Refined https://steamcommunity.com/sharedfiles/filedetails/?id=2886966525  
   
 ---Compatibility---  
-Custom head types are not really compatible with Nal's Facial Animations, but there is a Facial Animations Xenotype Compatibility mod that aims to correct this. If not, you can turn off facial animations on certain xenotypes under the mod options for Nal's Facial Animations.
+Custom head types are not really compatible with Nal's Facial Animations, but there is a Facial Animations Xenotype Compatibility mod that aims to correct this. If not, you can turn off facial animations on certain xenotypes under the mod options for Nal's Facial Animations.  
+  
+I have marked a few mods as incompatible that add the same or similar stuff to what this mod is adding.
 
