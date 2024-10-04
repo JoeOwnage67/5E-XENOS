@@ -20,9 +20,7 @@
 				<li>Beauty_Beautiful</li>
 				<li>Hair_LongOnly</li>
 				<li>ElongatedFingers</li>
-				<li>Beard_NoBeardOnly</li>
-				
-				<li>Ageless</li>
+				<li>Beard_NoBeardOnly</li>	
 				<li>Delicate</li>
 				<li>ArchiteMetabolism</li>
 				<li>DiseaseFree</li>				
@@ -30,11 +28,9 @@
 				<li>KindInstinct</li>
 				<li>Fertile</li>
 				<li>Libido_Low</li>
-				<li>LowSleep</li>
-								
+				<li>LowSleep</li>								
 				<li>AptitudeTerrible_Melee</li>
-				<li>AptitudeRemarkable_Animals</li>
-				
+				<li>AptitudeRemarkable_Plants</li>				
 				<li>AnimalWarcall</li>			
 
     			</genes>
@@ -64,8 +60,6 @@
 				<li>Hair_LongOnly</li>
 				<li>ElongatedFingers</li>
 				<li>Beard_NoBeardOnly</li>
-				
-				<li>Ageless</li>
 				<li>Delicate</li>
 				<li>ArchiteMetabolism</li>
 				<li>DiseaseFree</li>
@@ -74,10 +68,9 @@
 				<li>Fertile</li>
 				<li>Libido_Low</li>
 				<li>LowSleep</li>
-				<li>MeleeDamage_Weak</li>
-								
+				<li>MeleeDamage_Weak</li>								
 				<li>MaxTemp_SmallDecrease</li>	
-				<li>AptitudeRemarkable_Plants</li>
+				<li>AptitudeRemarkable_Animals</li>
 
 			 </genes>
 		</XenotypeDef>
