@@ -259,6 +259,7 @@
 				<li MayRequire="biotexpans.mammalia">BTEMa_SharpClaws</li> <!-- Biotech Expansion - Mammalia -->				
 				<li MayRequire="biotexpans.mammalia">BTEMa_SensitiveWhiskers</li> <!-- Biotech Expansion - Mammalia -->					
 				<li>5X_FelyneWhiskers</li> <!-- 5e Xenos -->
+				<li>DwarfFrame</li><!--Big & Small-->
 
 				<li>Beard_NoBeardOnly</li>
 				<li>Hair_BaldOnly</li>
