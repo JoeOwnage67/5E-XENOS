@@ -12,7 +12,7 @@ Orc
 Warforged  
 Undead  
 Tabaxi - has additional genes with *Biotech Expansion - Mammalia* loaded.  
-Illithid - just a name change and small gene tweak from the *Alpha Genes* version.  
+Illithid - just a name change and small gene tweak from the *Alpha Genes* mind devourer.  
 Dragonborn - requires *Biotech Expansion - Mythic* loaded.  
 Loxodon - requires *Biotech Expansion - Mammalia* loaded.  
 Shifter - requires *Biotech Expansion - Mammalia* loaded.  
