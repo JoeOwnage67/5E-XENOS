@@ -11,7 +11,7 @@ Mountain Dwarf
 Orc  
 Warforged  
 Undead  
-Tabaxi - has additional genes with *Biotech Expansion - Mammalia* loaded.  
+Tabaxi    
 Illithid - just a name change and small gene tweak from the *Alpha Genes* mind devourer.  
 Dragonborn - requires *Biotech Expansion - Mythic* loaded.  
 Loxodon - requires *Biotech Expansion - Mammalia* loaded.  
