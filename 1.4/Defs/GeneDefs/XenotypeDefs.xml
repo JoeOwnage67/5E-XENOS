@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!-- Wood Elf -->
+		<XenotypeDef>
+    			<defName>5X_elfwood</defName>
+    			<label>wood elf</label>
+    			<description>The Wood Elves are a reclusive, secretive and highly isolationist subrace of Elves that long ago voluntarily split off from the rest of their kin, preferring instead to live out their lives in nature's embrace beneath the enchanted forested canopy of the great woodland.</description>
+			<descriptionShort>Wood Elves are a subrace of Elf that prefer to live out their lives in nature's embrace.</descriptionShort>
+   			<iconPath>UI/Icons/Xenotypes/Elf</iconPath>
+    			<inheritable>true</inheritable>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+    			<genes>
+
+				<li>DV_LifespanLong</li> <!--Stoneborn-->
+
+				<li>Ears_Pointed</li>
+				<li>Body_Standard</li>
+				<li>Body_Thin</li>
+				<li>Beauty_Beautiful</li>
+				<li>Hair_LongOnly</li>
+				<li>ElongatedFingers</li>
+				<li>Beard_NoBeardOnly</li>
+				
+				<li>Ageless</li>
+				<li>Delicate</li>
+				<li>ArchiteMetabolism</li>
+				<li>DiseaseFree</li>				
+				<li>MeleeDamage_Weak</li>
+				<li>KindInstinct</li>
+				<li>Fertile</li>
+				<li>Libido_Low</li>
+				<li>LowSleep</li>
+								
+				<li>AptitudeTerrible_Melee</li>
+				<li>AptitudeRemarkable_Animals</li>
+				
+				<li>AnimalWarcall</li>			
+
+    			</genes>
+  		</XenotypeDef>
+
+
+<!-- Dark Elf -->
+		<XenotypeDef>
+			<defName>5X_elfdark</defName>
+			<label>dark elf</label>
+			<description>Descended from an earlier subrace of dark-skinned elves, the Dark Elves or Drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth.</description>
+			<descriptionShort>Dark Elves are a subrace of Elf long ago banished from the surface world for worship of the evil and corrupt goddess Lolth.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Elf</iconPath>
+			<inheritable>true</inheritable>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+			<genes>
+
+				<li>DV_LifespanLong</li> <!--Stoneborn-->
+
+				<li>Ears_Pointed</li>
+				<li>Body_Standard</li>
+				<li>Body_Thin</li>
+				<li>Skin_InkBlack</li>				
+				<li>Beauty_Beautiful</li>
+				<li>Eyes_Gray</li>
+				<li>Hair_SnowWhite</li>
+				<li>Hair_LongOnly</li>
+				<li>ElongatedFingers</li>
+				<li>Beard_NoBeardOnly</li>
+				
+				<li>Ageless</li>
+				<li>Delicate</li>
+				<li>ArchiteMetabolism</li>
+				<li>DiseaseFree</li>
+				<li>DarkVision</li>
+				<li>Mood_Pessimist</li>
+				<li>Fertile</li>
+				<li>Libido_Low</li>
+				<li>LowSleep</li>
+				<li>MeleeDamage_Weak</li>
+								
+				<li>MaxTemp_SmallDecrease</li>	
+				<li>AptitudeRemarkable_Plants</li>
+
+			 </genes>
+		</XenotypeDef>
+	
+<!-- Hill Dwarf -->
+		<XenotypeDef>
+			<defName>5X_dwarfhill</defName>
+			<label>hill dwarf</label>
+			<description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.</description>
+			<descriptionShort>Hill Dwarves are a lowland subrace of Dwarf known for their robustness, combat prowess, and ability to strike a bargain.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
+			<inheritable>true</inheritable>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+			<genes>
+
+				<li>DV_BushyEyebrows</li> <!--Stoneborn-->
+				<li>DV_MightyLiver</li>	<!--Stoneborn-->
+				<li>DV_Aggression_Irascible</li> <!--Stoneborn-->
+				<li>DwarfFrame</li><!--Big & Small-->
+
+				<li>BushyEyebrows</li>
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Body_Fat</li>
+	  			<li>Body_Standard</li>
+	  			<li>Body_Hulk</li>
+				
+				<li>MoveSpeed_Slow</li>
+				<li>Robust</li>
+	  			<li>Libido_High</li>
+	  			<li>WoundHealing_Slow</li>
+	  			<li>Immunity_Strong</li>
+				
+	  			<li>MinTemp_SmallDecrease</li>
+	  			<li>MaxTemp_SmallDecrease</li>				
+	  			<li>AptitudeStrong_Social</li>
+				<li>AptitudePoor_Animals</li>
+	  			<li>AptitudePoor_Plants</li>
+	  			<li>AptitudeRemarkable_Melee</li>   
+
+			</genes>
+		</XenotypeDef>
+  
+<!-- Mountain Dwarf -->
+		<XenotypeDef>
+			<defName>5X_dwarfmountain</defName>
+			<label>mountain dwarf</label>
+			<description>Mountain Dwarves are a breed of dwarves at home in the high peaks and rarified air of the rocky mountains. In many ways similar to their lowland cousins, mountain dwarves are slightly more reclusive and tend to focus on mining, forging, and crafting a bit more strongly -- their closeness to the dwarven deity Moradin is said to be a cause of this. It is said that a mountain dwarf is born in armor, but this is likely just a mild exaggeration.</description>
+			<descriptionShort>Mountain Dwarves are a more reclusive subrace of Dwarf focused on mining, forging and crafting.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
+			<inheritable>true</inheritable>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+			<genes>
+
+				<li>DV_BushyEyebrows</li> <!-- Stoneborn -->
+				<li>DV_Stonecall</li> <!-- Stoneborn -->
+				<li>DV_MightyLiver</li> <!-- Stoneborn -->
+				<li>DV_Undergrounder</li> <!-- Stoneborn -->
+				<li>DV_Aggression_Irascible</li> <!-- Stoneborn --> 	
+				<li>DwarfFrame</li><!--Big & Small-->
+				<li>AG_MiningYield_High</li><!--Alpha Genes-->
+
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Body_Fat</li>
+	  			<li>Body_Standard</li>
+	  			<li>Body_Hulk</li>		
+				<li>MoveSpeed_Slow</li>
+				<li>Robust</li>
+	  			<li>Libido_High</li>
+	  			<li>WoundHealing_Slow</li>
+	  			<li>Immunity_Strong</li>	  			
+	  			<li>Nearsighted</li>
+				<li>MinTemp_SmallDecrease</li>
+	  			<li>MaxTemp_SmallDecrease</li>	  			
+	  			<li>AptitudePoor_Social</li>
+	  			<li>AptitudeStrong_Mining</li>
+	  			<li>AptitudePoor_Animals</li>
+	  			<li>AptitudePoor_Plants</li>
+	  			<li>AptitudeRemarkable_Crafting</li>      				
+				
+			</genes>
+		</XenotypeDef>
+
+<!-- Orc -->
+		<XenotypeDef>
+			<defName>5X_orc</defName>
+			<label>orc</label>
+			<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
+			<descriptionShort>Orcs are savage, fearless warriors who seek glory through death and destruction.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Orc</iconPath>
+			<inheritable>true</inheritable>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+    			<genes>
+
+				<li>AG_Skin_DeepGreen</li> <!-- Alpha Genes -->
+				<li>AG_Skin_PlantGreen</li>	<!-- Alpha Genes -->	
+				<li>AG_PackMule</li> <!-- Alpha Genes -->
+				<li>BS_LargeFrame</li> <!-- Big & Small -->
+				<li>BS_GiantWeaponWielder</li> <!-- Big & Small -->
+
+				<li>Hair_BaldOnly</li>
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Ears_Pointed</li>				
+				<li>Headbone_MiniHorns</li>
+				<li>Body_Standard</li>
+				<li>Body_Hulk</li>
+				<li>Skin_Green</li>
+				<li>Brow_Heavy</li>
+				<li>FacialRidges</li>
+				<li>AG_GutturalVoice</li>
+				<li>MaxTemp_LargeIncrease</li>
+				<li>Aggression_HyperAggressive</li>
+				<li>MeleeDamage_Strong</li>
+				<li>KillThirst</li>
+				<li>Robust</li>
+				<li>AptitudeRemarkable_Melee</li>
+				<li>AptitudeTerrible_Social</li>
+				<li>AptitudeTerrible_Plants</li>
+				<li>AptitudeTerrible_Crafting</li>
+				<li>Fertile</li>
+				<li>Libido_High</li>
+
+			</genes>
+		</XenotypeDef>
+
+<!-- Warforged -->
+		<XenotypeDef>
+			<defName>5X_warforged</defName>
+			<label>warforged</label>
+			<description>Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond the war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.</description>
+			<descriptionShort>Warforged are fully sentient soldiers built from a blend of organic and inorganic materials.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Warforged</iconPath>
+			<inheritable>true</inheritable>
+			<chanceToUseNameMaker>1</chanceToUseNameMaker>
+			<genes>
+
+				<li>5X_WarforgedBody</li> <!-- 5e Xenos -->
+				<li>5X_WarforgedHead</li> <!-- 5e Xenos -->
+				<li>5X_IntegratedProtection</li> <!-- 5e Xenos -->
+				<li>5X_Impressionable</li> <!-- 5e Xenos -->	
+				<li>BS_LargeFrame</li> <!-- Big & Small -->				
+				<li>BS_GiantWeaponWielder</li> <!-- Big & Small -->
+				<li>BS_TrulyAgeless</li> <!-- Big & Small -->
+				<li>AG_Foodless</li> <!-- Alpha Genes -->
+				<li>AG_RegenerationMinor</li> <!-- Alpha Genes -->
+				<li>AG_ColdSlowness</li> <!-- Alpha Genes -->
+				<li>AG_HeatSlowness</li> <!-- Alpha Genes -->
+				<li>AG_PackMule</li> <!-- Alpha Genes -->	
+				<li>AG_TarBlood</li> <!-- Alpha Genes -->						
+
+				<li>Skin_SlateGray</li>
+				<li>Hair_BaldOnly</li>				
+				<li>Body_Standard</li>
+				<li>Eyes_Red</li>				
+				<li>Beard_NoBeardOnly</li>				
+				<li>Ageless</li>				
+				<li>Sterile</li>
+				<li>MeleeDamage_Strong</li>
+				<li>Robust</li>
+				<li>Aggression_DeadCalm</li>
+				<li>TotalHealing</li>	
+				<li>AptitudeStrong_Construction</li>
+				<li>MeleeDamage_Strong</li>
+				<li>AptitudeTerrible_Social</li>
+				<li>AptitudeTerrible_Plants</li>
+				<li>Neversleep</li>
+				<li>Immunity_SuperStrong</li>
+				<li>ToxResist_Total</li>
+				<li>Learning_Slow</li>
+
+			</genes>
+		</XenotypeDef>
+	
+<!-- Tabaxi -->
+		<XenotypeDef>
+			<defName>5X_tabaxi</defName>
+			<label>tabaxi</label>
+			<description>Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.</description>
+			<descriptionShort>Tabaxi are inquisitive, catlike humanoids known for their curiosity and their restless nature.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+				
+				<li MayRequire="biotexpans.mammalia">BTEMa_SharpClaws</li> <!-- Biotech Expansion - Mammalia -->				
+				<li MayRequire="biotexpans.mammalia">BTEMa_SensitiveWhiskers</li> <!-- Biotech Expansion - Mammalia -->					
+				<li>5X_FelyneWhiskers</li> <!-- 5e Xenos -->
+
+				<li>Beard_NoBeardOnly</li>
+				<li>Hair_BaldOnly</li>
+				<li>Ears_Cat</li>
+				<li>Tail_Furry</li>
+				<li>Body_Thin</li>
+				<li>Furskin</li>							
+				<li>Learning_Fast</li><!-- Curious -->
+				<li>Fertile</li>
+				<li>Libido_High</li>
+				<li>DarkVision</li>
+				<li>MoveSpeed_Quick</li>
+				<li>Immunity_Weak</li>											
+				<li>AptitudeStrong_Animals</li>
+				<li>AptitudeStrong_Intellectual</li>
+				<li>AptitudeStrong_Cooking</li>
+				<li>AptitudePoor_Construction</li>
+				<li>AptitudeTerrible_Mining</li>								
+				<li>AnimalWarcall</li>	
+
+			</genes>
+		</XenotypeDef>				
+				
+		<XenotypeDef>
+			<defName>5X_undead</defName>
+			<label>undead</label>
+			<description>Emerging from the shadowy realms beyond the mortal plane, the undead are eerie beings animated by dark magic and ancient curses. Driven by an insatiable hunger for life force and forbidden knowledge, these spectral wanderers traverse the world in search of lost relics, forgotten lore, and the secrets of immortality. Relentless in their pursuit, the undead rarely find rest, their existence a ceaseless journey through the veil of death. Their very nature compels them to uncover hidden truths, reclaim ancient powers, and ensure that no arcane mystery remains buried.</description>
+			<descriptionShort>The undead are eerie beings driven by dark magic, wandering the world in search of lost relics and forbidden knowledge.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Undead</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+						<li>5X_UndeadBody</li> <!-- 5e Xenos -->
+						<li>5X_UndeadHead</li> <!-- 5e Xenos -->
+						<li>AG_GauntBody</li> <!-- Alpha Genes -->
+						<li>AG_CancerousBody</li> <!-- Alpha Genes -->
+						<li>AG_VeryGauntHead</li> <!-- Alpha Genes -->
+
+						<li>Ageless</li>
+						<li>ArchiteMetabolism</li>
+						<li>Deathless</li>						
+						<li>DiseaseFree</li>
+						<li>PerfectImmunity</li>
+						<li>TotalHealing</li>
+						<li>MinTemp_SmallDecrease</li>
+						<li>KillThirst</li>
+						<li>Neversleep</li>
+						<li>Pain_Reduced</li>
+						<li>Libido_Low</li>
+						<li>Sterile</li>
+						<li>Hair_BaldOnly</li>
+						<li>Beard_NoBeardOnly</li>
+						<li>Body_Standard</li>
+						<li>Body_Thin</li>
+						<li>Skin_SheerWhite</li>
+						<li>DarkVision</li>
+						<li>Unstoppable</li>
+						<li>Skin_SlateGray</li>
+						<li>Skin_LightGray</li>
+						
+			</genes>
+		</XenotypeDef>
+
+		<!--<5X_troll>
+			<5X_halfling>
+			<5X_goblin>-->
+</Defs>
+

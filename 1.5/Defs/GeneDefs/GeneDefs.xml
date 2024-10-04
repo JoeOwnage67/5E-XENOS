@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<!-- Warforged Head Genedef -->
+	<GeneDef ParentName="AG_GeneHeadBase">
+		<defName>5X_WarforgedHead</defName>
+		<label>warforged head</label>
+		<selectionWeight>0</selectionWeight>
+		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have Crystalline Eyes, a hinged jawline and a prominent brow.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<iconPath>UI/Icons/Genes/Gene_WarFace</iconPath>
+		<forcedHeadTypes>
+			<li>5X_War_Head1</li>
+			<li>5X_War_Head2</li>
+			<li>5X_War_Head3</li>
+		</forcedHeadTypes>		
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+<!-- WarforgedBody -->
+	<GeneDef ParentName="AG_ArmourBase">
+	<defName>5X_WarforgedBody</defName>
+	<label>warforged body</label>	
+	<description>a metal body with a high quality rust coating.</description>
+	<iconPath>UI/Icons/Genes/Gene_WarforgedBody</iconPath>	   
+		<displayOrderInCategory>20</displayOrderInCategory>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	   	
+	   	<graphicData>
+      			<fur>5X_WarforgedBody</fur>      			
+      			<tattoosVisible>false</tattoosVisible>			
+    		</graphicData>		
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<furHidesBody>true</furHidesBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+<!-- UndeadHead Genedef -->
+	<GeneDef ParentName="AG_GeneHeadBase">
+		<defName>5X_UndeadHead</defName>
+		<label>undead head</label>
+		<selectionWeight>0</selectionWeight>
+		<description>A formerly dead head, it is not in top condition.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<iconPath>UI/Icons/Genes/Gene_UndeadHead</iconPath>
+		<forcedHeadTypes>
+			<li>5X_UndeadHead1</li>
+			<li>5X_UndeadHead2</li>
+			<li>5X_UndeadHead3</li>
+			<li>5X_UndeadHead4</li>
+		</forcedHeadTypes>		
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>	
+
+	
+<!-- UndeadBody -->
+	<GeneDef ParentName="AG_ArmourBase">
+	<defName>5X_UndeadBody</defName>
+	<label>undead body</label>	
+	<description>A formerly dead body. It ain't what it used to be.</description>
+	<iconPath>UI/Icons/Genes/Gene_UndeadBody</iconPath>	   
+		<displayOrderInCategory>20</displayOrderInCategory>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	   	
+	   	<graphicData>
+      			<fur>5X_UndeadBody</fur>      			
+      			<tattoosVisible>false</tattoosVisible>			
+    		</graphicData>		
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<furHidesBody>true</furHidesBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	
+<!-- Felyne Whiskers -->
+	<GeneDef ParentName="AG_GeneTuskBase">
+		<defName>5X_FelyneWhiskers</defName>
+		<label>felyne whiskers</label>
+		<displayCategory>AG_Cosmetic_Horns</displayCategory>
+		<description>Carriers of this gene grow fluffy Felyne whiskers.</description>
+		<iconPath>UI/Icons/Genes/5X_FelyneWhiskers</iconPath>
+		<forcedHeadTypes>
+			<li>Female_AveragePointy</li>			
+		</forcedHeadTypes>	
+		<selectionWeight>0</selectionWeight>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/FelyneWhiskers/Mashed_FelyneWhiskers</graphicPath>
+			<colorType>Skin</colorType>
+			<layer>PostHeadgear</layer>
+			 <visibleNorth>false</visibleNorth>
+		</graphicData>		
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+<!-- Natural Armor (thick, leathery skin) -->
+  <GeneDef ParentName="AG_ArmourBase">
+	<defName>NaturalArmor</defName>
+	<label>natural armor</label>	
+	<description>Carriers of this gene have natural protection gained from having thick, leathery skin.</description>
+	<iconPath>UI/Icons/Genes/Gene_NaturalArmor</iconPath>
+	  
+	 <customEffectDescriptions>
+			<li>+20% blunt and sharp natural armour.</li>
+		</customEffectDescriptions>
+		<displayOrderInCategory>0</displayOrderInCategory>
+
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>bark</symbol>
+				</li>
+
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<hediffToWholeBody>AG_ArmourMinor</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+<!-- Integrated Protection (Metal Skin)-->
+   <GeneDef ParentName="AG_ArmourBase">
+	<defName>IntegratedProtection</defName>
+	<label>integrated protection</label>	
+	<description>Carriers of this gene have a metal body with built-in defensive layers, which can be enhanced with armor.</description>
+	<iconPath>UI/Icons/Genes/Gene_IntegratedProtection</iconPath>
+	   <customEffectDescriptions>
+			<li>+40% blunt and sharp natural armour.</li>
+		</customEffectDescriptions>
+		<displayOrderInCategory>20</displayOrderInCategory>
+
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+	   	
+	   	<graphicData>      			
+      			<colorType>Skin</colorType>
+      			<skinIsHairColor>true</skinIsHairColor>
+      			<tattoosVisible>false</tattoosVisible>
+    		</graphicData>
+
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>adamant</symbol>
+				</li>
+
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<hediffToWholeBody>AG_ArmourMajor</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+<!-- Impressionable Gene -->
+	<GeneDef>
+    		<defName>5X_Impressionable</defName>
+    		<label>impressionable</label>    	
+    		<description>Carriers of this gene are particularly impressionable, their outlook can be more easily affected by the opinions of others.</description>
+    		<iconPath>UI/Icons/Genes/Gene_Impressionable</iconPath>
+    		<displayCategory>Mood</displayCategory>
+    		<displayOrderInCategory>500</displayOrderInCategory>
+		<statOffsets>
+          		<CertaintyLossFactor>3</CertaintyLossFactor>
+        	</statOffsets>    		
+    		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+<!-- Undergrounder Gene
+	<GeneDef>
+    		<defName>UndergrounderGene</defName>
+    		<label>undergrounder</label>    	
+    		<description>Carriers of this gene have no need to experience the outdoors or light. They will never feel cooped up or get cabin fever no matter how long they stay inside, and are not bothered by darkness.</description>
+    		<iconPath>UI/Icons/Genes/Gene_Undergrounder</iconPath>
+    		<displayCategory>Mood</displayCategory>
+    		<displayOrderInCategory>500</displayOrderInCategory>
+    		<forcedTraits>
+      			<li>
+        			<def>Undergrounder</def>
+      			</li>
+    		</forcedTraits>
+    		<biostatMet>2</biostatMet>
+	</GeneDef> -->
+  </Defs>

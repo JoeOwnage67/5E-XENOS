@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  
+  			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+				<value>
+					<5X_elfwood>0.02</5X_elfwood>
+					<5X_elfdark>0.02</5X_elfdark>
+					<5X_dwarfhill>0.02</5X_dwarfhill>
+					<5X_dwarfmountain>0.02</5X_dwarfmountain>
+					<5X_orc>0.02</5X_orc>
+					<5X_warforged>0.02</5X_warforged>
+					<5X_tabaxi>0.02</5X_tabaxi>           
+					<MayRequire="biotexpans.mammalia" 5X_loxodon>0.02</5X_loxodon>
+					<MayRequire="biotexpans.mammalia" 5X_shifter>0.02</5X_shifter>
+					<MayRequire="biotexpans.mythic" dragonborn>0.02</dragonborn>
+					<!--<5X_troll>0.02</5X_troll>
+					<5X_halfling>0.02</5X_halfling>
+					<5X_goblin>0.02</5X_goblin>-->
+					<5X_undead>0.02</5X_undead>
+				</value>
+			</Operation>  	
+  
+  </Patch>

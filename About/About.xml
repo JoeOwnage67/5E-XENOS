@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>5e Xenos</name>
+	<author>JoeOwnage</author>
+	<supportedVersions>
+        	<li>1.4</li>
+			<li>1.5</li>
+    </supportedVersions>
+	<packageId>JoeOwnage.5eXenos</packageId>
+	<incompatibleWith>
+		<li>skylar.fantasyoftherim</li>
+		<li>Sabrael.FRBELoxo</li>
+	</incompatibleWith>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+		<li>sarg.alphagenes</li> <!--Alpha Genes-->
+    	<li>biotexpans.core</li> <!-- Biotech Expansion - Core -->
+    	<li>biotexpans.mammalia</li><!-- Biotech Expansion - Mammalia -->
+		<li>biotexpans.mythic</li><!-- Biotech Expansion - Mythic -->
+		<li>det.stoneborn</li> <!-- Det's Xenotypes - Stoneborn -->
+		<li>RedMattis.BetterPrerequisites</li> <!-- Big and Small - Framework -->
+		<li>RedMattis.BigSmall.Core</li> <!-- Big and Small - Genes & More -->
+	</loadAfter>
+
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+    	</li>
+
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+		</li>
+	
+		<li>
+			<packageId>RedMattis.BigSmall.Core</packageId>
+			<displayName>Big and Small - Genes &amp; More</displayName>
+		</li>  
+
+		<li>
+			<packageId>sarg.alphagenes</packageId>
+			<displayName>Alpha Genes</displayName>
+		</li>
+
+		<li>
+			<packageId>det.stoneborn</packageId>
+			<displayName>Det's Xenotypes - Stoneborn</displayName>
+		</li>
+ 
+	</modDependencies>
+	<description>This mod is made up of several patches to bring some xenotypes from existing mods into line with DnD 5e races for my DnD party, the Heroes of Adrion. Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson, Lennoxite, Skylar and DetVisor. Dungeons and Dragons Fifth Edition is the property of Wizards of the Coast and this is simply a fan project. I am making this mod for my personal use but will probably make it available on steam to share with my other party members/interested people. Any requests for additions are welcome as I'd love to expand this but might need help. Skylar is also still adding to Fantasy of the Rim and I plan to support any expansion of his in any way I can.
+</description>
+</ModMetaData>

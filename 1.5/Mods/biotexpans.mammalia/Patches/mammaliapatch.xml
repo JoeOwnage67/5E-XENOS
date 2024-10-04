@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+    		<mods>
+      			<li>Biotech Expansion - Mammalia</li>
+    		</mods>
+   		<label>remove BTE-Mammalia xenotypes and factions</label>	   
+		<operations>
+				
+<!-- remove BTE-Mammalia xenotypes (have reworked some in new defs) -->	
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Barkkin"]</xpath>
+				</li>				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Bonecrown"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Wiretail"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Hidewing"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Seertusk"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Hindhopper"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Haytankard"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Cloudpuff"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Blastheart"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Devilpuff"]</xpath>
+				</li>
+				
+<!-- remove Biotech Expansion - Mammalia factions (intend to rework later using new versions of xenos) -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="TribeRoughMammals"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="TribeCivilMammals"]</xpath>
+				</li>	
+			</operations>   		
+	</Operation>
+</Patch>

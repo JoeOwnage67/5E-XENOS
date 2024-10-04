@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+<!-- Warforged Head -->
+	
+	<HeadTypeDef Name="5X_WarheadBase" ParentName="AverageBase" Abstract="True">
+		<selectionWeight>100000</selectionWeight>
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>5X_WarforgedHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_WarheadBase">
+		<defName>5X_War_Head1</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_WarheadBase">
+		<defName>5X_War_Head2</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head2</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_WarheadBase">
+		<defName>5X_War_Head3</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head3</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	
+<!-- UndeadHead -->
+	
+	<HeadTypeDef Name="5X_UndeadHeadBase" ParentName="AverageBase" Abstract="True">
+		<selectionWeight>100000</selectionWeight>
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>5X_UndeadHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_UndeadHeadBase">
+		<defName>5X_UndeadHead1</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Average_Normal</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_UndeadHeadBase">
+		<defName>5X_UndeadHead2</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Average_Wa</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_UndeadHeadBase">
+		<defName>5X_UndeadHead3</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Average_Normal</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="5X_UndeadHeadBase">
+		<defName>5X_UndeadHead4</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Average_Wa</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	
+</Defs>
+
+	
+		
+		
+		
+		

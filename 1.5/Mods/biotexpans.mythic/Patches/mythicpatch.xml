@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+    		<mods>
+      			<li>Biotech Expansion - Mythic</li>
+    		</mods>
+   		<label>remove BTE-Mythic xenotypes and factions</label>	    
+		<operations>
+				
+<!-- remove Biotech Expansion - Mythic version of xenotypes (have reworked in new defs) -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Glintscale"]</xpath>
+				</li>				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Ashfeather"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Tailbinder"]</xpath>
+				</li>	
+				
+<!-- remove Biotech Expansion - Mythic faction (intend to rework later using new versions of xenos) -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="TribeMythicHouseFire"]</xpath>
+				</li>
+			</operations>   		
+	</Operation>
+</Patch>

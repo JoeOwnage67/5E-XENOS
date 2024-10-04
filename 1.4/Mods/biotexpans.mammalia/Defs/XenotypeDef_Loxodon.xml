@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs> 
+<!-- Loxodon -->
+		<XenotypeDef>
+			<defName>5X_loxodon</defName>
+			<label>loxodon</label>
+			<description>Loxodons are a humanoid species of elephants originally from Ravnica, who found their way to Faerûn. Known for their calm demeanor, Loxodons often serve as an oasis of tranquility. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, “There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.”
+		</description></description>
+			<descriptionShort>Loxodons are a humanoid species of elephants originally from Ravnica, who found their way to Faerûn. They are massive, calm, and stubbornly loyal.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Loxodon</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+				<li>BTEMa_NoseElephant</li> <!-- Biotech Expansion - Mammalia -->
+				<li>BTEMa_ElephantEars</li> <!-- Biotech Expansion - Mammalia -->
+				<li>BTEMa_TailElephant</li> <!-- Biotech Expansion - Mammalia -->
+				<li>BTEMa_ElephantMemory</li> <!-- Biotech Expansion - Mammalia -->
+				<li>AG_PackMule</li> <!-- Alpha Genes -->
+				<li>BS_LargeFrame</li> <!-- Big & Small -->
+				<li>BS_GiantWeaponWielder</li> <!-- Big & Small -->
+
+				<li>Hair_BaldOnly</li>
+				<li>Body_Hulk</li>
+				<li>NaturalArmor</li>
+				<li>Skin_InkBlack</li>
+				<li>Skin_SlateGray</li>
+				<li>Skin_LightGray</li>				
+				<li>Beard_NoBeardOnly</li>				
+																
+				<li>Libido_Low</li>
+				<li>Aggression_DeadCalm</li>
+				<li>KindInstinct</li>
+				
+				<li>MoveSpeed_Slow</li>
+				<li>Sleepy</li>
+				<li>Nearsighted</li>
+				
+				<li>AptitudeStrong_Intellectual</li>
+				<li>AptitudeTerrible_Social</li>
+				<li>MeleeDamage_Strong</li>
+				<li>Robust</li>
+				
+			</genes>				
+		</XenotypeDef>
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs> 
+<!-- Dragonborn -->
+		<XenotypeDef>
+			<defName>5X_dragonborn</defName>
+			<label>dragonborn</label>
+			<description>The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.</description>
+			<descriptionShort>Originally shaped by the dragons themselves, Dragonborn combine the best attributes of humanoids and dragons.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Dragonborn</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+				<li>BTEMy_DraconicNose</li> <!-- Biotech Expansion - Mythic -->
+				<li>BTEMy_DraconicTail</li> <!-- Biotech Expansion - Mythic -->
+				<li>BTEMy_AvariceInstinct</li> <!-- Biotech Expansion - Mythic -->
+				<li MayRequire="biotexpans.mammalia">BTEMa_SharpClaws</li> <!-- Biotech Expansion - Mammalia -->     				    				
+				<li>AG_ScalyBody</li> <!-- Alpha Genes -->				
+				<li>AG_AnimusEars</li> <!-- Alpha Genes -->
+				<li>AG_Skin_DeeperRed</li> <!-- Alpha Genes -->
+				<li>AG_Skin_DeepGreen</li> <!-- Alpha Genes -->
+				<li>AG_Skin_PlantGreen</li> <!-- Alpha Genes -->
+				<li>AG_EggLaying</li> <!-- Alpha Genes -->
+				<li>5X_NaturalArmor</li> <!-- 5e Xenos -->
+											
+				<li>Hair_BaldOnly</li>
+				<li>Skin_DeepRed</li>		
+				<li>Skin_InkBlack</li>
+				<li>Skin_PaleRed</li>					
+				<li>Body_Standard</li>
+				<li>Body_Hulk</li>
+				<li>Beard_NoBeardOnly</li>
+				<li>FireResistant</li>
+				<li>MeleeDamage_Strong</li>
+				<li>WoundHealing_Fast</li>
+				<li>Sleepy</li>
+				<li>Robust</li>
+      			<li>Unstoppable</li>						
+				<li>Aggression_Aggressive</li>	 			
+				<li>MinTemp_SmallIncrease</li>
+				<li>AptitudeTerrible_Animals</li>
+	  			<li>AptitudeTerrible_Plants</li>
+				<li>AptitudeTerrible_Intellectual</li>				
+				<li>FireSpew</li>
+			</genes>
+		</XenotypeDef>
+</Defs>
