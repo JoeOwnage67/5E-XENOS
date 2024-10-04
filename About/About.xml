@@ -10,6 +10,7 @@
 	<incompatibleWith>
 		<li>skylar.fantasyoftherim</li>
 		<li>Sabrael.FRBELoxo</li>
+		<li>Neronix17.ForgottenRealms</li>
 	</incompatibleWith>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
