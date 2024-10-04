@@ -11,15 +11,15 @@ Mountain Dwarf
 Orc  
 Warforged  
 Undead  
-Tabaxi - has additional genes with *Biotech Expansion - Mammalia* loaded.  
+Tabaxi - has additional genes with *Biotech Expansion - Mammalia* loaded. 
+Illithid - just a name change and small gene tweak from the *Alpha Genes* version.  
 Dragonborn - requires *Biotech Expansion - Mythic* loaded.  
 Loxodon - requires *Biotech Expansion - Mammalia* loaded.  
 Shifter - requires *Biotech Expansion - Mammalia* loaded.  
 Troll - will come back in the future  
 Halfling - will come back in the future  
 Goblin - will come back in the future
-Illithid - just a name change and small gene tweak from the *Alpha Genes* version.
-
+  
 There are mod options under Vanilla Expanded Framework that allow you to toggle *Biotech Expansion* xenotypes and factions on or off.
   
 Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson (Alpha Genes), Lennoxite (Biotech Expansion), RedMattis (Big & Small), and DetVisor (Det's Stoneborn).  
