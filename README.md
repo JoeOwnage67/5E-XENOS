@@ -21,7 +21,7 @@ Goblin - will come back in the future
 
 There are mod options under Vanilla Expanded Framework that allow you to toggle *Biotech Expansion* xenotypes and factions on or off.
   
-Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson (Alpha Genes), Lennoxite (Biotech Expansion), and DetVisor (Det's Stoneborn).  
+Credit for the assets and ideas in the mod dependancies go to their authors and artists. Thank you to Sarg Bjornson (Alpha Genes), Lennoxite (Biotech Expansion), RedMattis (Big & Small), and DetVisor (Det's Stoneborn).  
   
 Special thanks to 셉텐트리온 (Infinity Race), Mlie/Dalrae/Elseud (Wa Skeleton and Wa Skeleton Zombie Retexture), and SirMashedPotato (Lynians) for allowing me to borrow their textures.  
   
