@@ -3,25 +3,44 @@
 <!-- adding new xenos to existing factions -->
 <Patch>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
-		<value>
-                    <5X_elfwood>0.02</5X_elfwood>
-					<5X_elfdark>0.02</5X_elfdark>
-					<5X_dwarfhill>0.02</5X_dwarfhill>
-					<5X_dwarfmountain>0.02</5X_dwarfmountain>
-					<5X_orc>0.02</5X_orc>
-					<5X_warforged>0.02</5X_warforged>
-					<5X_tabaxi>0.02</5X_tabaxi>           
-					<MayRequire="biotexpans.mammalia" 5X_loxodon>0.02</5X_loxodon>
-					<MayRequire="biotexpans.mammalia" 5X_shifter>0.02</5X_shifter>
-					<MayRequire="biotexpans.mythic" dragonborn>0.02</dragonborn>
-					<!--<5X_troll>0.02</5X_troll>
-					<5X_halfling>0.02</5X_halfling>
-					<5X_goblin>0.02</5X_goblin>-->
-					<5X_undead>0.02</5X_undead>
-		</value>
-	</Operation>  
+	<Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]</xpath>
+			<value>
+				<xenotypeSet>
+					<xenotypeChances>
+						<FX_elfwood>0.02</FX_elfwood>
+						<FX_elfdark>0.02</FX_elfdark>
+						<FX_dwarfhill>0.02</FX_dwarfhill>
+						<FX_dwarfmountain>0.02</FX_dwarfmountain>
+						<FX_orc>0.02</FX_orc>
+						<FX_warforged>0.02</FX_warforged>
+						<FX_tabaxi>0.02</FX_tabaxi>	
+						<FX_undead>0.02</FX_undead>
+					</xenotypeChances>				
+				</xenotypeSet>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<FX_elfwood>0.02</FX_elfwood>
+				<FX_elfdark>0.02</FX_elfdark>
+				<FX_dwarfhill>0.02</FX_dwarfhill>
+				<FX_dwarfmountain>0.02</FX_dwarfmountain>
+				<FX_orc>0.02</FX_orc>
+				<FX_warforged>0.02</FX_warforged>
+				<FX_tabaxi>0.02</FX_tabaxi>	
+				<FX_undead>0.02</FX_undead>				
+			</value>
+		</match>
+	</Operation>
 		
-			
+
 </Patch>
+

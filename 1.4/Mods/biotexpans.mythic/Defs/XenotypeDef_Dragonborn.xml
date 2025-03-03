@@ -2,7 +2,7 @@
 <Defs> 
 <!-- Dragonborn -->
 		<XenotypeDef>
-			<defName>5X_dragonborn</defName>
+			<defName>FX_dragonborn</defName>
 			<label>dragonborn</label>
 			<description>The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.</description>
 			<descriptionShort>Originally shaped by the dragons themselves, Dragonborn combine the best attributes of humanoids and dragons.</descriptionShort>
@@ -19,7 +19,7 @@
 				<li>AG_Skin_DeepGreen</li> <!-- Alpha Genes -->
 				<li>AG_Skin_PlantGreen</li> <!-- Alpha Genes -->
 				<li>AG_EggLaying</li> <!-- Alpha Genes -->
-				<li>5X_NaturalArmor</li> <!-- 5e Xenos -->
+				<li>FX_NaturalArmor</li> <!-- 5e Xenos -->
 											
 				<li>Hair_BaldOnly</li>
 				<li>Skin_DeepRed</li>		

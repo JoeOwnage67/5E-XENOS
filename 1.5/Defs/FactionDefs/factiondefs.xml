@@ -3,8 +3,8 @@
 <Defs>
 	
 <!-- Hill Dwarf-->
-	<FactionDef ParentName="OutlanderRoughStoneborn">
-    	<defName>5X_tribehilldwarf</defName>
+	<FactionDef ParentName="OutlanderRoughBase">
+    	<defName>FX_tribehilldwarf</defName>
     	<label>hill dwarf trading post</label>
     	<description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.</description>
 		<factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
@@ -15,15 +15,15 @@
         <leaderTitle>underlord</leaderTitle>  	
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <5X_dwarfhill>100</5X_dwarfhill>
+                <FX_dwarfhill>100</FX_dwarfhill>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>false</permanentEnemyToEveryoneExceptPlayer>
 	</FactionDef>
 
     <!-- Mountain Dwarf-->
-	<FactionDef ParentName="OutlanderRoughStoneborn">
-    	<defName>5X_tribemountaindwarf</defName>
+	<FactionDef ParentName="OutlanderRoughBase">
+    	<defName>FX_tribemountaindwarf</defName>
     	<label>mountain dwarf mining operation</label>
     	<description>Mountain Dwarves are a breed of dwarves at home in the high peaks and rarified air of the rocky mountains. In many ways similar to their lowland cousins, mountain dwarves are slightly more reclusive and tend to focus on mining, forging, and crafting a bit more strongly -- their closeness to the dwarven deity Moradin is said to be a cause of this. It is said that a mountain dwarf is born in armor, but this is likely just a mild exaggeration.</description>
 		<factionIconPath Inherit="False">World/WorldObjects/Expanding/TownRough</factionIconPath>
@@ -34,7 +34,7 @@
         <leaderTitle>underlord</leaderTitle> 
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <5X_dwarfmountain>100</5X_dwarfmountain>
+                <FX_dwarfmountain>100</FX_dwarfmountain>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>false</permanentEnemyToEveryoneExceptPlayer>
@@ -42,8 +42,8 @@
 
 
 <!-- Wood Elf -->
-	<FactionDef ParentName="OutlanderCivil">
-    	<defName>5X_tribewoodelf</defName>
+	<FactionDef ParentName="OutlanderFactionBase">
+    	<defName>FX_tribewoodelf</defName>
     	<label>wood elf enclave</label>
     	<description>Wood Elves are a subrace of Elf that prefer to live out their lives in nature's embrace. Generations ago they banished their Lolth-worshipping brethren, the Dark Elves, from the surface world. They have been at odds ever since.</description>
 		<naturalEnemy>false</naturalEnemy>
@@ -55,7 +55,7 @@
         <leaderTitle>elder</leaderTitle>
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <5X_elfwood>100</5X_elfwood>
+                <FX_elfwood>100</FX_elfwood>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>false</permanentEnemyToEveryoneExceptPlayer>        
@@ -63,7 +63,7 @@
 
 <!-- Dark Elf -->
 	<FactionDef ParentName="PirateBandBase">
-    	<defName>5X_tribedarkelf</defName>
+    	<defName>FX_tribedarkelf</defName>
     	<label>dark elf consortium</label>
     	<description>Dark Elves are a subrace of Elf that worship the evil and corrupt goddess Lolth. Generations ago they were banished from the surface world by their nature-loving brethren, the Wood Elves. They have been at odds ever since.</description>
 		<naturalEnemy>true</naturalEnemy>
@@ -73,7 +73,7 @@
         <leaderTitle>dark lord</leaderTitle>
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <5X_elfdark>100</5X_elfdark>
+                <FX_elfdark>100</FX_elfdark>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>        
@@ -81,11 +81,20 @@
 
 		
 <!-- Orc -->
-	<FactionDef ParentName="TribeCannibal">
-    	<defName>5X_tribeorcsavage</defName>
+	<FactionDef ParentName="TribeBase">
+    	<defName>FX_tribeorcsavage</defName>
     	<label>savage orc tribe</label>
     	<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to hunt, eat, or mutilate. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
-    	<factionIconPath>World/WorldObjects/Expanding/CannibalTribe</factionIconPath>
+    	<permanentEnemy>true</permanentEnemy>
+		<requiredMemes>
+			<li>Cannibal</li>
+		</requiredMemes>
+		<disallowedMemes>
+			  <li>Nudism</li>
+			  <li>Blindsight</li>
+			  <li>AnimalPersonhood</li>
+		</disallowedMemes>
+		<factionIconPath>World/WorldObjects/Expanding/CannibalTribe</factionIconPath>
 		<factionNameMaker>NamerFactionOutlanderPig</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlanderPig</settlementNameMaker>
 		<configurationListOrderPriority>1</configurationListOrderPriority>
@@ -93,7 +102,7 @@
 		<pawnsPlural>savage orcs</pawnsPlural>		
 		<xenotypeSet Inherit="False">
             <xenotypeChances>
-                <5X_orc>100</5X_orc>
+                <FX_orc>100</FX_orc>
             </xenotypeChances>
         </xenotypeSet>
 	</FactionDef>

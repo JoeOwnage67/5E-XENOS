@@ -2,7 +2,7 @@
 <Defs> 
 <!-- Shifter -->
 		<XenotypeDef>
-			<defName>5X_shifter</defName>
+			<defName>FX_shifter</defName>
 			<label>shifter</label>
 			<description>Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect; while they cannot fully change shape they can temporarily enhance their animalistic features – a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife’s edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?</description>
 			<descriptionShort>Many believe shifters are the descendants of humans and lycanthropes. They walk on a knifes edge between the wilds and the world around them.</descriptionShort>

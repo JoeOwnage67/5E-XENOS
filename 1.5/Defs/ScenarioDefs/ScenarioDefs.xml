@@ -4,7 +4,7 @@
 
 	<!-- Hill Dwarf -->
     <ScenarioDef>
-    	<defName>5X_hilldwarfScene</defName>
+    	<defName>FX_hilldwarfScene</defName>
 		<scenario>
 			<name>Hill Dwarf Trading Post</name>
 			<summary>Start as a new Hill Dwarf Trading Post.</summary>
@@ -21,7 +21,7 @@
 						<li>
 							<count>3</count>
 							<requiredAtStart>True</requiredAtStart>
-							<xenotype>5X_dwarfhill</xenotype>
+							<xenotype>FX_dwarfhill</xenotype>
 							<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 						</li>
 					</xenotypeCounts>
@@ -78,7 +78,7 @@
 					<allowRoofed>True</allowRoofed>
 				</li>
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-					<factionDef>5X_tribehilldwarf</factionDef>
+					<factionDef>FX_tribehilldwarf</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 					<affectNaturalGoodwill>True</affectNaturalGoodwill>
@@ -86,7 +86,7 @@
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-					<factionDef>5X_tribemountaindwarf</factionDef>
+					<factionDef>FX_tribemountaindwarf</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 					<affectNaturalGoodwill>True</affectNaturalGoodwill>
@@ -107,7 +107,7 @@
 
 	<!-- Mountain Dwarf -->
 	<ScenarioDef>
-    	<defName>5X_mountaindwarfScene</defName>
+    	<defName>FX_mountaindwarfScene</defName>
 		<scenario>
 			<name>Mountain Dwarf Mining Operation</name>
 			<summary>Start as a new Mountain Dwarf colony.</summary>
@@ -125,7 +125,7 @@
 						<li>
 							<count>3</count>
 							<requiredAtStart>True</requiredAtStart>
-							<xenotype>5X_dwarfmountain</xenotype>
+							<xenotype>FX_dwarfmountain</xenotype>
 							<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 						</li>
 					</xenotypeCounts>
@@ -193,7 +193,7 @@
 				</li>
 				
 					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-					<factionDef>5X_tribehilldwarf</factionDef>
+					<factionDef>FX_tribehilldwarf</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 					<affectNaturalGoodwill>True</affectNaturalGoodwill>
@@ -201,7 +201,7 @@
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-					<factionDef>5X_tribemountaindwarf</factionDef>
+					<factionDef>FX_tribemountaindwarf</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 					<affectNaturalGoodwill>True</affectNaturalGoodwill>
@@ -222,7 +222,7 @@
 
 <!-- Wood Elf -->
 	<ScenarioDef>
-    	<defName>5X_woodelfScene</defName>
+    	<defName>FX_woodelfScene</defName>
 			<scenario>
 				<name>Wood Elf Enclave</name>
 				<summary>Start as a new wood elf colony.</summary>
@@ -240,7 +240,7 @@
 							<li>
 								<count>3</count>
 								<requiredAtStart>True</requiredAtStart>
-								<xenotype>5X_elf_wood</xenotype>
+								<xenotype>FX_elfwood</xenotype>
 								<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 							</li>
 						</xenotypeCounts>
@@ -308,7 +308,7 @@
 					</li>
 					
 					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-						<factionDef>5X_tribewoodelf</factionDef>
+						<factionDef>FX_tribewoodelf</factionDef>
 						<affectStartingGoodwill>True</affectStartingGoodwill>
 						<startingGoodwillRange>100~100</startingGoodwillRange>
 						<affectNaturalGoodwill>True</affectNaturalGoodwill>
@@ -323,7 +323,7 @@
 				
 <!-- Dark Elf -->
 		<ScenarioDef>
-			<defName>5X_darkelfScene</defName>
+			<defName>FX_darkelfScene</defName>
 			<scenario>
 				<name>Dark Elf Consortium</name>
 				<summary>Start as a new dark elf colony.</summary>
@@ -341,7 +341,7 @@
 							<li>
 								<count>3</count>
 								<requiredAtStart>True</requiredAtStart>
-								<xenotype>5X_elfdark</xenotype>
+								<xenotype>FX_elfdark</xenotype>
 								<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 							</li>
 						</xenotypeCounts>
@@ -409,7 +409,7 @@
 					</li>
 					
 					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-						<factionDef>5X_tribedarkelf</factionDef>
+						<factionDef>FX_tribedarkelf</factionDef>
 						<affectStartingGoodwill>True</affectStartingGoodwill>
 						<startingGoodwillRange>100~100</startingGoodwillRange>
 						<affectNaturalGoodwill>True</affectNaturalGoodwill>
@@ -424,7 +424,7 @@
 				
 <!-- Orc -->	
 		<ScenarioDef>
-			<defName>5X_orcScene</defName>	
+			<defName>FX_orcScene</defName>	
 			<scenario>
 				<name>Orc Stronghold</name>
 				<summary>Start as a new Orc Stronghold.</summary>
@@ -442,7 +442,7 @@
 							<li>
 								<count>3</count>
 								<requiredAtStart>True</requiredAtStart>
-								<xenotype>5X_orc</xenotype>
+								<xenotype>FX_orc</xenotype>
 								<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 							</li>
 						</xenotypeCounts>
@@ -510,7 +510,7 @@
 					</li>
 					
 					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-						<factionDef>5X_tribeorcsavage</factionDef>
+						<factionDef>FX_tribeorcsavage</factionDef>
 						<affectStartingGoodwill>True</affectStartingGoodwill>
 						<startingGoodwillRange>100~100</startingGoodwillRange>
 						<affectNaturalGoodwill>True</affectNaturalGoodwill>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<!--<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>	
+			
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
+						<value>						
+							<FX_loxodon>0.02</FX_loxodon>
+							<FX_shifter>0.02</FX_shifter>												
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]/xenotypeSet/xenotypeChances</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion" or defName="AG_XenohumanPirates"]</xpath>
+						<value>						
+							<xenotypeSet>
+								<xenotypeChances>
+									<FX_loxodon>0.02</FX_loxodon>
+									<FX_shifter>0.02</FX_shifter>
+								</xenotypeChances>				
+							</xenotypeSet>												
+						</value>
+					</nomatch>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+						<value>						
+							<FX_loxodon>0.02</FX_loxodon>
+							<FX_shifter>0.02</FX_shifter>												
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]</xpath>
+						<value>						
+							<xenotypeSet>
+								<xenotypeChances>
+									<FX_loxodon>0.02</FX_loxodon>
+									<FX_shifter>0.02</FX_shifter>
+								</xenotypeChances>				
+							</xenotypeSet>												
+						</value>
+					</nomatch>
+				</li>
+					
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
+						<value>						
+							<FX_loxodon>0.02</FX_loxodon>
+							<FX_shifter>0.02</FX_shifter>												
+						</value>
+					</match>
+				</li>
+								
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+						<value>						
+							<FX_loxodon>0.02</FX_loxodon>
+							<FX_shifter>0.02</FX_shifter>												
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="Beggars" or "CannibalPirate" or "NudistTribe" or "Pilgrims" or "TribeCannibal"]</xpath>
+						<value>						
+							<xenotypeSet>
+								<xenotypeChances>
+									<FX_loxodon>0.02</FX_loxodon>
+									<FX_shifter>0.02</FX_shifter>
+								</xenotypeChances>				
+							</xenotypeSet>												
+						</value>
+					</nomatch>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+						<value>						
+							<FX_loxodon>0.02</FX_loxodon>
+							<FX_shifter>0.02</FX_shifter>												
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="OutlanderRefugee"]</xpath>
+						<value>						
+							<xenotypeSet>
+								<xenotypeChances>
+									<FX_loxodon>0.02</FX_loxodon>
+									<FX_shifter>0.02</FX_shifter>
+								</xenotypeChances>				
+							</xenotypeSet>												
+						</value>
+					</nomatch>
+				</li>
+
+			</operations>
+	</Operation> -->
+	
+</Patch>
+  	
+	
