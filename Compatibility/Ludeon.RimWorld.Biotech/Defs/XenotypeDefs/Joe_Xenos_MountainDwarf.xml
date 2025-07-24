@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- Mountain Dwarf -->
+	<XenotypeDef>
+		<defName>Joe_MountainDwarf</defName>
+		<label>mountain dwarf</label>
+		<description>Mountain Dwarves are a breed of dwarves at home in the high peaks and rarified air of the rocky mountains. In many ways similar to their lowland cousins, mountain dwarves are slightly more reclusive and tend to focus on mining, forging, and crafting a bit more strongly -- their closeness to the dwarven deity Moradin is said to be a cause of this. It is said that a mountain dwarf is born in armor, but this is likely just a mild exaggeration.</description>
+		<descriptionShort>Mountain Dwarves are a more reclusive subrace of Dwarf focused on mining, forging and crafting.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li MayRequire="det.stoneborn">DV_BushyEyebrows</li>
+			<li MayRequire="det.stoneborn">DV_Stonecall</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_Undergrounder</li>
+			<li MayRequire="det.stoneborn">DV_Aggression_Irascible</li>
+			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>
+			<li MayRequire="sarg.alphagenes">AG_MiningYield_High</li>
+			<li>Beard_BushyOnly</li>
+			<li>Beard_Always</li>
+			<li>Body_Fat</li>
+  			<li>Body_Standard</li>
+  			<li>Body_Hulk</li>		
+			<li>MoveSpeed_Slow</li>
+			<li>Robust</li>
+  			<li>Libido_High</li>
+  			<li>WoundHealing_Slow</li>
+  			<li>Immunity_Strong</li>	  			
+  			<li>Nearsighted</li>
+			<li>MinTemp_SmallDecrease</li>
+  			<li>MaxTemp_SmallDecrease</li>	  			
+  			<li>AptitudePoor_Social</li>
+  			<li>AptitudeStrong_Mining</li>
+  			<li>AptitudePoor_Animals</li>
+  			<li>AptitudePoor_Plants</li>
+  			<li>AptitudeRemarkable_Crafting</li>    
+		</genes>
+	</XenotypeDef>
+</Defs>

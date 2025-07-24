@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs> 
+<!-- Shifter -->
+		<XenotypeDef>
+			<defName>Joe_Shifter</defName>
+			<label>shifter</label>
+			<description>Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect; while they cannot fully change shape they can temporarily enhance their animalistic features – a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife’s edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?</description>
+			<descriptionShort>Many believe shifters are the descendants of humans and lycanthropes. They walk on a knifes edge between the wilds and the world around them.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Shifter</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+				<li>BTEMa_Nose_Lupine</li> 
+				<li>BTEMa_ElongatedFangs</li>  
+				<li>BTEMa_SharpClaws</li>  		
+				<li>BTEMa_VulpineEars</li>  
+				<li>BTEMa_Tail_Vulpine</li> 
+				<li>BTEMa_SensitiveWhiskers</li>
+				<li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+				<li MayRequire="sarg.alphagenes">AG_GrowlingVoice</li>
+				<li>Ears_Floppy</li>	      			
+				<li>Tail_Furry</li>      				
+      			<li>Furskin</li>
+				<li>Skin_SlateGray</li>
+				<li>Skin_InkBlack</li>
+				<li>Skin_DeepRed</li>
+				<li>Skin_LightGray</li>
+				<li>Hair_BaldOnly</li>
+				<li>Body_Standard</li>
+				<li>Body_Hulk</li>				
+				<li>Beauty_Ugly</li>
+				<li>Beard_NoBeardOnly</li>	
+				<li>KillThirst</li>
+				<li>Aggression_Aggressive</li>
+				<li>StrongStomach</li>
+				<li>RobustDigestion</li>				
+				<li>MeleeDamage_Strong</li>
+				<li>Fertile</li>
+				<li>Libido_High</li>
+				<li>DarkVision</li>
+				<li>MoveSpeed_Quick</li>		
+				<li>AptitudeStrong_Animals</li>
+      			<li>AptitudeTerrible_Artistic</li>
+				<li>AptitudePoor_Construction</li>				
+				<li>AnimalWarcall</li>
+				<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>		
+			</genes>
+		</XenotypeDef>
+</Defs>

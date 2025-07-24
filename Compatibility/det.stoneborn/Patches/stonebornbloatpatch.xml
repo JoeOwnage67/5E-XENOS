@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>	
+	<!--<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>JoeOwnage.5eXenos</modId>
+		<key>Remove Stoneborn Xenos and Factions</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">    
+				<operations>-->
+
+					<!-- remove Det's Stoneborn xenotypes
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="Stoneborn"]</xpath>
+					</li>						 -->	
+					
+					<!-- remove Det's Stoneborn factions 
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/FactionDef[defName="OutlanderRoughStoneborn"]</xpath>
+					</li>
+				</operations>   		
+			</Operation>
+		</caseTrue>
+	</Operation>-->
+</Patch>

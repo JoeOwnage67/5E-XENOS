@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Tordune Head -->
+
+		<!-- Tordune Head Right Eyepatch -->
+	<HeadTypeDef ParentName="AverageBase">
+	    	<defName>LHeadTorduneRight</defName>
+	      	<graphicPath>Pawn/Loxo/Right/LHeadTorduneRight</graphicPath>
+	      	<gender>None</gender>
+	      	<requiredGenes>
+	        	<li>Joe_TorduneHead</li>
+	      	</requiredGenes>
+	</HeadTypeDef>
+	
+	<!-- Tordune Head Left Eyepatch -->
+	<HeadTypeDef ParentName="AverageBase">
+	    	<defName>LHeadTorduneLeft</defName>
+	      	<graphicPath>Pawn/Loxo/Left/LHeadTorduneLeft</graphicPath>
+	      	<gender>None</gender>
+	      	<requiredGenes>
+	        	<li>Joe_TorduneHead</li>
+	      	</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- tordune head gene -->
+	<GeneDef ParentName="GeneJawBase">
+		<defName>Joe_TorduneHead</defName>
+		<label>tordune head</label>
+		<description>Carriers of this gene have a head featuring elephant-like features, with an eyepatch over one eye. A nearly prehensile trunk offers a slight gain to manipulation, and their tough skin offers protection against blunt and sharp weapons.</description>
+	    <iconPath>UI/Genes/TorduneLoxoFace</iconPath>
+		<forcedHeadTypes>
+	    	<li>LHeadTorduneLeft</li>
+	      	<li>LHeadTorduneRight</li>
+	    </forcedHeadTypes>
+		<displayOrderInCategory>9802</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+		<capMods>
+			<li>
+		    	<capacity>Manipulation</capacity>
+		    	<postFactor>1.1</postFactor>
+		    </li>
+		</capMods>
+		<statOffsets>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		    <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		    <ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
+		    <MiningSpeed>0.1</MiningSpeed>
+		</statOffsets>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+		    	<li>Bald</li>
+		    </tags>
+		 </hairTagFilter>
+		 <beardTagFilter>
+			<whitelist>true</whitelist>
+		    <tags>
+		    	<li>NoBeard</li>
+		    </tags>
+		</beardTagFilter>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+		    	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
+		        <backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>
+		    </li>
+		</modExtensions>
+	</GeneDef>
+
+	<!-- Obstructed Vision gene -->
+	<GeneDef>
+	    <defName>Joe_ObstructedVision</defName>
+	    <label>obstructed vision</label>
+	    <iconPath>UI/Icons/Genes/Gene_Nearsighted</iconPath>
+	    <description>The followers of Tordune wear an eyepatch as a badge of honour. This causes their vision to be obstructed to some degree. Tordune Loxodons make up for this by being handy with a blade.</description>	
+		<displayCategory>Miscellaneous</displayCategory>
+	    <displayOrderInCategory>50</displayOrderInCategory>	    
+	    <biostatMet>3</biostatMet>
+	    <exclusionTags>
+	      <li>ShootingAccuracy</li>
+	    </exclusionTags>
+	    <symbolPack>
+	      <prefixSymbols>
+	        <li><symbol>blind</symbol></li>
+	        <li><symbol>blur</symbol></li>
+	        <li><symbol>squint</symbol></li>
+	        <li><symbol>peek</symbol></li>
+	        <li><symbol>cross</symbol></li>
+	      </prefixSymbols>
+	      <suffixSymbols>
+	        <li><symbol>sighter</symbol></li>
+	        <li><symbol>peeker</symbol></li>
+	      </suffixSymbols>
+	    </symbolPack>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+		    	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
+		        <backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>
+				<hediffToWholeBody>JoeHediff_ObstructedVision</hediffToWholeBody>
+		    </li>
+		</modExtensions>	
+	</GeneDef>
+
+	<HediffDef>
+  		<defName>JoeHediff_ObstructedVision</defName>
+  		<label>Obstructed Vision</label>
+		<defaultLabelColor>(255,123,0)</defaultLabelColor>
+  		<description>The followers of Tordune wear an eyepatch as a badge of honour. This causes their vision to be obstructed to some degree. Tordune Loxodons make up for this by being handy with a blade.</description>
+  		<hediffClass>HediffWithComps</hediffClass>
+  		<tendable>false</tendable>
+  		<isBad>false</isBad>		
+  		<stages>
+    		<li>    		
+    			<minSeverity>0.2</minSeverity>  
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods> 
+			</li>
+  		</stages>
+	</HediffDef>
+
+	<!-- Tordune Xenotype -->
+	<XenotypeDef MayRequire="redmattis.bigsmall.core">
+  		<defName>Joe_TorduneLoxo</defName>
+  		<label>tordune loxodon</label>
+		<description>An adventuring subspecies of Loxodon, distinguished by their eyepatches worn as badges of honor, the Tordune Loxodons are rare among their kind. They honor the legendary rogue Tordune, who, as part of the Heroes of Redwater, saved the Kingdom of Adrion from the undead. They have established a renowned Adventurer’s Guild in Adrion, training young Loxodons in combat and stealth. To join, one must pass the Shadow Trials, a series of rigorous tests challenging agility, stealth, and technique with a dagger. These trials take place in Redwater, where Tordune’s legend began, adding a layer of historical significance. Successful candidates earn the title of Tordune’s Heir and a special insignia. The Cloak of Tordune, an artifact granting enhanced stealth, is passed to the most promising adventurer. The Tordune Loxodons maintain a tradition of passing down the tales of the deeds of Tordune and the Heroes of Redwater, inspiring future generations. As for the real Tordune? They say he’s still out there somewhere, helping the souls of the dead find their peace.\n\n odons are a humanoid species of elephants originally from Ravnica, who found their way to Faerûn. Known for their calm demeanor, Loxodons often serve as an oasis of tranquility. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, “There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.”</description>
+		<descriptionShort> A rare subspecies of Loxodon, distinguished by their eyepatches worn as badges of honor, in homage to the legendary hero Tordune, who inspired a devoted following.</descriptionShort>
+  		<iconPath>UI/Genes/TorduneLoxoFace</iconPath>
+  		<inheritable>true</inheritable>
+  		<genes>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_DeceleratedPregnancy</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_Skin_Sage</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_Skin_Marble</li>
+		    <li MayRequire="Neronix17.Outland.Genetics">Outland_HoovedFeet</li>
+		    <li MayRequire="Neronix17.Outland.Genetics">Outland_Voice_Beastly</li>
+			<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>
+            <li MayRequire="redmattis.bigsmall.core">BS_SlowAging</li>  
+			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>   
+			<li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
+			<li MayRequire="Sabrael.FRBELoxo">Loxo_Tusk_Some</li>
+		    <li>Joe_TorduneHead</li>
+			<li>Joe_CannotWearHats</li>
+			<li>Joe_ObstructedVision</li>
+			<li>PsychicAbility_Enhanced</li>
+		    <li>Body_Hulk</li>
+		    <li>Skin_InkBlack</li>
+		    <li>Skin_SlateGray</li>		    
+			<li>Aggression_DeadCalm</li>
+			<li>KindInstinct</li>			
+			<li>MeleeDamage_Strong</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Sleepy</li>
+			<li>Robust</li>			       
+		</genes>
+	</XenotypeDef>
+
+	
+
+	</Defs>

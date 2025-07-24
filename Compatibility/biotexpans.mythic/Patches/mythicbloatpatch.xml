@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>JoeOwnage.5eXenos</modId>
+		<key>Remove BTEMy Xenos and Factions</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">    
+				<operations>
+				
+					<!-- remove Biotech Expansion - Mythic xenotypes -->
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="Glintscale"]</xpath>
+					</li>				
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="Ashfeather"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="Tailbinder"]</xpath>
+					</li>	
+					
+					<!-- remove Biotech Expansion - Mythic factions -->
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/FactionDef[defName="TribeMythicHouseFire"]</xpath>
+					</li>
+				</operations>   		
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

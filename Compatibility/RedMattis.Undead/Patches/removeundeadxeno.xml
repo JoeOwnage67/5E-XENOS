@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Big and Small - Vampires and the Undead</li> <!--RedMattis.Undead-->
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- remove Joe_Undead if Redmattis undead is loaded -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="Joe_Undead"]</xpath>					
+				</li>
+			</operations>
+		</match>	
+	</Operation>
+</Patch>		

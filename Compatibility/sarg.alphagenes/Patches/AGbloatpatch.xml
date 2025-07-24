@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>	
+	<!--<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>JoeOwnage.5eXenos</modId>
+		<key>Remove Alpha Genes Xenos and Factions</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">    
+				<operations> -->
+				
+					 <!-- remove Alpha Genes xenotypes 
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Fleetkind"]</xpath>
+					</li>				
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Animusen"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Lapis"]</xpath>
+					</li>	
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Wretch"]</xpath>
+					</li>	
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Taukai"]</xpath>
+					</li>	
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Hiveling"]</xpath>
+					</li>	
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Efreet"]</xpath>
+					</li>	
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Drakonori"]</xpath>
+					</li>	
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Nereid"]</xpath>
+					</li>	
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/XenotypeDef[defName="AG_Forsaken"]</xpath>
+					</li>	-->
+				
+					<!-- remove Alpha Genes factions 
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/FactionDef[defName="AG_OutlanderCivilUnion"]</xpath>
+					</li>
+
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/FactionDef[defName="AG_XenohumanPirates"]</xpath>
+					</li>
+				</operations>   		
+			</Operation>
+		</caseTrue>
+	</Operation>-->
+</Patch>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- Orc -->
+	<XenotypeDef>
+		<defName>Joe_Orc</defName>
+		<label>orc</label>
+		<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
+		<descriptionShort>Orcs are savage, fearless warriors who seek glory through death and destruction.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Orc</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+    		<genes>
+				<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
+				<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>	
+				<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+				<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>
+				<li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li>
+				<li>Hair_BaldOnly</li>
+				<li>Beard_BushyOnly</li>
+				<li>Beard_Always</li>
+				<li>Ears_Pointed</li>				
+				<li>Headbone_MiniHorns</li>
+				<li>Body_Standard</li>
+				<li>Body_Hulk</li>
+				<li>Skin_Green</li>
+				<li>Brow_Heavy</li>
+				<li>FacialRidges</li>
+				<li>AG_GutturalVoice</li>
+				<li>MaxTemp_LargeIncrease</li>
+				<li>Aggression_HyperAggressive</li>
+				<li>MeleeDamage_Strong</li>
+				<li>KillThirst</li>
+				<li>Robust</li>
+				<li>AptitudeRemarkable_Melee</li>
+				<li>AptitudeTerrible_Social</li>
+				<li>AptitudeTerrible_Plants</li>
+				<li>AptitudeTerrible_Crafting</li>
+				<li>Fertile</li>
+				<li>Libido_High</li>
+			</genes>
+	</XenotypeDef>
+</Defs>

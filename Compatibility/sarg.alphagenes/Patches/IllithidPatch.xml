@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	-<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+				<!-- Mind Devourer is Illithid -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/label</xpath>
+					<value>
+						<label>Illithid</label>
+					</value>
+				</li>
+				
+				<!-- Illithid Description -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/description</xpath>
+					<value>
+						<description>A xenotype inspired by the old eldritch folklore tales from old Earth, the Chthonian visage of Illithid mind flayers inspires terror and intense uneasiness. They are masters of the psychic arts, being capable of projecting their mental powers and using their mind as a fearsome weapon, as well as devouring the brains of their victims and extracting valuable knowledge from them. Illithids are usually reviled by other human xenotypes.</description>
+					</value>
+				</li>	
+
+				<!--remove illithid crown -->				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/genes/li[.="AG_OrnateEldritchHorns"]</xpath>
+				</li>
+
+				<!--remove illithid hair -->				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/genes</xpath>				
+					<value>			
+						<li>Hair_BaldOnly</li>
+					</value>	
+				</li>			
+			</operations>
+   		 </match>
+	</Operation>
+</Patch>

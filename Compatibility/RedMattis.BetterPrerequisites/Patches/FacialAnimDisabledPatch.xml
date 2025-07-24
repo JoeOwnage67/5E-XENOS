@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>	
+			<!-- SAB loxodon -->
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>FRBE Addon - Loxo</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="SAB_Loxodon"]/genes</xpath>
+						<value>											
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+							<li MayRequire="redmattis.bigsmall.core">Joe_CannotWearHats</li> 	
+						</value>   
+					</match>
+				</Operation>
+
+				<!-- Aard gnoll -->
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>FRBE Addon - Gnolls</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="SAB_GnollAard"]/genes</xpath>
+						<value>						
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>	
+						</value>   
+					</match>
+				</Operation>
+				
+				<!-- Flind Gnoll -->
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>FRBE Addon - Gnolls</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="SAB_GnollFlind"]/genes</xpath>
+						<value>							
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>												
+						</value>   
+					</match>
+				</Operation>
+				
+				<!-- gnoll base -->
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>FRBE Addon - Gnolls</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="SAB_Gnoll"]/genes</xpath>
+						<value>							
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>											
+						</value>   
+					</match>
+				</Operation>
+				
+				<!-- Bonereapers -->
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>BoneReapers ReMarrowed</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="pphhyy_BoneReaper_Sepelire"]/genes</xpath>
+						<value>							 
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>							   							
+						</value>   
+					</match>
+				</Operation>
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>BoneReapers ReMarrowed</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="pphhyy_BoneReaper_Thetes"]/genes</xpath>
+						<value>							
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>							  							
+						</value>   
+					</match>
+				</Operation>
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>BoneReapers ReMarrowed</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="pphhyy_BoneReaper_Phalangite"]/genes</xpath>
+						<value>							
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>													
+						</value>   
+					</match>
+				</Operation>
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>BoneReapers ReMarrowed</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="pphhyy_BoneReaper_Archon"]/genes</xpath>
+						<value>							
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>													
+						</value>   
+					</match>
+				</Operation>
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>BoneReapers ReMarrowed</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="pphhyy_BoneReaper_Apokryphos"]/genes</xpath>
+						<value>							
+							  <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+						</value>   
+					</match>
+				</Operation>		
+				
+				<!-- Alpha Genes -->
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_Fleetkind"]/genes</xpath>
+						<value>							
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+						</value>   
+					</match>
+				</Operation>
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_Helixien"]/genes</xpath>
+						<value>						
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+						</value>   
+					</match>
+				</Operation>				
+					
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_Animusen"]/genes</xpath>
+						<value>							
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+						</value>   
+					</match>
+				</Operation>	
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_Drakonori"]/genes</xpath>
+						<value>
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+						</value>   
+					</match>
+				</Operation>
+				
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_Nereid"]/genes</xpath>
+						<value>
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>						
+						</value>   
+					</match>
+				</Operation>
+
+				<Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_Taukai"]/genes</xpath>
+						<value>
+							<li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>
+						</value>   
+					</match>
+				</Operation>		
+		</Patch>

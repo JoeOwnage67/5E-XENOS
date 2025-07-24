@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<!-- Warforged Head types -->
+
+	<!-- Warhead1 -->
+	<HeadTypeDef ParentName="AverageBase">
+	    	<defName>Joe_Warhead1</defName>
+	      	<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head1</graphicPath>
+	      	<gender>None</gender>
+	      	<requiredGenes>
+	        	<li>Joe_WarforgedHead</li>
+	      	</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Warhead2 -->
+	<HeadTypeDef ParentName="AverageBase">
+	    	<defName>Joe_Warhead2</defName>
+	      	<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head2</graphicPath>
+	      	<gender>None</gender>
+	      	<requiredGenes>
+	        	<li>Joe_WarforgedHead</li>
+	      	</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Warhead3 -->
+	<HeadTypeDef ParentName="AverageBase">
+	    	<defName>Joe_Warhead3</defName>
+	      	<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head3</graphicPath>
+	      	<gender>None</gender>
+	      	<requiredGenes>
+	        	<li>Joe_WarforgedHead</li>
+	      	</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Joe_WarforgedHead Gene -->
+	<GeneDef ParentName="GeneJawBase">
+		<defName>Joe_WarforgedHead</defName>
+		<label>warforged head</label>
+		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have crystalline eyes, a hinged jawline and a prominent brow.</description>
+	    <iconPath>UI/Icons/Genes/Gene_WarFace</iconPath>
+		<forcedHeadTypes>
+	    	<li>Joe_Warhead1</li>
+	      	<li>Joe_Warhead2</li>
+			<li>Joe_Warhead3</li>
+	    </forcedHeadTypes>
+		<displayOrderInCategory>9802</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+		<capMods>
+			<li>
+		    	<capacity>Manipulation</capacity>
+		    	<postFactor>1.1</postFactor>
+		    </li>
+		</capMods>
+		<statOffsets>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		    <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		    <ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
+		    <MiningSpeed>0.1</MiningSpeed>
+		</statOffsets>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+		    	<li>Bald</li>
+		    </tags>
+		 </hairTagFilter>
+		 <beardTagFilter>
+			<whitelist>true</whitelist>
+		    <tags>
+		    	<li>NoBeard</li>
+		    </tags>
+		</beardTagFilter>		
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+		    	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
+		        <backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>				
+		    </li>
+		</modExtensions>
+	</GeneDef>
+
+<!-- Warforged Fur -->
+	<FurDef>
+		<defName>Joe_WarforgedFur</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+		<Male>Things/Pawn/Humanlike/Bodies/InfinityBody/InfinityBody_Male</Male>
+		<Female>Things/Pawn/Humanlike/Bodies/InfinityBody/InfinityBody_Female</Female>
+		</bodyTypeGraphicPaths>
+  	</FurDef>
+
+<!-- WarforgedBody -->
+	<GeneDef ParentName="GeneBodyBase">
+		<defName>Joe_WarforgedBody</defName>
+		<label>warforged body</label>
+		<labelShortAdj>warforged body</labelShortAdj>
+		<description>Carriers of this gene have a metal body with a high quality rust coating.</description>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<fur>Joe_WarforgedFur</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>400</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Gene_WarforgedBody</iconPath>
+		<skinColorOverride>(102, 102, 105)</skinColorOverride>	
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+		    	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
+		        <backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>				
+		    </li>
+		</modExtensions> 	
+	</GeneDef>
+
+	<!-- Warforged Xenotype -->
+	<XenotypeDef MayRequire="sarg.alphagenes,RedMattis.BigSmall.Core">
+		<defName>Joe_Warforged</defName>
+		<label>warforged</label>
+        <description>Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond the war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.</description>
+		<descriptionShort>Warforged are fully sentient soldiers built from a blend of organic and inorganic materials.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Warforged</iconPath>
+        <combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+        <genes>
+				
+                <li>Hair_BaldOnly</li> 					
+				<li>Body_Standard</li> 				
+				<li>Beard_NoBeardOnly</li>	
+                <li>Ageless</li>
+				<li>Joe_WarforgedBody</li> 
+				<li>Joe_WarforgedHead</li> 
+				<li>Skin_LightGray</li>
+				<li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>	                
+                
+				<li>LowSleep</li> 
+                <li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li> 				
+                <li MayRequire="RedMattis.BigSmall.Core">BS_NaturalArmor</li> 
+				<li>Sterile</li> 	
+				<li>MeleeDamage_Strong</li> 	
+				<li>Aggression_DeadCalm</li>	
+                <li>AptitudeStrong_Construction</li> 
+                <li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li>
+				<li MayRequire="RedMattis.BigSmall.Core">BS_NoFood</li>			                
+                
+				<li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>
+				<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+				<li>AptitudeTerrible_Social</li> 
+				<li>AptitudeTerrible_Plants</li> 
+                <li MayRequire="sarg.alphagenes">AG_TarBlood</li>
+				<li>DiseaseFree</li>
+				<li>Immunity_SuperStrong</li>              
+		</genes>
+    </XenotypeDef>
+
+	
+
+	</Defs>

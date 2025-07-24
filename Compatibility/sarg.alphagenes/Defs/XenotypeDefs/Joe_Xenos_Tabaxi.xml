@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- Tabaxi -->
+
+<!-- Felyne Whiskers Gene -->
+	<GeneDef ParentName="AG_GeneTuskBase">
+		<defName>Joe_FelyneWhiskers</defName>
+		<label>felyne whiskers</label>
+		<displayCategory>AG_Cosmetic_Horns</displayCategory>
+		<description>Carriers of this gene grow fluffy Felyne whiskers.</description>
+		<iconPath>UI/Icons/Genes/5X_FelyneWhiskers</iconPath>
+		<forcedHeadTypes>
+			<li>Female_AveragePointy</li>			
+		</forcedHeadTypes>	
+		<selectionWeight>0</selectionWeight>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/FelyneWhiskers/Mashed_FelyneWhiskers</texPath>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>		
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+<!-- Tabaxi Xenotype -->
+	<XenotypeDef>
+		<defName>Joe_Tabaxi</defName>
+		<label>tabaxi</label>
+		<description>Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.</description>
+		<descriptionShort>Tabaxi are inquisitive, catlike humanoids known for their curiosity and their restless nature.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
+		<inheritable>true</inheritable>
+		<genes>				
+			<li MayRequire="biotexpans.mammalia">BTEMa_SharpClaws</li>				
+			<li MayRequire="biotexpans.mammalia">BTEMa_SensitiveWhiskers</li>			
+			<li>Joe_FelyneWhiskers</li>
+			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Hair_BaldOnly</li>
+			<li>Ears_Cat</li>
+			<li>Tail_Furry</li>
+			<li>Body_Thin</li>
+			<li>Furskin</li>							
+			<li>Learning_Fast</li><!-- Curious -->
+			<li>Fertile</li>
+			<li>Libido_High</li>
+			<li>DarkVision</li>
+			<li>MoveSpeed_Quick</li>
+			<li>Immunity_Weak</li>											
+			<li>AptitudeStrong_Animals</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li>AptitudeStrong_Cooking</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudeTerrible_Mining</li>								
+			<li>AnimalWarcall</li>	
+		</genes>
+	</XenotypeDef>		
+</Defs>

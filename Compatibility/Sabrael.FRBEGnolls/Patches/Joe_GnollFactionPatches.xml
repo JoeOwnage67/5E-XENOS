@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances/SAB_Gnoll</xpath>
+		<value>
+			<SAB_Gnoll>0.05</SAB_Gnoll>      
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances/SAB_GnollFlind</xpath>
+		<value>
+			<SAB_GnollFlind>0.05</SAB_GnollFlind>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]</xpath>
+			<value>
+				<xenotypeSet>
+					<xenotypeChances>
+					</xenotypeChances>
+				</xenotypeSet>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet/xenotypeChances/SAB_Gnoll</xpath>
+		<value>
+			<SAB_Gnoll>0.05</SAB_Gnoll>      
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet/xenotypeChances/SAB_GnollFlind</xpath>
+		<value>
+			<SAB_GnollFlind>0.05</SAB_GnollFlind>     
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances/SAB_Gnoll</xpath>
+		<value>
+			<SAB_Gnoll>0.05</SAB_Gnoll>      
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances/SAB_GnollFlind</xpath>
+		<value>
+			<SAB_GnollFlind>0.05</SAB_GnollFlind>      
+		</value>
+	</Operation>
+</Patch>

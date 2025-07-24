@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- Dark Elf -->
+    <XenotypeDef>
+		<defName>Joe_DarkElf</defName>
+		<label>dark elf</label>
+		<description>Descended from an earlier subrace of dark-skinned elves, the Dark Elves or Drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth.</description>
+		<descriptionShort>Dark Elves are a subrace of Elf long ago banished from the surface world for worship of the evil and corrupt goddess Lolth.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Elf</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li>Ears_Pointed</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Skin_InkBlack</li>				
+			<li>Beauty_Beautiful</li>
+			<li>Eyes_Gray</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_LongOnly</li>
+			<li>ElongatedFingers</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Delicate</li>
+			<li>DiseaseFree</li>
+			<li>DarkVision</li>
+			<li>Mood_Pessimist</li>
+			<li>Fertile</li>
+			<li>Libido_Low</li>
+			<li>LowSleep</li>
+			<li>MeleeDamage_Weak</li>								
+			<li>MaxTemp_SmallDecrease</li>	
+			<li>AptitudeStrong_Intellectual</li>
+			<li>Aggression_Aggressive</li>
+		 </genes>
+		</XenotypeDef>
+
+
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- Hill Dwarf -->
+	<XenotypeDef>
+		<defName>Joe_HillDwarf</defName>
+		<label>hill dwarf</label>
+		<description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.</description>
+		<descriptionShort>Hill Dwarves are a lowland subrace of Dwarf known for their robustness, combat prowess, and ability to strike a bargain.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li MayRequire="det.stoneborn">DV_BushyEyebrows</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_Aggression_Irascible</li>
+			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>
+			<li>Beard_BushyOnly</li>
+			<li>Beard_Always</li>
+			<li>Body_Fat</li>
+	  		<li>Body_Standard</li>
+	  		<li>Body_Hulk</li>				
+			<li>MoveSpeed_Slow</li>
+			<li>Robust</li>
+	  		<li>Libido_High</li>
+	  		<li>WoundHealing_Slow</li>
+	  		<li>Immunity_Strong</li>			
+	  		<li>MinTemp_SmallDecrease</li>
+	  		<li>MaxTemp_SmallDecrease</li>				
+	  		<li>AptitudeStrong_Social</li>
+			<li>AptitudePoor_Animals</li>
+	  		<li>AptitudePoor_Plants</li>
+	  		<li>AptitudeRemarkable_Melee</li>   
+		</genes>
+	</XenotypeDef>
+
+
+</Defs>

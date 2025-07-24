@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!-- Undead head types -->	
+	<HeadTypeDef Name="Joe_UndeadHeadBase" ParentName="AverageBase" Abstract="True">
+		<selectionWeight>100000</selectionWeight>
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Joe_UndeadHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
+		<defName>Joe_UndeadHead1</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Average_Normal</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
+		<defName>Joe_UndeadHead2</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Average_Wa</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
+		<defName>Joe_UndeadHead3</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Average_Normal</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
+		<defName>Joe_UndeadHead4</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Average_Wa</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+    <!-- Joe_UndeadHead Gene -->
+    <GeneDef ParentName="AG_GeneHeadBase">
+        <defName>Joe_UndeadHead</defName>
+        <label>undead head</label>
+        <selectionWeight>0</selectionWeight>
+        <description>A formerly dead head, it is not in top condition.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <iconPath>UI/Icons/Genes/Gene_UndeadHead</iconPath>
+        <forcedHeadTypes>
+            <li>Joe_UndeadHead1</li>
+            <li>Joe_UndeadHead2</li>
+            <li>Joe_UndeadHead3</li>
+            <li>Joe_UndeadHead4</li>
+        </forcedHeadTypes>		
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+                <backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+            </li>
+        </modExtensions>
+	</GeneDef>	
+
+    <!-- Joe Undead Furdef -->
+    <FurDef>
+    <defName>Joe_UndeadBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Male>
+      <Female>Things/Pawn/Humanlike/Bodies/AG_GauntBody/AG_GauntBody_Female</Female>
+      <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>
+      <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
+      <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>
+    </bodyTypeGraphicPaths>  
+  </FurDef>
+
+	<!-- Joe_UndeadBody Gene -->
+	<GeneDef ParentName="AG_ArmourBase">
+        <defName>Joe_UndeadBody</defName>
+        <label>undead body</label>	
+        <description>A formerly dead body. It ain't what it used to be.</description>
+        <iconPath>UI/Icons/Genes/Gene_UndeadBody</iconPath>	   
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <fur>Joe_UndeadBody</fur>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_Fur</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+                <baseLayer>5</baseLayer>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <colorType>Skin</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
+        <selectionWeight>0</selectionWeight>
+        <modExtensions>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+                <backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+                <useSkinColorForFur>true</useSkinColorForFur>
+                <furHidesBody>true</furHidesBody>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <!-- undead xenotype -->		
+	<XenotypeDef>
+		<defName>Joe_Undead</defName>
+		<label>undead</label>
+		<description>Emerging from the shadowy realms beyond the mortal plane, the undead are eerie beings animated by dark magic and ancient curses. Driven by an insatiable hunger for life force and forbidden knowledge, these spectral wanderers traverse the world in search of lost relics, forgotten lore, and the secrets of immortality. Relentless in their pursuit, the undead rarely find rest, their existence a ceaseless journey through the veil of death. Their very nature compels them to uncover hidden truths, reclaim ancient powers, and ensure that no arcane mystery remains buried.</description>
+		<descriptionShort>The undead are eerie beings driven by dark magic, wandering the world in search of lost relics and forbidden knowledge.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Undead</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Joe_UndeadBody</li>
+			<li>Joe_UndeadHead</li>
+			<li>AG_GauntBody</li> <!-- Alpha Genes -->
+			<li>AG_CancerousBody</li> <!-- Alpha Genes -->
+			<li>AG_VeryGauntHead</li> <!-- Alpha Genes -->
+			<li>Ageless</li>
+			<li>ArchiteMetabolism</li>
+			<li>Deathless</li>						
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>KillThirst</li>
+			<li>Neversleep</li>
+			<li>Pain_Reduced</li>
+			<li>Libido_Low</li>
+			<li>Sterile</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Skin_SheerWhite</li>
+			<li>DarkVision</li>
+			<li>Unstoppable</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_LightGray</li>
+            <li MayRequire="nals.facialanimation, RedMattis.BetterPrerequisites">BS_FacialAnimDisabled</li>						
+		</genes>
+	</XenotypeDef>
+</Defs>

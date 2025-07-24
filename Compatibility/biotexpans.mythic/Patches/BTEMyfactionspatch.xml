@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- adding new xenos to existing factions -->
+<Patch>
+	
+	<Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]</xpath>
+			<value>
+				<xenotypeSet>
+					<xenotypeChances>
+						<Joe_Dragonborn>0.1</Joe_Dragonborn>					
+					</xenotypeChances>				
+				</xenotypeSet>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<Joe_Dragonborn>0.1</Joe_Dragonborn>				
+			</value>
+		</match>
+	</Operation>
+		
+
+</Patch>

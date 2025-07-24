@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>  
+    <!-- Joe_Warforged Removed if Asimov is loaded -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Asimov</li><!-- Neronix17.Asimov -->
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="Joe_Warforged"]</xpath>                    
+                </li>    
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/PawnKindDef[defName="Joe_Warforged"]</xpath>                    
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <!-- Joe_Warforged added to Factions if Asimov is not loaded -->
+
+        <Operation Class="PatchOperationFindMod">
+            <mods>
+                <li>Asimov</li><!-- Neronix17.Asimov -->
+            </mods>
+                <nomatch Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Big and Small - Genes &amp; More</li><!-- RedMattis.BigSmall.Core -->
+                    </mods>
+                    <match Class="PatchOperationFindMod">
+                        <mods>
+                            <li>Alpha Genes</li><!-- sarg.alphagenes -->
+                        </mods>
+                        <match Class="PatchOperationSequence">
+                            <operations>
+                                <li Class="PatchOperationAdd">
+                                    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+                                    <value>
+                                        <Joe_Warforged>0.1</Joe_Warforged>
+                                    </value>
+                                </li>
+                                <li Class="PatchOperationConditional">
+                                    <xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet</xpath>
+                                    <nomatch Class="PatchOperationAdd">
+                                        <xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]</xpath>
+                                        <value>
+                                            <xenotypeSet>
+                                                <xenotypeChances>
+                                                </xenotypeChances>
+                                            </xenotypeSet>
+                                        </value>
+                                    </nomatch>
+                                </li>
+                                <li Class="PatchOperationAdd">
+                                    <xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet/xenotypeChances</xpath>
+                                    <value>
+                                        <Joe_Warforged>0.1</Joe_Warforged>
+                                    </value>
+                                </li>
+                                <li Class="PatchOperationAdd">
+                                    <xpath>/Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+                                    <value>
+                                        <Joe_Warforged>0.1</Joe_Warforged>
+                                    </value>   
+                                </li>
+                            </operations>  
+                        </match>
+                    </match>
+                </nomatch>
+        </Operation>    
+</Patch>

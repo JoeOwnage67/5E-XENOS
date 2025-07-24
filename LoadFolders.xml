@@ -16,4 +16,19 @@
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Ludeon.RimWorld.Royalty</li>
 		<!--<li IfModActive="SirMashedPotato.ESCP.Trolls">1.5/Mods/Trolls</li>-->
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>Common</li>
+		<li>1.6</li>		
+		<li IfModActive="biotexpans.mammalia">Compatibility/biotexpans.mammalia</li>
+		<li IfModActive="biotexpans.mythic">Compatibility/biotexpans.mythic</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
+		<li IfModActive="Sabrael.FRBELoxo">Compatibility/Sabrael.FRBELoxo</li>
+		<li IfModActive="Sabrael.FRBEGnolls">Compatibility/Sabrael.FRBEGnolls</li>
+		<li IfModActive="redmattis.bigsmall.core">Compatibility/redmattis.bigsmall.core</li>
+		<li IfModActive="RedMattis.BetterPrerequisites">Compatibility/RedMattis.BetterPrerequisites</li>
+		<li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>
+		<li IfModActive="det.stoneborn">Compatibility/det.stoneborn</li>
+		<li IfModActive="RedMattis.Undead">Compatibility/RedMattis.Undead</li>
+	</v1.6>
 </loadFolders>
